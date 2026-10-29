@@ -55,10 +55,11 @@ def create_product_app(control, token_owners, *, profile, ui_root=None, build_id
     def info():
         return {
             "profile": profile,
-            "is_simulated_generation": profile != "live",
+            "is_simulated_generation": profile not in {"llm-demo", "live"},
+            "uses_synthetic_sources": profile in {"synthetic-demo", "llm-demo"},
             "model_quality_acceptance": "not_established",
             "default_investigator": "fixed",
-            "external_calls_in_demo": 0,
+            "external_calls_in_demo": 0 if profile in {"synthetic-demo", "official-demo"} else None,
             "implementation_sha256": build_identity,
         }
 

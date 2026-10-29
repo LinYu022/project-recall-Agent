@@ -24,6 +24,9 @@ services:
       RECALL_DATABASE_URL: postgresql+psycopg://recall:${RECALL_DB_PASSWORD}@database:5432/recall
       RECALL_CONTROL_TOKEN_OWNERS: ${RECALL_CONTROL_TOKEN_OWNERS:?Set local access credentials as a JSON object}
       RECALL_PRODUCT_SCHEMA: recall_product
+      RECALL_MODEL_API_KEY: ${RECALL_MODEL_API_KEY:-}
+      RECALL_MODEL_BASE_URL: ${RECALL_MODEL_BASE_URL:-https://api.deepseek.com}
+      RECALL_MODEL_ID: ${RECALL_MODEL_ID:-deepseek-flash}
     volumes:
       - product-artifacts:/workspace/.local
     depends_on:

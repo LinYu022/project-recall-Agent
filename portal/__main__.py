@@ -1,4 +1,4 @@
-"""Serve the product. Demo profiles cannot create external model requests."""
+"""Serve offline demos or explicitly configured LLM-backed investigations."""
 
 import argparse
 import json
@@ -34,7 +34,9 @@ from releases.service import PublishedService
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--profile", choices=["synthetic-demo", "official-demo", "live"], default="synthetic-demo"
+        "--profile",
+        choices=["synthetic-demo", "llm-demo", "official-demo", "live"],
+        default="synthetic-demo",
     )
     parser.add_argument("--host", choices=["127.0.0.1", "0.0.0.0"], default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8017)
@@ -43,8 +45,17 @@ def main():
     parser.add_argument("--ui-root", type=Path, default=Path("frontend/dist"))
     parser.add_argument("--release-index", type=Path, help="Local index of prepared source bundles")
     args = parser.parse_args()
-    if args.profile != "synthetic-demo" and args.release_index is None:
+    if args.profile in {"official-demo", "live"} and args.release_index is None:
         parser.error("--release-index is required for official-demo and live profiles")
+    model: Any
+    if args.profile in {"llm-demo", "live"}:
+        from models.chat_api import ChatJSONModel
+
+        model = ChatJSONModel()
+        if not model.key:
+            parser.error("RECALL_MODEL_API_KEY is required for LLM-backed profiles")
+    else:
+        model = DemoModel()
     args.root.mkdir(parents=True, exist_ok=True)
     schema = os.environ.get("RECALL_PRODUCT_SCHEMA", "recall_product")
     if not re.fullmatch(r"[a-z][a-z0-9_]{0,50}", schema):
@@ -71,7 +82,7 @@ def main():
             config = Config("alembic.ini")
             config.attributes["connection"] = connection
             command.upgrade(config, "head")
-        if args.profile == "synthetic-demo":
+        if args.profile in {"synthetic-demo", "llm-demo"}:
             pointer = args.root / "synthetic-release.json"
             if pointer.exists():
                 candidate = json.loads(pointer.read_bytes())
@@ -95,13 +106,6 @@ def main():
                 retain_until=datetime.now(UTC) + timedelta(days=30),
             )
         )
-        model: Any
-        if args.profile == "live":
-            from models.chat_api import ChatJSONModel
-
-            model = ChatJSONModel()
-        else:
-            model = DemoModel()
         control = TaskControl(
             PublishedService(catalog, args.root / "traces"),
             model,
