@@ -85,7 +85,10 @@ def create_query_app(
     development_mode=False,
 ) -> FastAPI:
     if settings is None:
-        path = Path(os.environ.get("RECALL_QUERY_CONFIG", "examples/query-readonly.json"))
+        configured = os.environ.get("RECALL_QUERY_CONFIG")
+        if not configured:
+            raise ValueError("RECALL_QUERY_CONFIG is required for saved-source queries")
+        path = Path(configured)
         settings = QuerySettings.model_validate_json(path.read_bytes())
     configured_engine = engine
     owned_engine = False

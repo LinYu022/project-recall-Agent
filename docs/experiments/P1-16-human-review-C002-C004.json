@@ -1,7 +1,0 @@
-{
-  "publication_status": "private_audit_not_distributed",
-  "original_git_blob_sha256": "c456eeaac75bb4eb47b68917fbeea37c1323d48610a7652d7e085a21277587d3",
-  "reason": "Actual human replies, conversation identifiers, local approvals and storage pointers remain private.",
-  "historical_verdict": "not_passed",
-  "summary": "See docs/experiments/P1-16-confirmation-results.md and docs/reproducibility.md."
-}

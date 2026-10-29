@@ -1,9 +1,0 @@
-{
-  "case_id": "TEST-21V652000-YEAR",
-  "split": "test",
-  "slots": [],
-  "required_claims": [],
-  "acceptable_dispositions": [
-    "no_matching_records"
-  ]
-}

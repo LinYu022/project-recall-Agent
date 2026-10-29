@@ -1,6 +1,0 @@
-{
-  "schema_version": "parse-audit-request/0.1",
-  "requests": [
-    {"snapshot_id": "00000000000000000000000000000000", "ordinal": 0}
-  ]
-}

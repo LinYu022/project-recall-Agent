@@ -11,9 +11,9 @@ def implementation():
         for p in (
             "frontend/package.json",
             "frontend/pnpm-lock.yaml",
+            "frontend/pnpm-workspace.yaml",
             "frontend/index.html",
             "frontend/vite.config.js",
-            "frontend/e2e.mjs",
             "Dockerfile",
             "compose.yaml",
         )

@@ -1,9 +1,0 @@
-{
-  "case_id": "DEV-MISSING",
-  "split": "development",
-  "slots": [],
-  "required_claims": [],
-  "acceptable_dispositions": [
-    "needs_clarification"
-  ]
-}

@@ -1,9 +1,0 @@
-cff-version: 1.2.0
-message: "Please cite the code version and the exact experiment or data release separately."
-title: "Recall Evidence Agent"
-type: software
-authors:
-  - name: "LinYu022"
-version: "0.1.0-candidate"
-date-released: "2026-10-29"
-license: MIT

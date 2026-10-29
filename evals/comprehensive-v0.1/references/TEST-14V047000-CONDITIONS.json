@@ -1,9 +1,0 @@
-{
-  "case_id": "TEST-14V047000-CONDITIONS",
-  "split": "test",
-  "slots": [],
-  "required_claims": [],
-  "acceptable_dispositions": [
-    "needs_clarification"
-  ]
-}

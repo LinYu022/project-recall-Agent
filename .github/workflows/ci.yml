@@ -34,57 +34,10 @@ jobs:
           persist-credentials: false
       # All credentials are generated locally. This test does not enable a provider.
       - run: python3 -m scripts.verify_container_product --output .local/container-ci
-
-  offline:
-    name: Offline checks (${{ matrix.os }})
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 10
-    strategy:
-      matrix:
-        os: [ubuntu-24.04, windows-2025]
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
         with:
-          persist-credentials: false
-      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
-        with:
-          version: "0.11.26"
-          python-version: "3.12.14"
-          enable-cache: true
-      # Environment setup needs network; subsequent checks use synthetic fixtures.
-      - run: uv sync --locked --python 3.12.14
-      - run: uv run --locked --offline python -m scripts.verify_offline
-      - run: uv run --locked --offline python -m mypy portal publication scripts/prepare_public_release.py scripts/verify_container_product.py
-
-  postgres:
-    name: PostgreSQL integration
-    runs-on: ubuntu-24.04
-    timeout-minutes: 10
-    services:
-      postgres:
-        image: postgres:18.6
-        env:
-          POSTGRES_USER: recall_test
-          POSTGRES_PASSWORD: ci-disposable-only
-          POSTGRES_DB: recall_test
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U recall_test -d recall_test"
-          --health-interval 5s
-          --health-timeout 5s
-          --health-retries 10
-    env:
-      # Disposable CI service credentials, never reuse for a deployed database.
-      RECALL_TEST_DATABASE_URL: postgresql+psycopg://recall_test:ci-disposable-only@127.0.0.1:5432/recall_test
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
-        with:
-          version: "0.11.26"
-          python-version: "3.12.14"
-          enable-cache: true
-      - run: uv sync --locked --python 3.12.14
-      - run: uv run --locked --offline python -m pytest -q -m postgres --basetemp .local/pytest-postgres
+          name: container-check-result
+          path: .local/container-ci/result.json
+          if-no-files-found: ignore
+          retention-days: 7

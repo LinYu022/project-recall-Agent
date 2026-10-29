@@ -38,10 +38,13 @@ def main():
     )
     parser.add_argument("--host", choices=["127.0.0.1", "0.0.0.0"], default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8017)
-    parser.add_argument("--root", type=Path, default=Path(".local/P1-17/product"))
+    parser.add_argument("--root", type=Path, default=Path(".local/product"))
     parser.add_argument("--postgres-bin", type=Path)
     parser.add_argument("--ui-root", type=Path, default=Path("frontend/dist"))
+    parser.add_argument("--release-index", type=Path, help="Local index of prepared source bundles")
     args = parser.parse_args()
+    if args.profile != "synthetic-demo" and args.release_index is None:
+        parser.error("--release-index is required for official-demo and live profiles")
     args.root.mkdir(parents=True, exist_ok=True)
     schema = os.environ.get("RECALL_PRODUCT_SCHEMA", "recall_product")
     if not re.fullmatch(r"[a-z][a-z0-9_]{0,50}", schema):
@@ -77,7 +80,7 @@ def main():
                 store, candidate = synthetic_bundle(args.root / "fixtures")
                 pointer.write_text(json.dumps(candidate), encoding="utf-8")
         else:
-            index = json.loads(Path("examples/release-candidates.json").read_bytes())
+            index = json.loads(args.release_index.read_bytes())
             candidate, store = index["candidates"]["expanded"], BundleStore(Path(index["root"]))
         catalog = Catalog(engine, store)
         from database.schema import release_defaults

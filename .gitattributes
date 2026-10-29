@@ -1,3 +1,2 @@
 * text=auto eol=lf
 *.pdf binary
-docs/plan/implementation-plan-v2.0.md -text -whitespace

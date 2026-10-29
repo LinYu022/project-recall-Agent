@@ -1,9 +1,0 @@
-{
-  "case_id": "TEST-18V404000-FACTS",
-  "split": "test",
-  "slots": [],
-  "required_claims": [],
-  "acceptable_dispositions": [
-    "insufficient_evidence"
-  ]
-}

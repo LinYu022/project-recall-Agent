@@ -4,7 +4,7 @@ FROM ghcr.io/astral-sh/uv:0.11.26 AS uv
 FROM ${NODE_IMAGE} AS frontend
 WORKDIR /frontend
 RUN npm install --global pnpm@11.25.0
-COPY frontend/package.json frontend/pnpm-lock.yaml ./
+COPY frontend/package.json frontend/pnpm-lock.yaml frontend/pnpm-workspace.yaml ./
 RUN pnpm install --frozen-lockfile --ignore-scripts
 COPY frontend/index.html frontend/vite.config.js ./
 COPY frontend/src ./src
