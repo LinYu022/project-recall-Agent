@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-10-26T06:44:09.795042+00:00",
+  "classification": "real_loopback_http_with_synthetic_data_and_fake_model",
+  "host": "127.0.0.1",
+  "port": 61150,
+  "server_stopped": true,
+  "external_model_calls": 0,
+  "checks": [
+    {
+      "case": "health",
+      "http_status": 200
+    },
+    {
+      "case": "success",
+      "http_status": 201,
+      "result": {
+        "schema_version": "demo-run/0.2",
+        "run_id": "5a507245cbb6407fae2a3f56d590ad45",
+        "task_id": "DEMO-001",
+        "call_id": "42d379f79efd4283b331962814dfa2a4",
+        "execution_generation": 1,
+        "release_id": "demo-fixture-v1",
+        "grant_id": "dev-readonly-v1",
+        "revision_id": "demo-plan-v1",
+        "data_kind": "synthetic",
+        "tool": "fake_query",
+        "model_call_id": "746a1ec9979b46f49bd24da034aba19f",
+        "model_calls_used": 1,
+        "model": {
+          "provider": "fake",
+          "model_id": "fake-summary-v1",
+          "is_simulated": true,
+          "parameters": {
+            "scenario": "success"
+          }
+        },
+        "model_input_artifact": {
+          "sha256": "df954a58ecc89e26e9c0426158e67bfe35d4962061a90b7ef1a75f5085ba5ea6",
+          "byte_size": 608
+        },
+        "model_output_artifact": {
+          "sha256": "4a3b86c620a62663ddfa3703c74e329ec62adb044b252ee98e53ef475e4577dd",
+          "byte_size": 150
+        },
+        "summary": {
+          "text": "Synthetic fixture contains 1 record(s). No real vehicle conclusion is supported.",
+          "cited_source_ids": [
+            "SIM-COMPLAINT-001"
+          ]
+        },
+        "usage": null,
+        "status": "succeeded",
+        "calls_used": 1,
+        "error_code": null,
+        "record_count": 1,
+        "input_artifact": {
+          "sha256": "4c40fb61c0b80b05bb9a85303f1adbbeb3d68478e6fbce5a7a098a5bc0109592",
+          "byte_size": 1946
+        },
+        "output_artifact": {
+          "sha256": "da040e64fb2a283595f0e1fdf683b4f2fb3dabfbddde52a66240f6700c99f00f",
+          "byte_size": 257
+        },
+        "elapsed_ms": 4.957,
+        "links": {
+          "self": "/demo/runs/5a507245cbb6407fae2a3f56d590ad45",
+          "events": "/demo/runs/5a507245cbb6407fae2a3f56d590ad45/events",
+          "input_artifact": "/demo/runs/5a507245cbb6407fae2a3f56d590ad45/artifacts/4c40fb61c0b80b05bb9a85303f1adbbeb3d68478e6fbce5a7a098a5bc0109592",
+          "output_artifact": "/demo/runs/5a507245cbb6407fae2a3f56d590ad45/artifacts/da040e64fb2a283595f0e1fdf683b4f2fb3dabfbddde52a66240f6700c99f00f",
+          "model_input_artifact": "/demo/runs/5a507245cbb6407fae2a3f56d590ad45/artifacts/df954a58ecc89e26e9c0426158e67bfe35d4962061a90b7ef1a75f5085ba5ea6",
+          "model_output_artifact": "/demo/runs/5a507245cbb6407fae2a3f56d590ad45/artifacts/4a3b86c620a62663ddfa3703c74e329ec62adb044b252ee98e53ef475e4577dd"
+        }
+      }
+    },
+    {
+      "case": "empty",
+      "http_status": 201,
+      "result": {
+        "schema_version": "demo-run/0.2",
+        "run_id": "a5303d93d8d045ab83da34c000516b8c",
+        "task_id": "DEMO-001",
+        "call_id": "e470c52763b14597a863222ba4846a1c",
+        "execution_generation": 1,
+        "release_id": "demo-fixture-v1",
+        "grant_id": "dev-readonly-v1",
+        "revision_id": "demo-plan-v1",
+        "data_kind": "synthetic",
+        "tool": "fake_query",
+        "model_call_id": "e231c47afb3e4b6f8cd5d65c5fe14220",
+        "model_calls_used": 1,
+        "model": {
+          "provider": "fake",
+          "model_id": "fake-summary-v1",
+          "is_simulated": true,
+          "parameters": {
+            "scenario": "success"
+          }
+        },
+        "model_input_artifact": {
+          "sha256": "5f0eb2fd9ed70fb6ebd43a791cd33d9927cf57875ce548557244e4cc8a12e699",
+          "byte_size": 425
+        },
+        "model_output_artifact": {
+          "sha256": "8b133207868360f574388c543156d7724e75ed971d730b2a1d0d2d95512c849d",
+          "byte_size": 123
+        },
+        "summary": {
+          "text": "Synthetic fixture contains 0 record(s). No real vehicle conclusion is supported.",
+          "cited_source_ids": []
+        },
+        "usage": null,
+        "status": "succeeded",
+        "calls_used": 1,
+        "error_code": null,
+        "record_count": 0,
+        "input_artifact": {
+          "sha256": "1ec4c175919b9c9c6d8eaf5a4142771782c709957c140de0dec8b1169db5e0a4",
+          "byte_size": 1944
+        },
+        "output_artifact": {
+          "sha256": "8b84ff9ea6acfa1e3d886bdf16ebb39a2350637317680ea8ee92e92f484d4955",
+          "byte_size": 83
+        },
+        "elapsed_ms": 4.253,
+        "links": {
+          "self": "/demo/runs/a5303d93d8d045ab83da34c000516b8c",
+          "events": "/demo/runs/a5303d93d8d045ab83da34c000516b8c/events",
+          "input_artifact": "/demo/runs/a5303d93d8d045ab83da34c000516b8c/artifacts/1ec4c175919b9c9c6d8eaf5a4142771782c709957c140de0dec8b1169db5e0a4",
+          "output_artifact": "/demo/runs/a5303d93d8d045ab83da34c000516b8c/artifacts/8b84ff9ea6acfa1e3d886bdf16ebb39a2350637317680ea8ee92e92f484d4955",
+          "model_input_artifact": "/demo/runs/a5303d93d8d045ab83da34c000516b8c/artifacts/5f0eb2fd9ed70fb6ebd43a791cd33d9927cf57875ce548557244e4cc8a12e699",
+          "model_output_artifact": "/demo/runs/a5303d93d8d045ab83da34c000516b8c/artifacts/8b133207868360f574388c543156d7724e75ed971d730b2a1d0d2d95512c849d"
+        }
+      }
+    },
+    {
+      "case": "denied",
+      "http_status": 403,
+      "result": {
+        "schema_version": "demo-run/0.2",
+        "run_id": "b87eec0a6aa440839c0612ef9d85fafe",
+        "task_id": "DEMO-001",
+        "call_id": "8432a91f43fc40498f388ef964508a1c",
+        "execution_generation": 1,
+        "release_id": "demo-fixture-v1",
+        "grant_id": "dev-readonly-v1",
+        "revision_id": "demo-plan-v1",
+        "data_kind": "synthetic",
+        "tool": "not_allowed",
+        "model_call_id": null,
+        "model_calls_used": 0,
+        "model": {
+          "provider": "fake",
+          "model_id": "fake-summary-v1",
+          "is_simulated": true,
+          "parameters": {
+            "scenario": "success"
+          }
+        },
+        "model_input_artifact": null,
+        "model_output_artifact": null,
+        "summary": null,
+        "usage": null,
+        "status": "denied",
+        "calls_used": 0,
+        "error_code": "tool_not_allowed",
+        "record_count": null,
+        "input_artifact": {
+          "sha256": "b88bcae96e44e05cb0207f72890b952a08af3972470363310672cad1ec8b441b",
+          "byte_size": 1947
+        },
+        "output_artifact": null,
+        "elapsed_ms": 2.291,
+        "links": {
+          "self": "/demo/runs/b87eec0a6aa440839c0612ef9d85fafe",
+          "events": "/demo/runs/b87eec0a6aa440839c0612ef9d85fafe/events",
+          "input_artifact": "/demo/runs/b87eec0a6aa440839c0612ef9d85fafe/artifacts/b88bcae96e44e05cb0207f72890b952a08af3972470363310672cad1ec8b441b",
+          "output_artifact": null,
+          "model_input_artifact": null,
+          "model_output_artifact": null
+        }
+      }
+    },
+    {
+      "case": "model-error",
+      "http_status": 502,
+      "result": {
+        "schema_version": "demo-run/0.2",
+        "run_id": "eca0132dce30435dabde2f12424f5d99",
+        "task_id": "DEMO-001",
+        "call_id": "79fff8dbdd93405bba6adde7a894df6d",
+        "execution_generation": 1,
+        "release_id": "demo-fixture-v1",
+        "grant_id": "dev-readonly-v1",
+        "revision_id": "demo-plan-v1",
+        "data_kind": "synthetic",
+        "tool": "fake_query",
+        "model_call_id": "babf04ec75e545649558d1060b5b1866",
+        "model_calls_used": 1,
+        "model": {
+          "provider": "fake",
+          "model_id": "fake-summary-v1",
+          "is_simulated": true,
+          "parameters": {
+            "scenario": "model-error"
+          }
+        },
+        "model_input_artifact": {
+          "sha256": "8a4649e42a85b34c6d3f58dacf8f91f0d0a1734c7dd9dbff2811ab484e189d16",
+          "byte_size": 612
+        },
+        "model_output_artifact": null,
+        "summary": null,
+        "usage": null,
+        "status": "failed",
+        "calls_used": 1,
+        "error_code": "model_error",
+        "record_count": 1,
+        "input_artifact": {
+          "sha256": "f9334dd3e3c0344daf4f5683993d5ae03c260cae0c74db8193426ad12a158dad",
+          "byte_size": 1950
+        },
+        "output_artifact": {
+          "sha256": "da040e64fb2a283595f0e1fdf683b4f2fb3dabfbddde52a66240f6700c99f00f",
+          "byte_size": 257
+        },
+        "elapsed_ms": 4.053,
+        "links": {
+          "self": "/demo/runs/eca0132dce30435dabde2f12424f5d99",
+          "events": "/demo/runs/eca0132dce30435dabde2f12424f5d99/events",
+          "input_artifact": "/demo/runs/eca0132dce30435dabde2f12424f5d99/artifacts/f9334dd3e3c0344daf4f5683993d5ae03c260cae0c74db8193426ad12a158dad",
+          "output_artifact": "/demo/runs/eca0132dce30435dabde2f12424f5d99/artifacts/da040e64fb2a283595f0e1fdf683b4f2fb3dabfbddde52a66240f6700c99f00f",
+          "model_input_artifact": "/demo/runs/eca0132dce30435dabde2f12424f5d99/artifacts/8a4649e42a85b34c6d3f58dacf8f91f0d0a1734c7dd9dbff2811ab484e189d16",
+          "model_output_artifact": null
+        }
+      }
+    },
+    {
+      "case": "bad-citation",
+      "http_status": 502,
+      "result": {
+        "schema_version": "demo-run/0.2",
+        "run_id": "596410beb95a4246885185fffb19a8cc",
+        "task_id": "DEMO-001",
+        "call_id": "819eb7e33f84435286b64b797401eb2a",
+        "execution_generation": 1,
+        "release_id": "demo-fixture-v1",
+        "grant_id": "dev-readonly-v1",
+        "revision_id": "demo-plan-v1",
+        "data_kind": "synthetic",
+        "tool": "fake_query",
+        "model_call_id": "470eee145a6e45598dc8b4c743ebbfef",
+        "model_calls_used": 1,
+        "model": {
+          "provider": "fake",
+          "model_id": "fake-summary-v1",
+          "is_simulated": true,
+          "parameters": {
+            "scenario": "bad-citation"
+          }
+        },
+        "model_input_artifact": {
+          "sha256": "aa203bebc84102dd68b5fc3e6b65341de0a8518487dabb489c29903307e6d6b2",
+          "byte_size": 613
+        },
+        "model_output_artifact": {
+          "sha256": "2514c4d4f24adc88810b6568825f35024996900fa002e957f7fcebe1be3f8ca8",
+          "byte_size": 146
+        },
+        "summary": null,
+        "usage": null,
+        "status": "failed",
+        "calls_used": 1,
+        "error_code": "model_citation_invalid",
+        "record_count": 1,
+        "input_artifact": {
+          "sha256": "a0bb3dd078765417f7a4f23bc8bc65dbf0d5b139e809b3d82e9fce81a5b2da4d",
+          "byte_size": 1951
+        },
+        "output_artifact": {
+          "sha256": "da040e64fb2a283595f0e1fdf683b4f2fb3dabfbddde52a66240f6700c99f00f",
+          "byte_size": 257
+        },
+        "elapsed_ms": 4.674,
+        "links": {
+          "self": "/demo/runs/596410beb95a4246885185fffb19a8cc",
+          "events": "/demo/runs/596410beb95a4246885185fffb19a8cc/events",
+          "input_artifact": "/demo/runs/596410beb95a4246885185fffb19a8cc/artifacts/a0bb3dd078765417f7a4f23bc8bc65dbf0d5b139e809b3d82e9fce81a5b2da4d",
+          "output_artifact": "/demo/runs/596410beb95a4246885185fffb19a8cc/artifacts/da040e64fb2a283595f0e1fdf683b4f2fb3dabfbddde52a66240f6700c99f00f",
+          "model_input_artifact": "/demo/runs/596410beb95a4246885185fffb19a8cc/artifacts/aa203bebc84102dd68b5fc3e6b65341de0a8518487dabb489c29903307e6d6b2",
+          "model_output_artifact": "/demo/runs/596410beb95a4246885185fffb19a8cc/artifacts/2514c4d4f24adc88810b6568825f35024996900fa002e957f7fcebe1be3f8ca8"
+        }
+      }
+    },
+    {
+      "case": "missing-make",
+      "http_status": 422
+    }
+  ]
+}

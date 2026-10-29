@@ -1,0 +1,31 @@
+{
+  "classification": "deterministic_temporal_filter_on_real_archived_snapshots",
+  "replayed_equal": true,
+  "external_model_calls": 0,
+  "checks": [
+    {
+      "case": "time-snapshot",
+      "status": "selected",
+      "selected_count": 106,
+      "excluded_count": 0,
+      "selection_sha256": "d48d846b1d9883e08ce91a74326fe66fbf64796c077d79063d14b1e07c8bd58a",
+      "output": ".local/P1-02-selections/time-snapshot.json"
+    },
+    {
+      "case": "time-historical-2014",
+      "status": "unsupported",
+      "selected_count": 0,
+      "excluded_count": 106,
+      "selection_sha256": "b956641c459215768c5fcbc216853edab6a6d587f7a9e895a82a30aa47ddbd17",
+      "output": ".local/P1-02-selections/time-historical-2014.json"
+    },
+    {
+      "case": "time-historical-observed",
+      "status": "selected",
+      "selected_count": 106,
+      "excluded_count": 0,
+      "selection_sha256": "c9cca762ce58c3e0e8cb9aa54e1f1b57cdf24aa09eca0903193fb942965c6aa7",
+      "output": ".local/P1-02-selections/time-historical-observed.json"
+    }
+  ]
+}

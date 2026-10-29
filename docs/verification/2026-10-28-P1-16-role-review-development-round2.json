@@ -1,0 +1,4584 @@
+{
+  "schema_version": "role-aware-summary/0.2",
+  "assessment_id": "aa7b3621bf193cbfa706374eccdf514dc2ee67e02f7c6f4b03d2290819a7e049",
+  "experiment_id": "04977b4c562ad6b533b2fefe89098c1c3515d3542ac4216a8f7b6e260e7099ef",
+  "post_hoc_revision": true,
+  "frozen_denominator": 270,
+  "arms": {
+    "fixed": {
+      "denominator": 60,
+      "human_task_judgments": 1,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 1,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "single_agent": {
+      "denominator": 60,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "parallel_tools": {
+      "denominator": 60,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "multi_agent": {
+      "denominator": 60,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "retrieval_bm25": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "retrieval_dense": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "retrieval_hybrid": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "retrieval_hybrid_rerank": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "context_full_history": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "context_recent_window": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "context_structured": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_frozen_none": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_frozen_semantic": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_frozen_semantic_episode": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_frozen_all": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_sequential_none": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_sequential_semantic": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_sequential_semantic_episode": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    },
+    "memory_sequential_all": {
+      "denominator": 2,
+      "human_task_judgments": 0,
+      "reviewed_successes": 0,
+      "task_completion_rate": null,
+      "citation_role_reviewed_cells": 0,
+      "direct_citation_aspect_support_rate": null,
+      "atomic_reviewed_cells": 0,
+      "unsupported_atomic_assertion_rate": null,
+      "partial_atomic_assertion_rate": null
+    }
+  },
+  "rows": [
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "fixed:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-14V047000-CONDITIONS",
+        "cell_id": "fixed:TEST-14V047000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-14V047000-YEAR",
+        "cell_id": "fixed:TEST-14V047000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-15V461000-FACTS",
+        "cell_id": "fixed:TEST-15V461000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-15V461000-CONDITIONS",
+        "cell_id": "fixed:TEST-15V461000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-15V461000-TIME",
+        "cell_id": "fixed:TEST-15V461000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-18V332000-FACTS",
+        "cell_id": "fixed:TEST-18V332000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": false,
+      "formal": {
+        "task_success": false,
+        "disposition_correct": true,
+        "reviewed_claim_count": 6,
+        "reported_claim_verdict_counts": {
+          "supported": 2,
+          "partial": 4
+        },
+        "claim_judgments_complete": true,
+        "citation_pairs_expected": 20,
+        "citation_pairs_reviewed": 20,
+        "citation_roles_complete": true,
+        "context_only_citation_pairs": 5,
+        "direct_citation_pairs": 15,
+        "direct_citation_verdict_counts": {
+          "supported": 13,
+          "partial": 2
+        },
+        "direct_citation_aspect_support_rate": 0.8666666666666667,
+        "direct_metric_scope": "reviewer_named_aspect_not_necessarily_all_assertions_in_claim",
+        "whole_claim_citation_support_rate": null,
+        "required_context_links_expected": 8,
+        "required_context_links_present": 8,
+        "required_context_coverage": 1.0,
+        "context_coverage_is_mechanical_not_semantic": true,
+        "atomic_assertions_exhaustive": false,
+        "reviewed_atomic_assertion_count": 0,
+        "unsupported_atomic_assertion_count": 0,
+        "partial_atomic_assertion_count": 0,
+        "unsupported_atomic_assertion_rate": null,
+        "partial_atomic_assertion_rate": null,
+        "required_obligations_reviewed": 0,
+        "required_obligations_expected": 3,
+        "required_obligation_recall": null,
+        "relations_ready": true,
+        "relation_judgments": []
+      },
+      "imported_reviews": 1
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-18V332000-CONDITIONS",
+        "cell_id": "fixed:TEST-18V332000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-18V332000-YEAR",
+        "cell_id": "fixed:TEST-18V332000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-19V053000-FACTS",
+        "cell_id": "fixed:TEST-19V053000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-19V053000-CONDITIONS",
+        "cell_id": "fixed:TEST-19V053000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-19V053000-TIME",
+        "cell_id": "fixed:TEST-19V053000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-18V404000-FACTS",
+        "cell_id": "fixed:TEST-18V404000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-18V404000-CONDITIONS",
+        "cell_id": "fixed:TEST-18V404000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-18V404000-YEAR",
+        "cell_id": "fixed:TEST-18V404000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-19V782000-FACTS",
+        "cell_id": "fixed:TEST-19V782000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-19V782000-CONDITIONS",
+        "cell_id": "fixed:TEST-19V782000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-19V782000-TIME",
+        "cell_id": "fixed:TEST-19V782000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-20V012000-FACTS",
+        "cell_id": "fixed:TEST-20V012000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-20V012000-CONDITIONS",
+        "cell_id": "fixed:TEST-20V012000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-20V012000-YEAR",
+        "cell_id": "fixed:TEST-20V012000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-20V588000-FACTS",
+        "cell_id": "fixed:TEST-20V588000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-20V588000-CONDITIONS",
+        "cell_id": "fixed:TEST-20V588000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-20V588000-TIME",
+        "cell_id": "fixed:TEST-20V588000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V165000-FACTS",
+        "cell_id": "fixed:TEST-21V165000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V165000-CONDITIONS",
+        "cell_id": "fixed:TEST-21V165000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V165000-YEAR",
+        "cell_id": "fixed:TEST-21V165000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V387000-FACTS",
+        "cell_id": "fixed:TEST-21V387000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V387000-CONDITIONS",
+        "cell_id": "fixed:TEST-21V387000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V387000-TIME",
+        "cell_id": "fixed:TEST-21V387000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "fixed:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V652000-CONDITIONS",
+        "cell_id": "fixed:TEST-21V652000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-21V652000-YEAR",
+        "cell_id": "fixed:TEST-21V652000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V346000-FACTS",
+        "cell_id": "fixed:TEST-22V346000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V346000-CONDITIONS",
+        "cell_id": "fixed:TEST-22V346000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V346000-TIME",
+        "cell_id": "fixed:TEST-22V346000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V554000-FACTS",
+        "cell_id": "fixed:TEST-22V554000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V554000-CONDITIONS",
+        "cell_id": "fixed:TEST-22V554000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V554000-YEAR",
+        "cell_id": "fixed:TEST-22V554000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V746000-FACTS",
+        "cell_id": "fixed:TEST-22V746000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V746000-CONDITIONS",
+        "cell_id": "fixed:TEST-22V746000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-22V746000-TIME",
+        "cell_id": "fixed:TEST-22V746000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V023000-FACTS",
+        "cell_id": "fixed:TEST-23V023000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V023000-CONDITIONS",
+        "cell_id": "fixed:TEST-23V023000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V023000-YEAR",
+        "cell_id": "fixed:TEST-23V023000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V198000-FACTS",
+        "cell_id": "fixed:TEST-23V198000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V198000-CONDITIONS",
+        "cell_id": "fixed:TEST-23V198000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V198000-TIME",
+        "cell_id": "fixed:TEST-23V198000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V268000-FACTS",
+        "cell_id": "fixed:TEST-23V268000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V268000-CONDITIONS",
+        "cell_id": "fixed:TEST-23V268000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V268000-YEAR",
+        "cell_id": "fixed:TEST-23V268000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V477000-FACTS",
+        "cell_id": "fixed:TEST-23V477000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V477000-CONDITIONS",
+        "cell_id": "fixed:TEST-23V477000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-23V477000-TIME",
+        "cell_id": "fixed:TEST-23V477000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-24V051000-FACTS",
+        "cell_id": "fixed:TEST-24V051000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-24V051000-CONDITIONS",
+        "cell_id": "fixed:TEST-24V051000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-24V051000-YEAR",
+        "cell_id": "fixed:TEST-24V051000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-24V081000-FACTS",
+        "cell_id": "fixed:TEST-24V081000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-24V081000-CONDITIONS",
+        "cell_id": "fixed:TEST-24V081000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "fixed",
+        "case_id": "TEST-24V081000-TIME",
+        "cell_id": "fixed:TEST-24V081000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "single_agent:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-14V047000-CONDITIONS",
+        "cell_id": "single_agent:TEST-14V047000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-14V047000-YEAR",
+        "cell_id": "single_agent:TEST-14V047000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-15V461000-FACTS",
+        "cell_id": "single_agent:TEST-15V461000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-15V461000-CONDITIONS",
+        "cell_id": "single_agent:TEST-15V461000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-15V461000-TIME",
+        "cell_id": "single_agent:TEST-15V461000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-18V332000-FACTS",
+        "cell_id": "single_agent:TEST-18V332000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-18V332000-CONDITIONS",
+        "cell_id": "single_agent:TEST-18V332000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-18V332000-YEAR",
+        "cell_id": "single_agent:TEST-18V332000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-19V053000-FACTS",
+        "cell_id": "single_agent:TEST-19V053000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-19V053000-CONDITIONS",
+        "cell_id": "single_agent:TEST-19V053000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-19V053000-TIME",
+        "cell_id": "single_agent:TEST-19V053000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-18V404000-FACTS",
+        "cell_id": "single_agent:TEST-18V404000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-18V404000-CONDITIONS",
+        "cell_id": "single_agent:TEST-18V404000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-18V404000-YEAR",
+        "cell_id": "single_agent:TEST-18V404000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-19V782000-FACTS",
+        "cell_id": "single_agent:TEST-19V782000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-19V782000-CONDITIONS",
+        "cell_id": "single_agent:TEST-19V782000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-19V782000-TIME",
+        "cell_id": "single_agent:TEST-19V782000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-20V012000-FACTS",
+        "cell_id": "single_agent:TEST-20V012000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-20V012000-CONDITIONS",
+        "cell_id": "single_agent:TEST-20V012000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-20V012000-YEAR",
+        "cell_id": "single_agent:TEST-20V012000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-20V588000-FACTS",
+        "cell_id": "single_agent:TEST-20V588000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-20V588000-CONDITIONS",
+        "cell_id": "single_agent:TEST-20V588000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-20V588000-TIME",
+        "cell_id": "single_agent:TEST-20V588000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V165000-FACTS",
+        "cell_id": "single_agent:TEST-21V165000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V165000-CONDITIONS",
+        "cell_id": "single_agent:TEST-21V165000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V165000-YEAR",
+        "cell_id": "single_agent:TEST-21V165000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V387000-FACTS",
+        "cell_id": "single_agent:TEST-21V387000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V387000-CONDITIONS",
+        "cell_id": "single_agent:TEST-21V387000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V387000-TIME",
+        "cell_id": "single_agent:TEST-21V387000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "single_agent:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V652000-CONDITIONS",
+        "cell_id": "single_agent:TEST-21V652000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-21V652000-YEAR",
+        "cell_id": "single_agent:TEST-21V652000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V346000-FACTS",
+        "cell_id": "single_agent:TEST-22V346000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V346000-CONDITIONS",
+        "cell_id": "single_agent:TEST-22V346000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V346000-TIME",
+        "cell_id": "single_agent:TEST-22V346000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V554000-FACTS",
+        "cell_id": "single_agent:TEST-22V554000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V554000-CONDITIONS",
+        "cell_id": "single_agent:TEST-22V554000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V554000-YEAR",
+        "cell_id": "single_agent:TEST-22V554000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V746000-FACTS",
+        "cell_id": "single_agent:TEST-22V746000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V746000-CONDITIONS",
+        "cell_id": "single_agent:TEST-22V746000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-22V746000-TIME",
+        "cell_id": "single_agent:TEST-22V746000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V023000-FACTS",
+        "cell_id": "single_agent:TEST-23V023000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V023000-CONDITIONS",
+        "cell_id": "single_agent:TEST-23V023000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V023000-YEAR",
+        "cell_id": "single_agent:TEST-23V023000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V198000-FACTS",
+        "cell_id": "single_agent:TEST-23V198000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V198000-CONDITIONS",
+        "cell_id": "single_agent:TEST-23V198000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V198000-TIME",
+        "cell_id": "single_agent:TEST-23V198000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V268000-FACTS",
+        "cell_id": "single_agent:TEST-23V268000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V268000-CONDITIONS",
+        "cell_id": "single_agent:TEST-23V268000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V268000-YEAR",
+        "cell_id": "single_agent:TEST-23V268000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V477000-FACTS",
+        "cell_id": "single_agent:TEST-23V477000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V477000-CONDITIONS",
+        "cell_id": "single_agent:TEST-23V477000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-23V477000-TIME",
+        "cell_id": "single_agent:TEST-23V477000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-24V051000-FACTS",
+        "cell_id": "single_agent:TEST-24V051000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-24V051000-CONDITIONS",
+        "cell_id": "single_agent:TEST-24V051000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-24V051000-YEAR",
+        "cell_id": "single_agent:TEST-24V051000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-24V081000-FACTS",
+        "cell_id": "single_agent:TEST-24V081000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-24V081000-CONDITIONS",
+        "cell_id": "single_agent:TEST-24V081000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "single_agent",
+        "case_id": "TEST-24V081000-TIME",
+        "cell_id": "single_agent:TEST-24V081000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "parallel_tools:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-14V047000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-14V047000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-14V047000-YEAR",
+        "cell_id": "parallel_tools:TEST-14V047000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-15V461000-FACTS",
+        "cell_id": "parallel_tools:TEST-15V461000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-15V461000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-15V461000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-15V461000-TIME",
+        "cell_id": "parallel_tools:TEST-15V461000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-18V332000-FACTS",
+        "cell_id": "parallel_tools:TEST-18V332000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-18V332000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-18V332000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-18V332000-YEAR",
+        "cell_id": "parallel_tools:TEST-18V332000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-19V053000-FACTS",
+        "cell_id": "parallel_tools:TEST-19V053000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-19V053000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-19V053000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-19V053000-TIME",
+        "cell_id": "parallel_tools:TEST-19V053000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-18V404000-FACTS",
+        "cell_id": "parallel_tools:TEST-18V404000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-18V404000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-18V404000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-18V404000-YEAR",
+        "cell_id": "parallel_tools:TEST-18V404000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-19V782000-FACTS",
+        "cell_id": "parallel_tools:TEST-19V782000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-19V782000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-19V782000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-19V782000-TIME",
+        "cell_id": "parallel_tools:TEST-19V782000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-20V012000-FACTS",
+        "cell_id": "parallel_tools:TEST-20V012000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-20V012000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-20V012000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-20V012000-YEAR",
+        "cell_id": "parallel_tools:TEST-20V012000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-20V588000-FACTS",
+        "cell_id": "parallel_tools:TEST-20V588000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-20V588000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-20V588000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-20V588000-TIME",
+        "cell_id": "parallel_tools:TEST-20V588000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V165000-FACTS",
+        "cell_id": "parallel_tools:TEST-21V165000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V165000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-21V165000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V165000-YEAR",
+        "cell_id": "parallel_tools:TEST-21V165000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V387000-FACTS",
+        "cell_id": "parallel_tools:TEST-21V387000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V387000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-21V387000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V387000-TIME",
+        "cell_id": "parallel_tools:TEST-21V387000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "parallel_tools:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V652000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-21V652000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-21V652000-YEAR",
+        "cell_id": "parallel_tools:TEST-21V652000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V346000-FACTS",
+        "cell_id": "parallel_tools:TEST-22V346000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V346000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-22V346000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V346000-TIME",
+        "cell_id": "parallel_tools:TEST-22V346000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V554000-FACTS",
+        "cell_id": "parallel_tools:TEST-22V554000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V554000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-22V554000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V554000-YEAR",
+        "cell_id": "parallel_tools:TEST-22V554000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V746000-FACTS",
+        "cell_id": "parallel_tools:TEST-22V746000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V746000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-22V746000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-22V746000-TIME",
+        "cell_id": "parallel_tools:TEST-22V746000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V023000-FACTS",
+        "cell_id": "parallel_tools:TEST-23V023000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V023000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-23V023000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V023000-YEAR",
+        "cell_id": "parallel_tools:TEST-23V023000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V198000-FACTS",
+        "cell_id": "parallel_tools:TEST-23V198000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V198000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-23V198000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V198000-TIME",
+        "cell_id": "parallel_tools:TEST-23V198000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V268000-FACTS",
+        "cell_id": "parallel_tools:TEST-23V268000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V268000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-23V268000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V268000-YEAR",
+        "cell_id": "parallel_tools:TEST-23V268000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V477000-FACTS",
+        "cell_id": "parallel_tools:TEST-23V477000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V477000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-23V477000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-23V477000-TIME",
+        "cell_id": "parallel_tools:TEST-23V477000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-24V051000-FACTS",
+        "cell_id": "parallel_tools:TEST-24V051000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-24V051000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-24V051000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-24V051000-YEAR",
+        "cell_id": "parallel_tools:TEST-24V051000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-24V081000-FACTS",
+        "cell_id": "parallel_tools:TEST-24V081000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-24V081000-CONDITIONS",
+        "cell_id": "parallel_tools:TEST-24V081000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "parallel_tools",
+        "case_id": "TEST-24V081000-TIME",
+        "cell_id": "parallel_tools:TEST-24V081000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "parallel_tools",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "multi_agent:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-14V047000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-14V047000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-14V047000-YEAR",
+        "cell_id": "multi_agent:TEST-14V047000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-15V461000-FACTS",
+        "cell_id": "multi_agent:TEST-15V461000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-15V461000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-15V461000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-15V461000-TIME",
+        "cell_id": "multi_agent:TEST-15V461000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-18V332000-FACTS",
+        "cell_id": "multi_agent:TEST-18V332000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-18V332000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-18V332000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-18V332000-YEAR",
+        "cell_id": "multi_agent:TEST-18V332000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-19V053000-FACTS",
+        "cell_id": "multi_agent:TEST-19V053000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-19V053000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-19V053000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-19V053000-TIME",
+        "cell_id": "multi_agent:TEST-19V053000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-02",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-18V404000-FACTS",
+        "cell_id": "multi_agent:TEST-18V404000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-18V404000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-18V404000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-18V404000-YEAR",
+        "cell_id": "multi_agent:TEST-18V404000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-19V782000-FACTS",
+        "cell_id": "multi_agent:TEST-19V782000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-19V782000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-19V782000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-19V782000-TIME",
+        "cell_id": "multi_agent:TEST-19V782000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-03",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-20V012000-FACTS",
+        "cell_id": "multi_agent:TEST-20V012000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-20V012000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-20V012000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-20V012000-YEAR",
+        "cell_id": "multi_agent:TEST-20V012000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-20V588000-FACTS",
+        "cell_id": "multi_agent:TEST-20V588000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-20V588000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-20V588000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-20V588000-TIME",
+        "cell_id": "multi_agent:TEST-20V588000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-04",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V165000-FACTS",
+        "cell_id": "multi_agent:TEST-21V165000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V165000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-21V165000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V165000-YEAR",
+        "cell_id": "multi_agent:TEST-21V165000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V387000-FACTS",
+        "cell_id": "multi_agent:TEST-21V387000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V387000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-21V387000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V387000-TIME",
+        "cell_id": "multi_agent:TEST-21V387000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-05",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "multi_agent:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V652000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-21V652000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-21V652000-YEAR",
+        "cell_id": "multi_agent:TEST-21V652000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V346000-FACTS",
+        "cell_id": "multi_agent:TEST-22V346000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V346000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-22V346000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V346000-TIME",
+        "cell_id": "multi_agent:TEST-22V346000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V554000-FACTS",
+        "cell_id": "multi_agent:TEST-22V554000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V554000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-22V554000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V554000-YEAR",
+        "cell_id": "multi_agent:TEST-22V554000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V746000-FACTS",
+        "cell_id": "multi_agent:TEST-22V746000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V746000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-22V746000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-22V746000-TIME",
+        "cell_id": "multi_agent:TEST-22V746000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-07",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V023000-FACTS",
+        "cell_id": "multi_agent:TEST-23V023000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V023000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-23V023000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V023000-YEAR",
+        "cell_id": "multi_agent:TEST-23V023000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V198000-FACTS",
+        "cell_id": "multi_agent:TEST-23V198000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V198000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-23V198000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V198000-TIME",
+        "cell_id": "multi_agent:TEST-23V198000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-08",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V268000-FACTS",
+        "cell_id": "multi_agent:TEST-23V268000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V268000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-23V268000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V268000-YEAR",
+        "cell_id": "multi_agent:TEST-23V268000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V477000-FACTS",
+        "cell_id": "multi_agent:TEST-23V477000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V477000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-23V477000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-23V477000-TIME",
+        "cell_id": "multi_agent:TEST-23V477000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-09",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-24V051000-FACTS",
+        "cell_id": "multi_agent:TEST-24V051000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-24V051000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-24V051000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-24V051000-YEAR",
+        "cell_id": "multi_agent:TEST-24V051000-YEAR:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-24V081000-FACTS",
+        "cell_id": "multi_agent:TEST-24V081000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-24V081000-CONDITIONS",
+        "cell_id": "multi_agent:TEST-24V081000-CONDITIONS:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "multi_agent",
+        "case_id": "TEST-24V081000-TIME",
+        "cell_id": "multi_agent:TEST-24V081000-TIME:1",
+        "event_cluster_id": "EVAL-CLUSTER-10",
+        "family": "main",
+        "method": "multi_agent",
+        "repeat": 1
+      },
+      "state": "guarded",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_bm25",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "retrieval_bm25:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_bm25",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "retrieval_bm25:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_dense",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "retrieval_dense:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_dense",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "retrieval_dense:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_hybrid",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "retrieval_hybrid:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_hybrid",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "retrieval_hybrid:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_hybrid_rerank",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "retrieval_hybrid_rerank:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "retrieval_hybrid_rerank",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "retrieval_hybrid_rerank:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "retrieval",
+        "method": "fixed",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "context_full_history",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "context_full_history:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "context",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "context_full_history",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "context_full_history:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "context",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "context_recent_window",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "context_recent_window:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "context",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "context_recent_window",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "context_recent_window:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "context",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "context_structured",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "context_structured:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "context",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "context_structured",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "context_structured:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "context",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_none",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "memory_frozen_none:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_none",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "memory_frozen_none:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_semantic",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "memory_frozen_semantic:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_semantic",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "memory_frozen_semantic:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_semantic_episode",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "memory_frozen_semantic_episode:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_semantic_episode",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "memory_frozen_semantic_episode:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_all",
+        "case_id": "TEST-14V047000-FACTS",
+        "cell_id": "memory_frozen_all:TEST-14V047000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_frozen_all",
+        "case_id": "TEST-21V652000-FACTS",
+        "cell_id": "memory_frozen_all:TEST-21V652000-FACTS:1",
+        "event_cluster_id": "EVAL-CLUSTER-06",
+        "family": "memory_frozen",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_none",
+        "case_id": "SEQUENCE-PREFIX",
+        "cell_id": "memory_sequential_none:SEQUENCE-PREFIX:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_none",
+        "case_id": "SEQUENCE-FOLLOWUP",
+        "cell_id": "memory_sequential_none:SEQUENCE-FOLLOWUP:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_semantic",
+        "case_id": "SEQUENCE-PREFIX",
+        "cell_id": "memory_sequential_semantic:SEQUENCE-PREFIX:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_semantic",
+        "case_id": "SEQUENCE-FOLLOWUP",
+        "cell_id": "memory_sequential_semantic:SEQUENCE-FOLLOWUP:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "completed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_semantic_episode",
+        "case_id": "SEQUENCE-PREFIX",
+        "cell_id": "memory_sequential_semantic_episode:SEQUENCE-PREFIX:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_semantic_episode",
+        "case_id": "SEQUENCE-FOLLOWUP",
+        "cell_id": "memory_sequential_semantic_episode:SEQUENCE-FOLLOWUP:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_all",
+        "case_id": "SEQUENCE-PREFIX",
+        "cell_id": "memory_sequential_all:SEQUENCE-PREFIX:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "failed",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    },
+    {
+      "cell": {
+        "arm_id": "memory_sequential_all",
+        "case_id": "SEQUENCE-FOLLOWUP",
+        "cell_id": "memory_sequential_all:SEQUENCE-FOLLOWUP:1",
+        "event_cluster_id": "EVAL-CLUSTER-01",
+        "family": "memory_sequential",
+        "method": "single_agent",
+        "repeat": 1
+      },
+      "state": "not_started",
+      "human_review_conflict": false,
+      "human_task_judgment": null,
+      "formal": null,
+      "imported_reviews": 0
+    }
+  ],
+  "human_task_judgments": 1,
+  "aggregate_quality_metrics": null,
+  "new_provider_requests": 0,
+  "limits": [
+    "One retained human judgment does not estimate population quality.",
+    "Whole-claim, atomic-assertion, citation-aspect, obligation and task metrics have separate coverage.",
+    "This policy was revised after observing test outcomes; no pre-registered quality benefit is inferred."
+  ]
+}

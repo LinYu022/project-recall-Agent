@@ -1,0 +1,283 @@
+{
+  "schema_version": "P1-08-verification/0.1",
+  "timestamp": "2026-10-27T04:04:05.463818+00:00",
+  "classification": "real_postgresql_and_http_with_synthetic_permissions_and_generation_plus_saved_official_data",
+  "offline": {
+    "tests": {
+      "tests": 313,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "check_exit_codes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "legacy_http_checks": [
+      7,
+      7
+    ]
+  },
+  "postgres": {
+    "tests": {
+      "tests": 81,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "server_stopped": true,
+    "cases": [
+      "test_plan_research_allowed_generation_denied_and_legal_revision_keeps_grant",
+      "test_scope_expansion_exact_approval_and_stale_approval_cannot_apply",
+      "test_plan_to_execute_requires_new_authorization_and_completed_is_not_semantic_support",
+      "test_revocation_resume_requires_fresh_grant_and_old_permit_is_fenced",
+      "test_missing_input_is_persisted_and_answer_narrows_scope_without_new_grant",
+      "test_direct_tools_cli_flow_and_old_http_cannot_bypass_managed_task",
+      "test_children_inherit_scope_owner_and_parent_revocation",
+      "test_revocation_during_generation_cannot_publish_or_complete_old_execution[revoke]",
+      "test_revocation_during_generation_cannot_publish_or_complete_old_execution[pause]",
+      "test_revocation_during_generation_cannot_publish_or_complete_old_execution[cancel]",
+      "test_authenticated_http_owner_isolation_and_document_injection_is_only_text",
+      "test_completed_report_revocation_hides_output_and_cannot_be_resumed",
+      "test_database_tampered_plan_or_grant_is_rejected",
+      "test_concurrent_revision_cas_and_append_only_history",
+      "test_parent_pause_resume_does_not_restore_old_child_authority",
+      "test_resume_before_old_model_returns_fences_the_old_execution",
+      "test_literal_forged_approval_from_parsed_pdf_never_changes_grant",
+      "test_model_json_forged_authorization_cannot_alter_control_tables",
+      "test_unsupported_historical_request_waits_for_explicit_time_answer",
+      "test_cancellation_propagates_to_children_and_retains_auditable_history",
+      "test_execution_permit_cannot_be_forged_from_visible_task_identifiers",
+      "test_many_products_and_components_do_not_multiply_complaint_count",
+      "test_projection_is_idempotent_and_never_rewrites_source",
+      "test_unknown_production_date_cannot_satisfy_requested_range",
+      "test_query_refuses_fuzzy_names_and_unprojected_records",
+      "test_component_filter_counts_a_union_not_a_sum",
+      "test_changed_rules_need_a_new_rules_version",
+      "test_query_text_is_not_executed_as_sql",
+      "test_projection_transaction_rolls_back_on_late_storage_failure",
+      "test_fixed_flow_real_catalog_synthetic_model_and_artifacts",
+      "test_model_failure_does_not_become_no_matching_records[unknown-ValueError]",
+      "test_model_failure_does_not_become_no_matching_records[schema-ValidationError]",
+      "test_model_failure_does_not_become_no_matching_records[transport-synthetic_transport_failure]",
+      "test_model_failure_does_not_become_no_matching_records[truncated-model_completion_truncated_or_refused]",
+      "test_guards_missing_conditions_time_and_trusted_zero",
+      "test_pending_scope_does_not_become_zero_and_tool_budget_is_enforced",
+      "test_rehashed_origin_tamper_and_cross_task_are_rejected",
+      "test_investigation_http_is_explicit_and_input_cannot_override_scope",
+      "test_upgrade_matches_schema_and_roundtrip_downgrade",
+      "test_archive_roundtrips_lineage_and_preserves_first_run[success-succeeded-fake_query]",
+      "test_archive_roundtrips_lineage_and_preserves_first_run[tool-error-failed-fake_query]",
+      "test_archive_roundtrips_lineage_and_preserves_first_run[success-denied-forbidden]",
+      "test_late_insert_failure_rolls_back_task_run_and_events",
+      "test_same_task_id_cannot_overwrite_a_different_task",
+      "test_database_rejects_invalid_event_rows[missing-run]",
+      "test_database_rejects_invalid_event_rows[duplicate-sequence]",
+      "test_database_rejects_invalid_event_rows[zero-sequence]",
+      "test_database_rejects_invalid_event_rows[zero-generation]",
+      "test_database_rejects_invalid_event_rows[non-object-payload]",
+      "test_online_migration_and_archive_cli_do_not_expose_credentials",
+      "test_count_api_matches_raw_odi_union_and_does_not_mutate_tables",
+      "test_zero_partial_and_unsupported_are_distinct_api_results",
+      "test_missing_projection_is_conflict_not_count_zero",
+      "test_rules_fingerprint_drift_is_conflict",
+      "test_count_uses_read_only_repeatable_read_transaction",
+      "test_database_failure_does_not_expose_connection_or_source_data",
+      "test_migration_adds_source_tables_without_erasing_existing_control_rows",
+      "test_reimport_is_idempotent_but_separate_fetch_keeps_observation",
+      "test_changed_content_keeps_old_version_and_old_snapshot_binding",
+      "test_first_observation_uses_receipt_time_even_if_imported_out_of_order",
+      "test_row_failures_are_persisted_with_reconciled_counts",
+      "test_duplicate_input_rows_preserve_positions_without_duplicate_versions",
+      "test_concurrent_reimport_has_one_commit_and_one_idempotent_result",
+      "test_unchanged_mapping_version_cannot_hide_changed_normalization",
+      "test_late_database_failure_rolls_back_the_whole_import",
+      "test_existing_snapshot_manifest_cannot_be_rewritten",
+      "test_running_task_reads_old_release_after_new_publish_and_rollback",
+      "test_switch_and_catalog_insert_roll_back_together",
+      "test_failed_candidate_publish_never_changes_default[missing_vector_manifest]",
+      "test_failed_candidate_publish_never_changes_default[artifact_hash]",
+      "test_database_mapping_mismatch_blocks_bound_queries[payload]",
+      "test_database_mapping_mismatch_blocks_bound_queries[vehicle]",
+      "test_database_mapping_mismatch_blocks_bound_queries[membership]",
+      "test_database_mapping_mismatch_blocks_bound_queries[lineage]",
+      "test_database_mapping_mismatch_blocks_bound_queries[task_scope]",
+      "test_task_binding_cannot_change_scope_or_release",
+      "test_concurrent_publish_cas_has_one_winner_and_no_implicit_overwrite",
+      "test_collection_checks_task_reports_retention_and_can_resume_after_failure",
+      "test_published_http_never_accepts_unbound_or_mixed_release_query",
+      "test_historical_selection_uses_old_database_version_after_revision_import",
+      "test_fixed_snapshot_stays_bound_when_late_complaint_is_imported"
+    ]
+  },
+  "release_regression": {
+    "checks": 20,
+    "http_stopped": true,
+    "schema_removed": true
+  },
+  "protected_official_data_flow": {
+    "timestamp": "2026-10-27T04:04:00.488925+00:00",
+    "classification": "real_postgresql_http_saved_official_sources_synthetic_user_actions_and_generation",
+    "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "checks": [
+      {
+        "case": "scoped_user_submission",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 2
+      },
+      {
+        "case": "plan_readonly_research",
+        "http_status": 200,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "plan_generation_blocked",
+        "http_status": 403,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "in_scope_hypothesis_revision",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 3
+      },
+      {
+        "case": "scope_expansion_waits",
+        "http_status": 200,
+        "task_state": "WAITING_APPROVAL",
+        "version": 5
+      },
+      {
+        "case": "scope_expansion_cannot_research",
+        "http_status": 403,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "revert_inside_existing_grant",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 6
+      },
+      {
+        "case": "plan_to_execution_waits",
+        "http_status": 200,
+        "task_state": "WAITING_APPROVAL",
+        "version": 8
+      },
+      {
+        "case": "explicit_exact_revision_approval",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 9
+      },
+      {
+        "case": "synchronous_execution",
+        "http_status": 200,
+        "task_state": "COMPLETED",
+        "version": 11
+      },
+      {
+        "case": "authorized_report_read",
+        "http_status": 200,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "revoke_after_completion",
+        "http_status": 200,
+        "task_state": "COMPLETED",
+        "version": 12
+      },
+      {
+        "case": "revoked_report_blocked",
+        "http_status": 403,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "count_plan_submission",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 2
+      },
+      {
+        "case": "official_count_within_grant",
+        "http_status": 200,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "valid_narrow_subtask",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 2
+      },
+      {
+        "case": "subtask_cannot_widen",
+        "http_status": 403,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "missing_year_waits",
+        "http_status": 200,
+        "task_state": "WAITING_INPUT",
+        "version": 2
+      },
+      {
+        "case": "structured_clarification",
+        "http_status": 200,
+        "task_state": "DRAFT",
+        "version": 3
+      },
+      {
+        "case": "stale_answer_blocked",
+        "http_status": 409,
+        "task_state": null,
+        "version": null
+      },
+      {
+        "case": "unauthenticated_direct_api",
+        "http_status": 403
+      },
+      {
+        "case": "service_recreation_preserves_state",
+        "state": "DRAFT"
+      }
+    ],
+    "synthetic_model_calls": 1,
+    "external_model_calls": 0,
+    "new_source_requests": 0,
+    "official_count": 86,
+    "formal_semantic_metrics": null,
+    "independent_human_review": false,
+    "http_server_stopped": true,
+    "schema_removed": true
+  },
+  "migration": "0005_task_control",
+  "new_dependencies": 0,
+  "external_model_calls": 0,
+  "new_source_requests": 0,
+  "formal_semantic_metrics": null,
+  "record_content_sha256": {
+    "offline": "7159c6e7407b65fa69a7459ccb0df0383d642e34abea3e796b3c83966bbc910a",
+    "database": "f0f2da9b2626c47e6b6655b8af998e05241d43988c416c1c00536dba73973aa4",
+    "release": "16f6f7b153a477083ba0673ee78fc06a38a6c8e618c67400792b0e850439bd65"
+  },
+  "limits": [
+    "User actions and malicious PDF content are synthetic fixtures, not observed attacks.",
+    "Real official sources and real PostgreSQL/HTTP do not make synthetic answers real model experiments.",
+    "Persistent lifecycle is implemented; background workers, leases and automatic continuation remain P1-11.",
+    "Trusted local process/database/file administrator is outside remote API authorization threat model.",
+    "P1-07 independent semantic review remains pending."
+  ]
+}

@@ -1,0 +1,505 @@
+[
+  {
+    "task_id": "EXP-001",
+    "category": "跨源关联与直接查询",
+    "reference_answer": "API 的两条车型记录共有一个召回编号；TOYOTA PRIUS 2010 记录匹配。PE10006 的 Action 明确引用 10V-039，Summary 将结案与 Toyota 的召回行动联系起来，并保留继续监测。不能由此断言所有投诉已被逐一解释或所有车辆问题已消除。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-001-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+        "content_sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "CUSTOMERS HAVE EXPERIENCED INCONSISTENT BRAKE FEEL AFTER ABS ACTUATION",
+        "role": "support"
+      },
+      {
+        "evidence_id": "EXP-001-E2",
+        "source_id": "NHTSA-INV-PE10006-CLOSE",
+        "content_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "locator": "page=1; Action; Summary",
+        "excerpt": null,
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-001-E1",
+        "EXP-001-E2"
+      ]
+    ],
+    "relation_annotation": "officially_referenced",
+    "unknown_conditions": [
+      "具体车辆的生产与配置范围",
+      "具体投诉的因果"
+    ],
+    "rejected_answer": "两条车型记录是两次召回；结案证明所有 Prius 投诉都已解决。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-001-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-001-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-001-C2",
+        "statement": "两条车型记录是两次召回；结案证明所有 Prius 投诉都已解决。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-002",
+    "category": "跨源风险与修复核对",
+    "reference_answer": "API 列出 2013 Fusion，主题是前制动软管破裂和制动液泄漏；通知第 1 页说明制动踏板行程增加、减速能力降低和更换前软管。两者联合支持该车型层面的召回描述；样板通知中的个车措辞不能转移到当前用户车辆。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-002-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-23V162000",
+        "content_sha256": "ff2bde697fef30a0488bb95c62e43aeb32cf431bc4977ec48963a4ccc93cdeb0",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "The front brake hoses may rupture and leak brake fluid.",
+        "role": "support"
+      },
+      {
+        "evidence_id": "EXP-002-E2",
+        "source_id": "NHTSA-OWNER-23V162",
+        "content_sha256": "9e0986756d0ffd0fc8e7593075c885909eaba1bd25ebc137df294204a426b2f7",
+        "locator": "page=1; recall heading; issue/risk/repair",
+        "excerpt": null,
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-002-E1",
+        "EXP-002-E2"
+      ]
+    ],
+    "relation_annotation": "officially_referenced",
+    "unknown_conditions": [
+      "具体车辆是否适用",
+      "既往修复情况"
+    ],
+    "rejected_answer": "只要是 2013 Fusion，当前用户这辆车就一定需要本次修复。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-002-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-002-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-002-C2",
+        "statement": "只要是 2013 Fusion，当前用户这辆车就一定需要本次修复。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-003",
+    "category": "条件歧义",
+    "reference_answer": "记录涉及某些 2008–2011 Escape/Mariner，Summary 还限定生产日期为 2006-08-18 至 2010-09-11。只知道 2008 车型年仍不足以独立证明任意个车属于受影响集合，应补充生产日期及适用范围核对。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-003-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-14V284000",
+        "content_sha256": "0d6dafd71cf1c3751c4e3fdea71fbc23482ea697e19786763e3acd19b6bc7f23",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "manufactured August 18, 2006, through September 11, 2010",
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-003-E1"
+      ]
+    ],
+    "relation_annotation": "applicability_unknown",
+    "unknown_conditions": [
+      "生产日期",
+      "个车范围证明"
+    ],
+    "rejected_answer": "车型年为 2008，所以生产日期已知且一定适用。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-003-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-003-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-003-C2",
+        "statement": "车型年为 2008，所以生产日期已知且一定适用。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-004",
+    "category": "投诉线索与证据不足",
+    "reference_answer": "ODI 11766023 的投诉人提及 20S31 和制动主缸。官方 20V332000 的 Remedy 使用 20S31 编号，Summary 限定某些 2014–2017 F-150 且配备 3.5L EcoBoost。可以记录投诉自述及编号关联线索，不能独立确认其车辆配置、故障或全部陈述属实。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-004-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-20V332000",
+        "content_sha256": "31426864d2750208bed837335fe7c8729a9b581969979b853d1eff3722e01b49",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "equipped with 3.5L Ecoboost engines",
+        "role": "support"
+      },
+      {
+        "evidence_id": "EXP-004-E2",
+        "source_id": "NHTSA-COMPLAINTS-F150-2016",
+        "content_sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+        "locator": "results[odiNumber=11766023].summary; products",
+        "excerpt": null,
+        "role": "neutral"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-004-E1",
+        "EXP-004-E2"
+      ]
+    ],
+    "relation_annotation": "applicability_unknown",
+    "unknown_conditions": [
+      "发动机配置",
+      "车辆适用性",
+      "零件供应说法的独立核实"
+    ],
+    "rejected_answer": "投诉人说有召回，所以其车辆缺陷和对厂商的法律指控都已得到官方确认。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-004-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-004-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-004-C2",
+        "statement": "投诉人说有召回，所以其车辆缺陷和对厂商的法律指控都已得到官方确认。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-005",
+    "category": "错误关联反例",
+    "reference_answer": "该记录描述全景天窗环境灯 LED 模块短路，Component 属于天窗装置。车型匹配不能把它变为制动证据；本题只核对这一召回，不能由排除这一条推出没有其他召回或缺陷。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-005-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-18V467000",
+        "content_sha256": "4a54193b32566bfa9504eb6bd753319f7459346d527ddf008a118ad4ce049806",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "The LED module for the panoramic sunroof ambient light bar may short circuit.",
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-005-E1"
+      ]
+    ],
+    "relation_annotation": "excluded_by_scope",
+    "unknown_conditions": [
+      "其他制动记录是否存在",
+      "具体投诉机制"
+    ],
+    "rejected_answer": "有同车型召回就解释刹车问题；或者这一条不是刹车召回所以没有刹车缺陷。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-005-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-005-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-005-C2",
+        "statement": "有同车型召回就解释刹车问题；或者这一条不是刹车召回所以没有刹车缺陷。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-006",
+    "category": "统计分母与证据不足",
+    "reference_answer": "官方描述某些 2009–2012 Genesis 的原制动液可能未能防止 HECU 腐蚀，并给出检查及处理方案。潜在受影响数量不是本题已经核对的投诉统计总体；没有投诉分子、统一观察期和适当分母，不能报告故障率。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-006-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-13V489000",
+        "content_sha256": "12e2a5c3c2f61ac399c15d3ab6fa81158b98f5448b1b21b386b2bc74f07a22c4",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "does not protect against corrosion of the Hydraulic Electronic Control Unit",
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-006-E1"
+      ]
+    ],
+    "relation_annotation": "scope_overlap",
+    "unknown_conditions": [
+      "适当分母",
+      "同口径投诉分子",
+      "去重与观察期"
+    ],
+    "rejected_answer": "潜在受影响车辆数就是发生故障车辆数，故障率为 100%。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-006-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-006-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-006-C2",
+        "statement": "潜在受影响车辆数就是发生故障车辆数，故障率为 100%。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-007",
+    "category": "历史时点与后续修订",
+    "reference_answer": "当前 Summary 同时描述 2014-02-10、02-25 和 03-27 的通知与扩展。因此该响应包含知识截止之后的信息；本次没有取得历史归档版本及公开证明，应返回当前资料不足以支持该历史时点还原，而非照抄当前完整范围。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-007-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-14V047000",
+        "content_sha256": "d4d02d959019215dccbd37e962c5d224f0ea52dd1ad50ab50a4b7149e7248355",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "On March 27, 2014, GM notified the agency",
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-007-E1"
+      ]
+    ],
+    "relation_annotation": "applicability_unknown",
+    "unknown_conditions": [
+      "截止前具体内容版本及公开证明"
+    ],
+    "rejected_answer": "记录的最早日期在截止之前，所以整个当前响应都可以用于历史回答。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-007-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-007-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-007-C2",
+        "statement": "记录的最早日期在截止之前，所以整个当前响应都可以用于历史回答。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-008",
+    "category": "同车型不同缺陷",
+    "reference_answer": "16V487000 描述侧气帘充气装置焊缝可能开裂，与 10V039000 的 ABS 制动主题不同。车型范围交集不是症状或因果证明；该气帘记录不能单独解释制动投诉。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-008-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-16V487000",
+        "content_sha256": "837f92af5be20ba15de95e83a07c03f24229911e5b8abeb34d9641386182db8b",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "A weld in the curtain shield air bag inflator may crack",
+        "role": "support"
+      },
+      {
+        "evidence_id": "EXP-008-E2",
+        "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+        "content_sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+        "locator": "results[*].Summary; Component",
+        "excerpt": null,
+        "role": "counter"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-008-E1",
+        "EXP-008-E2"
+      ]
+    ],
+    "relation_annotation": "excluded_by_scope",
+    "unknown_conditions": [
+      "具体制动投诉的有效关联证据"
+    ],
+    "rejected_answer": "同为 2010 Prius，所以气帘召回证明刹车投诉属于同一缺陷。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-008-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-008-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-008-C2",
+        "statement": "同为 2010 Prius，所以气帘召回证明刹车投诉属于同一缺陷。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-009",
+    "category": "来源定位与范围核对",
+    "reference_answer": "API 与确认函均涉及部分 2014–2018 Silverado，确认函车型列表明确 Silverado 1500。问题是真空泵提供的真空随时间减弱，可能降低制动助力；文件给出电子制动控制模块重编程方案。这是方案证据，不是某辆车已维修或风险已消除的证明。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-009-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-19V645000",
+        "content_sha256": "32bc1f28d7af6aac23da616438eec51c7a0e954cce137b2df1743b19f1dbc2fd",
+        "locator": "results[0].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "The amount of vacuum created by the vacuum pump may decrease over time.",
+        "role": "support"
+      },
+      {
+        "evidence_id": "EXP-009-E2",
+        "source_id": "NHTSA-ACK-19V645",
+        "content_sha256": "dc6127adf8aa6f09c013d28dee24be160f24d47311d2713b1b23a37582d70e3b",
+        "locator": "pages=1-2; Makes/Models; Problem; Consequence; Remedy",
+        "excerpt": null,
+        "role": "support"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-009-E1",
+        "EXP-009-E2"
+      ]
+    ],
+    "relation_annotation": "officially_referenced",
+    "unknown_conditions": [
+      "个车适用性",
+      "修复完成情况"
+    ],
+    "rejected_answer": "官方列出了修复办法，所以所有涉及车辆都已经修好。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-009-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-009-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-009-C2",
+        "statement": "官方列出了修复办法，所以所有涉及车辆都已经修好。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  },
+  {
+    "task_id": "EXP-010",
+    "category": "相似症状但范围不符",
+    "reference_answer": "20V469000 列出某些 2015–2018 Edge 与 2016–2018 MKX，主题是前制动软管过早破裂；23V162000 涉及 Fusion/MKZ。两者症状相近仍不能把 Fusion 的范围套到 Edge；2016 Edge 只能形成与其范围匹配的候选，具体车辆仍待核查。",
+    "evidence": [
+      {
+        "evidence_id": "EXP-010-E1",
+        "source_id": "NHTSA-API-CAMPAIGN-20V469000",
+        "content_sha256": "3b84b9d23848b0dd8e43db349b3a80559ec6ce04b989ab45270509a8a5b9c433",
+        "locator": "results[3].Make/Model/ModelYear/NHTSACampaignNumber/Summary/Remedy",
+        "excerpt": "2015-2018 Ford Edge and 2016-2018 Lincoln MKX",
+        "role": "support"
+      },
+      {
+        "evidence_id": "EXP-010-E2",
+        "source_id": "NHTSA-API-CAMPAIGN-23V162000",
+        "content_sha256": "ff2bde697fef30a0488bb95c62e43aeb32cf431bc4977ec48963a4ccc93cdeb0",
+        "locator": "results[*].Make/Model/ModelYear; Summary",
+        "excerpt": null,
+        "role": "counter"
+      }
+    ],
+    "acceptable_evidence_sets": [
+      [
+        "EXP-010-E1",
+        "EXP-010-E2"
+      ]
+    ],
+    "relation_annotation": "symptom_similar",
+    "unknown_conditions": [
+      "具体车辆的适用性与修复状态"
+    ],
+    "rejected_answer": "都叫前制动软管破裂，因此两次召回适用车辆可以互换。",
+    "review_status": "assistant_manual_draft",
+    "claims": [
+      {
+        "claim_id": "EXP-010-C1",
+        "statement": "当前取得的源记录包含本题车型范围；仅证明当前源记录层面的范围交集，不证明历史可见性。",
+        "evidence_sets": [
+          [
+            "EXP-010-E1"
+          ]
+        ],
+        "support": "supported"
+      },
+      {
+        "claim_id": "EXP-010-C2",
+        "statement": "都叫前制动软管破裂，因此两次召回适用车辆可以互换。",
+        "evidence_sets": [],
+        "support": "unsupported_or_overstated"
+      }
+    ]
+  }
+]

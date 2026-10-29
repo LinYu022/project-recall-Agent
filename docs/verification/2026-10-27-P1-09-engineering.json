@@ -1,0 +1,300 @@
+{
+  "schema_version": "P1-09-engineering-verification/0.1",
+  "timestamp": "2026-10-27T04:46:35.327247+00:00",
+  "classification": "real_postgresql_official_frozen_sources_scripted_decisions_and_simulated_answers",
+  "offline_tests": {
+    "tests": 325,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgres_tests": {
+    "tests": 97,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_check_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "legacy_http_checks": [
+    7,
+    7
+  ],
+  "comparison_profile": {
+    "schema_version": "single-agent-comparison/0.1",
+    "case_ids": [
+      "DEV-PRIUS-JOINT",
+      "DEV-DOOR-PAIR"
+    ],
+    "profile": {
+      "version": "fixed-investigation/0.1",
+      "retrieval_method": "hybrid",
+      "retrieve_k": 6,
+      "expand_k": 2,
+      "max_tool_calls": 6,
+      "max_model_calls": 6,
+      "prompt_characters": 24000,
+      "generation_tokens": 2000,
+      "total_prompt_characters": 96000,
+      "total_generation_tokens": 4000,
+      "wall_seconds": 900,
+      "repeated_action_limit": 2,
+      "no_progress_limit": 2,
+      "tool_timeout_retries": 1
+    },
+    "label_root": "evals/investigation-v0.2",
+    "split": "development",
+    "label_policy": "Labels were already inspected in P1-07. Never feed labels or draft reviews to either method.",
+    "model": "deepseek-flash",
+    "maximum_new_api_requests_for_full_comparison": 14,
+    "notes": [
+      "Preserve historical P1-07 defaults and results. Both methods receive this common upper envelope for the new comparison.",
+      "The fixed method uses its existing single-generation sequence; the agent spends calls on decisions and a final answer.",
+      "Report actual tool/model calls, observed tokens, replay modes, elapsed time and semantic review status separately.",
+      "The common evidence prompt projection omits opaque administrative task IDs; audited source identities and text remain intact.",
+      "Formal semantic metrics remain null without independent human reviews."
+    ]
+  },
+  "runs": [
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "fixed",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "generation_mode": "simulated_model",
+      "model_calls": 1,
+      "tool_calls": 4,
+      "termination": null,
+      "error_code": null,
+      "resources": {
+        "completion_tokens_reserved_or_used": 40,
+        "elapsed_ms": 20677.617599998484,
+        "model_calls": 1,
+        "prompt_characters": 23965,
+        "provider_usage_totals": {
+          "completion_tokens": 40,
+          "prompt_tokens": 0,
+          "total_tokens": 40
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "elapsed_ms": 20677.619199996116,
+      "report_content_sha256": "ccec91fed650d175fcec21efd803f2369576e43295e3d262510b6b81475ed30f",
+      "report_artifact": {
+        "sha256": "86d987eb19669051781ab5f7f68b0ec1f977190b403df78bb939b3779536f3eb",
+        "byte_size": 119225
+      },
+      "report_path": ".local/P1-09/reports/DEV-PRIUS-JOINT-FIXED.json",
+      "blind_id": "BLIND-e10555102419",
+      "score": {
+        "schema_version": "investigation-score/0.1",
+        "report_content_sha256": "ccec91fed650d175fcec21efd803f2369576e43295e3d262510b6b81475ed30f",
+        "reference_sha256": "066e1888600789f308ff7d73cafb5967077d4bc31bc6b52861bd2363f019e22e",
+        "split": "development",
+        "machine": {
+          "execution_completed": true,
+          "evidence_verified": true,
+          "claim_constraints_passed": true,
+          "disposition_in_reference": false,
+          "claim_evidence_coverage": {},
+          "slot_coverage_fraction": 0.0
+        },
+        "novel_evidence_pending": [],
+        "formal_semantic_metrics": null,
+        "provisional_semantic_metrics": null,
+        "review_status": "pending",
+        "reviewer_kind": null
+      }
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "single_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "generation_mode": "simulated_model",
+      "model_calls": 4,
+      "tool_calls": 4,
+      "termination": "agent_finished",
+      "error_code": null,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 20621.596700002556,
+        "model_calls": 4,
+        "prompt_characters": 45524,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "elapsed_ms": 20621.598300000187,
+      "report_content_sha256": "613204e029c77e97a1b183f70fa83ddff7ae2ff5ce4aba871d6431954b956c1a",
+      "report_artifact": {
+        "sha256": "b3c6728c10c35518dc2d0df5b30a1515c913f9aef442d61db141c91f7f69edbb",
+        "byte_size": 46576
+      },
+      "report_path": ".local/P1-09/reports/DEV-PRIUS-JOINT-AGENT.json",
+      "blind_id": "BLIND-6de0f2abe327",
+      "score": {
+        "schema_version": "investigation-score/0.1",
+        "report_content_sha256": "613204e029c77e97a1b183f70fa83ddff7ae2ff5ce4aba871d6431954b956c1a",
+        "reference_sha256": "066e1888600789f308ff7d73cafb5967077d4bc31bc6b52861bd2363f019e22e",
+        "split": "development",
+        "machine": {
+          "execution_completed": true,
+          "evidence_verified": true,
+          "claim_constraints_passed": true,
+          "disposition_in_reference": false,
+          "claim_evidence_coverage": {},
+          "slot_coverage_fraction": 0.0
+        },
+        "novel_evidence_pending": [],
+        "formal_semantic_metrics": null,
+        "provisional_semantic_metrics": null,
+        "review_status": "pending",
+        "reviewer_kind": null
+      }
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "fixed",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "generation_mode": "simulated_model",
+      "model_calls": 1,
+      "tool_calls": 5,
+      "termination": null,
+      "error_code": null,
+      "resources": {
+        "completion_tokens_reserved_or_used": 40,
+        "elapsed_ms": 30571.481500002847,
+        "model_calls": 1,
+        "prompt_characters": 16254,
+        "provider_usage_totals": {
+          "completion_tokens": 40,
+          "prompt_tokens": 0,
+          "total_tokens": 40
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "elapsed_ms": 30571.48320000124,
+      "report_content_sha256": "374933a241b839b162a6f6d2af052b68bd55a00ce92cf302c15b6e69795540a3",
+      "report_artifact": {
+        "sha256": "26a3119e2d6f2d70d8c4f0c8845230055298db188b907c7bd29ff981a952c147",
+        "byte_size": 172613
+      },
+      "report_path": ".local/P1-09/reports/DEV-DOOR-PAIR-FIXED.json",
+      "blind_id": "BLIND-1c0baede03ee",
+      "score": {
+        "schema_version": "investigation-score/0.1",
+        "report_content_sha256": "374933a241b839b162a6f6d2af052b68bd55a00ce92cf302c15b6e69795540a3",
+        "reference_sha256": "2023e84ecf112b896d19200ba4b9b50da4896e12c56a0452b4ee60cdf7bc3f06",
+        "split": "development",
+        "machine": {
+          "execution_completed": true,
+          "evidence_verified": true,
+          "claim_constraints_passed": true,
+          "disposition_in_reference": false,
+          "claim_evidence_coverage": {},
+          "slot_coverage_fraction": 0.0
+        },
+        "novel_evidence_pending": [],
+        "formal_semantic_metrics": null,
+        "provisional_semantic_metrics": null,
+        "review_status": "pending",
+        "reviewer_kind": null
+      }
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "single_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "generation_mode": "simulated_model",
+      "model_calls": 5,
+      "tool_calls": 5,
+      "termination": "agent_finished",
+      "error_code": null,
+      "resources": {
+        "completion_tokens_reserved_or_used": 200,
+        "elapsed_ms": 45592.1978999977,
+        "model_calls": 5,
+        "prompt_characters": 75793,
+        "provider_usage_totals": {
+          "completion_tokens": 200,
+          "prompt_tokens": 0,
+          "total_tokens": 200
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "elapsed_ms": 45592.19950000261,
+      "report_content_sha256": "56c1af9dccbf223b2c3285f9801d1d43713207c1c261268f0ce743fa07c784de",
+      "report_artifact": {
+        "sha256": "f588dd277f4b95fe37a5ec15fb1aa5868638882a8b0478382dfbcfb3bf46a962",
+        "byte_size": 176683
+      },
+      "report_path": ".local/P1-09/reports/DEV-DOOR-PAIR-AGENT.json",
+      "blind_id": "BLIND-ed163d187c87",
+      "score": {
+        "schema_version": "investigation-score/0.1",
+        "report_content_sha256": "56c1af9dccbf223b2c3285f9801d1d43713207c1c261268f0ce743fa07c784de",
+        "reference_sha256": "2023e84ecf112b896d19200ba4b9b50da4896e12c56a0452b4ee60cdf7bc3f06",
+        "split": "development",
+        "machine": {
+          "execution_completed": true,
+          "evidence_verified": true,
+          "claim_constraints_passed": true,
+          "disposition_in_reference": false,
+          "claim_evidence_coverage": {},
+          "slot_coverage_fraction": 0.0
+        },
+        "novel_evidence_pending": [],
+        "formal_semantic_metrics": null,
+        "provisional_semantic_metrics": null,
+        "review_status": "pending",
+        "reviewer_kind": null
+      }
+    }
+  ],
+  "external_model_calls": 0,
+  "actual_real_model_usage": null,
+  "formal_semantic_metrics": null,
+  "live_comparison_status": "awaiting_explicit_data_transmission_approval",
+  "approval_review": {
+    "action": "P1-09 paired DeepSeek experiment with two saved public NHTSA cases",
+    "status": "rejected",
+    "reason": "Existing explicit external-call authorization was judged to cover P1-07, not these P1-09 data transmissions.",
+    "calls_sent": 0,
+    "workaround_used": false
+  },
+  "http_server_stopped": true,
+  "schema_removed": true,
+  "postgres_stopped": true,
+  "new_source_requests": 0,
+  "record_content_sha256": {
+    "offline": "253c8f30b04b5699099bf4166f62e850182042fc0d908c41d6ff325435c1a309",
+    "database": "05a2496746db83b9576a03f7fcd5cd105604886815ed191d0e5fa843309ba72a"
+  },
+  "limits": [
+    "Scripted branches demonstrate mechanics, not actual model reasoning or relative answer quality.",
+    "Synthetic token counters in fixture responses are not real provider usage or cost.",
+    "P1-07/P1-08 semantic review remains pending; no independent human review is fabricated.",
+    "Background recovery, advanced context summaries and worker budgets remain later modules."
+  ]
+}

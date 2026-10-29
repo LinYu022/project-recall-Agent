@@ -1,0 +1,98 @@
+{
+  "case_id": "TEST-15V461000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "cffc8ad50af31cb444993561e761b1479dc3c7118029a652efb361ecbc770d3d",
+          "unit_id": "1734f13236b5681ad6fb023d2c876e79af8a86a5b31a85840f40c0fe46289c23",
+          "start": 0,
+          "end": 430,
+          "quote_sha256": "6b6bed847017a5a97f1e4677f47ba852a01384908ac41d2b9ad760554e8974e3"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "cffc8ad50af31cb444993561e761b1479dc3c7118029a652efb361ecbc770d3d",
+          "unit_id": "9e22c7ef2bff55a48bd383847dbe66da0bd5d97b11d1d117781fab25450a4b26",
+          "start": 0,
+          "end": 161,
+          "quote_sha256": "54943c4c32bfc8b30acffdcf9f80718f4a51a0ce99429552881a528f08f42ad1"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "cffc8ad50af31cb444993561e761b1479dc3c7118029a652efb361ecbc770d3d",
+          "unit_id": "00a4d1f4f263444c89aca36714d7234fd147e2e03e10bf9c2ecd8f9eadfe4637",
+          "start": 0,
+          "end": 850,
+          "quote_sha256": "461382414f038aa1057deaca311d1815a2a1364a5902da83dc62aa29937a561b"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SUMMARY",
+      "statement": "Chrysler (FCA US LLC) is recalling certain model year 2013-2015 Ram 1500, 2500, 3500, 4500, and 5500, 2015 Chrysler 200, Chrysler 300, Dodge Charger, and Dodge Challenger, 2014-2015 Jeep Grand Cherokee, Cherokee, and Dodge Durango, and 2013-2015 Dodge Viper vehicles.  The affected vehicles are equipped with radios that have software vulnerabilities that can allow third-party access to certain networked vehicle control systems.",
+      "evidence_sets": [
+        [
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CONSEQUENCE",
+      "statement": "Exploitation of the software vulnerability may result in unauthorized remote modification and control of certain vehicle systems, increasing the risk of a crash.",
+      "evidence_sets": [
+        [
+          "consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-REMEDY",
+      "statement": "Chrysler will notify and mail affected owners a USB drive that includes a software update that eliminates the vulnerability, free of charge.  Optionally, owners may download the update to their own USB drive from http://www.driveuconnect.com/software-update/ or take their vehicle to a Chrysler dealer for immediate installation.  In an effort to mitigate the effects of this security vulnerability, Chrysler has had the wireless service provider close the open cellular connection to the vehicle that provided unauthorized access to the vehicle network.   This measure may not have been implemented on all vehicles and does not address access by other means that will be remedied by the software update.  The recall began on August 25, 2015.  Owners may contact Chrysler customer service at 1-800-853-1403.  Chrysler's number for this recall is R40.",
+      "evidence_sets": [
+        [
+          "remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source_result_sha256": "f3b8db5d3453e98fe446b72eda8ddf9d91614ca7bfe440052e8bdd30e4adf930",
+  "classification": "actual_automated_browser_with_synthetic_sources_and_generation",
+  "files": {
+    "synthetic-browser-demo.webm": {
+      "sha256": "f178bcd77d79252ecbb2a846a26577c473d8c822ddfd9086c13d12e869873652",
+      "bytes": 2748634
+    },
+    "evidence-desktop.png": {
+      "sha256": "d94baf5921fd3fab45de603c07c966cea47667777bed62a6921d6b0355a37261",
+      "bytes": 198943
+    },
+    "partial-failure.png": {
+      "sha256": "b6d5e6231514b436acdbdde102c76d45241c340d29ca70ae8b66c05c506af709",
+      "bytes": 131715
+    },
+    "failure-mobile.png": {
+      "sha256": "067fb3f7aa15d0f59f2e15df47f1d3c603a8521f26785dfe9003fe6c58b28e51",
+      "bytes": 122388
+    }
+  }
+}

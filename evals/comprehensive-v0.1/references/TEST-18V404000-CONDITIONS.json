@@ -1,0 +1,9 @@
+{
+  "case_id": "TEST-18V404000-CONDITIONS",
+  "split": "test",
+  "slots": [],
+  "required_claims": [],
+  "acceptable_dispositions": [
+    "needs_clarification"
+  ]
+}

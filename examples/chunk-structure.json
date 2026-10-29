@@ -1,0 +1,8 @@
+{
+  "schema_version": "chunk-config/0.1",
+  "config_version": "structured-chunks/0.1",
+  "strategy": "structure",
+  "short_complaint_characters": 4000,
+  "fixed_characters": null,
+  "fixed_overlap": null
+}

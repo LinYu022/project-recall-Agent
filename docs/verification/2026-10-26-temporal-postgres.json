@@ -1,0 +1,262 @@
+{
+  "timestamp": "2026-10-26T08:16:25.235426+00:00",
+  "classification": "real_postgresql_controlled_tests_plus_saved_official_snapshot_imports",
+  "binary_version": "postgres (PostgreSQL) 18.6",
+  "server_version": "18.6",
+  "authentication": "ephemeral_password_scram_sha_256",
+  "host": "127.0.0.1",
+  "server_stopped": true,
+  "external_model_calls": 0,
+  "pytest_exit_code": 0,
+  "tests": {
+    "tests": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cases": [
+    "test_upgrade_matches_schema_and_roundtrip_downgrade",
+    "test_archive_roundtrips_lineage_and_preserves_first_run[success-succeeded-fake_query]",
+    "test_archive_roundtrips_lineage_and_preserves_first_run[tool-error-failed-fake_query]",
+    "test_archive_roundtrips_lineage_and_preserves_first_run[success-denied-forbidden]",
+    "test_late_insert_failure_rolls_back_task_run_and_events",
+    "test_same_task_id_cannot_overwrite_a_different_task",
+    "test_database_rejects_invalid_event_rows[missing-run]",
+    "test_database_rejects_invalid_event_rows[duplicate-sequence]",
+    "test_database_rejects_invalid_event_rows[zero-sequence]",
+    "test_database_rejects_invalid_event_rows[zero-generation]",
+    "test_database_rejects_invalid_event_rows[non-object-payload]",
+    "test_online_migration_and_archive_cli_do_not_expose_credentials",
+    "test_migration_adds_source_tables_without_erasing_existing_control_rows",
+    "test_reimport_is_idempotent_but_separate_fetch_keeps_observation",
+    "test_changed_content_keeps_old_version_and_old_snapshot_binding",
+    "test_first_observation_uses_receipt_time_even_if_imported_out_of_order",
+    "test_row_failures_are_persisted_with_reconciled_counts",
+    "test_duplicate_input_rows_preserve_positions_without_duplicate_versions",
+    "test_concurrent_reimport_has_one_commit_and_one_idempotent_result",
+    "test_unchanged_mapping_version_cannot_hide_changed_normalization",
+    "test_late_database_failure_rolls_back_the_whole_import",
+    "test_existing_snapshot_manifest_cannot_be_rewritten",
+    "test_historical_selection_uses_old_database_version_after_revision_import",
+    "test_fixed_snapshot_stays_bound_when_late_complaint_is_imported"
+  ],
+  "artifacts": ".local/postgres-check-68a787e930b14586a57b7e4a52758612",
+  "source_import_exit_code": 0,
+  "source_import": {
+    "timestamp": "2026-10-26T08:16:24.818811+00:00",
+    "classification": "real_postgresql_import_of_previously_downloaded_official_snapshots",
+    "mapping_version": "source-record/0.1",
+    "schema_cleaned_up": true,
+    "new_https_requests": 0,
+    "external_model_calls": 0,
+    "reports": [
+      {
+        "attempt": 1,
+        "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584",
+        "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+        "source_kind": "recall_api",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": 2,
+        "input_units": 2,
+        "accepted": 2,
+        "rejected": 0,
+        "distinct_record_keys": 2,
+        "distinct_versions": 2,
+        "date_issues": {
+          "format_unverified": 2
+        },
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "imported",
+        "new_versions": 2
+      },
+      {
+        "attempt": 1,
+        "batch_sha256": "215e06cbe422d461b71a632855bfb15ad7304d01f06287193a0d50480b5088de",
+        "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+        "source_kind": "complaint_api",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": 103,
+        "input_units": 103,
+        "accepted": 103,
+        "rejected": 0,
+        "distinct_record_keys": 103,
+        "distinct_versions": 103,
+        "date_issues": {},
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "imported",
+        "new_versions": 103
+      },
+      {
+        "attempt": 1,
+        "batch_sha256": "a376f96fbd8ee7d6067304b7e49b16aea6f193477c37ce21a3ceabb33ea454aa",
+        "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "source_kind": "investigation_pdf",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": null,
+        "input_units": 1,
+        "accepted": 1,
+        "rejected": 0,
+        "distinct_record_keys": 1,
+        "distinct_versions": 1,
+        "date_issues": {},
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "imported",
+        "new_versions": 1
+      },
+      {
+        "attempt": 1,
+        "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584",
+        "snapshot_id": "81312fe0084a4aafa99db307bc64eb90",
+        "source_kind": "recall_api",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": 2,
+        "input_units": 2,
+        "accepted": 2,
+        "rejected": 0,
+        "distinct_record_keys": 2,
+        "distinct_versions": 2,
+        "date_issues": {
+          "format_unverified": 2
+        },
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "imported",
+        "new_versions": 0
+      },
+      {
+        "attempt": 2,
+        "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584",
+        "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+        "source_kind": "recall_api",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": 2,
+        "input_units": 2,
+        "accepted": 2,
+        "rejected": 0,
+        "distinct_record_keys": 2,
+        "distinct_versions": 2,
+        "date_issues": {
+          "format_unverified": 2
+        },
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "already_imported",
+        "new_versions": 0
+      },
+      {
+        "attempt": 2,
+        "batch_sha256": "215e06cbe422d461b71a632855bfb15ad7304d01f06287193a0d50480b5088de",
+        "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+        "source_kind": "complaint_api",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": 103,
+        "input_units": 103,
+        "accepted": 103,
+        "rejected": 0,
+        "distinct_record_keys": 103,
+        "distinct_versions": 103,
+        "date_issues": {},
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "already_imported",
+        "new_versions": 0
+      },
+      {
+        "attempt": 2,
+        "batch_sha256": "a376f96fbd8ee7d6067304b7e49b16aea6f193477c37ce21a3ceabb33ea454aa",
+        "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "source_kind": "investigation_pdf",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": null,
+        "input_units": 1,
+        "accepted": 1,
+        "rejected": 0,
+        "distinct_record_keys": 1,
+        "distinct_versions": 1,
+        "date_issues": {},
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "already_imported",
+        "new_versions": 0
+      },
+      {
+        "attempt": 2,
+        "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584",
+        "snapshot_id": "81312fe0084a4aafa99db307bc64eb90",
+        "source_kind": "recall_api",
+        "mapping_version": "source-record/0.1",
+        "container_record_count": 2,
+        "input_units": 2,
+        "accepted": 2,
+        "rejected": 0,
+        "distinct_record_keys": 2,
+        "distinct_versions": 2,
+        "date_issues": {
+          "format_unverified": 2
+        },
+        "errors": {},
+        "pdf_text_parsed": false,
+        "usage": "exploration_only",
+        "status": "already_imported",
+        "new_versions": 0
+      }
+    ],
+    "counts_after_two_passes": {
+      "source_snapshots": 4,
+      "record_versions": 106,
+      "snapshot_imports": 4,
+      "snapshot_rows": 108
+    },
+    "payload_readback_equal": true,
+    "raw_pointer_links_equal": true,
+    "publication_times_known": false,
+    "commands": [
+      {
+        "module": "alembic",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      },
+      {
+        "module": "ingestion",
+        "exit_code": 0
+      }
+    ]
+  }
+}

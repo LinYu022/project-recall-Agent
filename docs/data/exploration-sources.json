@@ -1,0 +1,156 @@
+[
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=10V039000",
+    "observed_at": "2026-10-26T11:58:52.7242448+08:00",
+    "status_code": 200,
+    "sha256": "751C19DB03EAB693F43C57503B50703CFFEB2B98D1644B4F9E8A361B4D2C462C",
+    "count": 2,
+    "local_path": ".local/exploration/raw/10V039000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-19V588000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=19V588000",
+    "observed_at": "2026-10-26T11:58:58.1790417+08:00",
+    "status_code": 200,
+    "sha256": "3F8006ABD58A68513E26373C3000D62532D12F23C81D5B7BE4395A9CD623192C",
+    "count": 10,
+    "local_path": ".local/exploration/raw/19V588000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-23V162000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V162000",
+    "observed_at": "2026-10-26T11:59:03.8543999+08:00",
+    "status_code": 200,
+    "sha256": "FF2BDE697FEF30A0488BB95C62E43AEB32CF431BC4977EC48963A4CCC93CDEB0",
+    "count": 12,
+    "local_path": ".local/exploration/raw/23V162000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-22V590000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V590000",
+    "observed_at": "2026-10-26T11:59:09.3153632+08:00",
+    "status_code": 200,
+    "sha256": "3DBB8687E9D3463E5675DF7E09D13BBA6730F75D786CCF5C27EFA20BC3A0ECC2",
+    "count": 12,
+    "local_path": ".local/exploration/raw/22V590000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-14V284000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=14V284000",
+    "observed_at": "2026-10-26T11:59:15.1497391+08:00",
+    "status_code": 200,
+    "sha256": "0D6DAFD71CF1C3751C4E3FDEA71FBC23482EA697E19786763E3ACD19B6BC7F23",
+    "count": 8,
+    "local_path": ".local/exploration/raw/14V284000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-20V332000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=20V332000",
+    "observed_at": "2026-10-26T11:59:20.846625+08:00",
+    "status_code": 200,
+    "sha256": "31426864D2750208BED837335FE7C8729A9B581969979B853D1EFF3722E01B49",
+    "count": 4,
+    "local_path": ".local/exploration/raw/20V332000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-18V467000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=18V467000",
+    "observed_at": "2026-10-26T11:59:26.2894348+08:00",
+    "status_code": 200,
+    "sha256": "4A54193B32566BFA9504EB6BD753319F7459346D527DDF008A118AD4CE049806",
+    "count": 1,
+    "local_path": ".local/exploration/raw/18V467000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-13V489000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=13V489000",
+    "observed_at": "2026-10-26T11:59:31.8655188+08:00",
+    "status_code": 200,
+    "sha256": "12E2A5C3C2F61AC399C15D3AB6FA81158B98F5448B1B21B386B2BC74F07A22C4",
+    "count": 4,
+    "local_path": ".local/exploration/raw/13V489000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-14V047000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=14V047000",
+    "observed_at": "2026-10-26T11:59:37.5164027+08:00",
+    "status_code": 200,
+    "sha256": "D4D02D959019215DCCBD37E962C5D224F0EA52DD1AD50AB50A4B7149E7248355",
+    "count": 30,
+    "local_path": ".local/exploration/raw/14V047000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-16V487000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=16V487000",
+    "observed_at": "2026-10-26T11:59:43.5082732+08:00",
+    "status_code": 200,
+    "sha256": "837F92AF5BE20BA15DE95E83A07C03F24229911E5B8ABEB34D9641386182DB8B",
+    "count": 7,
+    "local_path": ".local/exploration/raw/16V487000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-19V645000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=19V645000",
+    "observed_at": "2026-10-26T04:00:46.7369135+00:00",
+    "status_code": 200,
+    "sha256": "32BC1F28D7AF6AAC23DA616438EEC51C7A0E954CCE137B2DF1743B19F1DBC2FD",
+    "local_path": ".local/exploration/raw/19V645000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-20V469000",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=20V469000",
+    "observed_at": "2026-10-26T04:00:52.7096182+00:00",
+    "status_code": 200,
+    "sha256": "3B84B9D23848B0DD8E43DB349B3A80559EC6CE04B989AB45270509A8A5B9C433",
+    "local_path": ".local/exploration/raw/20V469000.json",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-INV-PE10006-CLOSE",
+    "url": "https://static.nhtsa.gov/odi/inv/2010/INCLA-PE10006-1281.pdf",
+    "observed_at": "2026-10-26T04:00:58.2069076+00:00",
+    "status_code": 200,
+    "sha256": "E6FE568C5F521B7A1171BFB898431736077103D02755D41D563E7CD321180350",
+    "local_path": ".local/exploration/raw/PE10006-close.pdf",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-ACK-19V645",
+    "url": "https://static.nhtsa.gov/odi/rcl/2019/RCAK-19V645-5441.pdf",
+    "observed_at": "2026-10-26T04:01:03.9888739+00:00",
+    "status_code": 200,
+    "sha256": "DC6127ADF8AA6F09C013D28DEE24BE160F24D47311D2713B1B23A37582D70E3B",
+    "local_path": ".local/exploration/raw/19V645-ack.pdf",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-OWNER-23V162",
+    "url": "https://static.nhtsa.gov/odi/rcl/2023/RCONL-23V162-1319.pdf",
+    "observed_at": "2026-10-26T04:01:09.9714127+00:00",
+    "status_code": 200,
+    "sha256": "9E0986756D0FFD0FC8E7593075C885909EABA1BD25EBC137DF294204A426B2F7",
+    "local_path": ".local/exploration/raw/23V162-owner.pdf",
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-COMPLAINTS-F150-2016",
+    "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=FORD&model=F-150&modelYear=2016",
+    "observed_at": "2026-10-26T04:01:15.7275168+00:00",
+    "status_code": 200,
+    "sha256": "FFDBED2AD2E0B789127B2F7BE9F6EC6EB5560F1129EBF12C0BD5181CDAEADE2D",
+    "local_path": ".local/exploration/raw/complaints-F150-2016.json",
+    "usage": "exploration_only"
+  }
+]

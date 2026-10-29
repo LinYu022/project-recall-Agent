@@ -1,0 +1,30 @@
+{
+  "schema_version": "retrieval-request/0.1",
+  "dataset_build_id": "b84089a6465f68feab955ecaff920d444427c9f5b7a7c1e9a9e0bd37a0001980",
+  "query": "How will Tesla correct the driver assistance misuse risk and is the update delivered remotely?",
+  "allowed_source_ids": [
+    "NHTSA-API-CAMPAIGN-10V039000",
+    "NHTSA-API-CAMPAIGN-14V284000",
+    "NHTSA-API-CAMPAIGN-17V331000",
+    "NHTSA-API-CAMPAIGN-17V652000",
+    "NHTSA-API-CAMPAIGN-20V332000",
+    "NHTSA-API-CAMPAIGN-22V150000",
+    "NHTSA-API-CAMPAIGN-22V859000",
+    "NHTSA-API-CAMPAIGN-23V080000",
+    "NHTSA-API-CAMPAIGN-23V651000",
+    "NHTSA-API-CAMPAIGN-23V838000",
+    "NHTSA-COMPLAINTS-F150-2016",
+    "NHTSA-INV-PE10006-CLOSE"
+  ],
+  "scope": {
+    "make": "TESLA",
+    "model": "MODEL Y",
+    "model_year": 2022,
+    "campaign_number": null,
+    "component": null,
+    "production_date": null,
+    "configurations": {}
+  },
+  "method": "hybrid",
+  "top_k": 10
+}

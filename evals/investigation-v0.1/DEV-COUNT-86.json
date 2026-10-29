@@ -1,0 +1,33 @@
+{
+  "case_id": "DEV-COUNT-86",
+  "split": "development",
+  "slots": [
+    {
+      "slot_id": "count86",
+      "kind": "count",
+      "alternatives": [],
+      "expected_fields": {
+        "status": "counted",
+        "distinct_complaints": 86
+      }
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-COUNT",
+      "statement": "当前允许冻结投诉资料按ODI去重为86，不是故障发生率或因果证明。",
+      "evidence_sets": [
+        [
+          "count86"
+        ]
+      ],
+      "forbidden_inferences": [
+        "causality",
+        "incidence_rate"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

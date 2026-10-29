@@ -1,0 +1,216 @@
+{
+  "schema_version": "P1-13-delivery/0.1",
+  "timestamp": "2026-10-27T13:48:25.592993+00:00",
+  "classification": "real_postgresql_review_cache_scope_fault_tests_real_extractor_process_official_sources_simulated_generation",
+  "migration_head": "0007_semantic_memory",
+  "offline_tests": {
+    "tests": 391,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgres_tests": {
+    "tests": 156,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "legacy_http_checks": [
+    7,
+    7
+  ],
+  "development_history": [
+    {
+      "record": "initial.json",
+      "tests": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_filter": "memory",
+      "server_stopped": true,
+      "content_sha256": "f7b7e52f083657157cb6f0690202c401bd27c86f6f6a0ac8669da1e039e5a867"
+    },
+    {
+      "record": "round2.json",
+      "tests": {
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_filter": "memory",
+      "server_stopped": true,
+      "content_sha256": "fbd09625f1d50c73eec4e8619100e9f3b7fb0d0874b57891ba819361264af179"
+    }
+  ],
+  "first_offline_failure": {
+    "tests": 391,
+    "failures": 1,
+    "reason": "legacy API fixture lacked eagerly accessed memory service; dependency now resolved per request",
+    "log_sha256": "9441e74376b9ed3060da4aca6b76c367eac5896dd364b192525ee7a450566876"
+  },
+  "before_verification_deduplication": {
+    "classification": "retained_official_NHTSA_release_real_postgresql_and_extractor_process_synthetic_confirmations_and_generation",
+    "timestamp": "2026-10-27T13:24:16.545833+00:00",
+    "new_api_requests": 0,
+    "new_source_requests": 0,
+    "actual_provider_usage": null,
+    "estimated_cost": null,
+    "independent_human_reviews": 0,
+    "formal_semantic_metrics": null,
+    "schema_removed": true,
+    "extractor_process_exit_code": 0,
+    "queued_candidates_only_until_review": true,
+    "active_index_after_deletion": 2,
+    "adoption_records": 5,
+    "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "case_id": "DEV-PRIUS-JOINT",
+    "runs": [
+      {
+        "task_id": "BEFORE",
+        "disposition": "insufficient_evidence",
+        "model_calls": 1,
+        "memory_references": 3,
+        "origin_replays": 3,
+        "report_content_sha256": "5699ab8d5acc02dc10d8980f7dd8e9d967922a8dfcc7a5f7e5fcf3a881dcda12"
+      },
+      {
+        "task_id": "AFTER",
+        "disposition": "insufficient_evidence",
+        "model_calls": 1,
+        "memory_references": 2,
+        "origin_replays": 3,
+        "report_content_sha256": "493deb5caba203597c6cffbfcacc2210bd960eac72d814cc5ac76e31e8e0ff68"
+      }
+    ],
+    "historical_report_marks_deletion": true,
+    "new_task_omits_deleted_preference": true,
+    "source_pointers_not_facts": true,
+    "root": ".local/P1-13/demo-feaa2890",
+    "generation_mode": "scripted_simulation"
+  },
+  "official_demonstration": {
+    "classification": "retained_official_NHTSA_release_real_postgresql_and_extractor_process_synthetic_confirmations_and_generation",
+    "timestamp": "2026-10-27T13:44:45.393766+00:00",
+    "new_api_requests": 0,
+    "new_source_requests": 0,
+    "actual_provider_usage": null,
+    "estimated_cost": null,
+    "independent_human_reviews": 0,
+    "formal_semantic_metrics": null,
+    "schema_removed": true,
+    "extractor_process_exit_code": 0,
+    "queued_candidates_only_until_review": true,
+    "active_index_after_deletion": 2,
+    "adoption_records": 5,
+    "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "case_id": "DEV-PRIUS-JOINT",
+    "runs": [
+      {
+        "task_id": "BEFORE",
+        "disposition": "insufficient_evidence",
+        "model_calls": 1,
+        "memory_references": 3,
+        "origin_replays": 3,
+        "report_content_sha256": "574cead51acaa3cee83018cf0387752db2ac26bf1e32c58b2c5f3defea2b029b",
+        "published_report": {
+          "artifact_root": ".local/P1-13/demo-b89a77ef/runs/private-runs/INV-2b808fa286614e329b0fc972e2fa3722",
+          "report_artifact": {
+            "sha256": "1344dc13e442bf07af102986b5010ccfc48a3ef1a509f38c4101d8b986e9cebf",
+            "byte_size": 121528
+          }
+        },
+        "resources": {
+          "completion_tokens_reserved_or_used": 40,
+          "elapsed_ms": 38945.01429999946,
+          "model_calls": 1,
+          "prompt_characters": 26050,
+          "provider_usage_totals": {
+            "completion_tokens": 40,
+            "prompt_tokens": 0,
+            "total_tokens": 40
+          },
+          "usage_complete": true,
+          "wall_limit_is_checked_between_operations": true
+        },
+        "elapsed_ms": 38945.01870000386
+      },
+      {
+        "task_id": "AFTER",
+        "disposition": "insufficient_evidence",
+        "model_calls": 1,
+        "memory_references": 2,
+        "origin_replays": 3,
+        "report_content_sha256": "1a0b8de7631df3439d400a3d1f082c1b580cb47b2510299735fde14711a914ae",
+        "published_report": {
+          "artifact_root": ".local/P1-13/demo-b89a77ef/runs/private-runs/INV-014290c0aa4740dd9c0f46193813c46c",
+          "report_artifact": {
+            "sha256": "2c8a656d0df1d0cb9f4840be3a4a87cfca5cf6fa09b4660cfc242f1f726aca84",
+            "byte_size": 121002
+          }
+        },
+        "resources": {
+          "completion_tokens_reserved_or_used": 40,
+          "elapsed_ms": 38029.639699991094,
+          "model_calls": 1,
+          "prompt_characters": 25654,
+          "provider_usage_totals": {
+            "completion_tokens": 40,
+            "prompt_tokens": 0,
+            "total_tokens": 40
+          },
+          "usage_complete": true,
+          "wall_limit_is_checked_between_operations": true
+        },
+        "elapsed_ms": 38029.642699999386
+      }
+    ],
+    "historical_report_marks_deletion": true,
+    "new_task_omits_deleted_preference": true,
+    "source_pointers_not_facts": true,
+    "root": ".local/P1-13/demo-b89a77ef",
+    "generation_mode": "scripted_simulation",
+    "generation_usage_is_synthetic": true
+  },
+  "legacy_model_responses_replayed": 8,
+  "legacy_outcomes_match": true,
+  "new_api_requests": 0,
+  "new_source_requests": 0,
+  "extraction_model_calls": 0,
+  "actual_new_provider_usage": null,
+  "estimated_cost": null,
+  "independent_human_reviews": 0,
+  "formal_semantic_metrics": null,
+  "P1_09_request_ledger_unchanged": true,
+  "temporary_postgres_stopped": true,
+  "temporary_http_stopped": true,
+  "experiment_schemas_removed": true,
+  "record_content_sha256": {
+    "offline": "c00f20717935c78be767ccf4ec751311a4138a0337bb46f8467c022201dd68c1",
+    "database": "64c9a30b9f3dcb0c54d3ba179782174f18138e5f0c37971d1c5506c5ce8196f1",
+    "request_ledger": "43871e9d45b66127432601660c6f9bfd0367e1bb12a34c758292eae57e07ce1a"
+  },
+  "limits": [
+    "The extractor parses bounded explicit declarations; no general natural-language or LLM extraction is claimed.",
+    "Only installed operating rules have bounded executable checks; they are not official facts or universal semantic proofs.",
+    "Official source bytes/tools and extractor process are real; preferences/reviewers/model generation are controlled fixtures.",
+    "Memory pointers cannot become E evidence or widen task authorization.",
+    "Deletion stops active adoption but preserves audit/history; it is not physical erasure of all past bytes.",
+    "A project namespace belongs to one authenticated owner; team membership is not implemented.",
+    "Word matching is not an evaluated semantic/vector retrieval benchmark.",
+    "Generation/publication validate current domain sources; step gates validate live primary memory status.",
+    "Unknown provider cancellation and changed-memory recovery remain strict, without automatic re-generation.",
+    "The official demonstration uses a 32000-character prompt cap and is not an equal-budget benefit comparison."
+  ]
+}

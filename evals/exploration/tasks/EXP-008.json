@@ -1,0 +1,49 @@
+{
+  "schema_version": "exploration-task/0.2",
+  "task_id": "EXP-008",
+  "split": "exploration",
+  "event_cluster_id": "nhtsa-campaign-16V487000",
+  "status": "draft",
+  "question": "16V487000 涉及 2010 PRIUS，能否据此解释与 10V039000 类似的制动症状？",
+  "scope": {
+    "country": "US",
+    "make": "TOYOTA",
+    "model": "PRIUS",
+    "model_year": 2010,
+    "component_topic": "braking",
+    "campaign_number": "16V487000"
+  },
+  "time": {
+    "mode": "snapshot_analysis",
+    "event_interval": null,
+    "knowledge_cutoff": null,
+    "date_filter_basis": "本题按召回编号查询，不统计投诉事件；在线观察日期不能证明历史可见性。"
+  },
+  "release_id": null,
+  "allowed_source_ids": [
+    "NHTSA-API-CAMPAIGN-16V487000",
+    "NHTSA-API-CAMPAIGN-10V039000"
+  ],
+  "required_outputs": [
+    "根据 Component 与 Summary 区分气帘和 ABS 制动机制；指出车型交集不支持跨缺陷因果。",
+    "列明范围、来源位置、允许结论和未知项；不把当前观察当成历史公开证明。"
+  ],
+  "forbidden_inferences": [
+    "把投诉人陈述当成官方确认的缺陷或法律判断。",
+    "仅凭品牌、车型、年份或症状相似确认个车适用和投诉因果。",
+    "把投诉数或潜在受影响数量解释为故障率。",
+    "把当前下载版本当成过去某日已公开的相同版本。",
+    "同为 2010 Prius，所以气帘召回证明刹车投诉属于同一缺陷。"
+  ],
+  "missing_information_behavior": {
+    "vehicle_applicability": "个车生产日期、配置和范围证明不足时保持未知，列明还需核对的条件；本题不要求 VIN 查询。",
+    "complaint_causality": "没有投诉记录及关联证据，不作投诉因果结论。",
+    "source_unavailable": "记录访问失败，不能把失败或空响应解释为没有召回。",
+    "ambiguous_date": "保留日期原值，未核实格式前不转换或用于历史过滤。",
+    "historical_request": "当前没有版本级历史公开证明，不支持据此还原历史时点。",
+    "empty_result": "区分成功查询无匹配、源数据不完整和访问失败；不能据此推出没有缺陷。"
+  },
+  "task_kind": "record_lookup",
+  "grant_id": null,
+  "revision_id": null
+}

@@ -1,0 +1,23 @@
+{
+  "classification": "real_persistent_qdrant_local_and_numpy_reference_same_onnx_vectors",
+  "index_artifact_sha256": "46373e84c19beb44a37ed3b2a2cf079d98b86ebf15f7a6cfbcc2b8852a616982",
+  "checks": [
+    {
+      "filtered_points": 593,
+      "max_absolute_cosine_difference": 5.441665207328583e-08
+    },
+    {
+      "filtered_points": 198,
+      "max_absolute_cosine_difference": 5.441665207328583e-08
+    },
+    {
+      "filtered_points": 593,
+      "max_absolute_cosine_difference": 7.521438516455703e-08
+    },
+    {
+      "filtered_points": 198,
+      "max_absolute_cosine_difference": 7.521438516455703e-08
+    }
+  ],
+  "remote_qdrant_server_tested": false
+}

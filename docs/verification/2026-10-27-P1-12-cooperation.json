@@ -1,0 +1,1339 @@
+{
+  "schema_version": "P1-12-delivery/0.1",
+  "timestamp": "2026-10-27T11:30:03.541037+00:00",
+  "classification": "real_postgresql_and_threads_retained_official_sources_local_models_scripted_generation",
+  "offline_tests": {
+    "tests": 377,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgres_tests": {
+    "tests": 132,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "legacy_http_checks": [
+    7,
+    7
+  ],
+  "development_history": [
+    {
+      "record": "initial.json",
+      "tests": {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_filter": "cooperation",
+      "content_sha256": "12e930924261010b7d60fa711708653c55cf11c3facb38271bc55dad11ca3c47",
+      "server_stopped": true
+    },
+    {
+      "record": "round2.json",
+      "tests": {
+        "tests": 8,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_filter": "cooperation",
+      "content_sha256": "5dd350ee2e23c404c7c092b561c386b860485a56b53f9bb842641692ce04c91a",
+      "server_stopped": true
+    },
+    {
+      "record": "round3.json",
+      "tests": {
+        "tests": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_filter": "cooperation",
+      "content_sha256": "d5f1b5cce1651c09e674b1cdaa3ef4c9d09e1f3c2f42f17f9f3c427026943cdd",
+      "server_stopped": true
+    },
+    {
+      "record": "round4.json",
+      "tests": {
+        "tests": 13,
+        "failures": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "test_filter": "cooperation",
+      "content_sha256": "bb529194e1f323b44c2c1e6e378b0ce91255a0c1f1b1fb341cf2a8d408737003",
+      "server_stopped": true
+    }
+  ],
+  "before_storage_fix": [
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "fixed",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 1,
+      "tool_calls": 4,
+      "elapsed_ms": 21403.67569999944,
+      "resources": {
+        "completion_tokens_reserved_or_used": 40,
+        "elapsed_ms": 21403.67349999724,
+        "model_calls": 1,
+        "prompt_characters": 23965,
+        "provider_usage_totals": {
+          "completion_tokens": 40,
+          "prompt_tokens": 0,
+          "total_tokens": 40
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": null,
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": null,
+      "published_report": null,
+      "report_content_sha256": "aeff1df3a5f378ac8a1b898825699e1da2082215fe75fa06b3d053436131e813",
+      "report_path": ".local/P1-12/reports/DEV-PRIUS-JOINT-FIXED.json"
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "single_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 4,
+      "elapsed_ms": 21404.24709999934,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 21404.24549999443,
+        "model_calls": 4,
+        "prompt_characters": 52625,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": null,
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [],
+      "published_report": null,
+      "report_content_sha256": "07d59b035753f2ff8b4cacf2f58558fac68fe0a7cca33f055e4354f38bc0a901",
+      "report_path": ".local/P1-12/reports/DEV-PRIUS-JOINT-SINGLE-AGENT.json"
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "parallel_tools",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 4,
+      "elapsed_ms": 21646.92909999576,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 21646.927800000412,
+        "model_calls": 4,
+        "prompt_characters": 55281,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": null,
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [],
+      "published_report": null,
+      "report_content_sha256": "6626bf24364eb595c28f0bd1870e44f90197a620e4b172806e5beb4accbc2f36",
+      "report_path": ".local/P1-12/reports/DEV-PRIUS-JOINT-PARALLEL-TOOLS.json"
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "multi_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 4,
+      "elapsed_ms": 26129.738800002087,
+      "resources": {
+        "accounting": "logical_run_including_recorded_replay_real_new_requests_live_in_dispatch_ledger",
+        "actual_provider_usage": null,
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 26129.70040000073,
+        "estimated_cost": null,
+        "model_calls": 4,
+        "prompt_characters": 53803,
+        "tool_calls": 4
+      },
+      "delegation_policy": {
+        "delegate": true,
+        "features": {
+          "intent": "cross_source",
+          "model_limit": 8,
+          "pinned_pairs": 0,
+          "source_count": 2,
+          "tool_limit": 10
+        },
+        "labels_or_past_scores_used": false,
+        "reason": "cross_source_or_pinned_relation",
+        "version": "delegation-trigger/0.1"
+      },
+      "branch_results": [
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DATA",
+          "disposition": null,
+          "error_code": "RuntimeError",
+          "evidence_ids": [],
+          "report_artifact": null,
+          "schema_version": "delegated-result/0.1",
+          "status": "failed",
+          "unresolved_fields": []
+        },
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DOCUMENT",
+          "disposition": "insufficient_evidence",
+          "error_code": "prompt_budget_exhausted",
+          "evidence_ids": [
+            "fedc108735b0327f6662f7afaaf0ecb214cb9d277b02be9571aff59621ad8c94",
+            "289930445af82b0010a459083c48542798203c52fbdfcdf13decdce2cfe1fbd9",
+            "77563a3025ac79aed965a9a3d38169e611cda789bd0cc5c736ef2be687dfde9b",
+            "4da6ec365f4f7e37974dc41d073fd81a67081266bfcbc4819a88cb4fc0e48f5b",
+            "b20d9254aea8f1b7cc9ddf3701a29f3ecdb2551608d6208d7420121cf5747bce",
+            "03ebed5de7dc1d1aeccd3f86966e8345c9b7864acd3d7bd1b16a0d4b6b12916d",
+            "3ca029ae748bcdf0c2fbd0d3e5c4c289d0674d9c4431b6495697bc885ff1b956",
+            "b6f2cffcdb2cc35874390055ff0619bc7e988d29fc4c76db055e02d95bd06a5e",
+            "37e3862367ee06b742099eb59d425f89091bb449600334600ec41177485d15e3"
+          ],
+          "report_artifact": {
+            "byte_size": 50673,
+            "sha256": "bb42fe34f5a8879d9221cee17cac64e4b1ff989a86600ea134a1b51ba601d3bb"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": []
+        }
+      ],
+      "branch_effective_configs": null,
+      "branch_timing": {
+        "data": {
+          "elapsed_ms": 8820.049100002507,
+          "finished_ms": 8871.296400000574,
+          "started_ms": 51.24809999688296,
+          "thread_id": 13384
+        },
+        "document": {
+          "elapsed_ms": 25921.43870000291,
+          "finished_ms": 25973.030799999833,
+          "started_ms": 51.59319999802392,
+          "thread_id": 33384
+        }
+      },
+      "conflicts": [],
+      "tool_batches": null,
+      "published_report": null,
+      "report_content_sha256": "b37feefe11e71c7ce23415f28c9fe8bf80bc2cd27b92eb84988bfe27295ba34f",
+      "report_path": ".local/P1-12/reports/DEV-PRIUS-JOINT-MULTI-AGENT.json"
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "fixed",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 1,
+      "tool_calls": 5,
+      "elapsed_ms": 31587.452500003565,
+      "resources": {
+        "completion_tokens_reserved_or_used": 40,
+        "elapsed_ms": 31587.451000006695,
+        "model_calls": 1,
+        "prompt_characters": 16254,
+        "provider_usage_totals": {
+          "completion_tokens": 40,
+          "prompt_tokens": 0,
+          "total_tokens": 40
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": null,
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": null,
+      "published_report": null,
+      "report_content_sha256": "478ab31ec0fca532171eccf6e2448c9550f52cf072c5dee159c135e05d3f31a5",
+      "report_path": ".local/P1-12/reports/DEV-DOOR-PAIR-FIXED.json"
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "single_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 5,
+      "elapsed_ms": 47555.61399999715,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 47555.61260000104,
+        "model_calls": 4,
+        "prompt_characters": 65139,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": null,
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [],
+      "published_report": null,
+      "report_content_sha256": "8590b73a2cd9d77e32af05e4b1b743270b0fcdeb33e12e1a1c4e56647019d109",
+      "report_path": ".local/P1-12/reports/DEV-DOOR-PAIR-SINGLE-AGENT.json"
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "parallel_tools",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 3,
+      "tool_calls": 5,
+      "elapsed_ms": 41176.14980000508,
+      "resources": {
+        "completion_tokens_reserved_or_used": 120,
+        "elapsed_ms": 41176.14799999865,
+        "model_calls": 3,
+        "prompt_characters": 51064,
+        "provider_usage_totals": {
+          "completion_tokens": 120,
+          "prompt_tokens": 0,
+          "total_tokens": 120
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": null,
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [
+        {
+          "elapsed_ms": 9536.171899999317,
+          "shared_planner_context": true,
+          "steps": [
+            {
+              "action": "search",
+              "document_id": null,
+              "include_related": null,
+              "query": "door handle cover side impact cable water freeze latch"
+            },
+            {
+              "action": "links",
+              "document_id": null,
+              "include_related": null,
+              "query": null
+            }
+          ],
+          "turn": 1
+        }
+      ],
+      "published_report": null,
+      "report_content_sha256": "4be22fdce0f0724d60b66906b5c65fb0580c70b97f8d78505a68483eb9d3c078",
+      "report_path": ".local/P1-12/reports/DEV-DOOR-PAIR-PARALLEL-TOOLS.json"
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "multi_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 2,
+      "tool_calls": 2,
+      "elapsed_ms": 24948.48110000021,
+      "resources": {
+        "accounting": "logical_run_including_recorded_replay_real_new_requests_live_in_dispatch_ledger",
+        "actual_provider_usage": null,
+        "completion_tokens_reserved_or_used": 80,
+        "elapsed_ms": 24948.44309999462,
+        "estimated_cost": null,
+        "model_calls": 2,
+        "prompt_characters": 24387,
+        "tool_calls": 2
+      },
+      "delegation_policy": {
+        "delegate": true,
+        "features": {
+          "intent": "relationship",
+          "model_limit": 8,
+          "pinned_pairs": 1,
+          "source_count": 2,
+          "tool_limit": 10
+        },
+        "labels_or_past_scores_used": false,
+        "reason": "cross_source_or_pinned_relation",
+        "version": "delegation-trigger/0.1"
+      },
+      "branch_results": [
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DATA",
+          "disposition": "insufficient_evidence",
+          "error_code": "prompt_budget_exhausted",
+          "evidence_ids": [
+            "69df5c1fc40552255215296f11c4f74e2d34dc2eccecf454c582e7b3873f9bf1",
+            "ecb637f23eb5dd1f9e652a3840d2a6cf343fa619cbbcf03780307b6997ef6ecc"
+          ],
+          "report_artifact": {
+            "byte_size": 134495,
+            "sha256": "c2611d6fd1d3bedfcd9a12b1ddebf383b1a77ed990f154446495a13c901fefa7"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": []
+        },
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DOCUMENT",
+          "disposition": null,
+          "error_code": "RuntimeError",
+          "evidence_ids": [],
+          "report_artifact": null,
+          "schema_version": "delegated-result/0.1",
+          "status": "failed",
+          "unresolved_fields": []
+        }
+      ],
+      "branch_effective_configs": null,
+      "branch_timing": {
+        "data": {
+          "elapsed_ms": 19613.188600000285,
+          "finished_ms": 19630.650200000673,
+          "started_ms": 17.462299998442177,
+          "thread_id": 27768
+        },
+        "document": {
+          "elapsed_ms": 8820.389499996963,
+          "finished_ms": 8838.176600002043,
+          "started_ms": 17.78780000313418,
+          "thread_id": 5940
+        }
+      },
+      "conflicts": [],
+      "tool_batches": null,
+      "published_report": null,
+      "report_content_sha256": "82b3e8454a4fb9e33658ca7e6adbb216019c04c0a083a7e6ea4af2ce8534114b",
+      "report_path": ".local/P1-12/reports/DEV-DOOR-PAIR-MULTI-AGENT.json"
+    }
+  ],
+  "diagnostic": [
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "multi_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 2,
+      "tool_calls": 1,
+      "elapsed_ms": 9282.830500000273,
+      "resources": {
+        "accounting": "logical_run_including_recorded_replay_real_new_requests_live_in_dispatch_ledger",
+        "actual_provider_usage": null,
+        "completion_tokens_reserved_or_used": 80,
+        "elapsed_ms": 9282.78539999883,
+        "estimated_cost": null,
+        "model_calls": 2,
+        "prompt_characters": 16234,
+        "tool_calls": 1
+      },
+      "delegation_policy": {
+        "delegate": true,
+        "features": {
+          "intent": "cross_source",
+          "model_limit": 8,
+          "pinned_pairs": 0,
+          "source_count": 2,
+          "tool_limit": 10
+        },
+        "labels_or_past_scores_used": false,
+        "reason": "cross_source_or_pinned_relation",
+        "version": "delegation-trigger/0.1"
+      },
+      "branch_results": [
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [
+            {
+              "counter_ids": [],
+              "issue": "applicability",
+              "reason": "SIMULATED: structured records do not establish an individual vehicle's configuration.",
+              "subject": "TASK",
+              "support_ids": [
+                "E001"
+              ],
+              "value": "unknown"
+            }
+          ],
+          "counterevidence_ids": [],
+          "delegation_id": "DATA",
+          "disposition": "insufficient_evidence",
+          "error_code": null,
+          "evidence_ids": [
+            "03e2289aa6163ce4f94dd40dab9917b2c8d1ee4ee9f0d4986371b9204f4759b7"
+          ],
+          "report_artifact": {
+            "byte_size": 9667,
+            "sha256": "a97ddbbe097c6a2a958088fc55978e136b04b750d80dd7414419be1814e43a97"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": [
+            "individual_vehicle",
+            "causality",
+            "source_coverage"
+          ]
+        },
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DOCUMENT",
+          "disposition": null,
+          "error_code": "RuntimeError",
+          "evidence_ids": [],
+          "report_artifact": null,
+          "schema_version": "delegated-result/0.1",
+          "status": "failed",
+          "unresolved_fields": []
+        }
+      ],
+      "branch_effective_configs": null,
+      "branch_timing": {
+        "data": {
+          "elapsed_ms": 9147.264500003075,
+          "finished_ms": 9204.865400002745,
+          "started_ms": 57.601699998485856,
+          "thread_id": 30600
+        },
+        "document": {
+          "elapsed_ms": 8667.516599998635,
+          "finished_ms": 8725.553800002672,
+          "started_ms": 58.03820000437554,
+          "thread_id": 14160
+        }
+      },
+      "conflicts": [],
+      "tool_batches": null,
+      "published_report": null,
+      "report_content_sha256": "53d68ed5c74642707a6588dc7ef6345a0a620fd8fab90ec18fae33f847320ba3",
+      "report_path": ".local/P1-12/reports/DEV-PRIUS-JOINT-MULTI-AGENT.json"
+    }
+  ],
+  "before_fix_immutable_reports_retained": [
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-DOOR-PAIR",
+          "single_agent"
+        ]
+      ],
+      "report_content_sha256": "8590b73a2cd9d77e32af05e4b1b743270b0fcdeb33e12e1a1c4e56647019d109",
+      "artifact_sha256": "90d0569a01a127dac2352336dde8d49aa15b8df512f491567976b54f257da28b",
+      "original_path": ".local/P1-12/runs/private-runs/AGENT-0ae2b801041f48bc91b2f037546c57d2/artifacts/90d0569a01a127dac2352336dde8d49aa15b8df512f491567976b54f257da28b.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/90d0569a01a127dac2352336dde8d49aa15b8df512f491567976b54f257da28b.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-DOOR-PAIR",
+          "parallel_tools"
+        ]
+      ],
+      "report_content_sha256": "4be22fdce0f0724d60b66906b5c65fb0580c70b97f8d78505a68483eb9d3c078",
+      "artifact_sha256": "23804daa413ad586ee0965cf42a739c6de96c1501aef64a0aa77f5aff94c2983",
+      "original_path": ".local/P1-12/runs/private-runs/AGENT-418f7c3395024fe58c005b60db644f2f/artifacts/23804daa413ad586ee0965cf42a739c6de96c1501aef64a0aa77f5aff94c2983.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/23804daa413ad586ee0965cf42a739c6de96c1501aef64a0aa77f5aff94c2983.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-PRIUS-JOINT",
+          "parallel_tools"
+        ]
+      ],
+      "report_content_sha256": "6626bf24364eb595c28f0bd1870e44f90197a620e4b172806e5beb4accbc2f36",
+      "artifact_sha256": "2044dd28436d7b35aebf3039bcc3872d7e0e40f2942242ad304381d9a9ea1e42",
+      "original_path": ".local/P1-12/runs/private-runs/AGENT-73a41b2eef224a0fa82dd1e3b352d0d7/artifacts/2044dd28436d7b35aebf3039bcc3872d7e0e40f2942242ad304381d9a9ea1e42.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/2044dd28436d7b35aebf3039bcc3872d7e0e40f2942242ad304381d9a9ea1e42.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-PRIUS-JOINT",
+          "single_agent"
+        ]
+      ],
+      "report_content_sha256": "07d59b035753f2ff8b4cacf2f58558fac68fe0a7cca33f055e4354f38bc0a901",
+      "artifact_sha256": "1922646b254e4fa2e2c5da4b21bf2dd0da04ff168c2e13c4881113ff886cf32f",
+      "original_path": ".local/P1-12/runs/private-runs/AGENT-fc02d09bb8ce4ae4950ae2f34992cc15/artifacts/1922646b254e4fa2e2c5da4b21bf2dd0da04ff168c2e13c4881113ff886cf32f.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/1922646b254e4fa2e2c5da4b21bf2dd0da04ff168c2e13c4881113ff886cf32f.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-PRIUS-JOINT",
+          "fixed"
+        ]
+      ],
+      "report_content_sha256": "aeff1df3a5f378ac8a1b898825699e1da2082215fe75fa06b3d053436131e813",
+      "artifact_sha256": "16a0d4d1f6ed744978e8fd32e1e4131514aa53e0d2b8497fdb5dd615da3d0870",
+      "original_path": ".local/P1-12/runs/private-runs/INV-083599b648fe4829800ba5f4bfbe4bcb/artifacts/16a0d4d1f6ed744978e8fd32e1e4131514aa53e0d2b8497fdb5dd615da3d0870.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/16a0d4d1f6ed744978e8fd32e1e4131514aa53e0d2b8497fdb5dd615da3d0870.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-DOOR-PAIR",
+          "fixed"
+        ]
+      ],
+      "report_content_sha256": "478ab31ec0fca532171eccf6e2448c9550f52cf072c5dee159c135e05d3f31a5",
+      "artifact_sha256": "5f7a7f6d995fb0d3ff198bb2e5368442c823bc3a89ea3b46c7d034a2c6a5c0a8",
+      "original_path": ".local/P1-12/runs/private-runs/INV-471fc37153554a14aec73dada4eb8027/artifacts/5f7a7f6d995fb0d3ff198bb2e5368442c823bc3a89ea3b46c7d034a2c6a5c0a8.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/5f7a7f6d995fb0d3ff198bb2e5368442c823bc3a89ea3b46c7d034a2c6a5c0a8.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-DOOR-PAIR",
+          "multi_agent"
+        ]
+      ],
+      "report_content_sha256": "82b3e8454a4fb9e33658ca7e6adbb216019c04c0a083a7e6ea4af2ce8534114b",
+      "artifact_sha256": "05ba533b0dc1e34c1e9f80c153edb70dafd9a47ec52da982f94ce7391d6afe7a",
+      "original_path": ".local/P1-12/runs/private-runs/TEAM-552b319a14734f29956e94622d3faa6f/artifacts/05ba533b0dc1e34c1e9f80c153edb70dafd9a47ec52da982f94ce7391d6afe7a.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/05ba533b0dc1e34c1e9f80c153edb70dafd9a47ec52da982f94ce7391d6afe7a.json"
+    },
+    {
+      "observations": [
+        [
+          "development-comparison.json",
+          "DEV-PRIUS-JOINT",
+          "multi_agent"
+        ]
+      ],
+      "report_content_sha256": "b37feefe11e71c7ce23415f28c9fe8bf80bc2cd27b92eb84988bfe27295ba34f",
+      "artifact_sha256": "df8ae9a071b5cc5ef814f59d2b38d6e09a8ccd108016bb55d88af2e84e7267a5",
+      "original_path": ".local/P1-12/runs/private-runs/TEAM-8f461e90d6894fc89e254f8db1bde63b/artifacts/df8ae9a071b5cc5ef814f59d2b38d6e09a8ccd108016bb55d88af2e84e7267a5.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/df8ae9a071b5cc5ef814f59d2b38d6e09a8ccd108016bb55d88af2e84e7267a5.json"
+    },
+    {
+      "observations": [
+        [
+          "diagnostic.json",
+          "DEV-PRIUS-JOINT",
+          "multi_agent"
+        ]
+      ],
+      "report_content_sha256": "53d68ed5c74642707a6588dc7ef6345a0a620fd8fab90ec18fae33f847320ba3",
+      "artifact_sha256": "0e5b80135335e271dad5ab7d712415e95a6d285c52ed7c8eda08163af9b468de",
+      "original_path": ".local/P1-12/runs/private-runs/TEAM-e0b41b566fd845b09f83c5e9b223287a/artifacts/0e5b80135335e271dad5ab7d712415e95a6d285c52ed7c8eda08163af9b468de.json",
+      "retained_path": ".local/P1-12/rounds/pre-storage-fix/immutable-reports/0e5b80135335e271dad5ab7d712415e95a6d285c52ed7c8eda08163af9b468de.json"
+    }
+  ],
+  "common_profile": {
+    "schema_version": "cooperation-comparison/0.1",
+    "case_ids": [
+      "DEV-PRIUS-JOINT",
+      "DEV-DOOR-PAIR"
+    ],
+    "methods": [
+      "fixed",
+      "single_agent",
+      "parallel_tools",
+      "multi_agent"
+    ],
+    "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "profile": {
+      "retrieval_method": "hybrid",
+      "retrieve_k": 6,
+      "expand_k": 2,
+      "max_tool_calls": 10,
+      "max_model_calls": 8,
+      "prompt_characters": 24000,
+      "total_prompt_characters": 96000,
+      "generation_tokens": 2000,
+      "total_generation_tokens": 4000,
+      "wall_seconds": 900,
+      "context_mode": "structured",
+      "multi_agent_enabled": true,
+      "branch_timeout_seconds": 120.0
+    },
+    "policy_version": "delegation-trigger/0.1",
+    "policy_basis": "Current intent, source count, pinned pairs and remaining server envelope only; no labels or scores.",
+    "split": "previously_seen_development",
+    "generation": "scripted_simulated_abstention",
+    "limits": [
+      "Same model identity, release, question, source access, scoring and root envelope for all four methods.",
+      "Branches partition one root allowance; quotas are not copied.",
+      "Role tool restrictions are an internal strategy, not extra data or tool capabilities.",
+      "The fixed method retains its historical deterministic sequence and may use less than the common maximum.",
+      "Real sources and concurrent execution do not demonstrate real-model quality gains.",
+      "No new provider requests are authorized or made by this verification."
+    ]
+  },
+  "final_run_group_id": "20261027T112249Z-33be4ef1",
+  "final_runs": [
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "fixed",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 1,
+      "tool_calls": 4,
+      "elapsed_ms": 21338.855500005593,
+      "resources": {
+        "completion_tokens_reserved_or_used": 40,
+        "elapsed_ms": 21338.853900000686,
+        "model_calls": 1,
+        "prompt_characters": 23965,
+        "provider_usage_totals": {
+          "completion_tokens": 40,
+          "prompt_tokens": 0,
+          "total_tokens": 40
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": {},
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": null,
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/INV-3d81cc0568f84c07a18c3bc54a91f205",
+        "report_artifact": {
+          "sha256": "99735021339ea4009479f92ad792b9afd7efc1ab19ed2e25c153d23e61ccb3c2",
+          "byte_size": 119408
+        }
+      },
+      "report_content_sha256": "e1c3c939825d8aa4d14a787b79524ac265af091345d964d827b5e6f585d94c62",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-PRIUS-JOINT-FIXED.json",
+      "branch_terminations": {}
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "single_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 4,
+      "elapsed_ms": 21600.870000002033,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 21600.868299996364,
+        "model_calls": 4,
+        "prompt_characters": 52625,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": {},
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [],
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/AGENT-ce8bf16df32e4580a7a20d262a6b35ff",
+        "report_artifact": {
+          "sha256": "2727c417a6d9c61726fbedd1d2f47cec4dbca5579a1b2b8be038c4f0c602de5e",
+          "byte_size": 52706
+        }
+      },
+      "report_content_sha256": "bf10fd8ef5d9f30f2553b2d9826580273a2914007dcc6a654c8c59fd0c7bf17e",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-PRIUS-JOINT-SINGLE-AGENT.json",
+      "branch_terminations": {}
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "parallel_tools",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 4,
+      "elapsed_ms": 21547.68879999756,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 21547.687700003735,
+        "model_calls": 4,
+        "prompt_characters": 55281,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": {},
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [],
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/AGENT-975c592b928446a0a5064aa28991349e",
+        "report_artifact": {
+          "sha256": "6d8616c996a7060385e9f73664c701a4c900e65012e572ef482ce8d01ac16ce6",
+          "byte_size": 52722
+        }
+      },
+      "report_content_sha256": "61296fa12ac7f39bf2defdd3255911b2e5ed444961106356a5b6131b4443538d",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-PRIUS-JOINT-PARALLEL-TOOLS.json",
+      "branch_terminations": {}
+    },
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "method": "multi_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 26235.98800000036,
+      "resources": {
+        "accounting": "logical_run_including_recorded_replay_real_new_requests_live_in_dispatch_ledger",
+        "actual_provider_usage": null,
+        "completion_tokens_reserved_or_used": 200,
+        "elapsed_ms": 26235.936100005347,
+        "estimated_cost": null,
+        "model_calls": 5,
+        "prompt_characters": 64158,
+        "tool_calls": 4
+      },
+      "delegation_policy": {
+        "delegate": true,
+        "features": {
+          "intent": "cross_source",
+          "model_limit": 8,
+          "pinned_pairs": 0,
+          "source_count": 2,
+          "tool_limit": 10
+        },
+        "labels_or_past_scores_used": false,
+        "reason": "cross_source_or_pinned_relation",
+        "version": "delegation-trigger/0.1"
+      },
+      "branch_results": [
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [
+            {
+              "counter_ids": [],
+              "issue": "applicability",
+              "reason": "SIMULATED: structured records do not establish an individual vehicle's configuration.",
+              "subject": "TASK",
+              "support_ids": [
+                "E001"
+              ],
+              "value": "unknown"
+            }
+          ],
+          "counterevidence_ids": [],
+          "delegation_id": "DATA",
+          "disposition": "insufficient_evidence",
+          "error_code": null,
+          "evidence_ids": [
+            "320ac5aa0e997e23a1c3e03f1ce913d500b0ad203ed38ea5ff4e757c6fba9647"
+          ],
+          "report_artifact": {
+            "byte_size": 9667,
+            "sha256": "82b888fa1dd374e510cfff59b34d7f88f7fed3f7908c79f48a57a7466dc7a50e"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": [
+            "individual_vehicle",
+            "causality",
+            "source_coverage"
+          ]
+        },
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DOCUMENT",
+          "disposition": "insufficient_evidence",
+          "error_code": "prompt_budget_exhausted",
+          "evidence_ids": [
+            "320ac5aa0e997e23a1c3e03f1ce913d500b0ad203ed38ea5ff4e757c6fba9647",
+            "3bf9adb44331f5073a8b3862a877cd5a39cb3a82a635d5ce84663bf311851215",
+            "8ff71f5294f8a822a5287e205c666e6dd29d20cb73a08db76dcfb35821906c77",
+            "d33d4da13fcd8b01191578000164856a5d46c8234d540ad35509d1b970cbf99c",
+            "cde934d4c337ced6be8effbbfb3c9944f8e413c7b83631afaceb11ba2b1dd9c3",
+            "321a7e11aae8773d73c0cc808c7efb18fbbb1d28a20b4e486caae0f5d516f84f",
+            "a0a8c76654987f11732096ef07070b8f5d47af9c0e5bb558ab524bc0dbf26663",
+            "0d62e3cc68ebdf997b616d23efaca2c2f825b10098fc9a64551b9828fc0d58a8",
+            "169f825bd115ccc3558f4c1aab1e411842b37047992ba13182788f8bdec6d107"
+          ],
+          "report_artifact": {
+            "byte_size": 50838,
+            "sha256": "6ded3ff298156052ae6039f51e6489880472ff083e70702c7f247a88b4fe4d26"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": []
+        }
+      ],
+      "branch_effective_configs": {
+        "DATA": {
+          "branch_timeout_seconds": 120.0,
+          "context_mode": "structured",
+          "expand_k": 2,
+          "generation_tokens": 333,
+          "max_model_calls": 3,
+          "max_tool_calls": 4,
+          "multi_agent_enabled": true,
+          "no_progress_limit": 2,
+          "prompt_characters": 24000,
+          "repeated_action_limit": 2,
+          "retrieval_method": "hybrid",
+          "retrieve_k": 6,
+          "tool_timeout_retries": 1,
+          "total_generation_tokens": 1000,
+          "total_prompt_characters": 16000,
+          "version": "fixed-investigation/0.1",
+          "wall_seconds": 900
+        },
+        "DOCUMENT": {
+          "branch_timeout_seconds": 120.0,
+          "context_mode": "structured",
+          "expand_k": 2,
+          "generation_tokens": 375,
+          "max_model_calls": 4,
+          "max_tool_calls": 5,
+          "multi_agent_enabled": true,
+          "no_progress_limit": 2,
+          "prompt_characters": 24000,
+          "repeated_action_limit": 2,
+          "retrieval_method": "hybrid",
+          "retrieve_k": 6,
+          "tool_timeout_retries": 1,
+          "total_generation_tokens": 1500,
+          "total_prompt_characters": 48000,
+          "version": "fixed-investigation/0.1",
+          "wall_seconds": 900
+        }
+      },
+      "branch_timing": {
+        "data": {
+          "elapsed_ms": 9357.141899999988,
+          "finished_ms": 9409.529399999883,
+          "started_ms": 52.38820000522537,
+          "thread_id": 30120
+        },
+        "document": {
+          "elapsed_ms": 26021.489700004167,
+          "finished_ms": 26074.21980000072,
+          "started_ms": 52.73080000188202,
+          "thread_id": 17356
+        }
+      },
+      "conflicts": [],
+      "tool_batches": null,
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/TEAM-3bff734c78014219ae653a3024ed22ec",
+        "report_artifact": {
+          "sha256": "c31f64c9272aedd2af1b85b5a91d6e4e089808c67f4c7d8a50261463bf5aa1dd",
+          "byte_size": 50058
+        }
+      },
+      "report_content_sha256": "7fd3b94dd2be89e75ae63090a8a430c1593c3d2e06276a8ad7df14237b4c8f4c",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-PRIUS-JOINT-MULTI-AGENT.json",
+      "branch_terminations": {
+        "DATA": "agent_finished",
+        "DOCUMENT": "prompt_budget_exhausted"
+      }
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "fixed",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 1,
+      "tool_calls": 5,
+      "elapsed_ms": 31743.747500004247,
+      "resources": {
+        "completion_tokens_reserved_or_used": 40,
+        "elapsed_ms": 31743.745900006616,
+        "model_calls": 1,
+        "prompt_characters": 16254,
+        "provider_usage_totals": {
+          "completion_tokens": 40,
+          "prompt_tokens": 0,
+          "total_tokens": 40
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": {},
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": null,
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/INV-2657405b9a1a46799fa211a4cad53402",
+        "report_artifact": {
+          "sha256": "117309f75f8e69ec42d4095e33792fd4ddec41ab3273be86cf8e6ab9cc595a45",
+          "byte_size": 172797
+        }
+      },
+      "report_content_sha256": "a45f745806a5270f040d0ffc4aa35dfc880f8c306a380d1e2841464502334bda",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-DOOR-PAIR-FIXED.json",
+      "branch_terminations": {}
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "single_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 4,
+      "tool_calls": 5,
+      "elapsed_ms": 47342.9679999972,
+      "resources": {
+        "completion_tokens_reserved_or_used": 160,
+        "elapsed_ms": 47342.96660000109,
+        "model_calls": 4,
+        "prompt_characters": 65139,
+        "provider_usage_totals": {
+          "completion_tokens": 160,
+          "prompt_tokens": 0,
+          "total_tokens": 160
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": {},
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [],
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/AGENT-6fe6e5b46da7474b8baa255c35bfc669",
+        "report_artifact": {
+          "sha256": "6f38fb5231c7ad1549b71f8067010f95f0a3285c285f09d501a95393ac35f5ef",
+          "byte_size": 182700
+        }
+      },
+      "report_content_sha256": "1b7643205def1c33769ea522efd2a4dbd0f90d738b642b6043e8ddc3c4c2222c",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-DOOR-PAIR-SINGLE-AGENT.json",
+      "branch_terminations": {}
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "parallel_tools",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 3,
+      "tool_calls": 5,
+      "elapsed_ms": 41400.62939999916,
+      "resources": {
+        "completion_tokens_reserved_or_used": 120,
+        "elapsed_ms": 41400.628200004576,
+        "model_calls": 3,
+        "prompt_characters": 51064,
+        "provider_usage_totals": {
+          "completion_tokens": 120,
+          "prompt_tokens": 0,
+          "total_tokens": 120
+        },
+        "usage_complete": true,
+        "wall_limit_is_checked_between_operations": true
+      },
+      "delegation_policy": null,
+      "branch_results": null,
+      "branch_effective_configs": {},
+      "branch_timing": null,
+      "conflicts": null,
+      "tool_batches": [
+        {
+          "elapsed_ms": 9509.822500003793,
+          "shared_planner_context": true,
+          "steps": [
+            {
+              "action": "search",
+              "document_id": null,
+              "include_related": null,
+              "query": "door handle cover side impact cable water freeze latch"
+            },
+            {
+              "action": "links",
+              "document_id": null,
+              "include_related": null,
+              "query": null
+            }
+          ],
+          "turn": 1
+        }
+      ],
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/AGENT-33711344b8844460980d36cd18350350",
+        "report_artifact": {
+          "sha256": "12264aa857128d4c4d60705f468327806d377a8513ea654d6341b496dfc06c52",
+          "byte_size": 181257
+        }
+      },
+      "report_content_sha256": "b9264d54e5bc2791eaf8c7edd0982d61177eda202f6f3e1bfaf8c26cff5fe33f",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-DOOR-PAIR-PARALLEL-TOOLS.json",
+      "branch_terminations": {}
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "method": "multi_agent",
+      "task_state": "COMPLETED",
+      "execution_status": "completed",
+      "disposition": "insufficient_evidence",
+      "model_calls": 5,
+      "tool_calls": 5,
+      "elapsed_ms": 40205.886899995676,
+      "resources": {
+        "accounting": "logical_run_including_recorded_replay_real_new_requests_live_in_dispatch_ledger",
+        "actual_provider_usage": null,
+        "completion_tokens_reserved_or_used": 200,
+        "elapsed_ms": 40205.83510000142,
+        "estimated_cost": null,
+        "model_calls": 5,
+        "prompt_characters": 73136,
+        "tool_calls": 5
+      },
+      "delegation_policy": {
+        "delegate": true,
+        "features": {
+          "intent": "relationship",
+          "model_limit": 8,
+          "pinned_pairs": 1,
+          "source_count": 2,
+          "tool_limit": 10
+        },
+        "labels_or_past_scores_used": false,
+        "reason": "cross_source_or_pinned_relation",
+        "version": "delegation-trigger/0.1"
+      },
+      "branch_results": [
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DATA",
+          "disposition": "insufficient_evidence",
+          "error_code": "prompt_budget_exhausted",
+          "evidence_ids": [
+            "e72d907ee1e8e80576fe0a152bffb2e4cfa56eb3ee5ed59c2cc50cee1a5ee4cf",
+            "58b6032def40187d3f806e60b27bb7e60dc7dc949cf0fcc0fb7109934e08d852"
+          ],
+          "report_artifact": {
+            "byte_size": 134658,
+            "sha256": "7f0064775d857a86703ef0cf62664716505c2c00ce623e2405ee74889e56fa61"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": []
+        },
+        {
+          "assessment_status_is_not_semantic_verdict": true,
+          "assessments": [],
+          "counterevidence_ids": [],
+          "delegation_id": "DOCUMENT",
+          "disposition": "insufficient_evidence",
+          "error_code": "prompt_budget_exhausted",
+          "evidence_ids": [
+            "e72d907ee1e8e80576fe0a152bffb2e4cfa56eb3ee5ed59c2cc50cee1a5ee4cf",
+            "43a0bdbb06e87348d96dada2e264c6e50703343182f8ea51f377071c31392605",
+            "f4fd735d14cd9a2473e48c33807e0005e51b5c5152c9fe9d06ae2a01a493be1e",
+            "d4e5b9d534ed03549af3f613e2a94f68fefffc3d125cf60fdd3356d8e7fabd8c",
+            "96ea9bb890459e87c6ac4046c3629c8b52ed8f64b2e546598204734980a156a4",
+            "fc72ee658d6fc51c0e29ef3b4fd4f3ca7db68c059a43a1558adf3dedf0fa316c",
+            "2e97c9939fff3a92b5df73886a9716229e8118477760f535789fb4db4dec52ca",
+            "3c933ae97c09646aa7369a1c5e01d1621c079d00ad04e7b3ef7727176b5c1751",
+            "64887e0ce9776d13113823b58238e97ef6b9418c228b5a0346b21f455ea9e990",
+            "c011124479534b907485ca88301f18a9a473d2e883c60b7762815c54794fa43a",
+            "ed4cf721848c9011786359ca40d44a1c070dae90f22ab56f647355557690896f"
+          ],
+          "report_artifact": {
+            "byte_size": 60162,
+            "sha256": "1a048e8bf740c98222d4d0a2ff18858cd8f284293affaf912256f4d5a85fb175"
+          },
+          "schema_version": "delegated-result/0.1",
+          "status": "completed",
+          "unresolved_fields": []
+        }
+      ],
+      "branch_effective_configs": {
+        "DATA": {
+          "branch_timeout_seconds": 120.0,
+          "context_mode": "structured",
+          "expand_k": 2,
+          "generation_tokens": 333,
+          "max_model_calls": 3,
+          "max_tool_calls": 4,
+          "multi_agent_enabled": true,
+          "no_progress_limit": 2,
+          "prompt_characters": 24000,
+          "repeated_action_limit": 2,
+          "retrieval_method": "hybrid",
+          "retrieve_k": 6,
+          "tool_timeout_retries": 1,
+          "total_generation_tokens": 1000,
+          "total_prompt_characters": 16000,
+          "version": "fixed-investigation/0.1",
+          "wall_seconds": 900
+        },
+        "DOCUMENT": {
+          "branch_timeout_seconds": 120.0,
+          "context_mode": "structured",
+          "expand_k": 2,
+          "generation_tokens": 375,
+          "max_model_calls": 4,
+          "max_tool_calls": 5,
+          "multi_agent_enabled": true,
+          "no_progress_limit": 2,
+          "prompt_characters": 24000,
+          "repeated_action_limit": 2,
+          "retrieval_method": "hybrid",
+          "retrieve_k": 6,
+          "tool_timeout_retries": 1,
+          "total_generation_tokens": 1500,
+          "total_prompt_characters": 48000,
+          "version": "fixed-investigation/0.1",
+          "wall_seconds": 900
+        }
+      },
+      "branch_timing": {
+        "data": {
+          "elapsed_ms": 24022.77000000322,
+          "finished_ms": 24076.39649999328,
+          "started_ms": 53.626999993866775,
+          "thread_id": 29208
+        },
+        "document": {
+          "elapsed_ms": 34776.866000000155,
+          "finished_ms": 34830.809299994144,
+          "started_ms": 53.943799997796305,
+          "thread_id": 32668
+        }
+      },
+      "conflicts": [],
+      "tool_batches": null,
+      "published_report": {
+        "artifact_root": ".local/P1-12/runs/private-runs/TEAM-36d4db773121481db3e56ee3a56d4654",
+        "report_artifact": {
+          "sha256": "b4f39c0d56b5163da03e207265c65babdbb0153a3dc4d5933544134e18de7a1f",
+          "byte_size": 178542
+        }
+      },
+      "report_content_sha256": "528ca09ddbe03df65e5722c0b5f5379720cd14ad461a257d50f824283bf80756",
+      "report_path": ".local/P1-12/rounds/20261027T112249Z-33be4ef1/reports/DEV-DOOR-PAIR-MULTI-AGENT.json",
+      "branch_terminations": {
+        "DATA": "prompt_budget_exhausted",
+        "DOCUMENT": "prompt_budget_exhausted"
+      }
+    }
+  ],
+  "durable_calls": 63,
+  "legacy_model_responses_replayed": 8,
+  "legacy_outcomes_match": true,
+  "new_api_requests": 0,
+  "new_source_requests": 0,
+  "actual_new_provider_usage": null,
+  "estimated_cost": null,
+  "independent_human_reviews": 0,
+  "formal_semantic_metrics": null,
+  "P1_09_request_ledger_unchanged": true,
+  "temporary_postgres_stopped": true,
+  "temporary_http_stopped": true,
+  "experiment_schemas_removed": true,
+  "record_content_sha256": {
+    "offline": "05eac7a1c3ba35ad760d82cc0f13216d2428c33440715bef66f355db512c7364",
+    "database": "4789a9882bd3385064ce4c1a1a15dad95ddf436f2e1518f51817b01d8c2c5014",
+    "request_ledger": "43871e9d45b66127432601660c6f9bfd0367e1bb12a34c758292eae57e07ce1a",
+    "development_comparison": "c9f4055b1c7a144d0199d16379f4585aa47ce6c4fc16dfe103859b3622ac153e",
+    "diagnostic": "07cdeb52826652146364d1aaf1592531543b741a9728b220a74caa36ad642cb8"
+  },
+  "limits": [
+    "Scripted generation and synthetic usage are not real model quality or provider cost measurements.",
+    "Previously seen two-case development execution is not an unseen test or repeated latency study.",
+    "The fixed method remains the default; no quality or speed superiority is established.",
+    "Current conflicts conservatively remain unresolved after source replay, pending semantic review.",
+    "Role quotas partition one root envelope and do not borrow unused sibling capacity.",
+    "Local Qdrant clients serialize directory access; no multi-process backend throughput claim.",
+    "In-flight threads/provider requests cannot be forcibly stopped; late results cannot publish.",
+    "Lane recovery tests inject a crash in-process; the earlier P1-11 real process experiment is separate."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+  "original_experiment_id": "04977b4c562ad6b533b2fefe89098c1c3515d3542ac4216a8f7b6e260e7099ef",
+  "original_and_new_generation_freezes_verified": true,
+  "new_wrapper_hashes_verified": true,
+  "protocol_and_references_verified": 35,
+  "report_path": "docs/verification/2026-10-29-P1-16-confirmation-v1.json",
+  "report_sha256": "49c51209925fb812cdfa423e9616fc5231dbc81b2492c2bc1a0ee96c054da50f",
+  "review_snapshot_sha256": "0d14152b6899cba8f36ebd18791dfacc33caf9c31b11978e977ceae5ed5b3923",
+  "human_bundle_sha256": "47da2dc4d6f12340e645932ca706a4c252f94b9fa7ddaaa7cde8df9324c99bf2",
+  "predeclared_human_units_navigable": 80,
+  "actual_human_component_reviews": 1,
+  "pending_predeclared_human_units": 79,
+  "new_provider_calls_by_verification": 0,
+  "new_tool_mypy_files": 19,
+  "new_tool_mypy_passed": true,
+  "offline_checks": "docs/verification/2026-10-29-P1-16-quality-offline-v1.json",
+  "acceptance_status": "not_passed",
+  "all_semantic_measurements_complete": false
+}

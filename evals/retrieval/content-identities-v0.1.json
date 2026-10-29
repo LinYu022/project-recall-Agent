@@ -1,0 +1,19 @@
+{
+  "schema_version": "retrieval-content-identities/0.1",
+  "canonicalization": "UTF-8 JSON; ensure_ascii=false; sort_keys=true; separators comma/colon; allow_nan=false",
+  "note": "Measured reports preserve actual run-file byte hashes. Git LF normalization changes byte hashes but not JSON values; canonical content hashes identify labels and protocol across platforms.",
+  "items": {
+    "labels": {
+      "path": "evals/retrieval/development-v0.1.json",
+      "run_file_sha256": "f260d4964a87dc1d302075960fd1c6ce59251070196f149011e4193200533e19",
+      "git_lf_file_sha256": "1bf710d35029c12d1ff59759d94bc55cc8f8d7ffd791f6b3c0d2187119221629",
+      "canonical_content_sha256": "c29d9944882330dbef0dc656e3e705d51576498c9a60edb15de7462c8c6d171a"
+    },
+    "protocol": {
+      "path": "evals/retrieval/protocol-v0.1.json",
+      "run_file_sha256": "81ebf9300050c26acb0dbfa95a431300996fcb0ca906572cca87f113f90481c6",
+      "git_lf_file_sha256": "e9c7ec1a725c54b9e15121bb08291c23548ef05ea00c2a7029490f468826b78f",
+      "canonical_content_sha256": "6b6c667a84e94a3cad2c676c2bf8e2b724931d85b8c417eb0660b6b04d75eafc"
+    }
+  }
+}

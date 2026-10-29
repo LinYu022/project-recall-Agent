@@ -1,0 +1,36 @@
+services:
+  database:
+    image: ${RECALL_POSTGRES_IMAGE:-postgres:18.6}
+    environment:
+      POSTGRES_USER: recall
+      POSTGRES_DB: recall
+      POSTGRES_PASSWORD: ${RECALL_DB_PASSWORD:?Set a local RECALL_DB_PASSWORD}
+    volumes:
+      - product-db:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U recall -d recall"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  product:
+    build:
+      context: .
+      args:
+        NODE_IMAGE: ${RECALL_NODE_IMAGE:-node:22.22.0-bookworm-slim}
+        PYTHON_IMAGE: ${RECALL_PYTHON_IMAGE:-python:3.12.14-slim-bookworm}
+    command: [".venv/bin/python", "-m", "portal", "--host", "0.0.0.0", "--profile", "${RECALL_PRODUCT_PROFILE:-synthetic-demo}"]
+    ports: ["127.0.0.1:8017:8017"]
+    environment:
+      RECALL_DATABASE_URL: postgresql+psycopg://recall:${RECALL_DB_PASSWORD}@database:5432/recall
+      RECALL_CONTROL_TOKEN_OWNERS: ${RECALL_CONTROL_TOKEN_OWNERS:?Set local access credentials as a JSON object}
+      RECALL_PRODUCT_SCHEMA: recall_product
+    volumes:
+      - product-artifacts:/workspace/.local
+    depends_on:
+      database:
+        condition: service_healthy
+    init: true
+    stop_grace_period: 45s
+volumes:
+  product-db:
+  product-artifacts:

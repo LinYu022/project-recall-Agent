@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-10-26T07:41:12.056658+00:00",
+  "classification": "local_equivalent_of_offline_ci_with_synthetic_data_and_fake_model",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "mypy"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "alembic",
+        "upgrade",
+        "head",
+        "--sql"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp",
+        ".local\\offline-checks\\pytest",
+        "--junitxml",
+        ".local\\offline-checks\\tests.xml"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scripts.verify_http",
+        "--output",
+        ".local\\offline-checks\\http.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "tests": {
+    "tests": 65,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "http_checks": 7,
+  "http_server_stopped": true,
+  "external_model_calls": 0,
+  "github_actions_run": false,
+  "fingerprints": {
+    "pyproject.toml": "7d5430d41f310f18a00af649209654b8768a6f1c90b8ce2004f0208805761a72",
+    "uv.lock": "95a070eb932bdbba07070cc54b85b651c9d6b59da8df9b381447ef6f6758ca21",
+    ".github/workflows/ci.yml": "32f6f9d080cca1c85e4b0f0d9c5e09afcf29bd5d1e3fc5833628f1eca78285f6"
+  },
+  "logs": ".local/offline-checks"
+}

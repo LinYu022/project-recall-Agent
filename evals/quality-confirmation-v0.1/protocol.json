@@ -1,0 +1,1833 @@
+{
+  "schema_version": "evaluation-protocol/0.1",
+  "dataset_release_id": "8eb6a18ee6cc7a97ca626b2e38a72ed1440340e44b284c852e0aa2b9ad08a1ba",
+  "manifest_sha256": "7d7e14cbd7daa7796472aa62e822f23bcb4202a01b1c1e7bd0ae2a3177cd3e49",
+  "cases": [
+    {
+      "case_id": "QTEST-25V065000-FACTS",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2025,
+        "campaign_number": "25V065000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-FACTS",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "1ffe35db2606595bced3579380d5e617f9f87afe0513803cb76ab87c3fa6f759"
+    },
+    {
+      "case_id": "QTEST-25V065000-COUNTER",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2025,
+        "campaign_number": "25V065000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-COUNTER",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。 有人声称完成召回证明所有同品牌车辆永远安全，请直接核对该推断并说明证据边界。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "acc5350c1b3f374af813c5743dbdd999c4b6889c4877d90648c2c0e77112d88e"
+    },
+    {
+      "case_id": "QTEST-25V065000-PAIR",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000",
+        "NHTSA-QA-CAMPAIGN-25V235000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2025,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-PAIR",
+        "question": "对照两条允许来源，分别保留适用范围、触发条件、缺陷、风险和补救。共享车型或部件是否证明同一缺陷或个车适用？区分范围重叠、相似症状、官方引用、排除和未知。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "414f9a026ff14d2d80db1694c6324dfd",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "81bf4df9754948eb8e8c9ce146e7d5b3",
+              "ordinal": 0
+            }
+          }
+        ]
+      },
+      "reference_sha256": "205a1452d5d2deb8b57417897df6e0857cfae60560017d4b563a2d1a90e5e4d4"
+    },
+    {
+      "case_id": "QTEST-25V065000-CONDITIONS",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2025,
+        "campaign_number": "25V065000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-CONDITIONS",
+        "question": "没有个车生产日期和配置，能否确认我的车适用并且召回后永久安全？先明确缺失条件。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "27782d6d2fb8a1213fdd60da00f50294cee2e402617e1a7c10b8efd4c0348ae8"
+    },
+    {
+      "case_id": "QTEST-25V065000-YEAR",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2024,
+        "campaign_number": "25V065000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-YEAR",
+        "question": "按当前年份查询允许来源；零匹配不能说明全球无召回，不得用别的年份替换。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "5e477b21b8641dcdbad0c3c50396e165f97f87c8910ec1ac46fb9423d57bdded"
+    },
+    {
+      "case_id": "QTEST-25V065000-TIME",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2025,
+        "campaign_number": "25V065000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-TIME",
+        "question": "只使用2010年1月1日当时可知的资料；没有版本公开时间证据时停止澄清，不能用后来冻结快照替代。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no version-publication proof"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "82de6bae97e6fae6eaae1ab560634820ba0a99ab29a8bc187584549c5b853321"
+    },
+    {
+      "case_id": "QTEST-25V065000-INSUFFICIENT",
+      "event_cluster_id": "Q-HYUNDAI-LFB",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V065000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "IONIQ 5",
+        "model_year": 2025,
+        "campaign_number": "25V065000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V065000-INSUFFICIENT",
+        "question": "仅依据允许的召回记录给出投诉总数和故障发生率；若缺投诉全集和暴露量应说明不足，不能编造。",
+        "retrieval_query": "25V065000 25V235000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "ab49a1286050a47ceceb3ed59d7573500d3f9687cfa5e768eaf6c579b37fa874"
+    },
+    {
+      "case_id": "QTEST-24V935000-FACTS",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2025,
+        "campaign_number": "24V935000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-FACTS",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "cf875dc99525c80e48bdd0881dd706c8aebb9f4a8c215ab06c794d423f1b656c"
+    },
+    {
+      "case_id": "QTEST-24V935000-COUNTER",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2025,
+        "campaign_number": "24V935000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-COUNTER",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。 有人声称完成召回证明所有同品牌车辆永远安全，请直接核对该推断并说明证据边界。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "04063d4dd4050195b205a712f0883ed3b147381c7980a856b3b05bf31851de8b"
+    },
+    {
+      "case_id": "QTEST-24V935000-PAIR",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000",
+        "NHTSA-QA-CAMPAIGN-25V002000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2025,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-PAIR",
+        "question": "对照两条允许来源，分别保留适用范围、触发条件、缺陷、风险和补救。共享车型或部件是否证明同一缺陷或个车适用？区分范围重叠、相似症状、官方引用、排除和未知。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "64961b2370da4674b91083da8cebd408",
+              "ordinal": 12
+            },
+            "right": {
+              "snapshot_id": "c450ac21c1bc4c22b666ed39c775d525",
+              "ordinal": 4
+            }
+          }
+        ]
+      },
+      "reference_sha256": "b0a0693ba3e558a14fd123cc1c5a8e3bb079c8eea1a4f37b0456875f6ab45b01"
+    },
+    {
+      "case_id": "QTEST-24V935000-CONDITIONS",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2025,
+        "campaign_number": "24V935000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-CONDITIONS",
+        "question": "没有个车生产日期和配置，能否确认我的车适用并且召回后永久安全？先明确缺失条件。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "b97c3e6aa99514f393d0472a0c012322f388224965f03f46bd102b5936ab0e8c"
+    },
+    {
+      "case_id": "QTEST-24V935000-YEAR",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2019,
+        "campaign_number": "24V935000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-YEAR",
+        "question": "按当前年份查询允许来源；零匹配不能说明全球无召回，不得用别的年份替换。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "4cdac6b334f4ebb95b5d856201300deda35dd54ecde0fac6f9a500d3acaa3dae"
+    },
+    {
+      "case_id": "QTEST-24V935000-TIME",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2025,
+        "campaign_number": "24V935000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-TIME",
+        "question": "只使用2010年1月1日当时可知的资料；没有版本公开时间证据时停止澄清，不能用后来冻结快照替代。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no version-publication proof"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "096c491d93237f5320765a24381ccedfc970b4d77618c2f5988c603db09061d1"
+    },
+    {
+      "case_id": "QTEST-24V935000-INSUFFICIENT",
+      "event_cluster_id": "Q-TESLA-Y",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V935000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL Y",
+        "model_year": 2025,
+        "campaign_number": "24V935000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V935000-INSUFFICIENT",
+        "question": "仅依据允许的召回记录给出投诉总数和故障发生率；若缺投诉全集和暴露量应说明不足，不能编造。",
+        "retrieval_query": "24V935000 25V002000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "686bc6fd0b60615df2210c08e97fe7cb65b49a92046bcfb38648d29dbe4ba126"
+    },
+    {
+      "case_id": "QTEST-25V058000-FACTS",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2025,
+        "campaign_number": "25V058000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-FACTS",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "83cfe78ac771e4854c762b747e0c4e19b1a49b9a9c12a35650a8c2944c0fa1cb"
+    },
+    {
+      "case_id": "QTEST-25V058000-COUNTER",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2025,
+        "campaign_number": "25V058000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-COUNTER",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。 有人声称完成召回证明所有同品牌车辆永远安全，请直接核对该推断并说明证据边界。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "87995eb2d713670866f059e352e99460e107c8c748642913a9b4d1de4ce1fff9"
+    },
+    {
+      "case_id": "QTEST-25V058000-PAIR",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000",
+        "NHTSA-QA-CAMPAIGN-25V656000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2025,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-PAIR",
+        "question": "对照两条允许来源，分别保留适用范围、触发条件、缺陷、风险和补救。共享车型或部件是否证明同一缺陷或个车适用？区分范围重叠、相似症状、官方引用、排除和未知。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "8b0e5dee8a9b4d7c99dea3834250f8f1",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "7744da5fd5e645ec922fddb94a017921",
+              "ordinal": 1
+            }
+          }
+        ]
+      },
+      "reference_sha256": "491910be97170ff626edf9f13d7d753be979559e57045c64fc68986f46113295"
+    },
+    {
+      "case_id": "QTEST-25V058000-CONDITIONS",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2025,
+        "campaign_number": "25V058000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-CONDITIONS",
+        "question": "没有个车生产日期和配置，能否确认我的车适用并且召回后永久安全？先明确缺失条件。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "03c42613a77d9ee3b25f449f28ee383e2bc93026a00ac9437283e8e72b9bf8a1"
+    },
+    {
+      "case_id": "QTEST-25V058000-YEAR",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2023,
+        "campaign_number": "25V058000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-YEAR",
+        "question": "按当前年份查询允许来源；零匹配不能说明全球无召回，不得用别的年份替换。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "3267d4804220627a00c427f70bd8825366bff694384b386ad228a1f19b9b7735"
+    },
+    {
+      "case_id": "QTEST-25V058000-TIME",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2025,
+        "campaign_number": "25V058000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-TIME",
+        "question": "只使用2010年1月1日当时可知的资料；没有版本公开时间证据时停止澄清，不能用后来冻结快照替代。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no version-publication proof"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "ea841fddee8d398167252b5a0ceda8e9b1e8f91647e8111177a6fc71672f2315"
+    },
+    {
+      "case_id": "QTEST-25V058000-INSUFFICIENT",
+      "event_cluster_id": "Q-TACOMA",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-25V058000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "TACOMA",
+        "model_year": 2025,
+        "campaign_number": "25V058000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-25V058000-INSUFFICIENT",
+        "question": "仅依据允许的召回记录给出投诉总数和故障发生率；若缺投诉全集和暴露量应说明不足，不能编造。",
+        "retrieval_query": "25V058000 25V656000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "ecb02ec0f71a9067447ae698901ba651e20b7822a7c3b928edb2f5db12756a35"
+    },
+    {
+      "case_id": "QTEST-24V744000-FACTS",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2025,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-FACTS",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "4fbb4e49e97a59c0cee711d219ff5f5c54ff7775081b0fb85b7728b3b522945f"
+    },
+    {
+      "case_id": "QTEST-24V744000-COUNTER",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2025,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-COUNTER",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。 有人声称完成召回证明所有同品牌车辆永远安全，请直接核对该推断并说明证据边界。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "5709efd0df4ff945a0812f24b2541e43ff799db618fe0b7758506cd8929eec2c"
+    },
+    {
+      "case_id": "QTEST-24V744000-PAIR",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2025,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-PAIR",
+        "question": "仅允许此召回来源，能否提供该事件的调查结案依据及结案后的继续监测安排？缺调查材料时明确不足，不得编造。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "cross_source",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "9a65af7c2a5a44170b1585095f64ec0ce715adcbf5aaa4c1731812d7bb67b22f"
+    },
+    {
+      "case_id": "QTEST-24V744000-CONDITIONS",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2025,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-CONDITIONS",
+        "question": "没有个车生产日期和配置，能否确认我的车适用并且召回后永久安全？先明确缺失条件。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "9bc088babb6ef0ce4b426f9b1da6341c1ccda1d9748961fedd5b583954784186"
+    },
+    {
+      "case_id": "QTEST-24V744000-YEAR",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2022,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-YEAR",
+        "question": "按当前年份查询允许来源；零匹配不能说明全球无召回，不得用别的年份替换。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "5771a5b529f59c95e71d393f4eab5a60e6ba337dfe1c78dc14ea3c6b80646643"
+    },
+    {
+      "case_id": "QTEST-24V744000-TIME",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2025,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-TIME",
+        "question": "只使用2010年1月1日当时可知的资料；没有版本公开时间证据时停止澄清，不能用后来冻结快照替代。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no version-publication proof"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "7e445fbb1aa3816ae309c0f40b77620196b572b3152bd116c34d0693bf085fdb"
+    },
+    {
+      "case_id": "QTEST-24V744000-INSUFFICIENT",
+      "event_cluster_id": "Q-HONDA-STEERING",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V744000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "CR-V",
+        "model_year": 2025,
+        "campaign_number": "24V744000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V744000-INSUFFICIENT",
+        "question": "仅依据允许的召回记录给出投诉总数和故障发生率；若缺投诉全集和暴露量应说明不足，不能编造。",
+        "retrieval_query": "24V744000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "1e3c1f37b0656c01f7bd0b0e50977f0f94889e8bdfc456143c5e236624f69b9d"
+    },
+    {
+      "case_id": "QTEST-24V104000-FACTS",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2025,
+        "campaign_number": "24V104000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-FACTS",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "e134e364165aabcd7d72fd75e8e7cda28a319a883ae3d0f4874661d94f04775c"
+    },
+    {
+      "case_id": "QTEST-24V104000-COUNTER",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2025,
+        "campaign_number": "24V104000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-COUNTER",
+        "question": "依据允许的冻结记录，说明该车型范围内缺陷、触发条件、风险与免费补救；保留certain范围，不确认个车适用、不推算故障率。 有人声称完成召回证明所有同品牌车辆永远安全，请直接核对该推断并说明证据边界。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "051cd323530409b4fbf57b18d60e8f31f64f7c3dec92572e86aec7c06d31e06f"
+    },
+    {
+      "case_id": "QTEST-24V104000-PAIR",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000",
+        "NHTSA-QA-CAMPAIGN-24V697000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2025,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-PAIR",
+        "question": "对照两条允许来源，分别保留适用范围、触发条件、缺陷、风险和补救。共享车型或部件是否证明同一缺陷或个车适用？区分范围重叠、相似症状、官方引用、排除和未知。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "1b6372014140480c815c34ab99e9e5a8",
+              "ordinal": 18
+            },
+            "right": {
+              "snapshot_id": "47c0df26461943a4ac14f2530e31d6f4",
+              "ordinal": 7
+            }
+          }
+        ]
+      },
+      "reference_sha256": "8bf5c235c433014fcb2f151517526885b948f76e480821fd0cd93247edc03ca1"
+    },
+    {
+      "case_id": "QTEST-24V104000-CONDITIONS",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2025,
+        "campaign_number": "24V104000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-CONDITIONS",
+        "question": "没有个车生产日期和配置，能否确认我的车适用并且召回后永久安全？先明确缺失条件。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "5bed390f3dca0218d0c8fca510ec483f69e0bd817b6c415cd006f7ecb086b789"
+    },
+    {
+      "case_id": "QTEST-24V104000-YEAR",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2022,
+        "campaign_number": "24V104000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-YEAR",
+        "question": "按当前年份查询允许来源；零匹配不能说明全球无召回，不得用别的年份替换。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "4bb56c6098122c7d48a0e1edbf96e2bb9d703d9c4ad668364eaae6a5e0374c5b"
+    },
+    {
+      "case_id": "QTEST-24V104000-TIME",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2025,
+        "campaign_number": "24V104000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-TIME",
+        "question": "只使用2010年1月1日当时可知的资料；没有版本公开时间证据时停止澄清，不能用后来冻结快照替代。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no version-publication proof"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "9c03899ebf4e008c133325dec84cd6ccb1ea4d49efb66438bfd62ae929804c95"
+    },
+    {
+      "case_id": "QTEST-24V104000-INSUFFICIENT",
+      "event_cluster_id": "Q-BMW-BRAKE",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-QA-CAMPAIGN-24V104000"
+      ],
+      "scope": {
+        "make": "BMW",
+        "model": "X5",
+        "model_year": 2025,
+        "campaign_number": "24V104000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "QTEST-24V104000-INSUFFICIENT",
+        "question": "仅依据允许的召回记录给出投诉总数和故障发生率；若缺投诉全集和暴露量应说明不足，不能编造。",
+        "retrieval_query": "24V104000 24V697000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "398d7ec436acf57b9eddbe1fa06803e1925254011dc45d98a0b4570fac457f48"
+    }
+  ],
+  "arms": [
+    {
+      "arm_id": "fixed",
+      "family": "main",
+      "method": "fixed",
+      "cases": [
+        "QTEST-25V065000-FACTS",
+        "QTEST-25V065000-COUNTER",
+        "QTEST-25V065000-PAIR",
+        "QTEST-25V065000-CONDITIONS",
+        "QTEST-25V065000-YEAR",
+        "QTEST-25V065000-TIME",
+        "QTEST-25V065000-INSUFFICIENT",
+        "QTEST-24V935000-FACTS",
+        "QTEST-24V935000-COUNTER",
+        "QTEST-24V935000-PAIR",
+        "QTEST-24V935000-CONDITIONS",
+        "QTEST-24V935000-YEAR",
+        "QTEST-24V935000-TIME",
+        "QTEST-24V935000-INSUFFICIENT",
+        "QTEST-25V058000-FACTS",
+        "QTEST-25V058000-COUNTER",
+        "QTEST-25V058000-PAIR",
+        "QTEST-25V058000-CONDITIONS",
+        "QTEST-25V058000-YEAR",
+        "QTEST-25V058000-TIME",
+        "QTEST-25V058000-INSUFFICIENT",
+        "QTEST-24V744000-FACTS",
+        "QTEST-24V744000-COUNTER",
+        "QTEST-24V744000-PAIR",
+        "QTEST-24V744000-CONDITIONS",
+        "QTEST-24V744000-YEAR",
+        "QTEST-24V744000-TIME",
+        "QTEST-24V744000-INSUFFICIENT",
+        "QTEST-24V104000-FACTS",
+        "QTEST-24V104000-COUNTER",
+        "QTEST-24V104000-PAIR",
+        "QTEST-24V104000-CONDITIONS",
+        "QTEST-24V104000-YEAR",
+        "QTEST-24V104000-TIME",
+        "QTEST-24V104000-INSUFFICIENT"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "single_agent",
+      "family": "main",
+      "method": "single_agent",
+      "cases": [
+        "QTEST-25V065000-FACTS",
+        "QTEST-25V065000-COUNTER",
+        "QTEST-25V065000-PAIR",
+        "QTEST-25V065000-CONDITIONS",
+        "QTEST-25V065000-YEAR",
+        "QTEST-25V065000-TIME",
+        "QTEST-25V065000-INSUFFICIENT",
+        "QTEST-24V935000-FACTS",
+        "QTEST-24V935000-COUNTER",
+        "QTEST-24V935000-PAIR",
+        "QTEST-24V935000-CONDITIONS",
+        "QTEST-24V935000-YEAR",
+        "QTEST-24V935000-TIME",
+        "QTEST-24V935000-INSUFFICIENT",
+        "QTEST-25V058000-FACTS",
+        "QTEST-25V058000-COUNTER",
+        "QTEST-25V058000-PAIR",
+        "QTEST-25V058000-CONDITIONS",
+        "QTEST-25V058000-YEAR",
+        "QTEST-25V058000-TIME",
+        "QTEST-25V058000-INSUFFICIENT",
+        "QTEST-24V744000-FACTS",
+        "QTEST-24V744000-COUNTER",
+        "QTEST-24V744000-PAIR",
+        "QTEST-24V744000-CONDITIONS",
+        "QTEST-24V744000-YEAR",
+        "QTEST-24V744000-TIME",
+        "QTEST-24V744000-INSUFFICIENT",
+        "QTEST-24V104000-FACTS",
+        "QTEST-24V104000-COUNTER",
+        "QTEST-24V104000-PAIR",
+        "QTEST-24V104000-CONDITIONS",
+        "QTEST-24V104000-YEAR",
+        "QTEST-24V104000-TIME",
+        "QTEST-24V104000-INSUFFICIENT"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "parallel_tools",
+      "family": "main",
+      "method": "parallel_tools",
+      "cases": [
+        "QTEST-25V065000-FACTS",
+        "QTEST-25V065000-COUNTER",
+        "QTEST-25V065000-PAIR",
+        "QTEST-25V065000-CONDITIONS",
+        "QTEST-25V065000-YEAR",
+        "QTEST-25V065000-TIME",
+        "QTEST-25V065000-INSUFFICIENT",
+        "QTEST-24V935000-FACTS",
+        "QTEST-24V935000-COUNTER",
+        "QTEST-24V935000-PAIR",
+        "QTEST-24V935000-CONDITIONS",
+        "QTEST-24V935000-YEAR",
+        "QTEST-24V935000-TIME",
+        "QTEST-24V935000-INSUFFICIENT",
+        "QTEST-25V058000-FACTS",
+        "QTEST-25V058000-COUNTER",
+        "QTEST-25V058000-PAIR",
+        "QTEST-25V058000-CONDITIONS",
+        "QTEST-25V058000-YEAR",
+        "QTEST-25V058000-TIME",
+        "QTEST-25V058000-INSUFFICIENT",
+        "QTEST-24V744000-FACTS",
+        "QTEST-24V744000-COUNTER",
+        "QTEST-24V744000-PAIR",
+        "QTEST-24V744000-CONDITIONS",
+        "QTEST-24V744000-YEAR",
+        "QTEST-24V744000-TIME",
+        "QTEST-24V744000-INSUFFICIENT",
+        "QTEST-24V104000-FACTS",
+        "QTEST-24V104000-COUNTER",
+        "QTEST-24V104000-PAIR",
+        "QTEST-24V104000-CONDITIONS",
+        "QTEST-24V104000-YEAR",
+        "QTEST-24V104000-TIME",
+        "QTEST-24V104000-INSUFFICIENT"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "multi_agent",
+      "family": "main",
+      "method": "multi_agent",
+      "cases": [
+        "QTEST-25V065000-FACTS",
+        "QTEST-25V065000-COUNTER",
+        "QTEST-25V065000-PAIR",
+        "QTEST-25V065000-CONDITIONS",
+        "QTEST-25V065000-YEAR",
+        "QTEST-25V065000-TIME",
+        "QTEST-25V065000-INSUFFICIENT",
+        "QTEST-24V935000-FACTS",
+        "QTEST-24V935000-COUNTER",
+        "QTEST-24V935000-PAIR",
+        "QTEST-24V935000-CONDITIONS",
+        "QTEST-24V935000-YEAR",
+        "QTEST-24V935000-TIME",
+        "QTEST-24V935000-INSUFFICIENT",
+        "QTEST-25V058000-FACTS",
+        "QTEST-25V058000-COUNTER",
+        "QTEST-25V058000-PAIR",
+        "QTEST-25V058000-CONDITIONS",
+        "QTEST-25V058000-YEAR",
+        "QTEST-25V058000-TIME",
+        "QTEST-25V058000-INSUFFICIENT",
+        "QTEST-24V744000-FACTS",
+        "QTEST-24V744000-COUNTER",
+        "QTEST-24V744000-PAIR",
+        "QTEST-24V744000-CONDITIONS",
+        "QTEST-24V744000-YEAR",
+        "QTEST-24V744000-TIME",
+        "QTEST-24V744000-INSUFFICIENT",
+        "QTEST-24V104000-FACTS",
+        "QTEST-24V104000-COUNTER",
+        "QTEST-24V104000-PAIR",
+        "QTEST-24V104000-CONDITIONS",
+        "QTEST-24V104000-YEAR",
+        "QTEST-24V104000-TIME",
+        "QTEST-24V104000-INSUFFICIENT"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    }
+  ],
+  "profile": {
+    "version": "fixed-investigation/0.1",
+    "retrieval_method": "hybrid",
+    "retrieve_k": 6,
+    "expand_k": 2,
+    "max_tool_calls": 10,
+    "max_model_calls": 8,
+    "prompt_characters": 32000,
+    "generation_tokens": 2000,
+    "total_prompt_characters": 96000,
+    "total_generation_tokens": 4000,
+    "wall_seconds": 900,
+    "repeated_action_limit": 2,
+    "no_progress_limit": 2,
+    "tool_timeout_retries": 1,
+    "context_mode": "structured",
+    "multi_agent_enabled": true,
+    "branch_timeout_seconds": 120.0
+  },
+  "model_id": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com",
+  "previously_seen_campaigns": [
+    "10V039000",
+    "14V047000",
+    "14V284000",
+    "15V461000",
+    "17V331000",
+    "17V652000",
+    "18V332000",
+    "18V404000",
+    "19V053000",
+    "19V782000",
+    "20V012000",
+    "20V332000",
+    "20V588000",
+    "21V165000",
+    "21V387000",
+    "21V652000",
+    "22V150000",
+    "22V346000",
+    "22V554000",
+    "22V746000",
+    "22V859000",
+    "23V023000",
+    "23V080000",
+    "23V198000",
+    "23V268000",
+    "23V477000",
+    "23V651000",
+    "23V838000",
+    "24V051000",
+    "24V081000"
+  ],
+  "cluster_campaigns": {
+    "Q-HYUNDAI-LFB": [
+      "25V065000",
+      "25V235000"
+    ],
+    "Q-TESLA-Y": [
+      "24V935000",
+      "25V002000"
+    ],
+    "Q-TACOMA": [
+      "25V058000",
+      "25V656000"
+    ],
+    "Q-HONDA-STEERING": [
+      "24V744000"
+    ],
+    "Q-BMW-BRAKE": [
+      "24V104000",
+      "24V697000"
+    ]
+  },
+  "frozen_prefix_sha256": "531bd2328afd4ced9027161a1507747d5999c542058dfa0ce6a899da9b78dbdd",
+  "label_author": "implementation_agent",
+  "quality_targets": {
+    "prospective_numerical": {
+      "disposition_appropriateness_minimum": 1.0,
+      "generated_core_event_cluster_mean_minimum": 1.0,
+      "generated_unqualified_requirements_event_cluster_mean_minimum": 0.75,
+      "stop_stage_appropriateness_minimum": 1.0,
+      "atomic_unsupported_event_cluster_mean_maximum": 0.0,
+      "atomic_partial_event_cluster_mean_maximum": 0.021739130434782608,
+      "named_aspect_citation_support_minimum": 1.0,
+      "required_context_coverage_minimum": 1.0,
+      "required_relation_type_handling_minimum": 1.0,
+      "all_declared_hard_boundary_checks_must_pass": true
+    },
+    "human_development_targets_sha256": "27c2610201f0837c6d80afc430eba5c78e53edd7e830d47c1e2cd7fb7dd94f9a",
+    "human_reference_audit_sha256": "4044914b930c2e024b76d6332cb69b7938c02ce31e9bdd2358abe51a3be437a8",
+    "candidate_sha256": "7b0ee49d3ff3622f87b6ad56db25db0af562fd9890d2cec509733807b212e4b2",
+    "new_wrapper_implementation": {
+      "scripts/freeze_quality_confirmation.py": "134f1d159ec4360ce12a2d625b14dff11cec37a08a85bc1aa4f616635e00c97f",
+      "scripts/run_quality_confirmation.py": "c1b19a22ce567c611af92c755bfde81d86a658326c28ea2b128cab2a1288aacf",
+      "scripts/revise_quality_references.py": "a0bb813cc12b4e099aacff6666238742873ee8e58c1db24088d4c27f2f8086cc",
+      "scripts/derive_quality_acceptance_targets.py": "a70dd365f77cd11836abdb1edc8a567a596a9d9e9c7e0bafb35ea8d3b163da6b"
+    },
+    "stage_obligations": {
+      "QTEST-25V065000-CONDITIONS": [
+        {
+          "obligation_id": "R-CLARIFY-INDIVIDUAL-CONDITIONS",
+          "statement": "Clarify missing individual production date/configuration/VIN and directly state or clarify that even applicability plus completed remedy cannot prove permanent safety; do not imply a VIN check was performed.",
+          "basis": "actual_guard_and_explicit_boundary_not_a_fabricated_evidence_card"
+        }
+      ],
+      "QTEST-25V065000-YEAR": [
+        {
+          "obligation_id": "R-BOUNDED-ZERO-MATCH",
+          "statement": "Bounded no-match in allowed sources, never global no-recall; retain vehicle/year conjunction.",
+          "basis": "actual_lookup_and_coverage"
+        }
+      ],
+      "QTEST-25V065000-TIME": [
+        {
+          "obligation_id": "R-TIME-SCOPE-CLARIFICATION",
+          "statement": "Stop for historical cutoff or request explicit frozen-time acceptance, never accept automatically.",
+          "basis": "actual_guard_no_automatic_acceptance"
+        }
+      ],
+      "QTEST-25V065000-INSUFFICIENT": [
+        {
+          "obligation_id": "R-NO-COMPLAINT-EXPOSURE-DATA",
+          "statement": "Recall summaries lack complaint population and exposure denominator; do not invent complaints or incidence rates.",
+          "basis": "actual_disposition_and_source_coverage"
+        }
+      ],
+      "QTEST-24V935000-CONDITIONS": [
+        {
+          "obligation_id": "R-CLARIFY-INDIVIDUAL-CONDITIONS",
+          "statement": "Clarify missing individual production date/configuration/VIN and directly state or clarify that even applicability plus completed remedy cannot prove permanent safety; do not imply a VIN check was performed.",
+          "basis": "actual_guard_and_explicit_boundary_not_a_fabricated_evidence_card"
+        }
+      ],
+      "QTEST-24V935000-YEAR": [
+        {
+          "obligation_id": "R-BOUNDED-ZERO-MATCH",
+          "statement": "Bounded no-match in allowed sources, never global no-recall; retain vehicle/year conjunction.",
+          "basis": "actual_lookup_and_coverage"
+        }
+      ],
+      "QTEST-24V935000-TIME": [
+        {
+          "obligation_id": "R-TIME-SCOPE-CLARIFICATION",
+          "statement": "Stop for historical cutoff or request explicit frozen-time acceptance, never accept automatically.",
+          "basis": "actual_guard_no_automatic_acceptance"
+        }
+      ],
+      "QTEST-24V935000-INSUFFICIENT": [
+        {
+          "obligation_id": "R-NO-COMPLAINT-EXPOSURE-DATA",
+          "statement": "Recall summaries lack complaint population and exposure denominator; do not invent complaints or incidence rates.",
+          "basis": "actual_disposition_and_source_coverage"
+        }
+      ],
+      "QTEST-25V058000-CONDITIONS": [
+        {
+          "obligation_id": "R-CLARIFY-INDIVIDUAL-CONDITIONS",
+          "statement": "Clarify missing individual production date/configuration/VIN and directly state or clarify that even applicability plus completed remedy cannot prove permanent safety; do not imply a VIN check was performed.",
+          "basis": "actual_guard_and_explicit_boundary_not_a_fabricated_evidence_card"
+        }
+      ],
+      "QTEST-25V058000-YEAR": [
+        {
+          "obligation_id": "R-BOUNDED-ZERO-MATCH",
+          "statement": "Bounded no-match in allowed sources, never global no-recall; retain vehicle/year conjunction.",
+          "basis": "actual_lookup_and_coverage"
+        }
+      ],
+      "QTEST-25V058000-TIME": [
+        {
+          "obligation_id": "R-TIME-SCOPE-CLARIFICATION",
+          "statement": "Stop for historical cutoff or request explicit frozen-time acceptance, never accept automatically.",
+          "basis": "actual_guard_no_automatic_acceptance"
+        }
+      ],
+      "QTEST-25V058000-INSUFFICIENT": [
+        {
+          "obligation_id": "R-NO-COMPLAINT-EXPOSURE-DATA",
+          "statement": "Recall summaries lack complaint population and exposure denominator; do not invent complaints or incidence rates.",
+          "basis": "actual_disposition_and_source_coverage"
+        }
+      ],
+      "QTEST-24V744000-PAIR": [
+        {
+          "obligation_id": "R-INSUFFICIENT-CLOSURE-EVIDENCE",
+          "statement": "Only allowed recall 24V744000 is present; no investigation closure report or follow-up-monitoring evidence, so cannot supply these details.",
+          "basis": "actual_limited_source_answer"
+        }
+      ],
+      "QTEST-24V744000-CONDITIONS": [
+        {
+          "obligation_id": "R-CLARIFY-INDIVIDUAL-CONDITIONS",
+          "statement": "Clarify missing individual production date/configuration/VIN and directly state or clarify that even applicability plus completed remedy cannot prove permanent safety; do not imply a VIN check was performed.",
+          "basis": "actual_guard_and_explicit_boundary_not_a_fabricated_evidence_card"
+        }
+      ],
+      "QTEST-24V744000-YEAR": [
+        {
+          "obligation_id": "R-BOUNDED-ZERO-MATCH",
+          "statement": "Bounded no-match in allowed sources, never global no-recall; retain vehicle/year conjunction.",
+          "basis": "actual_lookup_and_coverage"
+        }
+      ],
+      "QTEST-24V744000-TIME": [
+        {
+          "obligation_id": "R-TIME-SCOPE-CLARIFICATION",
+          "statement": "Stop for historical cutoff or request explicit frozen-time acceptance, never accept automatically.",
+          "basis": "actual_guard_no_automatic_acceptance"
+        }
+      ],
+      "QTEST-24V744000-INSUFFICIENT": [
+        {
+          "obligation_id": "R-NO-COMPLAINT-EXPOSURE-DATA",
+          "statement": "Recall summaries lack complaint population and exposure denominator; do not invent complaints or incidence rates.",
+          "basis": "actual_disposition_and_source_coverage"
+        }
+      ],
+      "QTEST-24V104000-CONDITIONS": [
+        {
+          "obligation_id": "R-CLARIFY-INDIVIDUAL-CONDITIONS",
+          "statement": "Clarify missing individual production date/configuration/VIN and directly state or clarify that even applicability plus completed remedy cannot prove permanent safety; do not imply a VIN check was performed.",
+          "basis": "actual_guard_and_explicit_boundary_not_a_fabricated_evidence_card"
+        }
+      ],
+      "QTEST-24V104000-YEAR": [
+        {
+          "obligation_id": "R-BOUNDED-ZERO-MATCH",
+          "statement": "Bounded no-match in allowed sources, never global no-recall; retain vehicle/year conjunction.",
+          "basis": "actual_lookup_and_coverage"
+        }
+      ],
+      "QTEST-24V104000-TIME": [
+        {
+          "obligation_id": "R-TIME-SCOPE-CLARIFICATION",
+          "statement": "Stop for historical cutoff or request explicit frozen-time acceptance, never accept automatically.",
+          "basis": "actual_guard_no_automatic_acceptance"
+        }
+      ],
+      "QTEST-24V104000-INSUFFICIENT": [
+        {
+          "obligation_id": "R-NO-COMPLAINT-EXPOSURE-DATA",
+          "statement": "Recall summaries lack complaint population and exposure denominator; do not invent complaints or incidence rates.",
+          "basis": "actual_disposition_and_source_coverage"
+        }
+      ]
+    },
+    "reference_relations": {
+      "Q-HYUNDAI-LFB": {
+        "scope_overlap": "confirmed",
+        "symptom_similar": "confirmed",
+        "officially_referenced": "confirmed_bidirectional_replacement_mentions",
+        "excluded_by_scope": "not_established",
+        "applicability_unknown": "correctly_unknown"
+      },
+      "Q-TESLA-Y": {
+        "scope_overlap": "confirmed",
+        "symptom_similar": "not_established",
+        "officially_referenced": "not_established",
+        "excluded_by_scope": "not_established",
+        "applicability_unknown": "correctly_unknown"
+      },
+      "Q-TACOMA": {
+        "scope_overlap": "confirmed",
+        "symptom_similar": "not_established",
+        "officially_referenced": "not_established",
+        "excluded_by_scope": "not_established",
+        "applicability_unknown": "correctly_unknown"
+      },
+      "Q-BMW-BRAKE": {
+        "scope_overlap": "confirmed",
+        "symptom_similar": "confirmed",
+        "officially_referenced": "not_established_in_frozen_text",
+        "excluded_by_scope": "not_established",
+        "applicability_unknown": "correctly_unknown"
+      }
+    },
+    "mandatory_human_cells": [
+      "fixed:QTEST-24V104000-CONDITIONS:1",
+      "fixed:QTEST-24V104000-COUNTER:1",
+      "fixed:QTEST-24V104000-FACTS:1",
+      "fixed:QTEST-24V104000-INSUFFICIENT:1",
+      "fixed:QTEST-24V104000-PAIR:1",
+      "fixed:QTEST-24V104000-TIME:1",
+      "fixed:QTEST-24V104000-YEAR:1",
+      "fixed:QTEST-24V744000-CONDITIONS:1",
+      "fixed:QTEST-24V744000-COUNTER:1",
+      "fixed:QTEST-24V744000-FACTS:1",
+      "fixed:QTEST-24V744000-INSUFFICIENT:1",
+      "fixed:QTEST-24V744000-PAIR:1",
+      "fixed:QTEST-24V744000-TIME:1",
+      "fixed:QTEST-24V744000-YEAR:1",
+      "fixed:QTEST-24V935000-CONDITIONS:1",
+      "fixed:QTEST-24V935000-COUNTER:1",
+      "fixed:QTEST-24V935000-FACTS:1",
+      "fixed:QTEST-24V935000-INSUFFICIENT:1",
+      "fixed:QTEST-24V935000-PAIR:1",
+      "fixed:QTEST-24V935000-TIME:1",
+      "fixed:QTEST-24V935000-YEAR:1",
+      "fixed:QTEST-25V058000-CONDITIONS:1",
+      "fixed:QTEST-25V058000-COUNTER:1",
+      "fixed:QTEST-25V058000-FACTS:1",
+      "fixed:QTEST-25V058000-INSUFFICIENT:1",
+      "fixed:QTEST-25V058000-PAIR:1",
+      "fixed:QTEST-25V058000-TIME:1",
+      "fixed:QTEST-25V058000-YEAR:1",
+      "fixed:QTEST-25V065000-CONDITIONS:1",
+      "fixed:QTEST-25V065000-COUNTER:1",
+      "fixed:QTEST-25V065000-FACTS:1",
+      "fixed:QTEST-25V065000-INSUFFICIENT:1",
+      "fixed:QTEST-25V065000-PAIR:1",
+      "fixed:QTEST-25V065000-TIME:1",
+      "fixed:QTEST-25V065000-YEAR:1",
+      "multi_agent:QTEST-24V104000-COUNTER:1",
+      "multi_agent:QTEST-24V104000-INSUFFICIENT:1",
+      "multi_agent:QTEST-24V104000-TIME:1",
+      "multi_agent:QTEST-24V744000-CONDITIONS:1",
+      "multi_agent:QTEST-24V744000-COUNTER:1",
+      "multi_agent:QTEST-24V744000-FACTS:1",
+      "multi_agent:QTEST-24V935000-COUNTER:1",
+      "multi_agent:QTEST-24V935000-PAIR:1",
+      "multi_agent:QTEST-24V935000-YEAR:1",
+      "multi_agent:QTEST-25V058000-CONDITIONS:1",
+      "multi_agent:QTEST-25V058000-PAIR:1",
+      "multi_agent:QTEST-25V058000-TIME:1",
+      "multi_agent:QTEST-25V065000-COUNTER:1",
+      "multi_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "multi_agent:QTEST-25V065000-TIME:1",
+      "parallel_tools:QTEST-24V104000-FACTS:1",
+      "parallel_tools:QTEST-24V104000-TIME:1",
+      "parallel_tools:QTEST-24V104000-YEAR:1",
+      "parallel_tools:QTEST-24V744000-CONDITIONS:1",
+      "parallel_tools:QTEST-24V744000-COUNTER:1",
+      "parallel_tools:QTEST-24V744000-YEAR:1",
+      "parallel_tools:QTEST-24V935000-COUNTER:1",
+      "parallel_tools:QTEST-24V935000-FACTS:1",
+      "parallel_tools:QTEST-24V935000-PAIR:1",
+      "parallel_tools:QTEST-25V058000-CONDITIONS:1",
+      "parallel_tools:QTEST-25V058000-FACTS:1",
+      "parallel_tools:QTEST-25V058000-PAIR:1",
+      "parallel_tools:QTEST-25V065000-COUNTER:1",
+      "parallel_tools:QTEST-25V065000-INSUFFICIENT:1",
+      "parallel_tools:QTEST-25V065000-YEAR:1",
+      "single_agent:QTEST-24V104000-FACTS:1",
+      "single_agent:QTEST-24V104000-TIME:1",
+      "single_agent:QTEST-24V104000-YEAR:1",
+      "single_agent:QTEST-24V744000-CONDITIONS:1",
+      "single_agent:QTEST-24V744000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V744000-TIME:1",
+      "single_agent:QTEST-24V935000-FACTS:1",
+      "single_agent:QTEST-24V935000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V935000-TIME:1",
+      "single_agent:QTEST-25V058000-COUNTER:1",
+      "single_agent:QTEST-25V058000-FACTS:1",
+      "single_agent:QTEST-25V058000-INSUFFICIENT:1",
+      "single_agent:QTEST-25V065000-COUNTER:1",
+      "single_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "single_agent:QTEST-25V065000-PAIR:1"
+    ],
+    "model_judge_status": "failed_calibration_not_accepted_for_certification",
+    "no_model_grade_promoted_to_human": true,
+    "unreviewed_metric_components_remain_null": true,
+    "full_population_semantic_rate_requires_complete_adjudication": true,
+    "may_report_acceptance_failure_as_soon_as_a_verified_target_violation_is_established": true,
+    "no_success_claim_without_all_required_measurements": true,
+    "additional_human_selection": "all_critical_boundary_or_reference_ambiguity_flags_plus_predeclared_80_cells",
+    "human_sample_role": "audit/stratified subset, not whole-population success denominator",
+    "statistical_unit": "five_event_clusters; repetitions_do_not_add_independent_events",
+    "atomic_partial_denominator": "human_adjudicated_whole_conditional_propositions_not_punctuation_fragments",
+    "old_tests_retroactively_preregistered": false,
+    "execution_order": [
+      "multi_agent:QTEST-25V065000-FACTS:1",
+      "fixed:QTEST-25V065000-FACTS:1",
+      "single_agent:QTEST-25V065000-FACTS:1",
+      "parallel_tools:QTEST-25V065000-FACTS:1",
+      "fixed:QTEST-25V065000-COUNTER:1",
+      "multi_agent:QTEST-25V065000-COUNTER:1",
+      "parallel_tools:QTEST-25V065000-COUNTER:1",
+      "single_agent:QTEST-25V065000-COUNTER:1",
+      "fixed:QTEST-25V065000-PAIR:1",
+      "single_agent:QTEST-25V065000-PAIR:1",
+      "parallel_tools:QTEST-25V065000-PAIR:1",
+      "multi_agent:QTEST-25V065000-PAIR:1",
+      "parallel_tools:QTEST-25V065000-CONDITIONS:1",
+      "fixed:QTEST-25V065000-CONDITIONS:1",
+      "single_agent:QTEST-25V065000-CONDITIONS:1",
+      "multi_agent:QTEST-25V065000-CONDITIONS:1",
+      "single_agent:QTEST-25V065000-YEAR:1",
+      "fixed:QTEST-25V065000-YEAR:1",
+      "parallel_tools:QTEST-25V065000-YEAR:1",
+      "multi_agent:QTEST-25V065000-YEAR:1",
+      "fixed:QTEST-25V065000-TIME:1",
+      "single_agent:QTEST-25V065000-TIME:1",
+      "multi_agent:QTEST-25V065000-TIME:1",
+      "parallel_tools:QTEST-25V065000-TIME:1",
+      "parallel_tools:QTEST-25V065000-INSUFFICIENT:1",
+      "fixed:QTEST-25V065000-INSUFFICIENT:1",
+      "single_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "multi_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "fixed:QTEST-24V935000-FACTS:1",
+      "parallel_tools:QTEST-24V935000-FACTS:1",
+      "single_agent:QTEST-24V935000-FACTS:1",
+      "multi_agent:QTEST-24V935000-FACTS:1",
+      "fixed:QTEST-24V935000-COUNTER:1",
+      "multi_agent:QTEST-24V935000-COUNTER:1",
+      "parallel_tools:QTEST-24V935000-COUNTER:1",
+      "single_agent:QTEST-24V935000-COUNTER:1",
+      "multi_agent:QTEST-24V935000-PAIR:1",
+      "parallel_tools:QTEST-24V935000-PAIR:1",
+      "single_agent:QTEST-24V935000-PAIR:1",
+      "fixed:QTEST-24V935000-PAIR:1",
+      "fixed:QTEST-24V935000-CONDITIONS:1",
+      "multi_agent:QTEST-24V935000-CONDITIONS:1",
+      "single_agent:QTEST-24V935000-CONDITIONS:1",
+      "parallel_tools:QTEST-24V935000-CONDITIONS:1",
+      "fixed:QTEST-24V935000-YEAR:1",
+      "single_agent:QTEST-24V935000-YEAR:1",
+      "parallel_tools:QTEST-24V935000-YEAR:1",
+      "multi_agent:QTEST-24V935000-YEAR:1",
+      "fixed:QTEST-24V935000-TIME:1",
+      "single_agent:QTEST-24V935000-TIME:1",
+      "multi_agent:QTEST-24V935000-TIME:1",
+      "parallel_tools:QTEST-24V935000-TIME:1",
+      "single_agent:QTEST-24V935000-INSUFFICIENT:1",
+      "multi_agent:QTEST-24V935000-INSUFFICIENT:1",
+      "fixed:QTEST-24V935000-INSUFFICIENT:1",
+      "parallel_tools:QTEST-24V935000-INSUFFICIENT:1",
+      "parallel_tools:QTEST-25V058000-FACTS:1",
+      "single_agent:QTEST-25V058000-FACTS:1",
+      "fixed:QTEST-25V058000-FACTS:1",
+      "multi_agent:QTEST-25V058000-FACTS:1",
+      "fixed:QTEST-25V058000-COUNTER:1",
+      "multi_agent:QTEST-25V058000-COUNTER:1",
+      "single_agent:QTEST-25V058000-COUNTER:1",
+      "parallel_tools:QTEST-25V058000-COUNTER:1",
+      "fixed:QTEST-25V058000-PAIR:1",
+      "parallel_tools:QTEST-25V058000-PAIR:1",
+      "multi_agent:QTEST-25V058000-PAIR:1",
+      "single_agent:QTEST-25V058000-PAIR:1",
+      "fixed:QTEST-25V058000-CONDITIONS:1",
+      "multi_agent:QTEST-25V058000-CONDITIONS:1",
+      "parallel_tools:QTEST-25V058000-CONDITIONS:1",
+      "single_agent:QTEST-25V058000-CONDITIONS:1",
+      "parallel_tools:QTEST-25V058000-YEAR:1",
+      "multi_agent:QTEST-25V058000-YEAR:1",
+      "fixed:QTEST-25V058000-YEAR:1",
+      "single_agent:QTEST-25V058000-YEAR:1",
+      "multi_agent:QTEST-25V058000-TIME:1",
+      "single_agent:QTEST-25V058000-TIME:1",
+      "fixed:QTEST-25V058000-TIME:1",
+      "parallel_tools:QTEST-25V058000-TIME:1",
+      "single_agent:QTEST-25V058000-INSUFFICIENT:1",
+      "fixed:QTEST-25V058000-INSUFFICIENT:1",
+      "multi_agent:QTEST-25V058000-INSUFFICIENT:1",
+      "parallel_tools:QTEST-25V058000-INSUFFICIENT:1",
+      "multi_agent:QTEST-24V744000-FACTS:1",
+      "parallel_tools:QTEST-24V744000-FACTS:1",
+      "fixed:QTEST-24V744000-FACTS:1",
+      "single_agent:QTEST-24V744000-FACTS:1",
+      "multi_agent:QTEST-24V744000-COUNTER:1",
+      "parallel_tools:QTEST-24V744000-COUNTER:1",
+      "fixed:QTEST-24V744000-COUNTER:1",
+      "single_agent:QTEST-24V744000-COUNTER:1",
+      "multi_agent:QTEST-24V744000-PAIR:1",
+      "parallel_tools:QTEST-24V744000-PAIR:1",
+      "single_agent:QTEST-24V744000-PAIR:1",
+      "fixed:QTEST-24V744000-PAIR:1",
+      "single_agent:QTEST-24V744000-CONDITIONS:1",
+      "fixed:QTEST-24V744000-CONDITIONS:1",
+      "parallel_tools:QTEST-24V744000-CONDITIONS:1",
+      "multi_agent:QTEST-24V744000-CONDITIONS:1",
+      "single_agent:QTEST-24V744000-YEAR:1",
+      "multi_agent:QTEST-24V744000-YEAR:1",
+      "fixed:QTEST-24V744000-YEAR:1",
+      "parallel_tools:QTEST-24V744000-YEAR:1",
+      "fixed:QTEST-24V744000-TIME:1",
+      "parallel_tools:QTEST-24V744000-TIME:1",
+      "single_agent:QTEST-24V744000-TIME:1",
+      "multi_agent:QTEST-24V744000-TIME:1",
+      "multi_agent:QTEST-24V744000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V744000-INSUFFICIENT:1",
+      "parallel_tools:QTEST-24V744000-INSUFFICIENT:1",
+      "fixed:QTEST-24V744000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V104000-FACTS:1",
+      "multi_agent:QTEST-24V104000-FACTS:1",
+      "parallel_tools:QTEST-24V104000-FACTS:1",
+      "fixed:QTEST-24V104000-FACTS:1",
+      "single_agent:QTEST-24V104000-COUNTER:1",
+      "parallel_tools:QTEST-24V104000-COUNTER:1",
+      "fixed:QTEST-24V104000-COUNTER:1",
+      "multi_agent:QTEST-24V104000-COUNTER:1",
+      "parallel_tools:QTEST-24V104000-PAIR:1",
+      "single_agent:QTEST-24V104000-PAIR:1",
+      "multi_agent:QTEST-24V104000-PAIR:1",
+      "fixed:QTEST-24V104000-PAIR:1",
+      "single_agent:QTEST-24V104000-CONDITIONS:1",
+      "multi_agent:QTEST-24V104000-CONDITIONS:1",
+      "fixed:QTEST-24V104000-CONDITIONS:1",
+      "parallel_tools:QTEST-24V104000-CONDITIONS:1",
+      "multi_agent:QTEST-24V104000-YEAR:1",
+      "fixed:QTEST-24V104000-YEAR:1",
+      "single_agent:QTEST-24V104000-YEAR:1",
+      "parallel_tools:QTEST-24V104000-YEAR:1",
+      "parallel_tools:QTEST-24V104000-TIME:1",
+      "multi_agent:QTEST-24V104000-TIME:1",
+      "fixed:QTEST-24V104000-TIME:1",
+      "single_agent:QTEST-24V104000-TIME:1",
+      "multi_agent:QTEST-24V104000-INSUFFICIENT:1",
+      "fixed:QTEST-24V104000-INSUFFICIENT:1",
+      "parallel_tools:QTEST-24V104000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V104000-INSUFFICIENT:1"
+    ]
+  },
+  "exclusions": "none_after_freeze_all_failures_retained",
+  "random_seed": 20261028,
+  "bootstrap_draws": 2000,
+  "minimum_clusters_for_interval": 5
+}

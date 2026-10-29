@@ -1,0 +1,568 @@
+{
+  "schema_version": "quality-calibration-assessment/0.1",
+  "status": "failed_not_authorized_for_population_acceptance",
+  "requests": 15,
+  "approved_maximum": 18,
+  "unused_requests_not_repurposed": 3,
+  "ledger_sha256": "52c59327261cd5013b54fd32e145cb876ca2eb02c807697ed7965e2b84e59e93",
+  "usage": {
+    "prompt_tokens": 112486,
+    "completion_tokens": 19196,
+    "total_tokens": 131682
+  },
+  "actual_account_charge": null,
+  "calibration_rows": [
+    {
+      "job_id": "DEV-BLIND-b0f073c1176a",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": true,
+        "strict_success": true,
+        "disposition_correct": true,
+        "core_complete": true,
+        "all_requirements": "satisfied",
+        "atomic_verdict_counts": {
+          "supported": 10
+        },
+        "direct_aspect_counts": {
+          "supported": 5
+        },
+        "whole_claim_pair_counts": {
+          "supported": 5
+        },
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "无其他召回范围重叠需要评价。"
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "无其他召回症状相似性需要评价。"
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "无官方引用关系需要评价。"
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "无范围排除关系需要评价。"
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "无适用性未知关系需要评价。"
+          }
+        ]
+      },
+      "human_source_sha256": "f2b75a859f19c3e25c1b177d3396b83646ce98f65f31e656b72ef658bcf45210",
+      "claim_disagreements": [],
+      "human_all_requirements": null,
+      "model_all_requirements": "satisfied",
+      "atomic_granularity_lengths": [
+        [
+          43,
+          21
+        ],
+        [
+          41,
+          22
+        ],
+        [
+          24,
+          23
+        ],
+        [
+          21,
+          27
+        ],
+        [
+          31,
+          20
+        ]
+      ]
+    },
+    {
+      "job_id": "DEV-BLIND-95cee9ebfdee",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": true,
+        "strict_success": true,
+        "disposition_correct": true,
+        "core_complete": true,
+        "all_requirements": "satisfied",
+        "atomic_verdict_counts": {
+          "supported": 5
+        },
+        "direct_aspect_counts": {
+          "supported": 8
+        },
+        "whole_claim_pair_counts": {
+          "supported": 6,
+          "partial": 2
+        },
+        "context_only_pairs": 2,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "未要求评价范围重叠关系。"
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "未要求评价症状相似关系。"
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "未要求评价官方引用关系。"
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "未要求评价范围排除关系。"
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "未要求评价适用性未知关系。"
+          }
+        ]
+      },
+      "human_source_sha256": "90a76cabc63130d4a39776872c485e6b05bb6f14f846e5a4d215956a021547f0",
+      "claim_disagreements": [],
+      "human_all_requirements": "mostly_satisfied_with_minor_caveat",
+      "model_all_requirements": "satisfied",
+      "atomic_granularity_lengths": [
+        [
+          76
+        ],
+        [
+          91
+        ],
+        [
+          50
+        ],
+        [
+          89
+        ],
+        [
+          91
+        ]
+      ]
+    },
+    {
+      "job_id": "DEV-BLIND-adbcda2666d8",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": true,
+        "strict_success": true,
+        "disposition_correct": true,
+        "core_complete": true,
+        "all_requirements": "satisfied",
+        "atomic_verdict_counts": {
+          "supported": 18
+        },
+        "direct_aspect_counts": {
+          "supported": 9
+        },
+        "whole_claim_pair_counts": {
+          "supported": 3,
+          "partial": 6
+        },
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "correct",
+            "reason": "E002 中确认 scope_overlap 关系，且答案 C005 正确陈述了车型年范围重叠。"
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "correct",
+            "reason": "E002 中确认 symptom_similar 关系，答案 C005 正确陈述了共享车门解锁症状标签。"
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "E002 中 officially_referenced 关系为 candidate 阶段，未确认，且答案未声称官方引用关系。"
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "E002 中 excluded_by_scope 关系为 candidate 阶段，未确认，且答案未声称排除关系。"
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "correct",
+            "reason": "E002 中 applicability_unknown 关系为 unknown 阶段，答案 C005 和 C006 正确表达了适用性未知。"
+          }
+        ]
+      },
+      "human_source_sha256": "1436acf0564f9cf05a4d456fb2270a505e6bf3b5313e2b6413faa091bfbe65ae",
+      "claim_disagreements": [],
+      "human_all_requirements": "satisfied",
+      "model_all_requirements": "satisfied",
+      "atomic_granularity_lengths": [
+        [
+          74,
+          18,
+          16
+        ],
+        [
+          40,
+          20,
+          20
+        ],
+        [
+          32,
+          26,
+          18
+        ],
+        [
+          31,
+          34,
+          21
+        ],
+        [
+          34,
+          11,
+          23,
+          25
+        ],
+        [
+          33,
+          29
+        ]
+      ]
+    },
+    {
+      "job_id": "DEV-BLIND-53ac2882b280",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": false,
+        "strict_success": null,
+        "disposition_correct": null,
+        "core_complete": null,
+        "all_requirements": "not_evaluable",
+        "atomic_verdict_counts": {},
+        "direct_aspect_counts": {},
+        "whole_claim_pair_counts": {},
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate."
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate."
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate."
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate."
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate."
+          }
+        ]
+      },
+      "human_source_sha256": "dd3b04576cfcc0d8299c7c171c5ff599c84dadad4460de2a2e36250345eccd12",
+      "claim_disagreements": [],
+      "human_all_requirements": "satisfied",
+      "model_all_requirements": "not_evaluable",
+      "atomic_granularity_lengths": []
+    },
+    {
+      "job_id": "DEV-BLIND-3bbc60801d77",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": false,
+        "strict_success": null,
+        "disposition_correct": null,
+        "core_complete": null,
+        "all_requirements": "not_evaluable",
+        "atomic_verdict_counts": {},
+        "direct_aspect_counts": {},
+        "whole_claim_pair_counts": {},
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "No proposal or evidence to evaluate scope overlap."
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "No proposal or evidence to evaluate symptom similarity."
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "No proposal or evidence to evaluate official references."
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "No proposal or evidence to evaluate scope exclusion."
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "No proposal or evidence to evaluate applicability."
+          }
+        ]
+      },
+      "human_source_sha256": "5167e489cef8998100478a7985a07bac843b44b464f85e20ad13f072adfd7236",
+      "claim_disagreements": [],
+      "human_all_requirements": "satisfied",
+      "model_all_requirements": "not_evaluable",
+      "atomic_granularity_lengths": []
+    },
+    {
+      "job_id": "DEV-BLIND-5f63e8d13912",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": false,
+        "strict_success": null,
+        "disposition_correct": null,
+        "core_complete": null,
+        "all_requirements": "not_evaluable",
+        "atomic_verdict_counts": {},
+        "direct_aspect_counts": {},
+        "whole_claim_pair_counts": {},
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "No claims or evidence relationships to evaluate."
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "No claims or evidence relationships to evaluate."
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "No claims or evidence relationships to evaluate."
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "No claims or evidence relationships to evaluate."
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "No claims or evidence relationships to evaluate."
+          }
+        ]
+      },
+      "human_source_sha256": "41796db95edbc452bd1e1bcb3a03ebed98cbe5a972a47b107cbc29ef17e9c090",
+      "claim_disagreements": [],
+      "human_all_requirements": "satisfied",
+      "model_all_requirements": "not_evaluable",
+      "atomic_granularity_lengths": []
+    },
+    {
+      "job_id": "DEV-BLIND-7dcf51b563f8",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": true,
+        "strict_success": true,
+        "disposition_correct": true,
+        "core_complete": true,
+        "all_requirements": "satisfied",
+        "atomic_verdict_counts": {},
+        "direct_aspect_counts": {},
+        "whole_claim_pair_counts": {},
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "No claims or relation requirements were provided; scope_overlap is not applicable."
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "No claims or relation requirements were provided; symptom_similar is not applicable."
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "No claims or relation requirements were provided; officially_referenced is not applicable."
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "No claims or relation requirements were provided; excluded_by_scope is not applicable."
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "No claims or relation requirements were provided; applicability_unknown is not applicable."
+          }
+        ]
+      },
+      "human_source_sha256": "6fc22d4a7341bf55860697a4c738340c71ee33ad0bab903c514449b8cca312f9",
+      "claim_disagreements": [],
+      "human_all_requirements": "satisfied",
+      "model_all_requirements": "satisfied",
+      "atomic_granularity_lengths": []
+    },
+    {
+      "job_id": "DEV-BLIND-84378628fdad",
+      "mechanical_error": null,
+      "metrics": {
+        "provenance": "model_judgment_not_human",
+        "complete_components": false,
+        "strict_success": null,
+        "disposition_correct": null,
+        "core_complete": null,
+        "all_requirements": "not_evaluable",
+        "atomic_verdict_counts": {},
+        "direct_aspect_counts": {},
+        "whole_claim_pair_counts": {},
+        "context_only_pairs": 0,
+        "relation_judgments": [
+          {
+            "relation_type": "scope_overlap",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate scope overlap."
+          },
+          {
+            "relation_type": "symptom_similar",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate symptom similarity."
+          },
+          {
+            "relation_type": "officially_referenced",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate official references."
+          },
+          {
+            "relation_type": "excluded_by_scope",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate scope exclusion."
+          },
+          {
+            "relation_type": "applicability_unknown",
+            "verdict": "not_applicable",
+            "reason": "No proposal or claims to evaluate applicability."
+          }
+        ]
+      },
+      "human_source_sha256": "2d44898e4ed0becf396938082c9d9a6894ee93c621e86d8e2197cfcd2a5aaee2",
+      "claim_disagreements": [],
+      "human_all_requirements": "satisfied",
+      "model_all_requirements": "not_evaluable",
+      "atomic_granularity_lengths": []
+    },
+    {
+      "job_id": "OLD-BLIND-525c27d5cddc",
+      "mechanical_error": "review_schema_or_coverage_invalid:context_only_invents_semantic_support",
+      "metrics": null,
+      "human_source_sha256": "a2cdd2aef0e95b6d8ef33fb6b8f7ea137620e581e6ca831dcb849b95059609fc",
+      "claim_disagreements": [
+        {
+          "claim_id": "C002",
+          "human": "partial",
+          "model": "supported"
+        },
+        {
+          "claim_id": "C004",
+          "human": "partial",
+          "model": "supported"
+        },
+        {
+          "claim_id": "C005",
+          "human": "partial",
+          "model": "supported"
+        },
+        {
+          "claim_id": "C006",
+          "human": "partial",
+          "model": "supported"
+        }
+      ],
+      "human_all_requirements": null,
+      "model_all_requirements": "satisfied",
+      "atomic_granularity_lengths": [
+        [
+          66,
+          16,
+          30
+        ],
+        [
+          59,
+          43,
+          17
+        ],
+        [
+          38,
+          36
+        ],
+        [
+          73,
+          47
+        ],
+        [
+          44,
+          39
+        ],
+        [
+          61,
+          26,
+          29
+        ]
+      ]
+    }
+  ],
+  "schema_valid_jobs": 8,
+  "fully_evaluated_jobs": 4,
+  "human_claim_judgments": 22,
+  "model_human_claim_agreements": 18,
+  "agreement_descriptive_only": 0.8181818181818182,
+  "negative_control_partial_claims_detected": 0,
+  "requests_states": {
+    "completed": 8,
+    "failed": 7
+  },
+  "failure_reasons": [
+    "Historical negative claims were overaccepted, despite known independent human partial judgments.",
+    "Seen-development certain qualifier caveat was omitted by the judge.",
+    "Several stop-stage judgments remain not_evaluable despite explicit stage requirements.",
+    "One multi-proposition answer was segmented as one atom per long claim; this cannot establish atomic rates.",
+    "Historical negative sample remains mechanically invalid after its one permitted repair."
+  ],
+  "population_reviews_executed": 0,
+  "new_confirmatory_generation_requests": 0,
+  "formal_model_quality_acceptance": "not_established",
+  "old_outputs_and_human_judgments_changed": false
+}

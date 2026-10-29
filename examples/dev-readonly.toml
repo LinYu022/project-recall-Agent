@@ -1,0 +1,11 @@
+profile = "development_readonly"
+data_mode = "synthetic"
+release_id = "demo-fixture-v1"
+grant_id = "dev-readonly-v1"
+revision_id = "demo-plan-v1"
+allowed_tools = ["fake_query"]
+allowed_source_ids = ["SIM-COMPLAINT-001"]
+max_tool_calls = 1
+allowed_models = ["fake-summary-v1"]
+max_model_calls = 1
+artifact_dir = ".local/demo-runs"

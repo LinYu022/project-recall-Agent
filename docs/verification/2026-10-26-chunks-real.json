@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-10-26T13:05:01.094393+00:00",
+  "classification": "saved_official_source_chunks_and_agent_reviewed_counterexample",
+  "source": {
+    "mapping_version": "source-record/0.1",
+    "ordinal": 0,
+    "raw_object_path": "objects/e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+    "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+    "row_pointer": "$document",
+    "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+    "snapshot_manifest_path": "snapshots/9d2d065bf1f844e7ab4ea63494a4b2f9.json",
+    "source_content_sha256": "852de62a477befa4dda8c130c97e774af2801976176cbdc967ebdf6b4a9d01c0",
+    "source_id": "NHTSA-INV-PE10006-CLOSE",
+    "source_kind": "investigation_pdf",
+    "source_url": "https://static.nhtsa.gov/odi/inv/2010/INCLA-PE10006-1281.pdf",
+    "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66"
+  },
+  "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+  "chunk_artifacts": {
+    "structure": {
+      "sha256": "28be4621237742bd4a529a063b57f7a0dbd36a8697f4bc9d525ed038e0aaf698",
+      "byte_size": 40714
+    },
+    "fixed": {
+      "sha256": "1c41b29c4b12d24acf81383804fad8edce21ff8bf7603bb59720ff7cffa50e14",
+      "byte_size": 41629
+    }
+  },
+  "searchable_chunks": {
+    "structure": 6,
+    "fixed": 6
+  },
+  "configs": {
+    "structure": {
+      "schema_version": "chunk-config/0.1",
+      "config_version": "structured-chunks/0.1",
+      "strategy": "structure",
+      "short_complaint_characters": 4000,
+      "fixed_characters": null,
+      "fixed_overlap": null
+    },
+    "fixed": {
+      "schema_version": "chunk-config/0.1",
+      "config_version": "fixed-chunks/0.1",
+      "strategy": "fixed",
+      "short_complaint_characters": 4000,
+      "fixed_characters": 700,
+      "fixed_overlap": 100
+    }
+  },
+  "replayed_leaf_citations": 12,
+  "table_cells_replayed": 18,
+  "table_header": [
+    "ODI",
+    "Manufacturer",
+    "Total"
+  ],
+  "table_first_row": {
+    "label": "Complaints:",
+    "values": [
+      1235,
+      192,
+      1427
+    ]
+  },
+  "table_footnote": "*Description of Other: Warranty claims",
+  "scope_loss_example": {
+    "focus_chunk_id": "0df5c6a617443c8e48c127f3100c508dcfd435750a0447c4e3c1608bb3fdd2b7",
+    "source_scope": "Model Year 2010 Toyota Prius",
+    "leaf_alone_omits_scope": true,
+    "expanded_context_contains_scope": true,
+    "fixed_strategy_has_same_context_access": true,
+    "forbidden_example": "本调查已确认所有混合动力车型都有该问题",
+    "reference_answer": "subject vehicles 的产品范围是前文的 2010 Toyota Prius；不能扩大成所有混动车型。",
+    "review": "implementation_agent_source_review_not_independent_human_labels"
+  },
+  "complaints_snapshot": "d0be027566e94ad2aa0737d166df64b1",
+  "short_fields_kept_whole": {
+    "structure": 103,
+    "fixed": 103
+  },
+  "longer_fields": {
+    "structure": 0,
+    "fixed": 0
+  },
+  "local_review_html": ".local/P1-04-chunks/review-final.html",
+  "retrieval_effectiveness_measured": false,
+  "external_model_calls": 0,
+  "new_external_source_requests": 0,
+  "dataset_release": null,
+  "inspection_ui": {
+    "checked_at": "2026-10-26T13:06:19.676022+00:00",
+    "classification": "real_browser_local_loopback_review",
+    "final_differs_from_checked_preview_only_in_generated_ids": true,
+    "html_sha256": "6cedab432a6a36f9b661cb8d78680f4de2578406b1c6a3de7f9c089ed47f5605",
+    "checked_preview_sha256": "9a9827cf7370d9dcb735f3fb130140ef0fc314feb74ad3ba87e0c46c20310fb4",
+    "renderer_sha256": "95bc0a5f64b81a74c88d529456e05e3f97bedeffda2126198957113e0ff0547e",
+    "table_visible": true,
+    "all_three_column_headers_and_footnote_visible": true,
+    "expanded_context_includes_original_vehicle_scope": true,
+    "screenshot": ".local/P1-04-chunks/table-comparison.png",
+    "screenshot_sha256": "27e9c8d66f97c6f9847eca3ac96f2343f33fd7cce7c071cf34773eba58a22d17",
+    "temporary_tab_closed": true,
+    "temporary_http_server_stopped": true,
+    "reviewed_by": "implementation_agent_not_independent_human_gold_review"
+  }
+}

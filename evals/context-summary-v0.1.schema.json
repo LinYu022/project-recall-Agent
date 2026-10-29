@@ -1,0 +1,231 @@
+{
+  "$defs": {
+    "ContextBinding": {
+      "additionalProperties": false,
+      "properties": {
+        "task_id": {
+          "minLength": 1,
+          "title": "Task Id",
+          "type": "string"
+        },
+        "release_id": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Release Id",
+          "type": "string"
+        },
+        "task_spec_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Task Spec Sha256",
+          "type": "string"
+        },
+        "plan_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Plan Sha256",
+          "type": "string"
+        },
+        "revision_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revision Id"
+        },
+        "authorization_id": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Authorization Id"
+        },
+        "epoch": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Epoch",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "task_id",
+        "release_id",
+        "task_spec_sha256",
+        "plan_sha256"
+      ],
+      "title": "ContextBinding",
+      "type": "object"
+    },
+    "SummaryEntry": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "pattern": "^E\\d{3}$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Aliases",
+          "type": "array"
+        },
+        "kind": {
+          "enum": [
+            "text",
+            "count",
+            "relationship",
+            "structured_lookup"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "scope_channel": {
+          "minLength": 1,
+          "title": "Scope Channel",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "source_version_ids": {
+          "items": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "title": "Source Version Ids",
+          "type": "array"
+        },
+        "required_context": {
+          "items": {
+            "pattern": "^E\\d{3}$",
+            "type": "string"
+          },
+          "title": "Required Context",
+          "type": "array"
+        },
+        "permitted_claim_kinds": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Permitted Claim Kinds",
+          "type": "array"
+        },
+        "payload": {
+          "additionalProperties": true,
+          "title": "Payload",
+          "type": "object"
+        },
+        "protected_conditions_or_negations": {
+          "title": "Protected Conditions Or Negations",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "aliases",
+        "kind",
+        "scope_channel",
+        "source_ids",
+        "source_version_ids",
+        "required_context",
+        "permitted_claim_kinds",
+        "payload",
+        "protected_conditions_or_negations"
+      ],
+      "title": "SummaryEntry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "extractive-context-summary/0.1",
+      "default": "extractive-context-summary/0.1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "binding": {
+      "$ref": "#/$defs/ContextBinding"
+    },
+    "snapshot_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Snapshot Sha256",
+      "type": "string"
+    },
+    "entries": {
+      "items": {
+        "$ref": "#/$defs/SummaryEntry"
+      },
+      "title": "Entries",
+      "type": "array"
+    },
+    "counter_aliases": {
+      "items": {
+        "pattern": "^E\\d{3}$",
+        "type": "string"
+      },
+      "title": "Counter Aliases",
+      "type": "array"
+    },
+    "current_hypotheses": {
+      "items": {
+        "additionalProperties": true,
+        "type": "object"
+      },
+      "title": "Current Hypotheses",
+      "type": "array"
+    },
+    "unresolved_conditions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved Conditions",
+      "type": "array"
+    },
+    "compression_policy": {
+      "const": "exact_blocks_deduplicated_no_sentence_clipping",
+      "default": "exact_blocks_deduplicated_no_sentence_clipping",
+      "title": "Compression Policy",
+      "type": "string"
+    },
+    "model_calls": {
+      "const": 0,
+      "default": 0,
+      "title": "Model Calls",
+      "type": "integer"
+    },
+    "provider_usage": {
+      "default": null,
+      "title": "Provider Usage",
+      "type": "null"
+    },
+    "estimated_cost": {
+      "default": null,
+      "title": "Estimated Cost",
+      "type": "null"
+    }
+  },
+  "required": [
+    "binding",
+    "snapshot_sha256",
+    "entries",
+    "counter_aliases",
+    "current_hypotheses",
+    "unresolved_conditions"
+  ],
+  "title": "StructuredSummary",
+  "type": "object"
+}

@@ -1,0 +1,245 @@
+{
+  "module": "P1-17",
+  "timestamp": "2026-10-29T08:41:59.536473+00:00",
+  "engineering_and_demo_delivery_complete": true,
+  "all_original_product_acceptance_requirements_passed": false,
+  "formal_model_quality_acceptance": "not_established",
+  "original_generator_freeze_unchanged": true,
+  "P1_16_sources_and_quality_reservations_unchanged": true,
+  "new_external_model_calls": 0,
+  "new_source_requests": 0,
+  "browsers": [
+    {
+      "profile": "synthetic-demo",
+      "checks": [
+        {
+          "name": "quality_reservation_and_simulation_visible",
+          "status": "passed"
+        },
+        {
+          "name": "invalid_token_denied",
+          "status": "passed"
+        },
+        {
+          "name": "credential_not_persisted",
+          "status": "passed"
+        },
+        {
+          "name": "clarification_does_not_guess_year",
+          "status": "passed"
+        },
+        {
+          "name": "simple_query_frozen_sources",
+          "status": "passed"
+        },
+        {
+          "name": "pause_and_resume_same_plan",
+          "status": "passed"
+        },
+        {
+          "name": "explicit_approval_then_insufficient_evidence",
+          "status": "passed"
+        },
+        {
+          "name": "evidence_original_replay",
+          "status": "passed"
+        },
+        {
+          "name": "execution_history_replay",
+          "status": "passed"
+        },
+        {
+          "name": "revocation_hides_report_and_original",
+          "status": "passed"
+        },
+        {
+          "name": "bounded_zero_match_counterexample",
+          "status": "passed"
+        },
+        {
+          "name": "cancel_is_terminal_and_copy_creates_new_task",
+          "status": "passed"
+        },
+        {
+          "name": "stale_version_rejected_with_ui_explanation",
+          "status": "passed"
+        },
+        {
+          "name": "historical_request_waits_without_auto_acceptance",
+          "status": "passed"
+        },
+        {
+          "name": "two_record_relationship_and_unknowns",
+          "status": "passed"
+        },
+        {
+          "name": "memory_candidate_review_source_and_revoke",
+          "status": "passed"
+        },
+        {
+          "name": "explicit_local_failure_is_not_styled_as_answer",
+          "status": "passed"
+        },
+        {
+          "name": "mobile_readable_without_horizontal_overflow",
+          "status": "passed"
+        },
+        {
+          "name": "browser_no_javascript_errors",
+          "status": "passed"
+        }
+      ],
+      "source_record": {
+        "path": ".local/P1-17/browser-synthetic-v4/result.json",
+        "sha256": "f3b8db5d3453e98fe446b72eda8ddf9d91614ca7bfe440052e8bdd30e4adf930"
+      },
+      "video": {
+        "path": ".local/P1-17/browser-synthetic-v4/b4d69eae436e8cb055c7ebd75db288ba.webm",
+        "sha256": "f178bcd77d79252ecbb2a846a26577c473d8c822ddfd9086c13d12e869873652"
+      },
+      "release_id": "ac1af9c1d93dbc8734d0dc512c142958468abf88b25eb168a1fec03219fd2625",
+      "generation": "simulated",
+      "independent_human_usability": false
+    },
+    {
+      "profile": "official-demo",
+      "checks": [
+        {
+          "name": "quality_reservation_and_simulation_visible",
+          "status": "passed"
+        },
+        {
+          "name": "invalid_token_denied",
+          "status": "passed"
+        },
+        {
+          "name": "credential_not_persisted",
+          "status": "passed"
+        },
+        {
+          "name": "clarification_does_not_guess_year",
+          "status": "passed"
+        },
+        {
+          "name": "simple_query_frozen_sources",
+          "status": "passed"
+        },
+        {
+          "name": "pause_and_resume_same_plan",
+          "status": "passed"
+        },
+        {
+          "name": "explicit_approval_then_insufficient_evidence",
+          "status": "passed"
+        },
+        {
+          "name": "evidence_original_replay",
+          "status": "passed"
+        },
+        {
+          "name": "execution_history_replay",
+          "status": "passed"
+        },
+        {
+          "name": "revocation_hides_report_and_original",
+          "status": "passed"
+        },
+        {
+          "name": "bounded_zero_match_counterexample",
+          "status": "passed"
+        },
+        {
+          "name": "cancel_is_terminal_and_copy_creates_new_task",
+          "status": "passed"
+        },
+        {
+          "name": "stale_version_rejected_with_ui_explanation",
+          "status": "passed"
+        },
+        {
+          "name": "historical_request_waits_without_auto_acceptance",
+          "status": "passed"
+        },
+        {
+          "name": "two_record_relationship_and_unknowns",
+          "status": "passed"
+        },
+        {
+          "name": "memory_candidate_review_source_and_revoke",
+          "status": "passed"
+        },
+        {
+          "name": "explicit_local_failure_is_not_styled_as_answer",
+          "status": "passed"
+        },
+        {
+          "name": "mobile_readable_without_horizontal_overflow",
+          "status": "passed"
+        },
+        {
+          "name": "browser_no_javascript_errors",
+          "status": "passed"
+        }
+      ],
+      "source_record": {
+        "path": ".local/P1-17/browser-official-v4/result.json",
+        "sha256": "4228f345b3d2b2a60e06030d32952fddf46a2f0ffe6dcce9b375dd8858bd611f"
+      },
+      "video": {
+        "path": ".local/P1-17/browser-official-v4/c37093ae7bd93ec355eb0bd166fcbee9.webm",
+        "sha256": "1d82b24e7925f1426268926d930cbdbbc1dec2962cba9fa99d46302ac6c8a5a1"
+      },
+      "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+      "generation": "simulated",
+      "independent_human_usability": false
+    }
+  ],
+  "offline": {
+    "path": ".local/P1-17/offline-delivery.json",
+    "sha256": "fc948ca8e309b843d4a3871ab6f53a1c42aa8fe686fc8edd6f3515d5480c5f5c",
+    "tests": {
+      "tests": 496,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "postgres": {
+    "path": ".local/P1-17/postgres-final.json",
+    "sha256": "b1e04f83f2b7b3ad933121fa71b5fd11a1bdf4b3f4763d0d9c3325aa8f9e9f75",
+    "tests": {
+      "tests": 208,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "product_implementation_sha256": {
+    "compose.yaml": "304f3a5c8dfbbc145cbc30b828e0345bfc62a607ec38aa839c6267276f8bd5fc",
+    "Dockerfile": "0be147cf302cf956063f93d7e8dbcaacfdd472865e16f588b2ce9267ca442565",
+    "frontend/dist/assets/index-BtLt_6Ge.css": "9381b2a472c27963553f71c7ebe5462dd94c4bf6078334b347c400c9635f9223",
+    "frontend/dist/assets/index-CyWrndu3.js": "509a4915509cd937650d6d65cce648539d7a57456af500a969d3fa28bf16d022",
+    "frontend/dist/index.html": "2298f00be3f4c6881476831dc01b1b06e1bf13bf03c8b42ebe1a506f20e5f756",
+    "frontend/e2e.mjs": "f1a6fd04cd8d13080307a485c36faa02d9e7330142d986adc7b9552e53e22769",
+    "frontend/index.html": "81c1475d62b5cbe144f0b1f40397ae578c122b1a20aca7239039be2c2406e332",
+    "frontend/package.json": "7600391edd1a584ab7e22cdc177b4b85ede4e9381f5f7a863a3b26919fd0a336",
+    "frontend/pnpm-lock.yaml": "44eeb1119e88acb5d9ebcbfa0274384d50d15220f088a48d6863480e5d83ba54",
+    "frontend/src/main.jsx": "c13c3fb133b4d706a7c829b1afa68fadc31ace76d951c3f881dc1d5c52a6b449",
+    "frontend/src/style.css": "c174898b12fb99b87b9f9efda09d7c977c8c6905e9a262ad40ea66b203b3be98",
+    "frontend/vite.config.js": "bad9088c54f7d45871cd034ad59bc0d5d7404e89ffd1589ddab36596c8918b41",
+    "portal/__init__.py": "4df5f2e0cbf8996414bc176c029b1e34edc73c4a0bf9b86aa1afd7ca233e90e4",
+    "portal/__main__.py": "e0d247a1900308af42d61658586452c3397e8d414301035919bb4f4c9f1be742",
+    "portal/api.py": "f2f1ea96ff6af46e27c98ba6a9f373952d8ff6af1914f0dd104e2825f1d02357",
+    "portal/demo.py": "f53d55a18f24636969c538156c02ee09ab48e0f7d8d6c5248cb1fc67d780cf59",
+    "portal/identity.py": "bd7667dbf91ba688e01bbb50c59d774f68128e89afe0244c6de4d986287d28dc",
+    "portal/postgres.py": "44dfacdbe50b55a1789b149e1842191da77c1483ebdc77162e35ce4d32c13d0b"
+  },
+  "container_runtime_verified": false,
+  "second_human_user_acceptance": "not_performed",
+  "remaining_requirements": [
+    "Build and start the actual Docker Compose environment, preserving logs.",
+    "A second person follows README and identifies a partial failure; agent cannot fill this.",
+    "P1-16 prospective quality acceptance remains unestablished; product tests do not replace it."
+  ],
+  "P1_18_started": false
+}

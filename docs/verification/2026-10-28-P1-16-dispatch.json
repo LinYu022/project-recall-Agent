@@ -1,0 +1,4746 @@
+{
+  "schema_version": "P1-16-dispatch-readonly-observation/0.1",
+  "experiment_id": "04977b4c562ad6b533b2fefe89098c1c3515d3542ac4216a8f7b6e260e7099ef",
+  "source_full_audit_content_sha256": "e400c21afbdffe510d58438bb5a04f7d75553de38ad4dcad874bafcac5716f3c",
+  "snapshot": {
+    "at": "2026-10-28T12:26:36.098184+00:00",
+    "transaction_read_only": true,
+    "not_state_at_original_observation_time": true,
+    "rows": [
+      {
+        "cell_id": "fixed:TEST-14V047000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-A7C1092946154EE69A7FF9708C0E871F",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "02ccf3ff6d0161576c7e155dfb755b81a9c75e5e9828bf4b92228ec40fa063f1",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "2da9bd1cbb9be2fd1bebe7b6ea7ea3b5335f1b52a80189b5554f08a36f8e64f2",
+              "byte_size": 8413
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ba292352b2c79d893bbcb286cf910f71c34e455e2e3abe13c4f60204ea709b52",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "1e11880cdd7c97d05f90a4c443665a440ee92f88201faade5452e7070eee8296",
+              "byte_size": 48361
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a9733e51579c23e68ae31d411523c850241b27b4564b5e890310cf0f0c953a3e",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "a11704771f79ad54b0cd0148ea7bb1d08d2ec201a81030ee8651f1ed4b252b3a",
+              "byte_size": 18775
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "12f3e74826a5be8ba4077fe7d6c70a8bce43fb9cd3242b20f8e158ba1b6507b0",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "8886c8ccf1a1bfdc7565c1f821f63145256ad97bee252b184f9ed0e7f51c0e8f",
+              "byte_size": 20377
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 4,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "03fe2842ae07ee9869d00c7f6f7e20aabf6d13f3dab20fc8ebf543749bb82e2d",
+              "byte_size": 17974
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "fixed:TEST-20V012000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-8F9EDF9E66B34274B8EEC600EF49C980",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f60f983edc38cc2d3087bdb197ca90f61dc8653f097837df8189912074dfd4a9",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "b832c825344f612250f53b9b04705438199d9603e5810dae1602172766b489c2",
+              "byte_size": 17898
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "792340f247e248fde6f5374a87d9f699ed96f04dd22ab21d36074a98d4a0fd63",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "2d1d36cfdbac39888cf9e1ac7a765c2a51a862dd427e0af955aca4fa3e8d7ed4",
+              "byte_size": 78026
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "634ec915c3e72d441d4f07aa748e3ec09d254d04026a7bad1c9174867f493fdb",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "253fed0de22eb026fd989fec7634ea42ece30d07d92a160cd6736d51ecb03b10",
+              "byte_size": 17283
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "b89ad81fffffee6505808a32d500586f38a608ce31081c566f800861641f8b8b",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "fb2a4d8aa1c14699d93066a933fa69e1c06ae2c0e7953b04034929fbfc156ff8",
+              "byte_size": 16796
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 4,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "ffb8d97049dbf07c845e006f4144c2b5f0b40c47417e9d2a4c60e2abb1669b95",
+              "byte_size": 15387
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "fixed:TEST-23V023000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-37697E77FAB64075BF70FD381C2A87B6",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2c9c01b6b9db58ed01e71732ceae7a408ac8c5c6b677d2e862b36f3de7057f04",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "901d1270f3c5a212c938cf0545588e05abb2d96fdfd1694a5b6fd40934099389",
+              "byte_size": 9691
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fe310d1293df50bc0b9a91124d2c25652ed2e2b120fbad300812aece23dbac48",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "b7c5298bad62c47c9e4e7655903e4414d551c3e1aef322aafb98644ddd01400e",
+              "byte_size": 49644
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "73f934ff7d4b43063454ae2a18b4f8080c65b9a442d15331dcc5c8f212ffc8f2",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "f19c5ca6ca419e54d27159d7264a85d31e18179a44df3b7927281b06c530c07c",
+              "byte_size": 15244
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "52529b15111e9c4225926b25da0c8da9084292d0273172b75bf0f9093be560a2",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "1b8c7f62353f3b1cd25e649613d32ace4111d529eb0caeadb55745b00081a4aa",
+              "byte_size": 15525
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 4,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "e7c2fefe08db7aad6c04e6d1c030e69ad63b90ed55fb884c3601898e8d82dca1",
+              "byte_size": 13746
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-F3DC71FC525D42F19F6FF5D8EE706D06",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "dc30f4914d26a4f4f7c2d1d30247ee11328fc05d51f0681111b8bc13739f7559",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "7f66b3f160b67c72aaadd28b87af56f959ec0f4ebe1014dc23b519ba06abb0d3",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "b8d94f37dc75d09de0bbf8a8dc9cebec387ca6803041eb5c5aa116a2acf89ce4",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "73116ff3a16c45dfb73bbfa7f65732b4352ff316c01cdba278bc9ca6a3d6ba41",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6b115d6de06730d87244de2f46afc94e80d6d5da0f1ffabbfc93d3a952460b14",
+              "byte_size": 12183
+            },
+            "output_artifact": {
+              "sha256": "aa057135f8a45fbdf232703a49c7c3f12f8435072a56c6d0811ebd5133801bbe",
+              "byte_size": 3016
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c04924a42457d96196d08ce8012883104337b1dc837949c8b472b58e31e66a48",
+              "byte_size": 406
+            },
+            "output_artifact": {
+              "sha256": "9084971628528dc4973eca2c890d0de2eb2d49c2331d8ee5651e8e3cdcf29edd",
+              "byte_size": 48747
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "698aa95adb8061b4a393327539bb07f20aa27204468730ebe623d4c67048520c",
+              "byte_size": 16295
+            },
+            "output_artifact": {
+              "sha256": "6e4bd51aa2f75c4d44cd6e632ff0aca79051880a91c22a3ded85b7ba7039bd60",
+              "byte_size": 2829
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5550e278b31a3bf60ff8e946cfca62a283f4f28ebfc32afabc303443d0dca2da",
+              "byte_size": 22894
+            },
+            "output_artifact": {
+              "sha256": "17a63eff74d23b214e9965835e84f97c17233f8b75f5a10eefd1627fbdbdf11d",
+              "byte_size": 9741
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-14V047000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-1C30D17E8CF147F7979FE151A404330E",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e6a0c248a368297e74eb03d659f347e63ec8a6547e2bb446af96b38f83c88314",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "32efe3529ef569d3262f99514b8408d7e3411fe38585044e0ce4a8a945fc3fa9",
+              "byte_size": 8413
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "4b3f75ad2465ec68575cc790f0e27a0ea162baf808afb5133a83e2010af9f7f3",
+              "byte_size": 12111
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-15V461000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-903FF0D37BEF4817B4BD39D62DD83F11",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8aa30e62ae087f7bc28f61ca86d2207aefbb5e95b87adce47dc9c530fc526b21",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "7edaf23cb44d066ac7858a51aec1c4b838868d06d1678b2b621614a8a813e917",
+              "byte_size": 15423
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "699fca67104b762bba879919364cbda1b92012c53d55613e9a15cf869ec528d8",
+              "byte_size": 14593
+            },
+            "output_artifact": {
+              "sha256": "7fd4a1a883c643a562a68c584744dcb2051b8bd9ebf3de88ed15fa3e27c9afb0",
+              "byte_size": 3064
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-18V332000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-5F7B832C620D455D866806F8514C8CF3",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "960b13a28706025636b28b412cf7f565b520f7b95ca65e95616f43650e30f43a",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "1d69198fa3ee8b679265cc811c4acd6afe8cc54a3ec3776a475401f065b170d4",
+              "byte_size": 17535
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "45ec227f80bd84a9d7cb5e9328193155bbc47408b7906c45e962ca9e11dcb117",
+              "byte_size": 15309
+            },
+            "output_artifact": {
+              "sha256": "d278d5bfebe1c8e34b08e784cbcad53f5058e808a76d85896bc2845cd11eec87",
+              "byte_size": 3181
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-19V053000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-06497BFF61184116AB1AE64D0F28679D",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ce647920c03c5f059fbc0043dff2d7ee2c61cd6905a1c887168d9648ca821605",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "4c5e53c5c4915d990a8b24fff27a142487db74af545966af5d02443acc873c1f",
+              "byte_size": 17991
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "cc28c97ca2047682180ea33c5e1edb25ef01cbeb91874c29ea62c202cab4b062",
+              "byte_size": 15780
+            },
+            "output_artifact": {
+              "sha256": "8ec87e47b0954bf4551078172ff0d49e8b4a1acbe6460a3e393de634255bdbe3",
+              "byte_size": 2879
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-19V782000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-FCBD09ECC7FE4A3B99E11C251AE1D7AE",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "40c56f9d0e0fce50c78d89c616bdf9d3950c3be5d41df4aff8c392ffe42d52b1",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "6bb5a0d71b60363e34c5e7bba1f68db9cf89eae66bf222cb640ef158a28544d2",
+              "byte_size": 4954
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3bc2bbe11f8365aacf05474e98ed49d1af0526ae3247bb40dc8c3a2e0e7a98c6",
+              "byte_size": 11045
+            },
+            "output_artifact": {
+              "sha256": "da97ec4a82ed7bdf0eb53300d633a8158c7bda083f86f6862eda7e12ff820b69",
+              "byte_size": 2555
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-20V012000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-9DBB0E8A25074C298DC6E318C99659E8",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "166012e9f398175027beeedf3ba939770ce5efbe6e0417f51471b5476cb6301f",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "529d0b860209aa94526456a8715a6b12672c8af31a238d6f5bdc5abb87421a21",
+              "byte_size": 17898
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "d4d7f29e4a0a6945140044897dd258fea78bad2749201d711f09ac0ef3b3c952",
+              "byte_size": 14979
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-20V588000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-9D3E2DE074DA4F94B365F5161941EF82",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c494cac86e677f7974828d332b2adac04729f783db7893c1bef36f6ded2f4b64",
+              "byte_size": 15046
+            },
+            "output_artifact": {
+              "sha256": "e1333621a6291b47998dd1a640598d49371ca115be95734e67563e504e58fe31",
+              "byte_size": 3117
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7075319ae81c36c5beb4a28968f23dadfaf031b7bdb20a6d2d95c6f918ada68e",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "032a6c3297eb7b7e2f98f356d5f09f9dba3d27acadc5e5ec0e36c4deb427521e",
+              "byte_size": 16075
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a1be0f11a61e7d878ad825a873e08cbf52ed8c1aa8e0f3123474fa6e616392da",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "c2f5efaafa2f69358785b956722a01a3613293359c4f83b32f3f4abefe753ab6",
+              "byte_size": 2780
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "12e6d7cdf9385ed87c7be0c157de0d6e11f07f8547f1b6a423011c9760781a4b",
+              "byte_size": 407
+            },
+            "output_artifact": {
+              "sha256": "3bff959d449fe626b95dff5aecd2bbe6a8cf3fb1fee9ac78d76ae4ee996c723a",
+              "byte_size": 28312
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "938b8a2a662f9a56d96219e9eab5d3393a3ab885df6522c1342a84f59b5eaa6a",
+              "byte_size": 10566
+            },
+            "output_artifact": {
+              "sha256": "627bceff7e4ebd9f590db2a5dfa80229deac7fc78fd1ddfaa4a1b733e1f99b91",
+              "byte_size": 3317
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7075319ae81c36c5beb4a28968f23dadfaf031b7bdb20a6d2d95c6f918ada68e",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "9c23e4fc7d8c512a1d1ab7b33b46d5fcc2485acf594080fbe6c031650aac4703",
+              "byte_size": 16075
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "30d9ecca12870c29ac2a94161f382026f2c703ef401f56e23a2da8ae0b8b7f32",
+              "byte_size": 20093
+            },
+            "output_artifact": {
+              "sha256": "1a07bfa8de361534de38dbdacbea9ae8d9ad92aa5bf84b24a44a7783a73ee305",
+              "byte_size": 3155
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e5bfd99100bba99bf67fe5734a3a1b3b7e128da678421849edf3c6030a68d3fc",
+              "byte_size": 20275
+            },
+            "output_artifact": {
+              "sha256": "3af310155b2e3e0ba23aa3917fcab97e05419c5add325633055cb75d27fa10bc",
+              "byte_size": 3157
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-21V165000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-E946386F2E574EED8F74694E4A0D33E5",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "80a122bc035ffe0c1ca69432e6ba109ce890e8387c7ee37d72bfdee4786fa8f2",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "29cde4e8a07ace19150a99c6b1df877d9727d23fc7ba9953cf4da78b5a03b35e",
+              "byte_size": 3250
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ccb5a528605d81e15df07eeab27b252f68fea7a69521f075079f583dfad239ad",
+              "byte_size": 10976
+            },
+            "output_artifact": {
+              "sha256": "585975d106d73ccad058d9073d53864c403ec1811a027c2e3dd722b6a96263f7",
+              "byte_size": 2830
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8c7ec8474f317aa4cc5d1d1539abc54d694d53dedae340b6c37c5e3a0aa36ff8",
+              "byte_size": 595
+            },
+            "output_artifact": {
+              "sha256": "c443953e46b292d31a998c177d1b3217d8787723aa2d6836608d511e358a77e4",
+              "byte_size": 77721
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "4154bd4db0fb4ac45e06387b059661993156345f7b6f5d4ef8fb73b51f52fa58",
+              "byte_size": 22588
+            },
+            "output_artifact": {
+              "sha256": "6ac7104302ba98653b9c7a6f27cad981a48429ff115b996aee7bb4560c08ecc1",
+              "byte_size": 2662
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-6AD5863CFBD549E2BA9BE17429A4DDA9",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "73e8e51a58cbf62abd65bffffc408893f4128fed4f13e6c033799cc3458b76dd",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "02e8aa9bc33ee0845f8f19715c30ce8d672ad569a5adfee5534118b5646e8832",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "db26ed4840055971ded2a618ded3d466552206a4f1a9aa5bb10b5ed0683b2318",
+              "byte_size": 9933
+            },
+            "output_artifact": {
+              "sha256": "ef2c7dec6949a928ebadbe0fff1e6ffb6582b77b228bc25bd396178ce7ce1e01",
+              "byte_size": 2681
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fb835f955210e1fd6d9d48290b15bcc6833b550d6a74cc08f87c42e009f35c51",
+              "byte_size": 387
+            },
+            "output_artifact": {
+              "sha256": "22f2538a5c48f523942e5ea3bd63464a72eaa91c8108f6e26a6eb4b92529dfe6",
+              "byte_size": 22049
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "115d216c0ce127f3b9e5afa8e62fbf5bdd56285edac21bd34cde9632198078e0",
+              "byte_size": 13583
+            },
+            "output_artifact": {
+              "sha256": "c928d66379c4f56ed767e288bc98147a219708e81ca114214e4c7cf81d9b2763",
+              "byte_size": 2605
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c19e1c366558ae6ab7c2d86462720c20c517187b3a4b081c1417305b8eabeb2a",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "b6cc2c4900efe29baa3939efb0a40981d9e3fae5b04c4a793620a98c38a5f220",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "86baa7b1064bca1e88787e98bc8611941e95d336892142508c0e410339e0bb9f",
+              "byte_size": 18689
+            },
+            "output_artifact": {
+              "sha256": "a413f72353a6c4ed4304ee4322b2928e8741d3c3e02451a410f383c739172dd3",
+              "byte_size": 2486
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c19e1c366558ae6ab7c2d86462720c20c517187b3a4b081c1417305b8eabeb2a",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "b11647219b782a1d8b4d3171c591563ceb5e0c378596bdcd86eecc8663624d33",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "18f66265955e2911c08263c467925b898c51865de9af735c71b7e4fb0e264137",
+              "byte_size": 18503
+            },
+            "output_artifact": {
+              "sha256": "d9177bca7d4f23dd1a0b30b1ff602deea63df15b4a7544f303c2ae129c452941",
+              "byte_size": 2486
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-22V554000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-EDF8CF6E4FC04871A2197A77FE507EB9",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d608906ae249d7400f0f8f5ea3ab3f52e52ea3207b5212bc6aa1b075f035e660",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "139b4f950d56582dabd3612ad3bed72370caedca813d6fcee9ba31458071632d",
+              "byte_size": 4692
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e3132b2f36e0674eed7a018a62b7e98ed641970d1920d2562dbd635c227b7e5a",
+              "byte_size": 11139
+            },
+            "output_artifact": {
+              "sha256": "d0c6e671c68a953d3f49c3d86026dcba390220a5f011684d2d847ed2750f0659",
+              "byte_size": 3009
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-22V746000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-ED9A34EEB45645D78764241E8065669C",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ff4ae46a74ec482a8522c46a5fe0b66194726aad871a9f4fd8c7d7a9198ff1c3",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "15883bf154dad835b82de440eb5c789b1ff1f412e9a68ba5cd9dd2e326f2636e",
+              "byte_size": 6658
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c625d6f19e72f0cf56c5e80b4e637b28025448a664f8683bf018c96782c394cf",
+              "byte_size": 12106
+            },
+            "output_artifact": {
+              "sha256": "2ded910a8d588e2dd63458b9c6d4d314e954eb07c184c914c84f0ec28f9aebfe",
+              "byte_size": 2817
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d25a2a98c3d096650623199dd3c5b3464e63088c658755b4d5a1ddb648bfa164",
+              "byte_size": 24716
+            },
+            "output_artifact": {
+              "sha256": "855df5f9c16c8ecf758020ab346ad5400d3f532b8d06d6773a39a314eccc8ef1",
+              "byte_size": 2606
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "89e1fceb2824dde40f2e2860df54702712ccb35efe2739fe044678f71509f709",
+              "byte_size": 595
+            },
+            "output_artifact": {
+              "sha256": "e5ad52e64abb91ecf5d025de462a69130efb62e96b8ab7e55efb3f37abcfa0fd",
+              "byte_size": 77878
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-23V023000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-BAD279AD39B2438199A7171B836993CB",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "592b3bd8876f2ce0cd278af874aabbd77a055fe5d3c7121cdac0225d12595d93",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "671e645e5cbc1e412b09a1e36ae1c0dc039d27661f072772a691be624728ac37",
+              "byte_size": 9691
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "8cee19567d895baf36407f52238518725ece84a9d54833e43da05886644a2315",
+              "byte_size": 12511
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-23V198000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-D263528E2A8B40B68CBC042BFA10F673",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "03b1d06366c1164126bdfa55fcb3b6ead423ff71bbfd7fb37c2464619eb96628",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "0316ae7a2bb45d2ccc365ba418329f2a7b26b6609bcffa4efd41abbe469b073a",
+              "byte_size": 1429
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9591f15dafe8197101504f1f687a8e31eeb31400b79589960a2c2286ff584e62",
+              "byte_size": 9921
+            },
+            "output_artifact": {
+              "sha256": "257f7fb1d11e7522328599d1c9ac543724f02c5b62ce384d44240fca2eda9173",
+              "byte_size": 2496
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "85b201674ffd49c3c6247031c6e5acd7896bd1813a8eae8b339d435783a34569",
+              "byte_size": 383
+            },
+            "output_artifact": {
+              "sha256": "7ff2fe4dd4237477737d3b8a9c09ded11be50a24558c32d89d36bb9f60c050ed",
+              "byte_size": 22232
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d8a03758194a3426e072954ceb6c2e09180ca6528b8fc9f2f2b3980a1174c195",
+              "byte_size": 13416
+            },
+            "output_artifact": {
+              "sha256": "78f140ceb1748a5c33c6c04d6fd97cf25f6c864f06cbab31c45c04c7af638779",
+              "byte_size": 2480
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "75bdd120c9fde78b30f9a48948492c06422679cf127668c409d60389768bf3db",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "d5483bfb89b64d4702e18856335437569e662fb069f0fb889ef602b7ab66869e",
+              "byte_size": 16050
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3ede47e0fb6a379333e2e68287f0ac675f532b90897033a2fd4f94fcca2d7d50",
+              "byte_size": 18443
+            },
+            "output_artifact": {
+              "sha256": "ff78458e270e3413f05c8a9589ceabaffa5f28ba4b375fb95ad51d7b79718d81",
+              "byte_size": 8059
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-23V477000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-8DB985A8F386436FB1C09EE2A3E4408A",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e59a9b45dffcfe936fcacbbbb90a957d878b81052b82b73ba035e830114c55d8",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "7aabc8d3a8f5d1fd5ef168971d27e72aaf2df88095de2c5f8c37c17a2c7dd02e",
+              "byte_size": 3009
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7f0cb61726b77d6e6bdfcbd7327868699fbb179a68e3cc08d630b158645ca106",
+              "byte_size": 10646
+            },
+            "output_artifact": {
+              "sha256": "8d5bf09ea8b49976dc1acf5b2ac2489097c63ac57b35580f1a617f5c4d327958",
+              "byte_size": 3445
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "single_agent:TEST-24V051000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-1D21FC01B38240ADB6AF59B74995B3D3",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f524b189466bced5ca6ee43c157037443a302f7f365c4c52fac1739a6b6cf2b0",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "8f9b1857a6ff68b397868d9c87689078bc9b9089d72100328c39ddb63fde3831",
+              "byte_size": 10532
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "02a84440c2655ca5a30a812831d6641363b53484a67ccfb0fb24da07d1e8e949",
+              "byte_size": 13135
+            },
+            "output_artifact": {
+              "sha256": "fd018b1a15a4452fe48c5026786b72a7ed6efc7548fa297543998bcfd75c56ec",
+              "byte_size": 3046
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-4A29DCCC7C1A4CACAD9950DBD0C3A75D",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "cfeae4415053ee81ef15b511fc45197df67c1fd13c31d47f180ad53475c1b88e",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "e0c1db963fa3040f33039edf1cee51965454de11719072c40e2438f154df23c9",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2147e2983a23c958df3c99bd721aed358947bad1c992b5b382be7a3bfff46ba3",
+              "byte_size": 407
+            },
+            "output_artifact": {
+              "sha256": "f04f94bcd7d225efcebd7f34d023fc78c2b9aac8e1c745cbc1fb37292859f6be",
+              "byte_size": 48747
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9ff8085ed25d8730d4aefc54e68f4b5dff61c1bafa124dc9abae770e617e4d82",
+              "byte_size": 12869
+            },
+            "output_artifact": {
+              "sha256": "889d40e114e33fe06776f440dd2076187c1fd9254d28224e1505e9e42729acb1",
+              "byte_size": 2685
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d66a88d675ce8896cf2abfedd8d70705d22bd37862b29c612a271d6de74367f6",
+              "byte_size": 16537
+            },
+            "output_artifact": {
+              "sha256": "6d75bc5ce429679b80b49d44761351c43ec5501e9677a822e698d3f00691e0c7",
+              "byte_size": 2475
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "59e1d3dcf25d72d462d5bf12b1cf2ac738f1b71f8621ae0a3ca47970aa8bdb04",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "bc867d991c662dfb28c5b9be7731fab299dc8bd82e90fa79d024d7c9de70c80a",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "86ac4f15e2f6965800d2a66b51f208bfa12a255a4fa6ffab9a21ac4e9e0fc6ec",
+              "byte_size": 23131
+            },
+            "output_artifact": {
+              "sha256": "04d53687e6ef98132526730e683473e555658e8dc09f6768350fc86446e6e9ca",
+              "byte_size": 8118
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-14V047000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-03D5AC6C8D5646FA83682D94A576EABB",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "eed80955736fdbb1571979c5a287aba5bdbc200b82f6ca33ef986d00f772c7e5",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "e145e8730207d31a1ae8e84b3d9fc575faaf0b3a5e15d30362f31a2129b66c5d",
+              "byte_size": 8413
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "6da925232f2a11984fd6334fc8ebe869e888841fe37365d229c5b1794262e421",
+              "byte_size": 12797
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-18V332000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-6796CE221814480A8804722D042CE381",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "339deae5b95b323de84cc884891785859b133e2fc9b32227c4d2cc1e4ef9b14a",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "b62ca83e1ed9cf59307a5c25e58053de931559348a3a7102dc5735134d12b6d5",
+              "byte_size": 17535
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6edb70aa645c88deb27c0d62bd816f1310edf4578a4229412fd5b977744e2663",
+              "byte_size": 15995
+            },
+            "output_artifact": {
+              "sha256": "a5d6d678f199ba001e505aa7ace370cd7db7688bd3876891f53df53f3661343b",
+              "byte_size": 3352
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d426823f8257efd4fe537475b721e42c0c9e477f6de747b51e86c99d5c75f696",
+              "byte_size": 408
+            },
+            "output_artifact": {
+              "sha256": "394d29809a99e87c1592d7cae192044f80a6d11a7cee784a0bbcdbf3c6d386da",
+              "byte_size": 79659
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6a835cd959a24f67bc4ac8a634b40aa6f21702d54cf4d36886482e7b72dde71c",
+              "byte_size": 20398
+            },
+            "output_artifact": {
+              "sha256": "d7d82f63d55ae39a787eb133cb58b7b08f9260962830b063d43154ac16d2ea63",
+              "byte_size": 3105
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "12962ba174638d2ff02454c6dd0966c48387a4f9abb5b2892f91d7094d257c79",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "e39df3b640cd3f66f30edaf407902416f1aee1c1b7019e3946c6bf8c59ffb458",
+              "byte_size": 18606
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f3886ee2928b2e3b069a2be9f3c3c44f8848860075572ad3fd606febee96f11b",
+              "byte_size": 26176
+            },
+            "output_artifact": {
+              "sha256": "8e08e08557671b15c22c170c65496421210a5e5f4accf806b3bb45fe5680cc06",
+              "byte_size": 10153
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-19V053000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-E5B9324A0D164728B9BE17AEE545233B",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "676db716fdee1fe9d93503f9f3cbb3c7d34a3dbfad9794506f6e94857c34699b",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "c1c0b2e0ac00d9abc4c5934f4b18edec38be75f8639c0c5b5df0150124580a24",
+              "byte_size": 17991
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "79fab7a2e96c12a36a1e5a8ead46a62f00afc376f340bd4f56e2a99deeea3ecf",
+              "byte_size": 16483
+            },
+            "output_artifact": {
+              "sha256": "17bcec81c197dd79d6d99abaeb1e4c8b4532fdff75edc61a8227d1b2a69f5165",
+              "byte_size": 2736
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-19V782000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-0ECE976106954B96B5B00DDEF73B160D",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "b5dd18dc0e8ec887b7ba1c02015fb11c0b355ec08ffeeb44a5a0ac7e51c63ff1",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "db701715f7d436770b1e6c3b3878e532dd5ff8b94e8e06d46a95f53dd6ac72eb",
+              "byte_size": 4954
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "72952eaee93cc128bdd08c6d890eb453a89582c6431ac768e6b4a71d522c36fe",
+              "byte_size": 11731
+            },
+            "output_artifact": {
+              "sha256": "d9e98526b936883eb8e445d2c9e69632ce322e47f28464f1a525e58c5e6c65c7",
+              "byte_size": 3003
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-20V012000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-EE943B10FC6941D0BB15B0EC15AE4B93",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a63d7e56a42aff180c1d612568b59e4b2a83a88acbc74f5a42a979ec9cc82b96",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "2199ccdc0b04fca61c079383a8db8306885c8167814b669c0d605af849b9e484",
+              "byte_size": 17898
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "a41c225787052cec811e60f06d15dc86cbaf426dfb53d7ab85585d84eebeba48",
+              "byte_size": 15665
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-20V588000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-00A1E0B23E814D88B5908F83C503E9FC",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8712f5632531368872b6c0cc4d5dfd54f8308f8177531b985d6e1c96ac801652",
+              "byte_size": 11252
+            },
+            "output_artifact": {
+              "sha256": "43e4e3ae3b27b097a27d56c130f9dba3760d7679e0adb2d4b235f67500171a8c",
+              "byte_size": 3136
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "aad4ca74ce3c3d3fda95a640a233a690724f85beb02a176e52962b310d3159f6",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "1c2cc2477bc1967659593aec7504d6f6b11e7804b317730762c80e5ee27b68af",
+              "byte_size": 2780
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "95de63b6c633dd97eba5700dae06f438809e8d2e19e8b437659b095d614a5c4b",
+              "byte_size": 393
+            },
+            "output_artifact": {
+              "sha256": "2490c8689be9496613ceaddd9450f653e6f934e71ed72258aecc44ed35ff58bc",
+              "byte_size": 28295
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e19c5638cf6d7560026e39323be0a96fc9033acbad5a00e46a2a46baa1e8cea4",
+              "byte_size": 15548
+            },
+            "output_artifact": {
+              "sha256": "1fe0ce27e2898f7e18e107fb2f7dcd9429b388a9846d0de69f43d20d7bfdb276",
+              "byte_size": 2987
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "70c06b12733a100c0aafc9a47975305e0788e5eb9b162298d40a9d324b735272",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "afd9aec9bb463f7b10cf9ad0b5cc6e3efb884c5fc0de50be28d802683c72acdc",
+              "byte_size": 16074
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6fe0d4f25a3025838f70c0e4c9e6ab0f72f94631361532d580f1ba9896d36dcb",
+              "byte_size": 20707
+            },
+            "output_artifact": {
+              "sha256": "7b9cd86699f12988caf17692dc8bdf32cc5a5afbbc4197abf2814a980e713d51",
+              "byte_size": 8916
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-21V165000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-28FA5468E60749339F8FCB9B5DFE402A",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "43b4bef112e23087c96995552ec4380a658999e5ae6a53aa82eddb9ff026c2b2",
+              "byte_size": 11679
+            },
+            "output_artifact": {
+              "sha256": "f34dda7b6acc3346adb0b9cc6840297f83024c3700eb5d455cd7791782a18589",
+              "byte_size": 2810
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3fd7c5281f4b28aa6815ce55f23a43110ee2dee9eb755fbef382c43db1ef32a2",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "f5ea35262e1cf26d5634cba40c65b3d76e9e6885e09f5af6baa81686538f0d0b",
+              "byte_size": 3250
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f4576f5bd1404afbdfec532ff9a38dbe91b5b5004d19676fc2b44f2789d08dc8",
+              "byte_size": 595
+            },
+            "output_artifact": {
+              "sha256": "fe7a028e318e47c81d5cc30ef0e6897cb5f4c808d93e08610f205008bf92dbca",
+              "byte_size": 77721
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d22aae620f52ffc1f1c19e44cf072ea4a160b0e69fd1f0fe64b4bd45fecd0826",
+              "byte_size": 23289
+            },
+            "output_artifact": {
+              "sha256": "eaf8928b9c70ff51dd7fa96b351ce6f9da06970e1b5368ed66126903995b6370",
+              "byte_size": 2839
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "4460733a96df0ead63f05c6af2f0c59c171ba8fd8a124944283107d583772968",
+              "byte_size": 402
+            },
+            "output_artifact": {
+              "sha256": "e43e0fab92cb8ebd6c48d856ad56141b1dafa5a14cfffbfa9f26fb76bf4d1664",
+              "byte_size": 28405
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7a9e1f70e3a763c2baa40f75f31fd70ada0733491522f3052c9ddb0169f69e8b",
+              "byte_size": 25577
+            },
+            "output_artifact": {
+              "sha256": "ad42b785666641b155a3ab218d0d2ac1af0472e845df6b1b569b9cbd17d15eeb",
+              "byte_size": 2650
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "97933653569f751756efe7b740afce5eae1a1a52611cfc2db134a0932866beda",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "0efdb94116a97aac7c2a147faccfbca7f31f9e1e04db86b9840ac91e307c288c",
+              "byte_size": 15659
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a1ef1cca7b406b936fbe568458959c989c709a95b0ef29d42e39ddc3f43528c4",
+              "byte_size": 30512
+            },
+            "output_artifact": {
+              "sha256": "40ffaf47e6e1fa8b14cfc128fcf89eaee2bb35d03cdd3090907aef60f7d4f4bc",
+              "byte_size": 9318
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-ECCE338418EB4C8891C9D350A5F7D817",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "364949233d691f1b7c9134327b7cc3d50fdc6d25ccb9fdb8011739c9aa1c638d",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "40b31eed913cbc7d204ca22ed2394afb85154169c90f99a649dea5442d5d253e",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "1b2763072cc79ff8fd3f27ab8f07fc8cbccefd11ab5a2d093febb2ed77fc07ff",
+              "byte_size": 10619
+            },
+            "output_artifact": {
+              "sha256": "07957d7a24066534640bc6a8b16a9f5a558ec8528fdab3d15604836c68f239c0",
+              "byte_size": 2575
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "49cebc27d12789e326d7f9c2c206bdb1505cac4148cc15095f9e88260d643cf7",
+              "byte_size": 406
+            },
+            "output_artifact": {
+              "sha256": "1c2ac8cd5269cdaf97d39e9db57ba38669d729ecb5877d00a155b98fe3112d88",
+              "byte_size": 22073
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "033a4953cf4af418e57a9cce48d31c30aa6dd31fdb90e9285ae27a5d2ce6e151",
+              "byte_size": 14135
+            },
+            "output_artifact": {
+              "sha256": "a74bc57b799eb3c72e491cc9b59a2e3fcc0070b708b815591e77ab4a1135db5e",
+              "byte_size": 2426
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5dcc7e061c916bd6024e60ba4009c846090ca3bb767ce44dbcb1799cff976207",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "6eb2be4715668b7f5cf5bf233dedfb2eb3291482aa81696e738dfa9bbc7bfb21",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "cfd095e8b5e7431d4116a36ace571ad669d2f37026ba8be2e2032d0838780e0d",
+              "byte_size": 19054
+            },
+            "output_artifact": {
+              "sha256": "06868ebce3b1904a94d0f98004221d7eecd4c3fe934f7a60824fa24ad3741e5d",
+              "byte_size": 2369
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5dcc7e061c916bd6024e60ba4009c846090ca3bb767ce44dbcb1799cff976207",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "52e974b80f9e374b4aa60ed9235101fe0f7cf49a050ab6a029c072e9b75a9e9f",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "35c7a3c39a17c231d2af72ae9fe3a80456318bdd674d0f735450389ebe2569cc",
+              "byte_size": 19228
+            },
+            "output_artifact": {
+              "sha256": "3b87a4dab8e15b622cae93686e3e2973a0c2c2f918f3ea95faa0558d52fd2cfa",
+              "byte_size": 7825
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-22V554000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-135BD17297C64A9E82A461E8D406B66B",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9a1d2f12f0cdeca55051e22a8a96a0d92b42b69be4aeed620fefe90269873dfa",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "c1440524776efb5854fa107cef0ab6b38024ed23c411bb332746709ff45702c0",
+              "byte_size": 4692
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ffa17600f16d67d4f8215b4f26f80c7153d6c0aaf4922b5eae4904cc4c4cf20e",
+              "byte_size": 412
+            },
+            "output_artifact": {
+              "sha256": "f19b21f967f30562e3ebbd95d5ee7d676733f1095b070fce64e8eb1a49078e06",
+              "byte_size": 36924
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "01e6dcbf9fec0a08361078ef456b273d1803acb72b08b4697fefff61390d4d43",
+              "byte_size": 15959
+            },
+            "output_artifact": {
+              "sha256": "ed5becfdd348d75f4d487c67158216d5334fd9544cdddccacca0c0b769576596",
+              "byte_size": 2896
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "1e48146c7081e5654280b88e6d02960726f929ebd07d19d9cfe3cdba21d749bc",
+              "byte_size": 11825
+            },
+            "output_artifact": {
+              "sha256": "2a479be03d8662eea0cc655d7a7a0394b4cff49e2ac62381c56929efe62f79c2",
+              "byte_size": 3135
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "063b9d27216a6432d7fe34bbd523f73863365069db483fbc9cd9bd017bf0e196",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "7bd097dd6a6a25f53b31d584c3093185e7cbb0cdd32005709706785bfcc63a05",
+              "byte_size": 15810
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fd9405cc11824c05fffca53bbd3d3ca3e79cf679d8cb98159b73a4609c1850fb",
+              "byte_size": 20770
+            },
+            "output_artifact": {
+              "sha256": "ec5ece6ddc042523d7d0044edf9221da3b01668f30e144ae1b98d2a4335ad0da",
+              "byte_size": 8664
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-23V023000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-C1778E5EF99F42A0B12E9CBBC298190D",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a0c6f3f31f72ba43a63da21ddfdee0b8dd78ace8557b3daf182a6c187e14a278",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "129f5dd22d9a89f18d4c0f954c649d0031836a7b77f4261707c5c69b0a6ef4fb",
+              "byte_size": 9691
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "1b2668b2cab0dff3dd666d3c30ed08f91c62b7fdb6518ac5468206ef8a1cafc6",
+              "byte_size": 13197
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-23V198000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-6DFCF46C1878418C853E0F28C0D35958",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6413c28b5bdbc9dfaff4bdb190357b4d44b0a6d10e3308c68c133473cb04f1a9",
+              "byte_size": 10607
+            },
+            "output_artifact": {
+              "sha256": "0c3996086b815899ecb582ddbd958c1fba6d19b974db1762947d38b921197ad3",
+              "byte_size": 2629
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "956716968bf1b6a59a9008556bbd4b8998973e80df78bb71115104cae193c5be",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "bb0e5cd405d4b4e1c67197637427073efbd934a43ebd35afeaf415a04614339f",
+              "byte_size": 1429
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e0bdb9a3c9a3fe43f223aa59429e0f2427e673815295e1e19d51c18f336bd404",
+              "byte_size": 383
+            },
+            "output_artifact": {
+              "sha256": "4dfcfaa8dba0e52374d136e4adc2d2a43f53affe5f073a8899d90126b9674fdf",
+              "byte_size": 22229
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a65b23e884befb287665c991fe0a094b565c1abd8c41ec7abf18e917bb02ea31",
+              "byte_size": 14248
+            },
+            "output_artifact": {
+              "sha256": "bd290f4729a2dbb922e170c03acceeb8b99ad1cbb8ccbab23c24518093efa54e",
+              "byte_size": 2493
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "08cc7bb7b4a733642202b07c18539c19191781b938db16d048d391654863dc0a",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "9fea761125e5bb6b8b093e1ffb31f5367f2ec08897acefb2a6f81d9e333321ad",
+              "byte_size": 16050
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a4984400941a3d01f11495e6122b6756ff15d51ab816d15f59f9b1283397169d",
+              "byte_size": 19217
+            },
+            "output_artifact": {
+              "sha256": "a6b304138e525718e4e82ee292fcbd42cda8e879eccd41871a2d4c68ce59b78a",
+              "byte_size": 7565
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "parallel_tools:TEST-23V477000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-F09AE49501C84066930B4F083736BA33",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7ca01cf215336eafd498293560ef790e1cdbbe2d3d6f2283d8327338bf9b4e8e",
+              "byte_size": 11332
+            },
+            "output_artifact": {
+              "sha256": "7b5b2c9c93385c745a7db9b03eedb68ce2de3919ca05434e2f5080d73a7f9457",
+              "byte_size": 3281
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fd04175d2f1c987c5cc1b6b307662d4e0e73082e8538fe09865ddc8d7d943d71",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "27d02e599c75d2cc446aa39b5cfa1c852e723fee5c1842cfc3fdbb0da1d41f66",
+              "byte_size": 15131
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "4a9a46dfbda93ecd4290963f843bdfb9772b18297cb1364756e7cf94262da728",
+              "byte_size": 20256
+            },
+            "output_artifact": {
+              "sha256": "573b7a74512602e657f48356d2cc97fa921d14e252b0722d85fb1ba7d9c39aa7",
+              "byte_size": 9089
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8eee0fa318ee5aa31a2fb403198f75634e10349837ea37906bdccb71322013e7",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "a5e9688c82a93c7b37ea9113a80c69a5f5eaf4be2058a688fb1580c469fb4035",
+              "byte_size": 3009
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "bb586e44d89afb18740c88e58047aa767b14f7e69225f6a19faada6dac0d3703",
+              "byte_size": 413
+            },
+            "output_artifact": {
+              "sha256": "66e739e74084eac8ec435514841a9024aecb89f12083896be85cda84807170af",
+              "byte_size": 27869
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "1e9af1fc8a47c6b282f9479d65ae24ca62707a03b4267d78943d5a3ae3ac9de4",
+              "byte_size": 15562
+            },
+            "output_artifact": {
+              "sha256": "219962521ffe7a4efe33cfe4d60a709c4d4af33cb9de8e96f014b0e60dda92f6",
+              "byte_size": 3146
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-7FE7577C8BF240408CBA43648F5CA08C",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8fb6b36c20fa14dfbe50d53bf35676f0956946a14c36a5629dab434c91f7f574",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "478c6561a7e7fe1343ab50cdd38908eb216aa0e792e0f69a593153de4c9781fa",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e8a14cde41c147c1c8a6b51bbf0cc25c3f6369a40c0ae8a9981995610c6bb4a8",
+              "byte_size": 12183
+            },
+            "output_artifact": {
+              "sha256": "826ca65aac39d357171196d66db97d03368337921bd288a5a32190e9d6533229",
+              "byte_size": 2745
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-14V047000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-6638951E5EA84A40A757A1879CED9CDF",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f9a9014ea0d1c6c7959aefd4c69fc728836ac54983fba5f2e4ab0b0a44ba791d",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "be25a57dfa5d5e5e4e26664af1e525b895ee2d23ffa212280d0a54f328b9be7b",
+              "byte_size": 8413
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "768d54f1e6e9b6491cd23965e7128c88081de711aa3d5529fd30fbb61d74217f",
+              "byte_size": 12111
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-18V332000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-B76CDBF2CE6043CEA3D75C5C723CFB12",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "50a2219bcce583e7c2fabd91c88d1b89bb72f2f53fa44b04b647812f9b68d433",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "f04bba609e0674535c993a1dc8ad0e6c8df85a261653e237f8ca53574affc0a6",
+              "byte_size": 17535
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7daeb8974a1cc2fc539fb991de9c7f2520ad04a44e46e596bfe84c33078f50e5",
+              "byte_size": 15309
+            },
+            "output_artifact": {
+              "sha256": "ee5768dab771e6644a7f7ef925a394e400c74cc96106832d57873c54fb23d178",
+              "byte_size": 3457
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-19V782000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-D5A973D708F347A8BC2A294D8B416A5D",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a41f4eeeede1e50db95cbe08c9dfebe70d29fad2961da83e0c7ffe56c02f0679",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "6135d9ca4c0dbe99aa88e0d381e8b48c30fc62d99f459154318aeb142114a202",
+              "byte_size": 4954
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d3a704dcf12fc253d4c04d3e6a0af44eaf9ba4c135ac365651bd5fa7a592d42e",
+              "byte_size": 11045
+            },
+            "output_artifact": {
+              "sha256": "5507522eebcde160cf11c82d60603d3faecfda02f5786e95a9395eae1551e26d",
+              "byte_size": 2506
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-20V012000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-A94E9F58248A42969E7F70B09491242C",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e6f84ae2791d7c42957aee40929041b460b02e14551c5743b64962e994ac01e8",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "478cdbcb62e183da535243700d3c1a17ec94095cd6bec7d3879f0157ecd223f6",
+              "byte_size": 17898
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "a5a750441fcedb3329d501469c52181038afee1dd82b734bc036f8d290a3d396",
+              "byte_size": 14979
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-20V588000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-C1A710387A9C47B29772F3E6569C57F2",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "464a123a9d13ba0c20749c511649ba05649a1bbf83b20c355c88188d3a9edff8",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "aa547c347195a5df4aabe9d9351773591f01d3bdf2134f2517e1da61991358cd",
+              "byte_size": 2780
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "b134d9bc6e0e83ceff961517a29ec1a0bba5abd35cf2bcdd51d2319902b405a1",
+              "byte_size": 14995
+            },
+            "output_artifact": {
+              "sha256": "2d59f8fe7cc095b651ecfefa7f0fcaf6c8b61615b17f40ca8abc52def5c46ced",
+              "byte_size": 3069
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c15a750bd3b944c12c3dbc1eec00c649dbc0d6166022eb9ae3955c650c17630b",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "f86df25a09e178fadb9e70967f5f3eec7da8b9a19e33d392234d6136ed146e79",
+              "byte_size": 16074
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "bd3e2322ee726c7a849ecb32b63db621a074ee64cee3aec411fb8b6e59855594",
+              "byte_size": 10566
+            },
+            "output_artifact": {
+              "sha256": "7b9173dc073d44c733d1c289a027552207883f0a792e24f60b152e48f7f5f422",
+              "byte_size": 3253
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ca58d4f3cd72e2d1db7e8e71f6e2a077adcd58231f3b160b50380e01068f57a1",
+              "byte_size": 417
+            },
+            "output_artifact": {
+              "sha256": "63b73f24b9306bbe06aae23babc94efc9d15d34d1ff05f677a6583e592260263",
+              "byte_size": 28296
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "4868a65e24bc63bbf55481882066b6bc9469c37c2033bb28cba03bdfc011c343",
+              "byte_size": 20050
+            },
+            "output_artifact": {
+              "sha256": "86b88f8e534c5d687c0e78876b1da3c7c12481ae6d0c1fc9bae3bb604eec2619",
+              "byte_size": 8747
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-3D2DE02778444887B76A4A895937354A",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "02100b70ed5d889676660c6d938bbc090f5d56bc06daceedcc6f85e00ada9e58",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "e797396807ae25566559761b453c6193882161462b38b3602bec9294a39773bb",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "0b30fe86a7faee3a3a8e265b38d4d08f8cfb195c0f937d2c9be4cb54c8cab24a",
+              "byte_size": 9933
+            },
+            "output_artifact": {
+              "sha256": "62bca0335115b2c1153e56221cc21129f0b6796a43d2a0de92bc3781e0ac82c3",
+              "byte_size": 2650
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2b5b856a71482007d3d5ba3af23da91fc662992438eb20fd5be10721c516e1c6",
+              "byte_size": 392
+            },
+            "output_artifact": {
+              "sha256": "2c4bebab1068bfa4469fa36518c2f2e50ed3f50ba7511ae3c688d6405594e079",
+              "byte_size": 22085
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9e3c53670104cddbc54adb796046e17ac77abafc756fd65555b84d67180922f0",
+              "byte_size": 18401
+            },
+            "output_artifact": {
+              "sha256": "cdbba624dce7fa4133dd11f3b8d56bd6263b8d70ea861342a620e4598b8aa04a",
+              "byte_size": 2492
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7bccff65a538edfa57acf81efc70359087b51be65e11c2f65effa3282e7e9841",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "0db08c816e462056708bd57c8ca823c566e110823e02a33bd947bd4fb01e735f",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ddb4959a8f6d37a7756ea8d2c7cc25c6ac01c6d97b5a1379130f2f48089e9b03",
+              "byte_size": 13497
+            },
+            "output_artifact": {
+              "sha256": "9416b23ce64da826478239113f599f1de430ecf7b4f63d6569019a0b4f35d852",
+              "byte_size": 2542
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7bccff65a538edfa57acf81efc70359087b51be65e11c2f65effa3282e7e9841",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "c6eafdac39e7a8b54d41ba9c065850d23af371befe1a3c857a629e94a6a552fd",
+              "byte_size": 15767
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3d53e99902a091fcb57dd7f37e15f4831dfa4c63232bb80f8d158a33a9b5212a",
+              "byte_size": 18577
+            },
+            "output_artifact": {
+              "sha256": "97eedbd355b0debe052712ff1ea727e434710a768d625268e11153d7f4d86edb",
+              "byte_size": 2491
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-22V346000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-5FDAE9E843AA423E955D478B5611C087",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 204,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "74b977588c3164f0aa050b1498b683c477f9eb6900d33fcbbe44d64752755cea",
+              "byte_size": 22711
+            },
+            "output_artifact": {
+              "sha256": "c133ed0dad71e6eebed4d271a54ad4e4a407cc81976b7daa845cd76edafc7042",
+              "byte_size": 3193
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "738a61028df8e72b05b31cb85af0b4f4f4c4268c938e57327b5a25b592f0c50e",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "e8698596c7170ffb29c48584c716c024306335ded4972ec6a10ee0aa45627dee",
+              "byte_size": 1960
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 200,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "95978689d254697670ddd2aa8746d2e14d8cb3cc4836b51f86a7d751c9da8831",
+              "byte_size": 12958
+            },
+            "output_artifact": {
+              "sha256": "f4817a267b5a8a48a356f9c89f6774ed5eeb05e1cad5685978470bfd7d6d0a87",
+              "byte_size": 3314
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 201,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9c93161dddf65e1171725915777d00b71a5fa96bba2b2f88ba6e1188f6d4e2a5",
+              "byte_size": 389
+            },
+            "output_artifact": {
+              "sha256": "869d5e9163f733a2da94e377057442525da5fc4cfbe709ec49dfdf3ffc9d42ad",
+              "byte_size": 24558
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 202,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7ec4fed0686f7ca932672f4c80a5c61465e4bda2055e17a06f14189a9d486d6c",
+              "byte_size": 17258
+            },
+            "output_artifact": {
+              "sha256": "b59fc176a7537971926433a1c221bf174fffe9e36aa8d8c04edd384341340872",
+              "byte_size": 3114
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 100,
+            "state": "error",
+            "error_code": "model_content_invalid_json",
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7134b380aed3fc31b1e2eb02075d51114c1b577def184d37d3522fc40e7a8508",
+              "byte_size": 12966
+            },
+            "output_artifact": {
+              "sha256": "da29964ee574b6bc5f405ffbf836240e5297716d9d1d3d385788215cd8c580ce",
+              "byte_size": 2493
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 203,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "90b3349afce3ffc7f941d1587358d8e41016a2e3e3cd991e5579bf220228c408",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "eefb59ce165874216c3d696c723e5c65a84ff68755d6311a198aba00e65a1d87",
+              "byte_size": 16218
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 205,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f921534df31f18701f0a1bb4696cf372953efbc633b6563be827ebfa8f003335",
+              "byte_size": 395
+            },
+            "output_artifact": {
+              "sha256": "8995811c64ba4276c61369d78c475bfcbfa3cb6b701ba8d304772b2c28af328e",
+              "byte_size": 24562
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f3b3834c51e5be59655ef46841bdf6d7e9050514aadf9760d337bd7fb67b2049",
+              "byte_size": 13643
+            },
+            "output_artifact": {
+              "sha256": "113fda32fe3fd548bb74e43631635ec5f0dc7a6324cf1a161600f5f01c00637c",
+              "byte_size": 7958
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-22V554000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-7169241BD7CB471FBC0825805C187622",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "14033890a0a7fcc233eb082c8854cc2e5fd5b55871587e9f33eabccc96050491",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "fc4f27525ed2013a62826a8c6bd1ed49690904b2099da10e8cafc9a3164ae688",
+              "byte_size": 4692
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f0ba4b655a7177cd3a2f3de5bbb057232110352f813a8e5cf371ba5b79c32298",
+              "byte_size": 11139
+            },
+            "output_artifact": {
+              "sha256": "3931df734635295a6700742891f55a8fee9249e566d8a6a7b284871e303fdc12",
+              "byte_size": 3192
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-23V023000-YEAR:1",
+        "jobs": [
+          {
+            "job_id": "JOB-0D6E4578958E4DF891D88BE9C690D43E",
+            "state": "failed",
+            "last_error": "deadline_or_attempts_exhausted"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "98f9b1832d43a375d5a37a7b7f482b95279ddcc22a82ac53e052feac2ff4a92a",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "a7d2ca062e4660f0b3cc9b2448b201cece4b1c7f95ed111fc57e8b2bce6f77c2",
+              "byte_size": 9691
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "unknown",
+            "error_code": "ValueError",
+            "pending_reconciliation": true,
+            "input_artifact": {
+              "sha256": "88c663b3885a4971e472943ea4844ca6960c0509d73acd3c089e1875f464695f",
+              "byte_size": 12511
+            },
+            "output_artifact": {
+              "sha256": "8dae4e416ec6e0dbb4c3aee0f25e8cb458db856d1b5d00c2431f8f4f5eed0729",
+              "byte_size": 86
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-23V198000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-E1FF5B50E89945CBAA9F99CA4B687EE9",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "ca56e14d6119c6f1cc3b97e0366ae212362d9ea0320d818332a978cbbe87a792",
+              "byte_size": 9921
+            },
+            "output_artifact": {
+              "sha256": "f8140672e6439d431fe1a9faeea110ead004358331bdcbaaf5760f6c1a58be78",
+              "byte_size": 2497
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7bd3776f385d6a06344e0ed4aa315e988bffdb51ae396e0c4219e46234f4d4c3",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "237cd5dbae709bb3efe4538a9eddd997f62ab26c0969ea001ef321f85a362e2f",
+              "byte_size": 1429
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a602c894506625b19f12e57093c5d4275e031588b3f511a8150ad9592748c22f",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "a238657d794f01a6d484b410802d9204cdaee6a7beb3139f77794e154c2411ec",
+              "byte_size": 16050
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9bd9ab2bf156947d3d692ef8fd3d2efb1f74cc1da604ad6f1eb88ef6523a7155",
+              "byte_size": 391
+            },
+            "output_artifact": {
+              "sha256": "7694cb3416d639a8a0f28b9643c07df1a088056b633f34b995350272f8b6dcf9",
+              "byte_size": 22241
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5637e7072ffe97ba8acb587d1e80791cb9fa6c13cefdf9cc1daad0bc347fb975",
+              "byte_size": 13389
+            },
+            "output_artifact": {
+              "sha256": "8dfad1e30b300c16e8fc3d623cfdf7402e3d52a5e4dc2c701ed6449dbd6a960b",
+              "byte_size": 2370
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a06ae0b6853f72fcb50f1f893ed6ad22c165ed5d5c92df1b92cede68bc3907df",
+              "byte_size": 18362
+            },
+            "output_artifact": {
+              "sha256": "6dca99356bf58c5933e15c44828eb7c7944f79dcfce05b8d40b9b0c24495ada8",
+              "byte_size": 7908
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "multi_agent:TEST-23V477000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-A5CC696352FA4B7CA5A10B50C2F27F84",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "827cc68c98c368ebe2a122586bb57714d65af0022d01c6ed09907bdaec14dbe9",
+              "byte_size": 10646
+            },
+            "output_artifact": {
+              "sha256": "d8665d0a7fbbd82b1c84e0a40d21bae80e8fbed2a558233c2c19a7ea8089c66c",
+              "byte_size": 3179
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d0ca09823ac652ac5ce9d69825f6fe397f6060546f884c66ce15dc634daaee87",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "3514ff999cca6729ee209a01213f34ee84af2bb800a3da9478fc194108be0c42",
+              "byte_size": 3009
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "context_full_history:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-7E7C7E70439F4CF183E7DF95D20280CC",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9152aa7f5fc24f32fa750d51f5b677126d0070fcd519ca0f803337d0c2a84458",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "709ba26c2b351f21063f0a62ad08eb597182356533c984e73b8f11fad03db505",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fece876deca46d18bb168dbea9e9ea53946a5cff714117b14179dbf17e8afe56",
+              "byte_size": 7021
+            },
+            "output_artifact": {
+              "sha256": "69017e1dd13f2ece17cd2d722bce9551a44342edbcc97b5c48eeaa7e3ef8cad4",
+              "byte_size": 2673
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "00b3bf012b55bb0acda4e957d114a2697d134ecef0f0f8a61ec2749f3e0fd351",
+              "byte_size": 406
+            },
+            "output_artifact": {
+              "sha256": "6dc8896236cc6e92178ed1a4955e0666f7558c1beb3100d97d5f8566d8321f34",
+              "byte_size": 48746
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5798160238701abc1f28ba5ab0e6edb8fb5db4667d9ab7301ec67bfe9d56eb32",
+              "byte_size": 18829
+            },
+            "output_artifact": {
+              "sha256": "5da90401f32e4fd74cc74e3a9228908de0490d5521b57bfdc7f0d112581ecf95",
+              "byte_size": 2502
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "af5de4199568d5cdcb7d671f1b6a8fd37c9b9c0aa0e0566363b6a2459e19b8a7",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "e359ec2b7a3d9c1a2a3328859980fc65281218f226010be825f905f53198447e",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f0ea252fec9c02ed1c103662ea1cf152d5b416785c2abec3aea3fe522c486c53",
+              "byte_size": 10233
+            },
+            "output_artifact": {
+              "sha256": "bb7489cf76535a82d3ffe52cb4a9143db69a1de9ccc742bc3370ec11e0c91aec",
+              "byte_size": 2577
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "af5de4199568d5cdcb7d671f1b6a8fd37c9b9c0aa0e0566363b6a2459e19b8a7",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "01c22940c435ec5053cc5a77baeed112bde0c74506ea1564f12d7381587c302b",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "1f24f251637a0cbe4ee2fc7663417e81d7a30379295a1ab5e406e7bad7a8f913",
+              "byte_size": 27363
+            },
+            "output_artifact": {
+              "sha256": "a0e093fa1035a21cc2bc637004a83d24f9b88e3bded29592c43bdcb045cccbf2",
+              "byte_size": 2511
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "context_full_history:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-4BFA7FA6B646445DA292941EC30BDE3F",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8fcc82cbd4158bde608590d73b5e41edd751a42c0ec9fbee0fde2f4185a6bf84",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "208717dfa19b92a0f0c40188f65e99a4dd8bd921bcd4002c1e832e0d5b89cbf3",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2bb75a3713234abf68ee54269e2ecc6db832cdd598b5a066b0eefd36af722f7e",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "c47bd8a2ec8b368bd0e6e745f3b7208b16953d4ebc642e15231a3107ab3ec437",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c8f88f862adb1bc462da213b81c323c0fa09433c5a64deae35dbf0e1740df315",
+              "byte_size": 7014
+            },
+            "output_artifact": {
+              "sha256": "e53bbb7e70aeba038df8b99b8669c37712f752eb741b728fedd7d16a25032c0e",
+              "byte_size": 2713
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "11801de430dcbc5febb097d3e763b25a35d1d3caaa0f6bf56a7f86b85faa3b87",
+              "byte_size": 392
+            },
+            "output_artifact": {
+              "sha256": "fb227e08fca83d00353d1484f8ad87107515a48d4949a16d3f9cd8f6a7b5e6c7",
+              "byte_size": 22083
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "0c36df7378abbb1cb3d1d09cbdd7ca1ad059be4ff13e91b4093f51773dccade4",
+              "byte_size": 10177
+            },
+            "output_artifact": {
+              "sha256": "1b5e21ada977cf940c94a32b2378d2da6f793fd35d2738d7eedaa9b88a30d44a",
+              "byte_size": 2550
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "dc4e6bcc21e9c32b16d4df86c6e0fc7be229832f843cbae0e70a0013cfcd9716",
+              "byte_size": 22037
+            },
+            "output_artifact": {
+              "sha256": "406167ed9d4b20aac824f214514e1ff1b210ded2481a48895085addac556dbac",
+              "byte_size": 2680
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "cc92e94cdc265411228ddb52ead6b84824bdc8c59e60782f705a610b89de9765",
+              "byte_size": 16051
+            },
+            "output_artifact": {
+              "sha256": "ae2b0cfd3338f43d59a2cd299896abf61e20ae62c744ab9e962b214db565dd08",
+              "byte_size": 2769
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2bb75a3713234abf68ee54269e2ecc6db832cdd598b5a066b0eefd36af722f7e",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "06f594e03eb6e2dcf14687b8a8593fee5f63395e6b18cdf1e88b7708189acab3",
+              "byte_size": 15768
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "context_recent_window:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-A2A959F8739C441B9AC1196DCA76F0C6",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f7cc59ba12c63f95b6e5bb379217b206fa16a1d72e0cad735d55e4b5461db315",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "d0cac47071fb1c0b33ff5c9b2db275784e963edc2d1431f2cb5b631d185d0b48",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "81177a5ab05163f88242d4322658b353f8f07addcd004cd7ee79b2a06abe2e05",
+              "byte_size": 9009
+            },
+            "output_artifact": {
+              "sha256": "e032a8f21b5ae6b3e0ee7b056960887262d0164b93ca2adcba30e02b4685c4ac",
+              "byte_size": 3025
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "0c78c2ce8a73190f8beff32d984f013cefcf011b4c5069fc08daad067fda3687",
+              "byte_size": 390
+            },
+            "output_artifact": {
+              "sha256": "935ec52acfe1836f35c09f29a1fef10651df93ca611498c000e8e221ad59c640",
+              "byte_size": 48729
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d0df8c98507e60fb6d8b287ba382c0bf67fc6a49b85602cfbbeed7fc7fb9aebc",
+              "byte_size": 12483
+            },
+            "output_artifact": {
+              "sha256": "e84ac0f249d2260d1a1222b6ca161b1f3edf6191f5762465454a950f939e5733",
+              "byte_size": 3020
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "15424f18fbd156dfd52b34fd6e109aca59d1f8f20f40c2bc5abb7e3078218b54",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "231b7aa805f34fb6e053106f377689f34112bb32933f176016cbc8aca4c4c53b",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9b714c4d87164cf2da55b5e099ada5b2cb0804b535288906db5831fdb2e38c95",
+              "byte_size": 13979
+            },
+            "output_artifact": {
+              "sha256": "f6bf551c05cbb564503dbbe99095d1d71abbaa356ea9d7f11ad3e0aac7cb4c32",
+              "byte_size": 3007
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "15424f18fbd156dfd52b34fd6e109aca59d1f8f20f40c2bc5abb7e3078218b54",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "e65b85ebaef9ab3ed3a6ea74d3a96eeacc145c191df927c36dfe3c64f0f7366b",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d7a8e305154536bf40f5ecc8bd4622d222d6021268c2e768356be3a27526eff6",
+              "byte_size": 13955
+            },
+            "output_artifact": {
+              "sha256": "a7a75a93ab5107b33e34cedda77b2c79c43817cce804c2d99663bbdfd6b3e2b3",
+              "byte_size": 2861
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "context_recent_window:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-3675EA3278DA42379C4273EA41A63AA1",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fb7b99f2aaf0beabedfcfd6bd27400e8d0988507a6dcc48cb17be763a6e7e568",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "c582c9a1bfb5f1d0fe1e300532849db555d88d16c2098a3ef5166cd0f8ab5fbc",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "84a734412bf5ed2ff2b7612893564e5e4860b0721bd365f97b8c61d64162681b",
+              "byte_size": 12557
+            },
+            "output_artifact": {
+              "sha256": "6e320ea22e86c514cb723dd39981aec2e8679561cf67f4264f23567248060d8f",
+              "byte_size": 3049
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "fdaeffa1186107df57f38f6b62327de6c1c03464e647aa487094f4565caf8000",
+              "byte_size": 505
+            },
+            "output_artifact": {
+              "sha256": "2e72d5ebfb99776c82e0621b19e7c69d1157593a371fd6bb07c18c77ca3e3d9a",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "1b23dd0303b369074fd0c9b07c2fe8b00b50e40e8890b6043210f219e0a06428",
+              "byte_size": 12427
+            },
+            "output_artifact": {
+              "sha256": "162793aa0811a9671b6ef8fd85148b9120a721f5dc0efc61b9a4dcaa33caead6",
+              "byte_size": 2332
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "903ae534f847e1d6d984c3acb252dfac6f0d3960388366d36b674b0390192bdd",
+              "byte_size": 8999
+            },
+            "output_artifact": {
+              "sha256": "639df418c76b174c9388c6262619272ff610fcc1829f7aae65e2027ad16b96c6",
+              "byte_size": 3264
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "907ddcff4982dc37986c8bcd41133c12ee6d1c4e6fcb937f28ef4105986f2cda",
+              "byte_size": 416
+            },
+            "output_artifact": {
+              "sha256": "5a64d9471b210b83209346cb65df6d39cbe80b412f3ccf7faafdfecf8396bd55",
+              "byte_size": 22104
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "dae38dc874f8cfa3badb78ce23aa67103d7ffba9e72fb646c11f32ee79ac3f28",
+              "byte_size": 12976
+            },
+            "output_artifact": {
+              "sha256": "549802d89cf6c6fc90deb99eeaddb65dc9f3172cceb4f41f1fd5a841069342dc",
+              "byte_size": 2431
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6c254e8ce0093a88ffd6e4d03e5f956c9457af1a8066a8c208a0f241f9c16f81",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "c615742cbba9dcb4601e34a13d562d9a181222f560040a964e1f7ffe4084a17a",
+              "byte_size": 15501
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "context_structured:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-F68FAB73E11F42B8B463FAAE2D2A31DB",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8a243f30c5f7d257972398c855787bffeccc256b7738223063f8eda9ce0922cd",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "937b49db036743bd1678a9672fefc429400017ba0663ddb1c59f242622b2b2a5",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "59828955e3ed1cb205f1315aaae7167241e1d635c86ce7aecbf550fddb0cc507",
+              "byte_size": 12183
+            },
+            "output_artifact": {
+              "sha256": "774406fdd16c549b56728457dbc6a7f5d6990787e4cee397f23a9d8a8bafa730",
+              "byte_size": 3204
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "context_structured:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-4C986EBBE9054523A7B5B00F7F3EC203",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a8438dc48e9ccf868d2840ee2666241b0714b4dec92047e4af5ee9653bb737b1",
+              "byte_size": 387
+            },
+            "output_artifact": {
+              "sha256": "2b9546cdeed3615da5fec4aed1cc2da8244b5767ab11482585a73441586fbd5e",
+              "byte_size": 22047
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2b5324afcf00f68d39ae61a230427591953693483f02cef19027c53ea5aa3d43",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "c2bf69d2af279befab3171eca6d6d16007576a1942333b367032c02f00c7226c",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "70414d97298d6350718617470495f057426eaca6221eee6ec333f212d86725e4",
+              "byte_size": 9933
+            },
+            "output_artifact": {
+              "sha256": "5b1cc13e07f65e7c750dd43f8ed884ef72393ad485040ce5ccad435a203fdf89",
+              "byte_size": 2714
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "60e4922f84cf91df69352d8a5a02819ae508d417671648c0c502ae033842376a",
+              "byte_size": 13580
+            },
+            "output_artifact": {
+              "sha256": "a7402b2530dc43c7a6df7ed17144a5c68448494c446293e87bbaa8ea7403e5cd",
+              "byte_size": 2506
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7c11767b5bb417d52dacaaaff585f87288a6c927d45cc5d9fdf702c4aacd0a32",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "20c1ac9ca633abdc0bfcb701b34c345977322e6932c6c478e92a8d4da14d2587",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c7ea56cb0c770317eff6d94884f127bff7834fbd64a6af289e614e8ee92a0f70",
+              "byte_size": 18427
+            },
+            "output_artifact": {
+              "sha256": "0c7e8fe2baca70df0c9b1be2f2601ecf1f2379834a6aca56d992056443a22a48",
+              "byte_size": 7875
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_none:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-1F07C99D3A9549A4861355FAE98C782F",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2d88bfa5314f042013506977068db0d3b1b4326c2a08d461953ec3aa1fd85341",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "72a78c084025fdb1b3735166403423b5815b1391625ca537c8b4c2983133e573",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "43c5473baa9924c06354efadb73d1e2e2416602135ddd00f8dae04c3a8b1e5d8",
+              "byte_size": 12183
+            },
+            "output_artifact": {
+              "sha256": "0ff0c4df8082c9702bc15fab9b1d69fbadec4a546b96e19dc7c3898ce5be898f",
+              "byte_size": 2447
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_none:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-0CD7E0FD2E494D7BB75EAC3708FBA0BC",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "517dd94c50aee41abc9ee8fcddb015fc456461316151056699248f78cd9cea3f",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "6ce969b8e1fae7b5ad1ec96d1adcd1cbe087692cf960bcb1aabdd301e21d40e0",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "edab087c9f6b3582b4676fb285f39fcf7d1e36a6d2d341716e133d152876d476",
+              "byte_size": 9933
+            },
+            "output_artifact": {
+              "sha256": "da35efec36040496a95d29f3d5fe7e5e0eeb1683200d96b821e341b70009c364",
+              "byte_size": 2562
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3cc5db521fbd3c4cf43cba6bced11db67c7b9a744b4fdcd62e9dbb4529b31c39",
+              "byte_size": 387
+            },
+            "output_artifact": {
+              "sha256": "b1f09006468d4961dbaaa28bcaa87c9f3327e440e14b886aa6350adf33357b90",
+              "byte_size": 22051
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "04a9e3c121e7a8d7726a96fc5ca58f5f0bd2aa45dc7bdee3fe72adc62d03942a",
+              "byte_size": 13429
+            },
+            "output_artifact": {
+              "sha256": "437e3974fea72f7cba7f66aa96b60814b0f139269009c42e9549f63fee946a61",
+              "byte_size": 2431
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a4f0d0451b7352e7926a4ebf4d05346bd8cb2176c2f2e64e3d6bde0b8ca8c930",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "e5ee885a0580264a649402a68e822889af8509b29641a1e853d2d295183c432d",
+              "byte_size": 15767
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7179e877dfe8c62dea867a8dd84aeb9c2511692bea4a65c4ab815aaff7b33acc",
+              "byte_size": 18322
+            },
+            "output_artifact": {
+              "sha256": "f62da2ad7c512c3665e7464160916470d1633c434a4e9ca57cce98905fcb5a97",
+              "byte_size": 7866
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_semantic:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-9EEF8C0597014656B7A6DB51F2F5492D",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "c874b778af5dafef733d7b6abf9f90b3f7d01fd4de1762b857d9135d9ff21a91",
+              "byte_size": 13481
+            },
+            "output_artifact": {
+              "sha256": "b42dcaf097a40fb4a0f35096e0e62be560772ffd105a3feb4333ae4a0711f9cd",
+              "byte_size": 2544
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8d9e9bfd9503de0c7fe34dd8735c77333ec8e0a2dc21857005e00b6c38655699",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "a51bd053d6d552cdfd60bea0a33e7e6525c9b755098b8ceaaef54a2300fdf096",
+              "byte_size": 8432
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_semantic:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-E999953A94C04723B87AC3A3406C41BB",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "1c2d4cb880260c81201c9c1b40cb100120d0785d443676f6641cb70d8deaab1b",
+              "byte_size": 11231
+            },
+            "output_artifact": {
+              "sha256": "19a1ace772b1046b11485d695eca00036375104a5b1dc8e499774bc58b5a4b22",
+              "byte_size": 2613
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "2d6ffb52d6aeed9355a5ba9e1ddd6cbbe965695fd52c19cc9b9ff351d3405bba",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "d651a5a0d886244b971e5934540ddf6690cac14496420a414649e1c77ea9b5b5",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "8e4127381b45ae124b4ad626bb9d30cef6e5d9d779917b5717b58e21e619c288",
+              "byte_size": 14789
+            },
+            "output_artifact": {
+              "sha256": "331dbf4068f24f39f8ddfbfa8b5d9dada46025a00d313da9a318ab1788c2c409",
+              "byte_size": 2510
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5dd78d778c2ffbe34bc97cdedbbaecf67dcb88d5398cb708e91729bde5d06398",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "22db4fd063ad62f9427a917490c6a7740028dd6752c1ea3507d5b247ec3587bf",
+              "byte_size": 15768
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 7,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "711ecdefc880b43c4d4bd8dddfadc14cd6daf6074fe3e659a8c452e61c6f6658",
+              "byte_size": 19958
+            },
+            "output_artifact": {
+              "sha256": "d15d1577c605a59248a6f2d676192656beee618000b4f945d128b53c500ffffb",
+              "byte_size": 7067
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "45e8be9252387289da4a0f7cd8379856604c4e6d65be841eaa96d58f519f222a",
+              "byte_size": 401
+            },
+            "output_artifact": {
+              "sha256": "ecacf54e4a39a3d5daed69bd36d78c67c0916b242be6a19fb52b93adfe142a37",
+              "byte_size": 22067
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "669f0d66cdad323769b20cb870ab9442ec811d0c774a0411f0b9790d0dce1615",
+              "byte_size": 19695
+            },
+            "output_artifact": {
+              "sha256": "f88940f68c81eee08ef7beed1d670a771f9b0ceaa2430a0eb80c0ec5344e7182",
+              "byte_size": 2455
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 6,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5dd78d778c2ffbe34bc97cdedbbaecf67dcb88d5398cb708e91729bde5d06398",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "b2506f91d374bb691be3fdff7ea236495d9dea09208be9cd6473f2662d517fa0",
+              "byte_size": 15767
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_semantic_episode:TEST-14V047000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-6D85D5F8AE0D4D739BA8604F1DCDAB78",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d56cd90c45471b5e37683258582486ab18b342552ec8c15377a44143d240fb54",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "994fa5693db8d26137bf6966ab08ef6ac2be7baf2a22b749261039de2105b4fa",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "89f56661894f8d9bc0e7cadeb127b7c53461ba2c9b9386036e56279afb7db123",
+              "byte_size": 20361
+            },
+            "output_artifact": {
+              "sha256": "a160f05e35b12b16d5b9651e4245829ae55e427779b49b64eb93835e643794f2",
+              "byte_size": 2876
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3253764288ddd7cb86851770455f5ff7c22041a9388e038bd3ecfcad9ec19947",
+              "byte_size": 390
+            },
+            "output_artifact": {
+              "sha256": "b515e54ec23f7c2398d438067274b4588b151159779e20936990f513e7a7ec76",
+              "byte_size": 48728
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "0b40b2292f2ddd9b18ec2a7f7961628bf0112c90a49a54f64aa3a126589d053d",
+              "byte_size": 24223
+            },
+            "output_artifact": {
+              "sha256": "1a4243aa494fa0672d477dd71b07b83490bcc342f009d95c286d487e0df57d5d",
+              "byte_size": 2801
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "085e03954e358e4da3e661f4450a34f39b8642ec9ce5a74197793772ddedc596",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "4f0c91a1f94fe2bb02ee08fb7ec7c46aaa53c4c3f69b0930b6aa41047708dfbc",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "4857bce801707ccea1a48e26957db054fb9c7dde79a60f585feb3c2ca8d38188",
+              "byte_size": 30880
+            },
+            "output_artifact": {
+              "sha256": "e4bd8346104364fe99f942c357282b899682b07916bbc7447106a21df277d2a3",
+              "byte_size": 9765
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_semantic_episode:TEST-21V652000-FACTS:1",
+        "jobs": [
+          {
+            "job_id": "JOB-66188734209B4084ABC38AAB02BC8552",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a7b0a9f6d91829d832a555e4418a4523f2b3ef2f4a1e059aad4de086ed58a55f",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "65b311e0e134945c44da639c4671ea4f37b0b6ae2f1af6bd3e1a8be4391a3658",
+              "byte_size": 1433
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "174442507e19ec83bbd326731b2926473983298f7e3e5eda3f0b14ca26834938",
+              "byte_size": 18108
+            },
+            "output_artifact": {
+              "sha256": "9299f52c2a0e89957c8c3855c9e95658360e049b3ae0e9069f512aadacd75bb0",
+              "byte_size": 2623
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "e443597183fcdbb8f7d3da496219e5fec34d87f1fa20234efd8c213e343555d7",
+              "byte_size": 21677
+            },
+            "output_artifact": {
+              "sha256": "5ca8831fecd019b9f533e32e08e98d65230ec26ba85beb7629d38f446078b819",
+              "byte_size": 2394
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a3b77e9db0a3e13f38c9010226732d5aebfa61c71648e2b98dfc11fcbb50188e",
+              "byte_size": 26514
+            },
+            "output_artifact": {
+              "sha256": "4d37259bad092e0291ed8e659871dab42dd85f7ce23edb78115b721d99c4a120",
+              "byte_size": 8346
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "7584ff6a541b2e8917c24280e30729e1fa28cfd4945514706bf2664fa617cc5e",
+              "byte_size": 387
+            },
+            "output_artifact": {
+              "sha256": "c81f8578d7efe29220ce43dbd218c5aa1dd3da03b9dd90f9f84b0671de32efab",
+              "byte_size": 22049
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a1ff4ac78b50bdf202d6d325ac93d2c422b09980823c255f3860c3fc1b5a28e7",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "45c5aa0aedf70bed03ee206a6d018225851a20c88a9cd93254613173a5a35904",
+              "byte_size": 15767
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_frozen_all:TEST-14V047000-FACTS:1",
+        "jobs": [],
+        "journal": []
+      },
+      {
+        "cell_id": "memory_frozen_all:TEST-21V652000-FACTS:1",
+        "jobs": [],
+        "journal": []
+      },
+      {
+        "cell_id": "memory_sequential_none:SEQUENCE-PREFIX:1",
+        "jobs": [
+          {
+            "job_id": "JOB-DDCBBF95598746B3BE14FB263F6B8E4C",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "6c9e2967c8f9251d6a4dd5d997ef8b6cc2c8895f4a259b4a36d7a5fa5222d115",
+              "byte_size": 12051
+            },
+            "output_artifact": {
+              "sha256": "a184ada59694bcc536e61fe38c95441412e25e89a5622dfd5589087de4a3359b",
+              "byte_size": 2672
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "de8355375897a02b8e90a2e8c3d7391440d1afe1736b7aab4465e3fdb91314b3",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "452ba4dd152042e8a0d2fe36899e1e8ca31ce1ca517af259606c1abb784fb30b",
+              "byte_size": 8432
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_sequential_none:SEQUENCE-FOLLOWUP:1",
+        "jobs": [
+          {
+            "job_id": "JOB-DDA24393B422481F85949F5709278B82",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "47149f639d4bb5fadbc86f4eabf5374e515004b66edc8d8816a4dc87e5178e9d",
+              "byte_size": 12075
+            },
+            "output_artifact": {
+              "sha256": "4d5f01c4779e496677eec7b0612b7003346e0c393df88b3532c23dffd5680007",
+              "byte_size": 2351
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "a44bd337b5aeb3a163206608cf39bef19d3a467de3bb0e88c38bb5a79c9529ac",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "a24dd967dad067132964a4fa52092f726e32d9a9cf8f875405c4a6ac72e8c141",
+              "byte_size": 8432
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_sequential_semantic:SEQUENCE-PREFIX:1",
+        "jobs": [
+          {
+            "job_id": "JOB-C36C44D703E8404E9AC146AE9F08D6CC",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "dee637ed15af47ad5f1e93e6edd9e4e2800a2ae7f5bdfa26815d35d5d0eeb0a3",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "d1cf11a4667e176ffca78074512e06da3190bde9345cb932538f5fbea7748208",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "0b8545fcfa6ff84027f14d1846b0645fcb84b09fae8d2c6cefa38025c06afcce",
+              "byte_size": 13349
+            },
+            "output_artifact": {
+              "sha256": "f4692f61dfb9612f47cc5e5af0a8d236a0a655402feb0bfce95fc6e6718e7d1a",
+              "byte_size": 7297
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_sequential_semantic_episode:SEQUENCE-PREFIX:1",
+        "jobs": [
+          {
+            "job_id": "JOB-CB9BAE106F9746359D83184F6A1ACDB7",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "4eb58f22f75e93b03f361f226a2d226cdde20e9cf8ec38e29931ac2b1329b50e",
+              "byte_size": 20229
+            },
+            "output_artifact": {
+              "sha256": "723e3076ad47dbba8a1d29f55a1fc194c8a79cb60fe6f4f49fa549e784461ad9",
+              "byte_size": 3241
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "d6ab5b8c80315abfda8b727ec2bdf0258dac8fa0ad6dcccb15655631bb77c1fb",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "ef6e1f753b8144792f52f3c64bbb2ea7e8973c5e524d9ef8702ba1574507d0d5",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "5a74dc8a1b07b8b546461a1fee51b7bfed74608232a74ad77dd8895ae5516f55",
+              "byte_size": 403
+            },
+            "output_artifact": {
+              "sha256": "89a214e52f437be660e0dbf8f7b7ec3527721736573da7873370cf8f7778886d",
+              "byte_size": 48743
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "12b6d2421e4e9809bbdaedb398b93493bfd398c96723bab63ef5312e17470af9",
+              "byte_size": 24530
+            },
+            "output_artifact": {
+              "sha256": "e08ae966e71067a6fe34d897a509fd15f7d2b0e939761ca7a3a822a5cf41e634",
+              "byte_size": 3013
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3f3a416acdf5ce37e55a59ed59426b98becb9764951b0231a590725b88994486",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "a63b7a841866d7f4f7c713363ac64d24965abc12190a93b7822faa6b9984966a",
+              "byte_size": 21141
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9702cebceb611d166edc2e3d6ffaa7dca0ddf7599ba06730966e1be19569dff0",
+              "byte_size": 31098
+            },
+            "output_artifact": {
+              "sha256": "d7823d109cb481df1a60071d87f329165828a375c55ebb807b1b8fc2239669ef",
+              "byte_size": 9085
+            }
+          }
+        ]
+      },
+      {
+        "cell_id": "memory_sequential_semantic_episode:SEQUENCE-FOLLOWUP:1",
+        "jobs": [
+          {
+            "job_id": "JOB-493CF0DB7D42468DAA0896648793AC97",
+            "state": "failed",
+            "last_error": "execution_failed"
+          }
+        ],
+        "journal": [
+          {
+            "kind": "model",
+            "ordinal": 1,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "93ac5b06aae6ab563be50c9871600e60a85f677e2c34b7881870b1e3b6f5731f",
+              "byte_size": 25438
+            },
+            "output_artifact": {
+              "sha256": "eccb5985e4c21264c60a7a21928fddac217bf34d17e89796890f51367039ff2c",
+              "byte_size": 2660
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 5,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "9f2dbdb73386d635657a99a83e233d032c5ad59401c64439a416c79d29c58ebc",
+              "byte_size": 35620
+            },
+            "output_artifact": {
+              "sha256": "83a3780b96dd97663d51a41273c5d76ad3008aaa4e321c0b64bbffebf13d4957",
+              "byte_size": 6985
+            }
+          },
+          {
+            "kind": "model",
+            "ordinal": 3,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "dee2e6a6b95418a6903ed4f03880ca835004c81fd03acfd70ba68166ce77df9f",
+              "byte_size": 29066
+            },
+            "output_artifact": {
+              "sha256": "f5993de4f397467710401a20dd96534a063f03a6661995157ba47e8c1a8e7eb0",
+              "byte_size": 2407
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 0,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "76bca4c9efb688fe2f5e5f1e77cb0012f6bececbdd300080ead7293d4588e7d5",
+              "byte_size": 385
+            },
+            "output_artifact": {
+              "sha256": "18dbed78a76b5fe7b743f29b90eda45c1e535d24a82154064c927e79b29b4359",
+              "byte_size": 8432
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 2,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "f95b7b877a7109dfc0b7ddd3fae6501fee189b9571793efc2049578eb0a8d787",
+              "byte_size": 400
+            },
+            "output_artifact": {
+              "sha256": "ff4f9c85b9b292493bf657e12d7b4707fd8efbd0d1ccede961cbf88b87b1525b",
+              "byte_size": 48760
+            }
+          },
+          {
+            "kind": "tool",
+            "ordinal": 4,
+            "state": "completed",
+            "error_code": null,
+            "pending_reconciliation": false,
+            "input_artifact": {
+              "sha256": "3bbe423cef79eac21f1a4aeff842cd54338ffe3a7924d18a18c95c6a5eb883cc",
+              "byte_size": 506
+            },
+            "output_artifact": {
+              "sha256": "359826808acb96d33600c87d22d9a0aae68b00b1ea2d6b497eac55ea37b44ce5",
+              "byte_size": 20383
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "classification": "post_hoc_readonly_dispatch_snapshot_not_original_observation_time",
+  "not_a_semantic_score": true
+}

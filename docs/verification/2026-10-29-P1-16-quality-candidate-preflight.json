@@ -1,0 +1,317 @@
+{
+  "schema_version": "quality-confirmation-preflight/0.1",
+  "candidate_sha256": "43fa1ca6072de601db49e31da761823b01cfe6e2a4d9facd9ceeeb000992f06d",
+  "release_id": "d3d4a2255ae02678e5cab83612130724e6853e7ebbe589cbc95c9ebe6aa809cd",
+  "literal_source_rows_checked": 123,
+  "checks": [
+    {
+      "case_id": "QTEST-25V065000-FACTS",
+      "category": "direct",
+      "scope_document_counts": {
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V065000-COUNTER",
+      "category": "counterevidence",
+      "scope_document_counts": {
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V065000-PAIR",
+      "category": "wrong_relation",
+      "scope_document_counts": {
+        "matched": 8
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V065000-CONDITIONS",
+      "category": "missing_conditions",
+      "scope_document_counts": {
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V065000-YEAR",
+      "category": "scope_exclusion",
+      "scope_document_counts": {
+        "excluded": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V065000-TIME",
+      "category": "time_boundary",
+      "scope_document_counts": {
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V065000-INSUFFICIENT",
+      "category": "insufficient",
+      "scope_document_counts": {
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-FACTS",
+      "category": "direct",
+      "scope_document_counts": {
+        "excluded": 60,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-COUNTER",
+      "category": "counterevidence",
+      "scope_document_counts": {
+        "excluded": 60,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-PAIR",
+      "category": "wrong_relation",
+      "scope_document_counts": {
+        "excluded": 96,
+        "matched": 8
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-CONDITIONS",
+      "category": "missing_conditions",
+      "scope_document_counts": {
+        "excluded": 60,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-YEAR",
+      "category": "scope_exclusion",
+      "scope_document_counts": {
+        "excluded": 64
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-TIME",
+      "category": "time_boundary",
+      "scope_document_counts": {
+        "excluded": 60,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V935000-INSUFFICIENT",
+      "category": "insufficient",
+      "scope_document_counts": {
+        "excluded": 60,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-FACTS",
+      "category": "direct",
+      "scope_document_counts": {
+        "excluded": 4,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-COUNTER",
+      "category": "counterevidence",
+      "scope_document_counts": {
+        "excluded": 4,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-PAIR",
+      "category": "wrong_relation",
+      "scope_document_counts": {
+        "excluded": 7,
+        "matched": 7
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-CONDITIONS",
+      "category": "missing_conditions",
+      "scope_document_counts": {
+        "excluded": 4,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-YEAR",
+      "category": "scope_exclusion",
+      "scope_document_counts": {
+        "excluded": 8
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-TIME",
+      "category": "time_boundary",
+      "scope_document_counts": {
+        "excluded": 4,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-25V058000-INSUFFICIENT",
+      "category": "insufficient",
+      "scope_document_counts": {
+        "excluded": 4,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-FACTS",
+      "category": "direct",
+      "scope_document_counts": {
+        "excluded": 108,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-COUNTER",
+      "category": "counterevidence",
+      "scope_document_counts": {
+        "excluded": 108,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-PAIR",
+      "category": "cross_source",
+      "scope_document_counts": {
+        "excluded": 108,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-CONDITIONS",
+      "category": "missing_conditions",
+      "scope_document_counts": {
+        "excluded": 108,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-YEAR",
+      "category": "scope_exclusion",
+      "scope_document_counts": {
+        "excluded": 112
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-TIME",
+      "category": "time_boundary",
+      "scope_document_counts": {
+        "excluded": 108,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V744000-INSUFFICIENT",
+      "category": "insufficient",
+      "scope_document_counts": {
+        "excluded": 108,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-FACTS",
+      "category": "direct",
+      "scope_document_counts": {
+        "excluded": 152,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-COUNTER",
+      "category": "counterevidence",
+      "scope_document_counts": {
+        "excluded": 152,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-PAIR",
+      "category": "wrong_relation",
+      "scope_document_counts": {
+        "matched": 8,
+        "excluded": 244
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-CONDITIONS",
+      "category": "missing_conditions",
+      "scope_document_counts": {
+        "excluded": 152,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-YEAR",
+      "category": "scope_exclusion",
+      "scope_document_counts": {
+        "excluded": 156
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-TIME",
+      "category": "time_boundary",
+      "scope_document_counts": {
+        "excluded": 152,
+        "matched": 4
+      },
+      "reference_integrity": true
+    },
+    {
+      "case_id": "QTEST-24V104000-INSUFFICIENT",
+      "category": "insufficient",
+      "scope_document_counts": {
+        "excluded": 152,
+        "matched": 4
+      },
+      "reference_integrity": true
+    }
+  ],
+  "new_provider_calls": 0,
+  "new_source_requests": 0,
+  "independent_reference_semantic_review": false,
+  "quality_targets_frozen": false,
+  "formal_model_quality_acceptance": "not_established"
+}

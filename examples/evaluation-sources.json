@@ -1,0 +1,11 @@
+{
+  "schema_version": "evaluation-acquisition/0.1",
+  "selection_basis": "Preselected official campaign identifiers; no model output or scores used for source selection. Unknown event relationships remain an explicit limitation.",
+  "campaigns": ["14V047000", "15V461000", "18V332000", "18V404000", "19V053000", "19V782000", "20V012000", "20V588000", "21V165000", "21V387000", "21V652000", "22V346000", "22V554000", "22V746000", "23V023000", "23V198000", "23V268000", "23V477000", "24V051000", "24V081000"],
+  "maximum_requests": 20,
+  "per_source_maximum_bytes": 4194304,
+  "source_usage": "evaluation_only",
+  "failure_policy": "Retain every failed receipt; no automatic replacement or retry to improve results. Resume reuses exact saved receipt, including failures.",
+  "time_mode": "snapshot_analysis",
+  "historical_evidence": "local_fetch_only"
+}

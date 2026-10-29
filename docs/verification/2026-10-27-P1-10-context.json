@@ -1,0 +1,220 @@
+{
+  "schema_version": "P1-10-delivery/0.1",
+  "timestamp": "2026-10-27T08:33:32.781509+00:00",
+  "classification": "real_database_synthetic_models_and_archived_official_source_context_checks_no_new_generation",
+  "offline_tests": {
+    "tests": 349,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgres_tests": {
+    "tests": 100,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_check_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "legacy_http_checks": [
+    7,
+    7
+  ],
+  "legacy_real_response_replays": 8,
+  "legacy_outcomes_match": true,
+  "postgres_stopped": true,
+  "http_stopped": true,
+  "schema_removed": true,
+  "context_comparison": {
+    "schema_version": "context-verification/0.1",
+    "classification": "synthetic_retention_checks_not_model_quality",
+    "synthetic_modes": [
+      {
+        "mode": "full_history",
+        "snapshot_artifact": {
+          "sha256": "f4caa93d4198f1b94ba3a929e12a244c6d0b32e43b12dcfb9b952d998fe97591",
+          "byte_size": 116528
+        },
+        "summary_artifact": {
+          "sha256": "93445f0768bdefaf0b882853677026878fd949b697bb44580112256c557b8620",
+          "byte_size": 41921
+        },
+        "before_characters": 72959,
+        "after_characters": 72959,
+        "summary_model_calls": 0,
+        "summary_provider_usage": null,
+        "summary_estimated_cost": null,
+        "summary_method": "deterministic_extractive",
+        "cache_used_for_selection": false,
+        "context_build_elapsed_ms": 16.99209999787854,
+        "counter_text_retained": true,
+        "vehicle_year_retained": true,
+        "fits_24000_characters": false
+      },
+      {
+        "mode": "recent_window",
+        "snapshot_artifact": {
+          "sha256": "f4caa93d4198f1b94ba3a929e12a244c6d0b32e43b12dcfb9b952d998fe97591",
+          "byte_size": 116528
+        },
+        "summary_artifact": {
+          "sha256": "93445f0768bdefaf0b882853677026878fd949b697bb44580112256c557b8620",
+          "byte_size": 41921
+        },
+        "before_characters": 72959,
+        "after_characters": 18640,
+        "summary_model_calls": 0,
+        "summary_provider_usage": null,
+        "summary_estimated_cost": null,
+        "summary_method": "deterministic_extractive",
+        "cache_used_for_selection": false,
+        "context_build_elapsed_ms": 15.260499996657018,
+        "counter_text_retained": false,
+        "vehicle_year_retained": true,
+        "fits_24000_characters": true
+      },
+      {
+        "mode": "structured",
+        "snapshot_artifact": {
+          "sha256": "f4caa93d4198f1b94ba3a929e12a244c6d0b32e43b12dcfb9b952d998fe97591",
+          "byte_size": 116528
+        },
+        "summary_artifact": {
+          "sha256": "93445f0768bdefaf0b882853677026878fd949b697bb44580112256c557b8620",
+          "byte_size": 41921
+        },
+        "before_characters": 72959,
+        "after_characters": 21049,
+        "summary_model_calls": 0,
+        "summary_provider_usage": null,
+        "summary_estimated_cost": null,
+        "summary_method": "deterministic_extractive",
+        "cache_used_for_selection": false,
+        "context_build_elapsed_ms": 16.68509999581147,
+        "counter_text_retained": true,
+        "vehicle_year_retained": true,
+        "fits_24000_characters": true
+      }
+    ],
+    "official": {
+      "classification": "saved_real_NHTSA_sources_reconstructed_unsent_next_context_no_generation",
+      "source_report_content_sha256": "29da79d1d16fcfca60ce84fe871dc67fb3d8b272172b8d1bcdc48d54fc1ac772",
+      "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+      "original_evidence_replays": 24,
+      "modes": [
+        {
+          "mode": "full_history",
+          "snapshot_artifact": {
+            "sha256": "a9c233759537c58cc140780e2b1d2b9fb8d24052bcf2996e3d74efba1f285198",
+            "byte_size": 124183
+          },
+          "summary_artifact": {
+            "sha256": "dfa9091d8f94874c43f480f6b45fc9548f6bc02012f5af640044c6be7609abd6",
+            "byte_size": 13193
+          },
+          "before_characters": 28522,
+          "after_characters": 28522,
+          "summary_model_calls": 0,
+          "summary_provider_usage": null,
+          "summary_estimated_cost": null,
+          "summary_method": "deterministic_extractive",
+          "cache_used_for_selection": false,
+          "context_build_elapsed_ms": 13.39929999812739,
+          "fits_24000_characters": false,
+          "source_cards": 24,
+          "deduplicated_groups": 8,
+          "visible_source_versions": []
+        },
+        {
+          "mode": "recent_window",
+          "snapshot_artifact": {
+            "sha256": "a9c233759537c58cc140780e2b1d2b9fb8d24052bcf2996e3d74efba1f285198",
+            "byte_size": 124183
+          },
+          "summary_artifact": {
+            "sha256": "dfa9091d8f94874c43f480f6b45fc9548f6bc02012f5af640044c6be7609abd6",
+            "byte_size": 13193
+          },
+          "before_characters": 28522,
+          "after_characters": 10795,
+          "summary_model_calls": 0,
+          "summary_provider_usage": null,
+          "summary_estimated_cost": null,
+          "summary_method": "deterministic_extractive",
+          "cache_used_for_selection": false,
+          "context_build_elapsed_ms": 14.643500006059185,
+          "fits_24000_characters": true,
+          "source_cards": 24,
+          "deduplicated_groups": 8,
+          "visible_source_versions": []
+        },
+        {
+          "mode": "structured",
+          "snapshot_artifact": {
+            "sha256": "a9c233759537c58cc140780e2b1d2b9fb8d24052bcf2996e3d74efba1f285198",
+            "byte_size": 124183
+          },
+          "summary_artifact": {
+            "sha256": "dfa9091d8f94874c43f480f6b45fc9548f6bc02012f5af640044c6be7609abd6",
+            "byte_size": 13193
+          },
+          "before_characters": 28522,
+          "after_characters": 19693,
+          "summary_model_calls": 0,
+          "summary_provider_usage": null,
+          "summary_estimated_cost": null,
+          "summary_method": "deterministic_extractive",
+          "cache_used_for_selection": false,
+          "context_build_elapsed_ms": 21.331699994334485,
+          "fits_24000_characters": true,
+          "source_cards": 24,
+          "deduplicated_groups": 8,
+          "visible_source_versions": [
+            "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+            "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+            "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522"
+          ],
+          "stale_revision_rejected": true
+        }
+      ],
+      "limitations": [
+        "This reconstructs the next input from retained run state; it was not sent to a provider.",
+        "Context size and exact source retention do not demonstrate improved model answers.",
+        "The recent window intentionally drops early evidence and is an ablation, not the default."
+      ]
+    },
+    "new_api_requests": 0,
+    "new_source_requests": 0,
+    "summary_model_calls": 0,
+    "summary_provider_usage": null,
+    "estimated_cost": null,
+    "formal_semantic_metrics": null,
+    "independent_human_reviews": 0
+  },
+  "independent_human_reviews": 0,
+  "formal_semantic_metrics": null,
+  "new_api_requests": 0,
+  "new_source_requests": 0,
+  "summary_model_calls": 0,
+  "estimated_provider_cost": null,
+  "record_content_sha256": {
+    "offline": "bbe6837a284cfa0c66bf5effc1b0a49c672c10c85696aee2382287031b8e2ca7",
+    "database": "76d44872a14d32ff85ce553d172abb9a32e5f0f3430568c1f05d06ce19ea2383",
+    "current_database": "62b6472e1c25f9c696ad76a76b3accbf638d40542157a8b41118b8be70846f17",
+    "comparison": "1797af1e832d61a25278075a7894274b23f6049efea22122ec56af155ac7fecc"
+  },
+  "limits": [
+    "Summary is deterministic extraction and exact block deduplication, not abstractive LLM generation.",
+    "Condition/negation heuristics conservatively pin complete blocks, but are not a semantic completeness oracle.",
+    "The official next input is reconstructed from P1-09 state, not submitted to a model.",
+    "Context fits and source replay do not prove answer quality gains.",
+    "Revision-bound context loading does not implement worker restart or task resume; P1-11 remains pending."
+  ]
+}

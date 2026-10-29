@@ -1,0 +1,98 @@
+{
+  "case_id": "TEST-23V198000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "200f1511e59cee6d34b04ae0478116c1f38679b74a9e77a2c5b67be3e0e7d370",
+          "unit_id": "8927d4b509d7333985463755d450ac5b481361f692936f297aeefbe9b905dec0",
+          "start": 0,
+          "end": 419,
+          "quote_sha256": "d7c6d07a809c1e05060e445a4bba4264080172b0ff54025620d861002fd28ea3"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "200f1511e59cee6d34b04ae0478116c1f38679b74a9e77a2c5b67be3e0e7d370",
+          "unit_id": "fb463c99b0d6ec8e645dfd812d7f11afb5515ed83e30cb9c092c7667a4a2abf7",
+          "start": 0,
+          "end": 92,
+          "quote_sha256": "6a4f8777719d521869d486431a599f50f13823d933958d968f0d90d4e6d361a9"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "200f1511e59cee6d34b04ae0478116c1f38679b74a9e77a2c5b67be3e0e7d370",
+          "unit_id": "4a3ac9f48889294481a69857fa29218a2702d41e12de0d7c77659886d7d3dba7",
+          "start": 0,
+          "end": 234,
+          "quote_sha256": "ae46dbe33d62c44ea437bb974b9a743341c584bbf21a43187a7f4a49e64b2454"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SUMMARY",
+      "statement": "Ford Motor Company (Ford) is recalling certain 2023 Edge and Lincoln Nautilus vehicles.  The child seat tether wire welds on the second-row left-side seat back frame may be insufficient, which can reduce the seat's ability to properly restrain a child during a crash.  As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard number 225, \"Child Restraint Anchorage Systems.\"",
+      "evidence_sets": [
+        [
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CONSEQUENCE",
+      "statement": "A child that is not properly restrained during a crash can have an increased risk of injury.",
+      "evidence_sets": [
+        [
+          "consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-REMEDY",
+      "statement": "Dealers will replace the left-side second-row seat back frame, free of charge.  Owner notification letters were mailed May 11, 2023.  Owners may contact Ford customer service at 1-866-436-7332.  Ford's number for this recall is 23C09.",
+      "evidence_sets": [
+        [
+          "remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

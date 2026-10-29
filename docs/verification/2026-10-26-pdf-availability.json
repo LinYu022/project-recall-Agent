@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-26T08:17:12.599109+00:00",
+  "classification": "read_only_visual_check_of_real_source_pdf",
+  "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+  "render_tool": "bundled Poppler pdftoppm",
+  "page": 1,
+  "rendered_image": ".local/pdf-availability/PE10006-page1.png",
+  "visual_reviewed": true,
+  "verified_headings": [
+    "Investigation: PE 10-006",
+    "ACTION / SUMMARY INFORMATION",
+    "Action",
+    "Summary"
+  ],
+  "render_warnings": [
+    "No display font for Symbol",
+    "No display font for ArialUnicode"
+  ],
+  "observed_render_result": "Body text, headings and table readable on the inspected full page; no claim of pixel-perfect font fidelity.",
+  "pdf_text_check_library": "pypdf",
+  "pdf_text_check_library_version": "6.21.2",
+  "formal_chunk_parser_implemented": false
+}

@@ -1,0 +1,2546 @@
+{
+  "schema_version": "evaluation-protocol/0.1",
+  "dataset_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+  "manifest_sha256": "6968e90b0dd994699f2aee9649d8520276bb2c65fd09ec40990be8a6af638836",
+  "cases": [
+    {
+      "case_id": "TEST-14V047000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-14V047000"
+      ],
+      "scope": {
+        "make": "CHEVROLET",
+        "model": "COBALT",
+        "model_year": 2005,
+        "campaign_number": "14V047000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-14V047000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。",
+        "retrieval_query": "14V047000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "cfae62a2184c6f721ab1abd62de4937699ff2c86c64a7863f4036ef3bf6dd497"
+    },
+    {
+      "case_id": "TEST-14V047000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-14V047000"
+      ],
+      "scope": {
+        "make": "CHEVROLET",
+        "model": "COBALT",
+        "model_year": 2005,
+        "campaign_number": "14V047000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-14V047000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "14V047000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "ec2aabb821b6be02b4c774efa4aa9bcb7a50cb22f495c79d60a0c3b85cdcd614"
+    },
+    {
+      "case_id": "TEST-14V047000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-14V047000"
+      ],
+      "scope": {
+        "make": "CHEVROLET",
+        "model": "COBALT",
+        "model_year": 2004,
+        "campaign_number": "14V047000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-14V047000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "14V047000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "98ceb3b2194bd3763d72d6f7242d47c4c45b26c9ad7c0b9ca96bc14453ebba93"
+    },
+    {
+      "case_id": "TEST-15V461000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-15V461000",
+        "NHTSA-EVAL-CAMPAIGN-14V047000"
+      ],
+      "scope": {
+        "make": "RAM",
+        "model": "5500",
+        "model_year": 2013,
+        "campaign_number": "15V461000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-15V461000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "15V461000 summary consequence remedy conditions",
+        "intent": "cross_source",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "19392397a1ba82e62a677da1e45c2ac65bcf2a5db8be65beeab8e71f74937d31"
+    },
+    {
+      "case_id": "TEST-15V461000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-15V461000"
+      ],
+      "scope": {
+        "make": "RAM",
+        "model": "5500",
+        "model_year": 2013,
+        "campaign_number": "15V461000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-15V461000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "15V461000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "540828a90288d6aa246f35c8d434e58e422336a5c4f4d351437e0c659f1b3bf3"
+    },
+    {
+      "case_id": "TEST-15V461000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-15V461000"
+      ],
+      "scope": {
+        "make": "RAM",
+        "model": "5500",
+        "model_year": 2013,
+        "campaign_number": "15V461000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-15V461000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "15V461000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "0284067ddb13e3b040b101520c6258998a959061ad34646478788791ca9f672b"
+    },
+    {
+      "case_id": "TEST-18V332000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-02",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-18V332000"
+      ],
+      "scope": {
+        "make": "JEEP",
+        "model": "GRAND CHEROKEE",
+        "model_year": 2014,
+        "campaign_number": "18V332000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-18V332000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。 假设有人声称完成召回便证明所有同品牌车辆永远安全，请核对该推断并说明证据边界。",
+        "retrieval_query": "18V332000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "832db09aa4f7d5e977a9c4d692f7c9de1430fade7675844c065db786e8b5a958"
+    },
+    {
+      "case_id": "TEST-18V332000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-02",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-18V332000"
+      ],
+      "scope": {
+        "make": "JEEP",
+        "model": "GRAND CHEROKEE",
+        "model_year": 2014,
+        "campaign_number": "18V332000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-18V332000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "18V332000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "06e41e7dafd64b7c560371570739962d1d49b6862387b69b3c9b6907f416ccdf"
+    },
+    {
+      "case_id": "TEST-18V332000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-02",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-18V332000"
+      ],
+      "scope": {
+        "make": "JEEP",
+        "model": "GRAND CHEROKEE",
+        "model_year": 2013,
+        "campaign_number": "18V332000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-18V332000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "18V332000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "d57a07fcd24852e7b29be1a021f14104c0bfb68211b067703f5013b1b7e1c81d"
+    },
+    {
+      "case_id": "TEST-19V053000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-02",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-19V053000",
+        "NHTSA-EVAL-CAMPAIGN-18V332000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "RIDGELINE",
+        "model_year": 2017,
+        "campaign_number": "19V053000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-19V053000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "19V053000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "f582cebe4288484cae5dc5e27c49f3e5",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "983f3025d88a4ce2bd38982f6b9364e9",
+              "ordinal": 0
+            }
+          }
+        ]
+      },
+      "reference_sha256": "529479b46f66130596547be0a8e1bfb29fa9f449924ff8b1f0012846c16ab8b3"
+    },
+    {
+      "case_id": "TEST-19V053000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-02",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-19V053000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "RIDGELINE",
+        "model_year": 2017,
+        "campaign_number": "19V053000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-19V053000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "19V053000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "9044b975f65dfb58ef0dab05e7ddea41dcc03ab2d00df2e9b8d37ee9482b8284"
+    },
+    {
+      "case_id": "TEST-19V053000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-02",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-19V053000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "RIDGELINE",
+        "model_year": 2017,
+        "campaign_number": "19V053000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-19V053000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "19V053000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "edd3e1ab1d46e10c45ccca40ecd8c91bc86b149ed88be0f0f34296037270e10d"
+    },
+    {
+      "case_id": "TEST-18V404000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-03",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-18V404000"
+      ],
+      "scope": {
+        "make": "MAZDA",
+        "model": "RX-8",
+        "model_year": 2005,
+        "campaign_number": "18V404000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-18V404000-FACTS",
+        "question": "仅依据这些允许的召回资料，能否给出投诉总数及故障发生率？若缺投诉全集应说明不足，不能把召回条数当投诉量。",
+        "retrieval_query": "18V404000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [
+          "SERVICE BRAKES"
+        ],
+        "pairs": []
+      },
+      "reference_sha256": "07e10822d3ebc2a63674f9f8b1403abf6ea1268bdc3adb3445aaeae6df533db1"
+    },
+    {
+      "case_id": "TEST-18V404000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-03",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-18V404000"
+      ],
+      "scope": {
+        "make": "MAZDA",
+        "model": "RX-8",
+        "model_year": 2005,
+        "campaign_number": "18V404000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-18V404000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "18V404000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "b24563eb8cd027494ecd865c5330de960358f3fd809d55685188386c8c5fa8d9"
+    },
+    {
+      "case_id": "TEST-18V404000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-03",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-18V404000"
+      ],
+      "scope": {
+        "make": "MAZDA",
+        "model": "RX-8",
+        "model_year": 2004,
+        "campaign_number": "18V404000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-18V404000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "18V404000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "d3b2c5b4b500b15ce88abcdafb4ab7775492f14186552618191c5831f2c20e6b"
+    },
+    {
+      "case_id": "TEST-19V782000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-03",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-19V782000"
+      ],
+      "scope": {
+        "make": "MAZDA",
+        "model": "CX-9",
+        "model_year": 2007,
+        "campaign_number": "19V782000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-19V782000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。",
+        "retrieval_query": "19V782000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "abf5a9de4c0a39a88ce1cc51a2626d06b6f21becdb7214d2d29debcbf80a43f9"
+    },
+    {
+      "case_id": "TEST-19V782000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-03",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-19V782000"
+      ],
+      "scope": {
+        "make": "MAZDA",
+        "model": "CX-9",
+        "model_year": 2007,
+        "campaign_number": "19V782000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-19V782000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "19V782000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "5d78d5d8266e67411e2e2127274c0c047b4b22e254136d4f6ec472477d802451"
+    },
+    {
+      "case_id": "TEST-19V782000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-03",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-19V782000"
+      ],
+      "scope": {
+        "make": "MAZDA",
+        "model": "CX-9",
+        "model_year": 2007,
+        "campaign_number": "19V782000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-19V782000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "19V782000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "3d929986d71bf0cc6ad1d7321f13f1760d78ff0a65dfc535c1255e527a584dc3"
+    },
+    {
+      "case_id": "TEST-20V012000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-04",
+      "split": "test",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-20V012000",
+        "NHTSA-EVAL-CAMPAIGN-20V588000"
+      ],
+      "scope": {
+        "make": "LEXUS",
+        "model": "IS 350",
+        "model_year": 2014,
+        "campaign_number": "20V012000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-20V012000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "20V012000 summary consequence remedy conditions",
+        "intent": "cross_source",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "77eb62b58fd667eb2ed2e2d8fa3c4760a4cc1bf9922ece939f56581528f7d4d4"
+    },
+    {
+      "case_id": "TEST-20V012000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-04",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-20V012000"
+      ],
+      "scope": {
+        "make": "LEXUS",
+        "model": "IS 350",
+        "model_year": 2014,
+        "campaign_number": "20V012000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-20V012000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "20V012000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "47ce9782dd12ced8362112d84acc4a4c2dc53409960c0d147b7b38df1c1e7101"
+    },
+    {
+      "case_id": "TEST-20V012000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-04",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-20V012000"
+      ],
+      "scope": {
+        "make": "LEXUS",
+        "model": "IS 350",
+        "model_year": 2013,
+        "campaign_number": "20V012000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-20V012000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "20V012000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "93594dcb048634a5c1ffea7e57cc52943c813fe159cd61027523177e43ebdf8d"
+    },
+    {
+      "case_id": "TEST-20V588000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-04",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-20V588000"
+      ],
+      "scope": {
+        "make": "CADILLAC",
+        "model": "CT5",
+        "model_year": 2020,
+        "campaign_number": "20V588000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-20V588000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。 假设有人声称完成召回便证明所有同品牌车辆永远安全，请核对该推断并说明证据边界。",
+        "retrieval_query": "20V588000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "add8cbfc66984b5633195b4d4231e5c57095b8b7e53366317f2b7e3700a77635"
+    },
+    {
+      "case_id": "TEST-20V588000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-04",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-20V588000"
+      ],
+      "scope": {
+        "make": "CADILLAC",
+        "model": "CT5",
+        "model_year": 2020,
+        "campaign_number": "20V588000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-20V588000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "20V588000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "dbf85fdbffdb27cd5eeb248016bd3c70a6ab16efa639af562c58bed0e1fc944a"
+    },
+    {
+      "case_id": "TEST-20V588000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-04",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-20V588000"
+      ],
+      "scope": {
+        "make": "CADILLAC",
+        "model": "CT5",
+        "model_year": 2020,
+        "campaign_number": "20V588000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-20V588000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "20V588000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "9d7bf625dbec2465e6bb34138c68d20cd9ac1569aa14c6287a1fecd149e5088a"
+    },
+    {
+      "case_id": "TEST-21V165000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-05",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V165000",
+        "NHTSA-EVAL-CAMPAIGN-21V387000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "PASSPORT",
+        "model_year": 2020,
+        "campaign_number": "21V165000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V165000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "21V165000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "307501a5eeee461eb53e0d5dcab721cd",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "8848d60b951c426389bcb9e15625b357",
+              "ordinal": 0
+            }
+          }
+        ]
+      },
+      "reference_sha256": "79d67cd1475de4ecb1e1967919dad22a6d71c855078d71b3b82b49495aeb836d"
+    },
+    {
+      "case_id": "TEST-21V165000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-05",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V165000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "PASSPORT",
+        "model_year": 2020,
+        "campaign_number": "21V165000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V165000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "21V165000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "5f13205e41dedc0eb429579d29627f1f2de9153dfe65d2e53d68746c977ee83a"
+    },
+    {
+      "case_id": "TEST-21V165000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-05",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V165000"
+      ],
+      "scope": {
+        "make": "HONDA",
+        "model": "PASSPORT",
+        "model_year": 2018,
+        "campaign_number": "21V165000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V165000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "21V165000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "63da1c153964935afd6825f9f2501e46277acf07025e2a2f4fc17a2f860879ee"
+    },
+    {
+      "case_id": "TEST-21V387000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-05",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V387000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "21V387000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V387000-FACTS",
+        "question": "仅依据这些允许的召回资料，能否给出投诉总数及故障发生率？若缺投诉全集应说明不足，不能把召回条数当投诉量。",
+        "retrieval_query": "21V387000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [
+          "SERVICE BRAKES"
+        ],
+        "pairs": []
+      },
+      "reference_sha256": "52bada8b225d1746fe7410662f8f2bb618b7146785ac011c22783e1e58bed877"
+    },
+    {
+      "case_id": "TEST-21V387000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-05",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V387000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "21V387000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V387000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "21V387000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "f1253a4382cfffd4e2569431e62ab6994afd0939fff4fe3bf1e6b0f8b026518e"
+    },
+    {
+      "case_id": "TEST-21V387000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-05",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V387000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "21V387000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V387000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "21V387000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "3d84ed60db1c171b04956873e9b23682665e5d519a469d205fef2aea54c3dd24"
+    },
+    {
+      "case_id": "TEST-21V652000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-06",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V652000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EXPLORER",
+        "model_year": 2021,
+        "campaign_number": "21V652000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V652000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。",
+        "retrieval_query": "21V652000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "a893914594b42d6c6b119266712318d88d459652b4d17e94913e622657765385"
+    },
+    {
+      "case_id": "TEST-21V652000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-06",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V652000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EXPLORER",
+        "model_year": 2021,
+        "campaign_number": "21V652000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V652000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "21V652000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "e97512b1f7d4d55603aa68881401f817c246d57c67a825cad74af8e41e6d4f16"
+    },
+    {
+      "case_id": "TEST-21V652000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-06",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-21V652000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EXPLORER",
+        "model_year": 2020,
+        "campaign_number": "21V652000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-21V652000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "21V652000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "641a7e4e2403c76f694576666a5ecd11f43983ad46b129571465563ac7cd67ac"
+    },
+    {
+      "case_id": "TEST-22V346000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-06",
+      "split": "test",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V346000",
+        "NHTSA-EVAL-CAMPAIGN-21V652000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EXPEDITION",
+        "model_year": 2021,
+        "campaign_number": "22V346000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V346000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "22V346000 summary consequence remedy conditions",
+        "intent": "cross_source",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "4446403791d83ae2fe224fb9404965bdf1293090e87d0a3e10e17510d9bca55b"
+    },
+    {
+      "case_id": "TEST-22V346000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-06",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V346000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EXPEDITION",
+        "model_year": 2021,
+        "campaign_number": "22V346000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V346000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "22V346000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "2dfee3f1db7974e2e976bc298d29514cbf3ff655d69b22262f8ca20ac0ec63f5"
+    },
+    {
+      "case_id": "TEST-22V346000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-06",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V346000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EXPEDITION",
+        "model_year": 2021,
+        "campaign_number": "22V346000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V346000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "22V346000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "0e896e4681bebba682439044d44ecb8f1662bfeabe0e3721ddef1f3a8bae3fc9"
+    },
+    {
+      "case_id": "TEST-22V554000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-07",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V554000"
+      ],
+      "scope": {
+        "make": "WESTERN STAR",
+        "model": "49X",
+        "model_year": 2023,
+        "campaign_number": "22V554000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V554000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。 假设有人声称完成召回便证明所有同品牌车辆永远安全，请核对该推断并说明证据边界。",
+        "retrieval_query": "22V554000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "1d840eb46282701473568f9a7e087620218c5630f532b2f72be3f081fdf83773"
+    },
+    {
+      "case_id": "TEST-22V554000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-07",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V554000"
+      ],
+      "scope": {
+        "make": "WESTERN STAR",
+        "model": "49X",
+        "model_year": 2023,
+        "campaign_number": "22V554000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V554000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "22V554000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "48a395bb76293a507d8a18ae4b40ebb8988e16e204cd11265901383d1d94a476"
+    },
+    {
+      "case_id": "TEST-22V554000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-07",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V554000"
+      ],
+      "scope": {
+        "make": "WESTERN STAR",
+        "model": "49X",
+        "model_year": 2022,
+        "campaign_number": "22V554000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V554000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "22V554000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "54729c16337ce14237da05622ef1c5d25b81d35069b4948b1d61795cde50be87"
+    },
+    {
+      "case_id": "TEST-22V746000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-07",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V746000",
+        "NHTSA-EVAL-CAMPAIGN-22V554000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "ELANTRA N",
+        "model_year": 2022,
+        "campaign_number": "22V746000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V746000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "22V746000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "239f1fdfe4f84be49977ed0fc9766585",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "c6be54f2e47241b5921b7743fe4a3dfa",
+              "ordinal": 0
+            }
+          }
+        ]
+      },
+      "reference_sha256": "8a0ab0ce23ee0e80b2cf843132bfbc8f3307386827c13e8142faaa7aadc8b1bf"
+    },
+    {
+      "case_id": "TEST-22V746000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-07",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V746000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "ELANTRA N",
+        "model_year": 2022,
+        "campaign_number": "22V746000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V746000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "22V746000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "b470208b8a3d2afa9b2b536851af8520f1cc597be12d99c5e93c00cd544b9a97"
+    },
+    {
+      "case_id": "TEST-22V746000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-07",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-22V746000"
+      ],
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "ELANTRA N",
+        "model_year": 2022,
+        "campaign_number": "22V746000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-22V746000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "22V746000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "de109eec9e09e74b38106ce0d25b264f27d7963ec26d0d68acf8f7b44581e58c"
+    },
+    {
+      "case_id": "TEST-23V023000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-08",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V023000"
+      ],
+      "scope": {
+        "make": "AUTOCAR",
+        "model": "XSPOTTER",
+        "model_year": 2016,
+        "campaign_number": "23V023000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V023000-FACTS",
+        "question": "仅依据这些允许的召回资料，能否给出投诉总数及故障发生率？若缺投诉全集应说明不足，不能把召回条数当投诉量。",
+        "retrieval_query": "23V023000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [
+          "SERVICE BRAKES"
+        ],
+        "pairs": []
+      },
+      "reference_sha256": "910f9a43d4e1b7b49b79cf6c65330a8b94e3c54b541ced3f793a560d3391c449"
+    },
+    {
+      "case_id": "TEST-23V023000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-08",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V023000"
+      ],
+      "scope": {
+        "make": "AUTOCAR",
+        "model": "XSPOTTER",
+        "model_year": 2016,
+        "campaign_number": "23V023000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V023000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "23V023000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "cbaf05132aeb8abef7c4f3c877af0d2a42419e3607796348bba940022f3e8163"
+    },
+    {
+      "case_id": "TEST-23V023000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-08",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V023000"
+      ],
+      "scope": {
+        "make": "AUTOCAR",
+        "model": "XSPOTTER",
+        "model_year": 2009,
+        "campaign_number": "23V023000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V023000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "23V023000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "418b61d911e54e45d4cf25c75a81728a07410e2a631689710f47290171df24e7"
+    },
+    {
+      "case_id": "TEST-23V198000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-08",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V198000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EDGE",
+        "model_year": 2023,
+        "campaign_number": "23V198000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V198000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。",
+        "retrieval_query": "23V198000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "f72eb55d3610d2d5cdc67a2d10a81e524992c5f22aebb9b0a5c318cbfb0b7085"
+    },
+    {
+      "case_id": "TEST-23V198000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-08",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V198000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EDGE",
+        "model_year": 2023,
+        "campaign_number": "23V198000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V198000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "23V198000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "de5de7b116564f824d2a305b8102d48f08313f0a55b8b0e9dcf9359a80aefd25"
+    },
+    {
+      "case_id": "TEST-23V198000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-08",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V198000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "EDGE",
+        "model_year": 2023,
+        "campaign_number": "23V198000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V198000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "23V198000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "c562618202aeaa783a8ab0885c9742a802476e39f5ee226482a0f6606e057b7b"
+    },
+    {
+      "case_id": "TEST-23V268000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-09",
+      "split": "test",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V268000",
+        "NHTSA-EVAL-CAMPAIGN-23V477000"
+      ],
+      "scope": {
+        "make": "NISSAN",
+        "model": "ROGUE",
+        "model_year": 2023,
+        "campaign_number": "23V268000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V268000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "23V268000 summary consequence remedy conditions",
+        "intent": "cross_source",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "8a588977024d50487cedc07faf25701299b52f040ab8f702811a6dda9267ae6a"
+    },
+    {
+      "case_id": "TEST-23V268000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-09",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V268000"
+      ],
+      "scope": {
+        "make": "NISSAN",
+        "model": "ROGUE",
+        "model_year": 2023,
+        "campaign_number": "23V268000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V268000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "23V268000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "7e06a957f028d46b43dbc2bcd088a54a66f38efa2e603c830153e50b48bab732"
+    },
+    {
+      "case_id": "TEST-23V268000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-09",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V268000"
+      ],
+      "scope": {
+        "make": "NISSAN",
+        "model": "ROGUE",
+        "model_year": 2022,
+        "campaign_number": "23V268000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V268000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "23V268000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "755db6acefb6a55163e53ffc24544a4fb5fec9d33857a7541f20c96c70220010"
+    },
+    {
+      "case_id": "TEST-23V477000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-09",
+      "split": "test",
+      "category": "counterevidence",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V477000"
+      ],
+      "scope": {
+        "make": "JAYCO",
+        "model": "SENECA",
+        "model_year": 2021,
+        "campaign_number": "23V477000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V477000-FACTS",
+        "question": "依据允许的冻结官方记录，说明缺陷、后果与补救，保留车型及适用条件；不得确认个车适用或推算故障率。 假设有人声称完成召回便证明所有同品牌车辆永远安全，请核对该推断并说明证据边界。",
+        "retrieval_query": "23V477000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "c4c65a1ee5c0afc5893fdaee124fea080917b0e968d99116305c7f8ca9d4f122"
+    },
+    {
+      "case_id": "TEST-23V477000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-09",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V477000"
+      ],
+      "scope": {
+        "make": "JAYCO",
+        "model": "SENECA",
+        "model_year": 2021,
+        "campaign_number": "23V477000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V477000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "23V477000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "9a72521ab7181f6b65cec7714ecb76358eb4803ec19bbc13e645e70a49910247"
+    },
+    {
+      "case_id": "TEST-23V477000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-09",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-23V477000"
+      ],
+      "scope": {
+        "make": "JAYCO",
+        "model": "SENECA",
+        "model_year": 2021,
+        "campaign_number": "23V477000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-23V477000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "23V477000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "c1adc3cfa769112fffbf4e6eae40a1f008cb3dcabd4ca84ded0ec1f128825b8f"
+    },
+    {
+      "case_id": "TEST-24V051000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-10",
+      "split": "test",
+      "category": "wrong_relation",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-24V051000",
+        "NHTSA-EVAL-CAMPAIGN-24V081000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "24V051000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-24V051000-FACTS",
+        "question": "对照这两组允许记录，说明当前车型范围内的缺陷、后果与补救，并区分范围排除与未知；相似部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "24V051000 summary consequence remedy conditions",
+        "intent": "relationship",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "943ebcbb1a87463e966977617573dc9a",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "ae3de80532d342678ae1473de3007d09",
+              "ordinal": 0
+            }
+          }
+        ]
+      },
+      "reference_sha256": "2ce6403a849ce74abc135879176b4ae1afab1d1bc2bc86efc78381283b1b4b11"
+    },
+    {
+      "case_id": "TEST-24V051000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-10",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-24V051000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "24V051000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-24V051000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "24V051000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "3ed71605e04b45dbe7b5992e8d96873507a1cef9e175e757adf026331ca92dbf"
+    },
+    {
+      "case_id": "TEST-24V051000-YEAR",
+      "event_cluster_id": "EVAL-CLUSTER-10",
+      "split": "test",
+      "category": "scope_exclusion",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-24V051000"
+      ],
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2016,
+        "campaign_number": "24V051000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-24V051000-YEAR",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "24V051000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "59b77ff75496bdadd3f346b94ce9eab43013033dfe758d18cdfe1dda91b55a1d"
+    },
+    {
+      "case_id": "TEST-24V081000-FACTS",
+      "event_cluster_id": "EVAL-CLUSTER-10",
+      "split": "test",
+      "category": "insufficient",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-24V081000"
+      ],
+      "scope": {
+        "make": "SUZUKI",
+        "model": "GSX800",
+        "model_year": 2024,
+        "campaign_number": "24V081000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-24V081000-FACTS",
+        "question": "仅依据这些允许的召回资料，能否给出投诉总数及故障发生率？若缺投诉全集应说明不足，不能把召回条数当投诉量。",
+        "retrieval_query": "24V081000 summary consequence remedy conditions",
+        "intent": "complaint_statistics",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [
+          "SERVICE BRAKES"
+        ],
+        "pairs": []
+      },
+      "reference_sha256": "11febd84a455a3f30872e5e54c70e3ebee604f4de49f46e7c52239755812f8cf"
+    },
+    {
+      "case_id": "TEST-24V081000-CONDITIONS",
+      "event_cluster_id": "EVAL-CLUSTER-10",
+      "split": "test",
+      "category": "missing_conditions",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-24V081000"
+      ],
+      "scope": {
+        "make": "SUZUKI",
+        "model": "GSX800",
+        "model_year": 2024,
+        "campaign_number": "24V081000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-24V081000-CONDITIONS",
+        "question": "我没有提供生产日期和车辆配置，能否确认我的车适用该召回？",
+        "retrieval_query": "24V081000 summary consequence remedy conditions",
+        "intent": "applicability",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "2a1ae26b7c1a483a1521b580416721c8bb4a4d770a2100cc868a73396236d792"
+    },
+    {
+      "case_id": "TEST-24V081000-TIME",
+      "event_cluster_id": "EVAL-CLUSTER-10",
+      "split": "test",
+      "category": "time_boundary",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-24V081000"
+      ],
+      "scope": {
+        "make": "SUZUKI",
+        "model": "GSX800",
+        "model_year": 2024,
+        "campaign_number": "24V081000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "TEST-24V081000-TIME",
+        "question": "请按当前任务条件检查允许的固定来源；不能用别的年份或以后取得的版本替代。",
+        "retrieval_query": "24V081000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-01-01T00:00:00Z",
+          "date_filter_basis": "no archived version-level publication proof before cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "3d9e9cec17121e82c7532fc95b6e563d68e3af587928e86003a2183457b1d1b9"
+    },
+    {
+      "case_id": "SEQUENCE-PREFIX",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-14V047000"
+      ],
+      "scope": {
+        "make": "CHEVROLET",
+        "model": "COBALT",
+        "model_year": 2005,
+        "campaign_number": "14V047000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "SEQUENCE-PREFIX",
+        "question": "先说明允许记录中的缺陷和风险边界，不能确认个车适用。",
+        "retrieval_query": "14V047000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "7f9ebfe48fb93a2cbfaa44a7730cd980d31b0bbd1cfb6b939f5d06aa436a8553"
+    },
+    {
+      "case_id": "SEQUENCE-FOLLOWUP",
+      "event_cluster_id": "EVAL-CLUSTER-01",
+      "split": "test",
+      "category": "direct",
+      "sources": [
+        "NHTSA-EVAL-CAMPAIGN-14V047000"
+      ],
+      "scope": {
+        "make": "CHEVROLET",
+        "model": "COBALT",
+        "model_year": 2005,
+        "campaign_number": "14V047000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "SEQUENCE-FOLLOWUP",
+        "question": "接着核对补救与适用条件；前一次结论只作线索，必须用当前原文。",
+        "retrieval_query": "14V047000 summary consequence remedy conditions",
+        "intent": "record_lookup",
+        "expected_release_id": null,
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "df1a7b83a6b6f328d30f0edb50b9c84c821e17574b2409b465fa9c148e35d66d"
+    }
+  ],
+  "arms": [
+    {
+      "arm_id": "fixed",
+      "family": "main",
+      "method": "fixed",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-14V047000-CONDITIONS",
+        "TEST-14V047000-YEAR",
+        "TEST-15V461000-FACTS",
+        "TEST-15V461000-CONDITIONS",
+        "TEST-15V461000-TIME",
+        "TEST-18V332000-FACTS",
+        "TEST-18V332000-CONDITIONS",
+        "TEST-18V332000-YEAR",
+        "TEST-19V053000-FACTS",
+        "TEST-19V053000-CONDITIONS",
+        "TEST-19V053000-TIME",
+        "TEST-18V404000-FACTS",
+        "TEST-18V404000-CONDITIONS",
+        "TEST-18V404000-YEAR",
+        "TEST-19V782000-FACTS",
+        "TEST-19V782000-CONDITIONS",
+        "TEST-19V782000-TIME",
+        "TEST-20V012000-FACTS",
+        "TEST-20V012000-CONDITIONS",
+        "TEST-20V012000-YEAR",
+        "TEST-20V588000-FACTS",
+        "TEST-20V588000-CONDITIONS",
+        "TEST-20V588000-TIME",
+        "TEST-21V165000-FACTS",
+        "TEST-21V165000-CONDITIONS",
+        "TEST-21V165000-YEAR",
+        "TEST-21V387000-FACTS",
+        "TEST-21V387000-CONDITIONS",
+        "TEST-21V387000-TIME",
+        "TEST-21V652000-FACTS",
+        "TEST-21V652000-CONDITIONS",
+        "TEST-21V652000-YEAR",
+        "TEST-22V346000-FACTS",
+        "TEST-22V346000-CONDITIONS",
+        "TEST-22V346000-TIME",
+        "TEST-22V554000-FACTS",
+        "TEST-22V554000-CONDITIONS",
+        "TEST-22V554000-YEAR",
+        "TEST-22V746000-FACTS",
+        "TEST-22V746000-CONDITIONS",
+        "TEST-22V746000-TIME",
+        "TEST-23V023000-FACTS",
+        "TEST-23V023000-CONDITIONS",
+        "TEST-23V023000-YEAR",
+        "TEST-23V198000-FACTS",
+        "TEST-23V198000-CONDITIONS",
+        "TEST-23V198000-TIME",
+        "TEST-23V268000-FACTS",
+        "TEST-23V268000-CONDITIONS",
+        "TEST-23V268000-YEAR",
+        "TEST-23V477000-FACTS",
+        "TEST-23V477000-CONDITIONS",
+        "TEST-23V477000-TIME",
+        "TEST-24V051000-FACTS",
+        "TEST-24V051000-CONDITIONS",
+        "TEST-24V051000-YEAR",
+        "TEST-24V081000-FACTS",
+        "TEST-24V081000-CONDITIONS",
+        "TEST-24V081000-TIME"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "single_agent",
+      "family": "main",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-14V047000-CONDITIONS",
+        "TEST-14V047000-YEAR",
+        "TEST-15V461000-FACTS",
+        "TEST-15V461000-CONDITIONS",
+        "TEST-15V461000-TIME",
+        "TEST-18V332000-FACTS",
+        "TEST-18V332000-CONDITIONS",
+        "TEST-18V332000-YEAR",
+        "TEST-19V053000-FACTS",
+        "TEST-19V053000-CONDITIONS",
+        "TEST-19V053000-TIME",
+        "TEST-18V404000-FACTS",
+        "TEST-18V404000-CONDITIONS",
+        "TEST-18V404000-YEAR",
+        "TEST-19V782000-FACTS",
+        "TEST-19V782000-CONDITIONS",
+        "TEST-19V782000-TIME",
+        "TEST-20V012000-FACTS",
+        "TEST-20V012000-CONDITIONS",
+        "TEST-20V012000-YEAR",
+        "TEST-20V588000-FACTS",
+        "TEST-20V588000-CONDITIONS",
+        "TEST-20V588000-TIME",
+        "TEST-21V165000-FACTS",
+        "TEST-21V165000-CONDITIONS",
+        "TEST-21V165000-YEAR",
+        "TEST-21V387000-FACTS",
+        "TEST-21V387000-CONDITIONS",
+        "TEST-21V387000-TIME",
+        "TEST-21V652000-FACTS",
+        "TEST-21V652000-CONDITIONS",
+        "TEST-21V652000-YEAR",
+        "TEST-22V346000-FACTS",
+        "TEST-22V346000-CONDITIONS",
+        "TEST-22V346000-TIME",
+        "TEST-22V554000-FACTS",
+        "TEST-22V554000-CONDITIONS",
+        "TEST-22V554000-YEAR",
+        "TEST-22V746000-FACTS",
+        "TEST-22V746000-CONDITIONS",
+        "TEST-22V746000-TIME",
+        "TEST-23V023000-FACTS",
+        "TEST-23V023000-CONDITIONS",
+        "TEST-23V023000-YEAR",
+        "TEST-23V198000-FACTS",
+        "TEST-23V198000-CONDITIONS",
+        "TEST-23V198000-TIME",
+        "TEST-23V268000-FACTS",
+        "TEST-23V268000-CONDITIONS",
+        "TEST-23V268000-YEAR",
+        "TEST-23V477000-FACTS",
+        "TEST-23V477000-CONDITIONS",
+        "TEST-23V477000-TIME",
+        "TEST-24V051000-FACTS",
+        "TEST-24V051000-CONDITIONS",
+        "TEST-24V051000-YEAR",
+        "TEST-24V081000-FACTS",
+        "TEST-24V081000-CONDITIONS",
+        "TEST-24V081000-TIME"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "parallel_tools",
+      "family": "main",
+      "method": "parallel_tools",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-14V047000-CONDITIONS",
+        "TEST-14V047000-YEAR",
+        "TEST-15V461000-FACTS",
+        "TEST-15V461000-CONDITIONS",
+        "TEST-15V461000-TIME",
+        "TEST-18V332000-FACTS",
+        "TEST-18V332000-CONDITIONS",
+        "TEST-18V332000-YEAR",
+        "TEST-19V053000-FACTS",
+        "TEST-19V053000-CONDITIONS",
+        "TEST-19V053000-TIME",
+        "TEST-18V404000-FACTS",
+        "TEST-18V404000-CONDITIONS",
+        "TEST-18V404000-YEAR",
+        "TEST-19V782000-FACTS",
+        "TEST-19V782000-CONDITIONS",
+        "TEST-19V782000-TIME",
+        "TEST-20V012000-FACTS",
+        "TEST-20V012000-CONDITIONS",
+        "TEST-20V012000-YEAR",
+        "TEST-20V588000-FACTS",
+        "TEST-20V588000-CONDITIONS",
+        "TEST-20V588000-TIME",
+        "TEST-21V165000-FACTS",
+        "TEST-21V165000-CONDITIONS",
+        "TEST-21V165000-YEAR",
+        "TEST-21V387000-FACTS",
+        "TEST-21V387000-CONDITIONS",
+        "TEST-21V387000-TIME",
+        "TEST-21V652000-FACTS",
+        "TEST-21V652000-CONDITIONS",
+        "TEST-21V652000-YEAR",
+        "TEST-22V346000-FACTS",
+        "TEST-22V346000-CONDITIONS",
+        "TEST-22V346000-TIME",
+        "TEST-22V554000-FACTS",
+        "TEST-22V554000-CONDITIONS",
+        "TEST-22V554000-YEAR",
+        "TEST-22V746000-FACTS",
+        "TEST-22V746000-CONDITIONS",
+        "TEST-22V746000-TIME",
+        "TEST-23V023000-FACTS",
+        "TEST-23V023000-CONDITIONS",
+        "TEST-23V023000-YEAR",
+        "TEST-23V198000-FACTS",
+        "TEST-23V198000-CONDITIONS",
+        "TEST-23V198000-TIME",
+        "TEST-23V268000-FACTS",
+        "TEST-23V268000-CONDITIONS",
+        "TEST-23V268000-YEAR",
+        "TEST-23V477000-FACTS",
+        "TEST-23V477000-CONDITIONS",
+        "TEST-23V477000-TIME",
+        "TEST-24V051000-FACTS",
+        "TEST-24V051000-CONDITIONS",
+        "TEST-24V051000-YEAR",
+        "TEST-24V081000-FACTS",
+        "TEST-24V081000-CONDITIONS",
+        "TEST-24V081000-TIME"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "multi_agent",
+      "family": "main",
+      "method": "multi_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-14V047000-CONDITIONS",
+        "TEST-14V047000-YEAR",
+        "TEST-15V461000-FACTS",
+        "TEST-15V461000-CONDITIONS",
+        "TEST-15V461000-TIME",
+        "TEST-18V332000-FACTS",
+        "TEST-18V332000-CONDITIONS",
+        "TEST-18V332000-YEAR",
+        "TEST-19V053000-FACTS",
+        "TEST-19V053000-CONDITIONS",
+        "TEST-19V053000-TIME",
+        "TEST-18V404000-FACTS",
+        "TEST-18V404000-CONDITIONS",
+        "TEST-18V404000-YEAR",
+        "TEST-19V782000-FACTS",
+        "TEST-19V782000-CONDITIONS",
+        "TEST-19V782000-TIME",
+        "TEST-20V012000-FACTS",
+        "TEST-20V012000-CONDITIONS",
+        "TEST-20V012000-YEAR",
+        "TEST-20V588000-FACTS",
+        "TEST-20V588000-CONDITIONS",
+        "TEST-20V588000-TIME",
+        "TEST-21V165000-FACTS",
+        "TEST-21V165000-CONDITIONS",
+        "TEST-21V165000-YEAR",
+        "TEST-21V387000-FACTS",
+        "TEST-21V387000-CONDITIONS",
+        "TEST-21V387000-TIME",
+        "TEST-21V652000-FACTS",
+        "TEST-21V652000-CONDITIONS",
+        "TEST-21V652000-YEAR",
+        "TEST-22V346000-FACTS",
+        "TEST-22V346000-CONDITIONS",
+        "TEST-22V346000-TIME",
+        "TEST-22V554000-FACTS",
+        "TEST-22V554000-CONDITIONS",
+        "TEST-22V554000-YEAR",
+        "TEST-22V746000-FACTS",
+        "TEST-22V746000-CONDITIONS",
+        "TEST-22V746000-TIME",
+        "TEST-23V023000-FACTS",
+        "TEST-23V023000-CONDITIONS",
+        "TEST-23V023000-YEAR",
+        "TEST-23V198000-FACTS",
+        "TEST-23V198000-CONDITIONS",
+        "TEST-23V198000-TIME",
+        "TEST-23V268000-FACTS",
+        "TEST-23V268000-CONDITIONS",
+        "TEST-23V268000-YEAR",
+        "TEST-23V477000-FACTS",
+        "TEST-23V477000-CONDITIONS",
+        "TEST-23V477000-TIME",
+        "TEST-24V051000-FACTS",
+        "TEST-24V051000-CONDITIONS",
+        "TEST-24V051000-YEAR",
+        "TEST-24V081000-FACTS",
+        "TEST-24V081000-CONDITIONS",
+        "TEST-24V081000-TIME"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "retrieval_bm25",
+      "family": "retrieval",
+      "method": "fixed",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "bm25",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "retrieval_dense",
+      "family": "retrieval",
+      "method": "fixed",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "dense",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "retrieval_hybrid",
+      "family": "retrieval",
+      "method": "fixed",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "retrieval_hybrid_rerank",
+      "family": "retrieval",
+      "method": "fixed",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid_rerank",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "context_full_history",
+      "family": "context",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "full_history",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "context_recent_window",
+      "family": "context",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "recent_window",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "context_structured",
+      "family": "context",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_frozen_none",
+      "family": "memory_frozen",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_frozen_semantic",
+      "family": "memory_frozen",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "semantic",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_frozen_semantic_episode",
+      "family": "memory_frozen",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "semantic_episode",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_frozen_all",
+      "family": "memory_frozen",
+      "method": "single_agent",
+      "cases": [
+        "TEST-14V047000-FACTS",
+        "TEST-21V652000-FACTS"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "all",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_sequential_none",
+      "family": "memory_sequential",
+      "method": "single_agent",
+      "cases": [
+        "SEQUENCE-PREFIX",
+        "SEQUENCE-FOLLOWUP"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "none",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_sequential_semantic",
+      "family": "memory_sequential",
+      "method": "single_agent",
+      "cases": [
+        "SEQUENCE-PREFIX",
+        "SEQUENCE-FOLLOWUP"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "semantic",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_sequential_semantic_episode",
+      "family": "memory_sequential",
+      "method": "single_agent",
+      "cases": [
+        "SEQUENCE-PREFIX",
+        "SEQUENCE-FOLLOWUP"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "semantic_episode",
+      "repeats": 1
+    },
+    {
+      "arm_id": "memory_sequential_all",
+      "family": "memory_sequential",
+      "method": "single_agent",
+      "cases": [
+        "SEQUENCE-PREFIX",
+        "SEQUENCE-FOLLOWUP"
+      ],
+      "retrieval": "hybrid",
+      "context": "structured",
+      "memory": "all",
+      "repeats": 1
+    }
+  ],
+  "profile": {
+    "version": "fixed-investigation/0.1",
+    "retrieval_method": "hybrid",
+    "retrieve_k": 6,
+    "expand_k": 2,
+    "max_tool_calls": 10,
+    "max_model_calls": 8,
+    "prompt_characters": 32000,
+    "generation_tokens": 2000,
+    "total_prompt_characters": 96000,
+    "total_generation_tokens": 4000,
+    "wall_seconds": 900,
+    "repeated_action_limit": 2,
+    "no_progress_limit": 2,
+    "tool_timeout_retries": 1,
+    "context_mode": "structured",
+    "multi_agent_enabled": true,
+    "branch_timeout_seconds": 120.0
+  },
+  "model_id": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com",
+  "previously_seen_campaigns": [
+    "10V039000",
+    "14V284000",
+    "17V331000",
+    "17V652000",
+    "20V332000",
+    "22V150000",
+    "22V859000",
+    "23V080000",
+    "23V651000",
+    "23V838000"
+  ],
+  "cluster_campaigns": {
+    "EVAL-CLUSTER-01": [
+      "14V047000",
+      "15V461000"
+    ],
+    "EVAL-CLUSTER-02": [
+      "18V332000",
+      "19V053000"
+    ],
+    "EVAL-CLUSTER-03": [
+      "18V404000",
+      "19V782000"
+    ],
+    "EVAL-CLUSTER-04": [
+      "20V012000",
+      "20V588000"
+    ],
+    "EVAL-CLUSTER-05": [
+      "21V165000",
+      "21V387000"
+    ],
+    "EVAL-CLUSTER-06": [
+      "21V652000",
+      "22V346000"
+    ],
+    "EVAL-CLUSTER-07": [
+      "22V554000",
+      "22V746000"
+    ],
+    "EVAL-CLUSTER-08": [
+      "23V023000",
+      "23V198000"
+    ],
+    "EVAL-CLUSTER-09": [
+      "23V268000",
+      "23V477000"
+    ],
+    "EVAL-CLUSTER-10": [
+      "24V051000",
+      "24V081000"
+    ]
+  },
+  "frozen_prefix_sha256": "635b1e2e01f113ef67f068b2416defa6acf132e4e39cf8f5a3844a7931d5d88e",
+  "label_author": "implementation_agent",
+  "quality_targets": {
+    "hard_constraints": "all_declared_challenges_pass",
+    "independent_review_required_for_formal_metrics": true,
+    "benefit_claim_requires_paired_human_metrics_and_full_costs": true,
+    "no_tuning_after_test": true,
+    "repetitions_are_not_independent_events": true
+  },
+  "exclusions": "none_after_freeze_all_failures_retained",
+  "random_seed": 20261028,
+  "bootstrap_draws": 2000,
+  "minimum_clusters_for_interval": 5
+}

@@ -1,0 +1,285 @@
+{
+  "sources": {
+    "14V047000": {
+      "snapshot_id": "136f330b6be0401b85cf2b28644b1673",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-14V047000",
+      "raw_sha256": "d4d02d959019215dccbd37e962c5d224f0ea52dd1ad50ab50a4b7149e7248355",
+      "record_count": 30,
+      "scope": {
+        "make": "CHEVROLET",
+        "model": "COBALT",
+        "model_year": 2005,
+        "campaign_number": "14V047000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=14V047000",
+      "event_cluster_id": "EVAL-CLUSTER-01"
+    },
+    "15V461000": {
+      "snapshot_id": "5906e4bc45e84233b29c586745764dc8",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-15V461000",
+      "raw_sha256": "e8ada966b8754264b7c45f7237ffc576b3565550cb4285f018cdebc85d0ac75c",
+      "record_count": 28,
+      "scope": {
+        "make": "RAM",
+        "model": "5500",
+        "model_year": 2013,
+        "campaign_number": "15V461000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=15V461000",
+      "event_cluster_id": "EVAL-CLUSTER-01"
+    },
+    "18V332000": {
+      "snapshot_id": "983f3025d88a4ce2bd38982f6b9364e9",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-18V332000",
+      "raw_sha256": "bf1676831b1e163d1276b73a912fbd87295e7a802749ce526e400e1c1bc714cb",
+      "record_count": 66,
+      "scope": {
+        "make": "JEEP",
+        "model": "GRAND CHEROKEE",
+        "model_year": 2014,
+        "campaign_number": "18V332000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=18V332000",
+      "event_cluster_id": "EVAL-CLUSTER-02"
+    },
+    "19V053000": {
+      "snapshot_id": "f582cebe4288484cae5dc5e27c49f3e5",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-19V053000",
+      "raw_sha256": "95388c176ce50b87a2c3f767e853bb17f6103dced2d7904aa96d68c9bc3c8084",
+      "record_count": 3,
+      "scope": {
+        "make": "HONDA",
+        "model": "RIDGELINE",
+        "model_year": 2017,
+        "campaign_number": "19V053000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=19V053000",
+      "event_cluster_id": "EVAL-CLUSTER-02"
+    },
+    "18V404000": {
+      "snapshot_id": "2913ec94f43d439bb27028810c710b15",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-18V404000",
+      "raw_sha256": "89722f88945d8a4d9f1f2e3b8b053a5fa1982367c410bd87febb49031c1f3744",
+      "record_count": 7,
+      "scope": {
+        "make": "MAZDA",
+        "model": "RX-8",
+        "model_year": 2005,
+        "campaign_number": "18V404000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=18V404000",
+      "event_cluster_id": "EVAL-CLUSTER-03"
+    },
+    "19V782000": {
+      "snapshot_id": "7c2857ff70b6414e827d746deb329db1",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-19V782000",
+      "raw_sha256": "164c0295b1b54f52b298c55b39a8459357f8fe7d2a57560267175e317a0c3b20",
+      "record_count": 16,
+      "scope": {
+        "make": "MAZDA",
+        "model": "CX-9",
+        "model_year": 2007,
+        "campaign_number": "19V782000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=19V782000",
+      "event_cluster_id": "EVAL-CLUSTER-03"
+    },
+    "20V012000": {
+      "snapshot_id": "cca377c5618f4fada9951d0bf70a5f63",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-20V012000",
+      "raw_sha256": "a364cebfae505289e31b8381036ee8723161db261b1dbc112fbc97a43b8ec93a",
+      "record_count": 66,
+      "scope": {
+        "make": "LEXUS",
+        "model": "IS 350",
+        "model_year": 2014,
+        "campaign_number": "20V012000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=20V012000",
+      "event_cluster_id": "EVAL-CLUSTER-04"
+    },
+    "20V588000": {
+      "snapshot_id": "83fbf8fa479c4040ace2dab162947679",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-20V588000",
+      "raw_sha256": "444fd4ce4626626cf62af2fde1835b10a28635da833e33af48ab50649b3818d5",
+      "record_count": 7,
+      "scope": {
+        "make": "CADILLAC",
+        "model": "CT5",
+        "model_year": 2020,
+        "campaign_number": "20V588000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=20V588000",
+      "event_cluster_id": "EVAL-CLUSTER-04"
+    },
+    "21V165000": {
+      "snapshot_id": "307501a5eeee461eb53e0d5dcab721cd",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-21V165000",
+      "raw_sha256": "3a8ef3ae50f318d8b8eea968c5ebe60df51f7090b88684eb47190be7144d937b",
+      "record_count": 4,
+      "scope": {
+        "make": "HONDA",
+        "model": "PASSPORT",
+        "model_year": 2020,
+        "campaign_number": "21V165000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=21V165000",
+      "event_cluster_id": "EVAL-CLUSTER-05"
+    },
+    "21V387000": {
+      "snapshot_id": "8848d60b951c426389bcb9e15625b357",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-21V387000",
+      "raw_sha256": "12460840046b254af45c823d828f60fc4cf75c4bf6e2139774eaa78c318613e3",
+      "record_count": 5,
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "21V387000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=21V387000",
+      "event_cluster_id": "EVAL-CLUSTER-05"
+    },
+    "21V652000": {
+      "snapshot_id": "2006291faa28418dbf6fc6289bbdbaca",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-21V652000",
+      "raw_sha256": "8ae05f197fe73766f5a4dfd447272a57c6dac0d2136fd2d846442acc50c5d568",
+      "record_count": 2,
+      "scope": {
+        "make": "FORD",
+        "model": "EXPLORER",
+        "model_year": 2021,
+        "campaign_number": "21V652000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=21V652000",
+      "event_cluster_id": "EVAL-CLUSTER-06"
+    },
+    "22V346000": {
+      "snapshot_id": "d73e3e282db04883a8765768c886cd07",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-22V346000",
+      "raw_sha256": "6689611224cdfc0933ccca7d709299200f720e2b3da8098a95d3749fb8880466",
+      "record_count": 2,
+      "scope": {
+        "make": "FORD",
+        "model": "EXPEDITION",
+        "model_year": 2021,
+        "campaign_number": "22V346000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V346000",
+      "event_cluster_id": "EVAL-CLUSTER-06"
+    },
+    "22V554000": {
+      "snapshot_id": "c6be54f2e47241b5921b7743fe4a3dfa",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-22V554000",
+      "raw_sha256": "99bb7802ba59befd972d4167216236859428f08bbd2e51098b5422e0a0bbbc65",
+      "record_count": 14,
+      "scope": {
+        "make": "WESTERN STAR",
+        "model": "49X",
+        "model_year": 2023,
+        "campaign_number": "22V554000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V554000",
+      "event_cluster_id": "EVAL-CLUSTER-07"
+    },
+    "22V746000": {
+      "snapshot_id": "239f1fdfe4f84be49977ed0fc9766585",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-22V746000",
+      "raw_sha256": "b776a2e22006cb1295ae35a5087b2e22ada69d32319b4464f2c071b76f0297ac",
+      "record_count": 9,
+      "scope": {
+        "make": "HYUNDAI",
+        "model": "ELANTRA N",
+        "model_year": 2022,
+        "campaign_number": "22V746000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V746000",
+      "event_cluster_id": "EVAL-CLUSTER-07"
+    },
+    "23V023000": {
+      "snapshot_id": "bac20d78d872495eb198cd2f49bc4b3f",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-23V023000",
+      "raw_sha256": "8ecfee144b0f84f8cb5eb031abd4d108c53918a81db828f1c836895c66497be4",
+      "record_count": 35,
+      "scope": {
+        "make": "AUTOCAR",
+        "model": "XSPOTTER",
+        "model_year": 2016,
+        "campaign_number": "23V023000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V023000",
+      "event_cluster_id": "EVAL-CLUSTER-08"
+    },
+    "23V198000": {
+      "snapshot_id": "cb9f47adac3a497193a9eb1e96fbf5e6",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-23V198000",
+      "raw_sha256": "5eb7440c30d812e460b3662fcef49ad21f48cc12514c7021bffbbb14ea16fbe3",
+      "record_count": 2,
+      "scope": {
+        "make": "FORD",
+        "model": "EDGE",
+        "model_year": 2023,
+        "campaign_number": "23V198000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V198000",
+      "event_cluster_id": "EVAL-CLUSTER-08"
+    },
+    "23V268000": {
+      "snapshot_id": "25868a5d69b14a57990eb6fea23ccfaf",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-23V268000",
+      "raw_sha256": "6e638f4b011694ce748adee53df77ec43ddb6145e9bf7462f7262d57ce16e827",
+      "record_count": 3,
+      "scope": {
+        "make": "NISSAN",
+        "model": "ROGUE",
+        "model_year": 2023,
+        "campaign_number": "23V268000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V268000",
+      "event_cluster_id": "EVAL-CLUSTER-09"
+    },
+    "23V477000": {
+      "snapshot_id": "46bcd92ef21b46bf9cc5cfaba4fd1f27",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-23V477000",
+      "raw_sha256": "52b92ca19dd9c72f1c12e3bca2bf6813395559c2bfcec7e1d5ae86d53187b712",
+      "record_count": 8,
+      "scope": {
+        "make": "JAYCO",
+        "model": "SENECA",
+        "model_year": 2021,
+        "campaign_number": "23V477000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V477000",
+      "event_cluster_id": "EVAL-CLUSTER-09"
+    },
+    "24V051000": {
+      "snapshot_id": "943ebcbb1a87463e966977617573dc9a",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-24V051000",
+      "raw_sha256": "918a4790ef3b4b1301ff8f84cd1250088300dae50f1ca646391a453ed09f8b9d",
+      "record_count": 35,
+      "scope": {
+        "make": "TESLA",
+        "model": "MODEL 3",
+        "model_year": 2020,
+        "campaign_number": "24V051000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=24V051000",
+      "event_cluster_id": "EVAL-CLUSTER-10"
+    },
+    "24V081000": {
+      "snapshot_id": "ae3de80532d342678ae1473de3007d09",
+      "source_id": "NHTSA-EVAL-CAMPAIGN-24V081000",
+      "raw_sha256": "af4cc8d30a83b8cde7f3f3111610db15f554546aeb4cf50fb41a825c8c16abfb",
+      "record_count": 1,
+      "scope": {
+        "make": "SUZUKI",
+        "model": "GSX800",
+        "model_year": 2024,
+        "campaign_number": "24V081000"
+      },
+      "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=24V081000",
+      "event_cluster_id": "EVAL-CLUSTER-10"
+    }
+  },
+  "clustering_basis": "Conservative paired-source units plus known related Mazda inflator campaigns. These are experimental units, not proof of universal event independence."
+}

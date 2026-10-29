@@ -1,0 +1,266 @@
+{
+  "timestamp": "2026-10-26T08:17:12.302188+00:00",
+  "classification": "local_verification_of_real_archived_source_bytes_no_model_experiment",
+  "snapshot_count": 4,
+  "distinct_raw_objects": 3,
+  "accepted_input_units": 108,
+  "rejected_input_units": 0,
+  "distinct_versions": 106,
+  "versions_by_kind": {
+    "recall_api": 2,
+    "complaint_api": 103,
+    "investigation_pdf": 1
+  },
+  "date_statuses_by_distinct_version": {
+    "event_date": {
+      "missing": 2,
+      "parsed": 103
+    },
+    "filed_date": {
+      "missing": 2,
+      "parsed": 103
+    },
+    "report_received_date": {
+      "format_unverified": 2,
+      "missing": 103
+    }
+  },
+  "event_after_filed_count": 0,
+  "known_version_publication_times": 0,
+  "availability": [
+    {
+      "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+      "kind": "recall_api",
+      "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+      "sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+      "downloaded": true,
+      "version_locatable": true,
+      "additional_to_structured_records": null,
+      "parse_status": "json_rows_mapped",
+      "container_record_count": 2,
+      "mapped_rows": 2,
+      "rejected_rows": 0,
+      "verified_locators": [
+        "/results/<ordinal>"
+      ],
+      "formal_chunk_parser": false
+    },
+    {
+      "source_id": "NHTSA-COMPLAINTS-F150-2016",
+      "kind": "complaint_api",
+      "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+      "sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+      "downloaded": true,
+      "version_locatable": true,
+      "additional_to_structured_records": null,
+      "parse_status": "json_rows_mapped",
+      "container_record_count": 103,
+      "mapped_rows": 103,
+      "rejected_rows": 0,
+      "verified_locators": [
+        "/results/<ordinal>"
+      ],
+      "formal_chunk_parser": false
+    },
+    {
+      "source_id": "NHTSA-INV-PE10006-CLOSE",
+      "kind": "investigation_pdf",
+      "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+      "sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+      "downloaded": true,
+      "version_locatable": true,
+      "additional_to_structured_records": true,
+      "parser": "pypdf",
+      "parse_status": "text_extracted",
+      "page_count": 1,
+      "page_text_chars": [
+        2160
+      ],
+      "page_text_sha256": [
+        "3a359640b7c561511653ce22e70f176228a043447caced7ad412323730254c55"
+      ],
+      "verified_locators": [
+        "page=1; Action",
+        "page=1; Summary"
+      ],
+      "locator_checks": {
+        "action_heading": true,
+        "summary_heading": true,
+        "investigation_id": true
+      },
+      "additional_information_basis": "human_review_recorded_in_availability_matrix",
+      "formal_chunk_parser": false
+    }
+  ],
+  "temporal_selections": {
+    "time-snapshot": {
+      "schema_version": "temporal-selection/0.1",
+      "purpose": "raw_snapshot_inspection",
+      "request": {
+        "snapshot_ids": [
+          "61cd818ad3ae45c7bbdc94ecf0b479bc",
+          "d0be027566e94ad2aa0737d166df64b1",
+          "9d2d065bf1f844e7ab4ea63494a4b2f9"
+        ],
+        "time": {
+          "mode": "snapshot_analysis",
+          "event_interval": null,
+          "knowledge_cutoff": null,
+          "date_filter_basis": "Inspect exactly these archived source responses; no historical reconstruction claim."
+        }
+      },
+      "mapping_version": "source-record/0.1",
+      "input_set_sha256": "914213786f45efb43d1e5c1b3b7bf43048228bbc2703ddec178275c2b18dc918",
+      "inputs": [
+        {
+          "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+          "raw_sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+          "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584"
+        },
+        {
+          "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+          "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+          "batch_sha256": "a376f96fbd8ee7d6067304b7e49b16aea6f193477c37ce21a3ceabb33ea454aa"
+        },
+        {
+          "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+          "raw_sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+          "batch_sha256": "215e06cbe422d461b71a632855bfb15ad7304d01f06287193a0d50480b5088de"
+        }
+      ],
+      "status": "selected",
+      "selected_count": 106,
+      "excluded_count": 0,
+      "exclusion_reasons": {},
+      "rejected_input_rows": 0,
+      "eligible_snapshot_ids": [
+        "61cd818ad3ae45c7bbdc94ecf0b479bc",
+        "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "d0be027566e94ad2aa0737d166df64b1"
+      ],
+      "snapshots_observed_after_cutoff": [],
+      "visible_version_conflicts": 0,
+      "analysis_label": "fixed_snapshot_analysis",
+      "event_filter_field": null,
+      "coverage": "selected_local_receipts_only",
+      "dataset_release": null,
+      "source_publication_times_known": false,
+      "selection_sha256": "d48d846b1d9883e08ce91a74326fe66fbf64796c077d79063d14b1e07c8bd58a"
+    },
+    "time-historical-2014": {
+      "schema_version": "temporal-selection/0.1",
+      "purpose": "raw_snapshot_inspection",
+      "request": {
+        "snapshot_ids": [
+          "61cd818ad3ae45c7bbdc94ecf0b479bc",
+          "d0be027566e94ad2aa0737d166df64b1",
+          "9d2d065bf1f844e7ab4ea63494a4b2f9"
+        ],
+        "time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2014-02-15T23:59:59Z",
+          "date_filter_basis": "Require version-specific observation evidence by cutoff; old report dates cannot substitute."
+        }
+      },
+      "mapping_version": "source-record/0.1",
+      "input_set_sha256": "914213786f45efb43d1e5c1b3b7bf43048228bbc2703ddec178275c2b18dc918",
+      "inputs": [
+        {
+          "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+          "raw_sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+          "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584"
+        },
+        {
+          "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+          "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+          "batch_sha256": "a376f96fbd8ee7d6067304b7e49b16aea6f193477c37ce21a3ceabb33ea454aa"
+        },
+        {
+          "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+          "raw_sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+          "batch_sha256": "215e06cbe422d461b71a632855bfb15ad7304d01f06287193a0d50480b5088de"
+        }
+      ],
+      "status": "unsupported",
+      "selected_count": 0,
+      "excluded_count": 106,
+      "exclusion_reasons": {
+        "version_not_observed_by_cutoff": 106
+      },
+      "rejected_input_rows": 0,
+      "eligible_snapshot_ids": [],
+      "snapshots_observed_after_cutoff": [
+        "61cd818ad3ae45c7bbdc94ecf0b479bc",
+        "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "d0be027566e94ad2aa0737d166df64b1"
+      ],
+      "visible_version_conflicts": 0,
+      "analysis_label": "bounded_observed_versions_as_of",
+      "event_filter_field": null,
+      "coverage": "selected_local_receipts_only",
+      "dataset_release": null,
+      "source_publication_times_known": false,
+      "selection_sha256": "b956641c459215768c5fcbc216853edab6a6d587f7a9e895a82a30aa47ddbd17"
+    },
+    "time-historical-observed": {
+      "schema_version": "temporal-selection/0.1",
+      "purpose": "raw_snapshot_inspection",
+      "request": {
+        "snapshot_ids": [
+          "61cd818ad3ae45c7bbdc94ecf0b479bc",
+          "d0be027566e94ad2aa0737d166df64b1",
+          "9d2d065bf1f844e7ab4ea63494a4b2f9"
+        ],
+        "time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2026-10-26T08:00:00Z",
+          "date_filter_basis": "Only evidence already fetched before this cutoff; bounded to three observed responses."
+        }
+      },
+      "mapping_version": "source-record/0.1",
+      "input_set_sha256": "914213786f45efb43d1e5c1b3b7bf43048228bbc2703ddec178275c2b18dc918",
+      "inputs": [
+        {
+          "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+          "raw_sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+          "batch_sha256": "2cb7eb44d71ab88374a52d46fced3648be2dadb7b00699db4e116947d65a7584"
+        },
+        {
+          "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+          "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+          "batch_sha256": "a376f96fbd8ee7d6067304b7e49b16aea6f193477c37ce21a3ceabb33ea454aa"
+        },
+        {
+          "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+          "raw_sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+          "batch_sha256": "215e06cbe422d461b71a632855bfb15ad7304d01f06287193a0d50480b5088de"
+        }
+      ],
+      "status": "selected",
+      "selected_count": 106,
+      "excluded_count": 0,
+      "exclusion_reasons": {},
+      "rejected_input_rows": 0,
+      "eligible_snapshot_ids": [
+        "61cd818ad3ae45c7bbdc94ecf0b479bc",
+        "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "d0be027566e94ad2aa0737d166df64b1"
+      ],
+      "snapshots_observed_after_cutoff": [],
+      "visible_version_conflicts": 0,
+      "analysis_label": "bounded_observed_versions_as_of",
+      "event_filter_field": null,
+      "coverage": "selected_local_receipts_only",
+      "dataset_release": null,
+      "source_publication_times_known": false,
+      "selection_sha256": "c9cca762ce58c3e0e8cb9aa54e1f1b57cdf24aa09eca0903193fb942965c6aa7"
+    }
+  },
+  "new_https_requests": 0,
+  "pdf_library_version": "6.21.2",
+  "external_model_calls": 0,
+  "population_completeness": "not_established",
+  "usage": "exploration_only"
+}

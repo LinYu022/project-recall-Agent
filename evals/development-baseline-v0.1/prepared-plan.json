@@ -1,0 +1,1786 @@
+{
+  "schema_version": "development-baseline-plan/0.1",
+  "classification": "seen_development_pilot_not_new_test_or_quality_acceptance",
+  "design": {
+    "schema_version": "development-baseline-design/0.1",
+    "split": "development",
+    "purpose": "initial_current_implementation_fixed_baseline_for_independent_review_not_a_four_method_comparison",
+    "model": "deepseek-flash",
+    "endpoint": "https://api.deepseek.com",
+    "method": "fixed",
+    "memory": "none",
+    "repeats": 1,
+    "maximum_requests": 3,
+    "allowed_source_ids": [
+      "NHTSA-API-CAMPAIGN-10V039000",
+      "NHTSA-INV-PE10006-CLOSE",
+      "NHTSA-API-CAMPAIGN-17V331000",
+      "NHTSA-API-CAMPAIGN-17V652000"
+    ],
+    "event_clusters": {
+      "DEV-PRIUS": [
+        "10V039000",
+        "PE10006"
+      ],
+      "DEV-FORD-DOORS": [
+        "17V331000",
+        "17V652000"
+      ]
+    },
+    "source_policy": "previously_seen_development_sources_only; no former test source may enter a plan",
+    "profile_source": "evals/comprehensive-v0.1/protocol.json",
+    "quality_targets": null,
+    "review_label_author": "implementation_agent_pending_actual_independent_review",
+    "review_policy": {
+      "strict_task_success": "all_required_obligations_and_conditions_supported_correct_disposition_no_unsupported_assertions",
+      "core_task_completion": "separate_actual_human_qualitative_judgment_never_substitutes_for_strict_metric",
+      "human_active_duration_ms": null,
+      "unreviewed_or_disputed": null,
+      "reference_labels_enter_generation": false
+    },
+    "cases": [
+      {
+        "case_id": "DEV2-PRIUS-RECALL",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS",
+          "model_year": 2010,
+          "campaign_number": "10V039000"
+        },
+        "intent": "record_lookup",
+        "question": "依据允许的冻结召回资料，说明2010 Prius的特定适用范围、ABS制动触发条件、缺陷表现、碰撞风险和免费补救；不得确认具体个车适用。",
+        "query": "ABS slow steady brake rough slick surface stopping distance crash reprogram",
+        "obligation_keys": [
+          "prius_scope",
+          "prius_trigger",
+          "prius_symptom",
+          "prius_risk",
+          "prius_remedy"
+        ],
+        "maximum_requests": 1,
+        "expected_preview": "stopped_before_provider",
+        "expected_disposition": "answered"
+      },
+      {
+        "case_id": "DEV2-PRIUS-JOINT",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius",
+          "investigation"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS",
+          "model_year": 2010
+        },
+        "intent": "cross_source",
+        "question": "基于允许冻结资料，说明2010 Prius的ABS制动问题、结案依据和后续监测；结案能否支持所有混动车均已安全？请直接核对该推断并说明边界。",
+        "query": "ABS braking rough road investigation closed monitor software recall",
+        "obligation_keys": [
+          "prius_trigger",
+          "prius_symptom",
+          "closure_basis",
+          "continued_monitoring",
+          "safety_boundary"
+        ],
+        "maximum_requests": 1,
+        "expected_preview": "stopped_before_provider",
+        "expected_disposition": "answered"
+      },
+      {
+        "case_id": "DEV2-FORD-PAIR",
+        "event_cluster_id": "DEV-FORD-DOORS",
+        "source_keys": [
+          "cover",
+          "cable"
+        ],
+        "scope": {
+          "make": "FORD",
+          "model": "F-150",
+          "model_year": 2016
+        },
+        "intent": "relationship",
+        "question": "对照17V331与17V652，说明2016 F-150相关记录各自的条件、缺陷、伤害风险与补救；同车型和车门部件能否证明同一缺陷或个车适用？",
+        "query": "door handle cover side impact cable water freeze latch remedy",
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "f7c828b88c7c43c2a4785895d30db3df",
+              "ordinal": 2
+            },
+            "right": {
+              "snapshot_id": "c0aef8c97d7d488d8eb72eb3355f866a",
+              "ordinal": 1
+            }
+          }
+        ],
+        "obligation_keys": [
+          "cover_condition",
+          "cover_defect",
+          "cover_risk",
+          "cover_remedy",
+          "cable_defect",
+          "cable_risk",
+          "cable_remedy",
+          "relation_boundary"
+        ],
+        "maximum_requests": 1,
+        "expected_preview": "stopped_before_provider",
+        "expected_disposition": "answered"
+      },
+      {
+        "case_id": "DEV2-MISSING-YEAR",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS"
+        },
+        "intent": "record_lookup",
+        "required_conditions": [
+          "model_year"
+        ],
+        "question": "请检查该Prius是否在允许召回记录的车型范围内；缺少年份时先澄清。",
+        "query": "Prius ABS recall",
+        "obligation_keys": [],
+        "maximum_requests": 0,
+        "expected_preview": "guarded",
+        "expected_disposition": "needs_clarification"
+      },
+      {
+        "case_id": "DEV2-INDIVIDUAL",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS",
+          "model_year": 2010
+        },
+        "intent": "applicability",
+        "question": "能否确认我的这辆2010 Prius需要这次召回且维修后永久安全？未提供生产日期、配置和VIN。",
+        "query": "Prius ABS individual applicability",
+        "obligation_keys": [],
+        "maximum_requests": 0,
+        "expected_preview": "guarded",
+        "expected_disposition": "needs_clarification"
+      },
+      {
+        "case_id": "DEV2-COMPLAINTS",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS",
+          "model_year": 2010
+        },
+        "intent": "complaint_statistics",
+        "components": [
+          "SERVICE BRAKES"
+        ],
+        "question": "只根据允许的召回资料给出投诉总数和故障发生率；资料不足时明确说明。",
+        "query": "braking complaints count incidence",
+        "obligation_keys": [],
+        "maximum_requests": 0,
+        "expected_preview": "program_answer",
+        "expected_disposition": "insufficient_evidence"
+      },
+      {
+        "case_id": "DEV2-WRONG-YEAR",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS",
+          "model_year": 2011
+        },
+        "intent": "record_lookup",
+        "question": "仅核查允许的10V039000冻结来源内2011款Prius的匹配情况，不外推全球召回覆盖。",
+        "query": "Prius 2011 10V039000",
+        "obligation_keys": [],
+        "maximum_requests": 0,
+        "expected_preview": "program_answer",
+        "expected_disposition": "no_matching_records"
+      },
+      {
+        "case_id": "DEV2-HISTORICAL",
+        "event_cluster_id": "DEV-PRIUS",
+        "source_keys": [
+          "prius"
+        ],
+        "scope": {
+          "make": "TOYOTA",
+          "model": "PRIUS",
+          "model_year": 2010
+        },
+        "intent": "record_lookup",
+        "question": "只使用2010年2月1日当时可知资料回答，不能用后来取得的快照代替。",
+        "query": "Prius ABS historical knowledge",
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-02-01T00:00:00Z",
+          "date_filter_basis": "only information known at the requested cutoff"
+        },
+        "obligation_keys": [],
+        "maximum_requests": 0,
+        "expected_preview": "guarded",
+        "expected_disposition": "unsupported_time"
+      }
+    ],
+    "limits": [
+      "Two previously inspected event clusters, one method and one repeat cannot establish method rankings, population quality or confidence intervals.",
+      "Guard expectations are engineering checks until a human evaluates the actual questions and dispositions.",
+      "A later full development baseline and unseen test are still required; no feature or planned comparison is removed."
+    ]
+  },
+  "atom_spec": {
+    "schema_version": "development-obligation-quotes/0.1",
+    "author": "implementation_agent_pending_independent_review",
+    "source_ids": {
+      "prius": "NHTSA-API-CAMPAIGN-10V039000",
+      "investigation": "NHTSA-INV-PE10006-CLOSE",
+      "cover": "NHTSA-API-CAMPAIGN-17V331000",
+      "cable": "NHTSA-API-CAMPAIGN-17V652000"
+    },
+    "atoms": [
+      {
+        "key": "prius_scope",
+        "source": "prius",
+        "field": "Summary",
+        "quote": "CERTAIN MODEL YEAR 2010 TOYOTA PRIUS AND LEXUS HS250H PASSENGER VEHICLES",
+        "statement": "适用仅限原文certain 2010 Prius与Lexus HS250H范围，不能确认个车。"
+      },
+      {
+        "key": "prius_trigger",
+        "source": "prius",
+        "field": "Summary",
+        "quote": "DURING SLOW AND STEADY APPLICATION OF THE BRAKES ON ROUGH OR SLICK ROAD SURFACES",
+        "statement": "保留ABS相关、粗糙或湿滑路面缓慢平稳制动的条件。"
+      },
+      {
+        "key": "prius_symptom",
+        "source": "prius",
+        "field": "Summary",
+        "quote": "INCONSISTENT BRAKE FEEL",
+        "statement": "踏板感不一致，不将投诉表述升级为所有车辆永久失去制动。"
+      },
+      {
+        "key": "prius_risk",
+        "source": "prius",
+        "field": "Consequence",
+        "quote": "INCREASING THE RISK OF A CRASH",
+        "statement": "制动距离超出预期可增加碰撞风险。"
+      },
+      {
+        "key": "prius_remedy",
+        "source": "prius",
+        "field": "Remedy",
+        "quote": "REWRITE THE PROGRAMMING OF THE ABS CONTROL UNIT FREE OF CHARGE",
+        "statement": "经销商免费重写ABS控制单元程序。"
+      },
+      {
+        "key": "closure_basis",
+        "source": "investigation",
+        "field": null,
+        "quote": "Based on Toyota's action the investigation is closed.",
+        "statement": "基于丰田针对该特定ABS问题的软件召回行动结案。"
+      },
+      {
+        "key": "continued_monitoring",
+        "source": "investigation",
+        "field": null,
+        "quote": "ODI will continue to monitor the subject vehicles' performance and will take further action as future circumstances",
+        "statement": "ODI继续监测涉事车辆并视未来情况进一步行动，保留监测对象范围。"
+      },
+      {
+        "key": "safety_boundary",
+        "source": "investigation",
+        "field": null,
+        "quote": "Based on Toyota's action the investigation is closed.",
+        "statement": "直接指出该特定调查结案不足以证明所有混动车均已安全；不反向断言所有混动车不安全。",
+        "requires_semantic_boundary_judgment": true
+      },
+      {
+        "key": "cover_condition",
+        "source": "cover",
+        "field": "Summary",
+        "quote": "originally produced with black or body colored exterior door handles that may have been subsequently equipped with a chrome exterior door handle cover accessory kit purchased from a Ford dealer",
+        "statement": "17V331保留原门把颜色/后装经销商镀铬盖附件的限定。"
+      },
+      {
+        "key": "cover_defect",
+        "source": "cover",
+        "field": "Summary",
+        "quote": "These accessory door handle covers may cause the doors to unlatch in a side impact collision.",
+        "statement": "门把盖附件可在侧碰中导致车门解锁。"
+      },
+      {
+        "key": "cover_risk",
+        "source": "cover",
+        "field": "Consequence",
+        "quote": "the occupants have an increased risk of injury",
+        "statement": "侧碰中车门解锁打开可增加乘员受伤风险。"
+      },
+      {
+        "key": "cover_remedy",
+        "source": "cover",
+        "field": "Remedy",
+        "quote": "dealers will remove the accessory covers and refund the purchase price",
+        "statement": "移除门把盖附件并退款。"
+      },
+      {
+        "key": "cable_defect",
+        "source": "cable",
+        "field": "Summary",
+        "quote": "a bent or kinked actuation cable or the door latches may freeze after water gets into the latch",
+        "statement": "17V652包括拉索弯折和门锁进水结冰两类条件。"
+      },
+      {
+        "key": "cable_risk",
+        "source": "cable",
+        "field": "Consequence",
+        "quote": "A door that opens while driving can increase the risk of injury.",
+        "statement": "行车中开门可增加受伤风险。"
+      },
+      {
+        "key": "cable_remedy",
+        "source": "cable",
+        "field": "Remedy",
+        "quote": "inspect the door latch actuation cables and repair if necessary, and install water shields over the door latches, free of charge",
+        "statement": "免费检查并按需修复拉索、安装门锁防水罩。"
+      },
+      {
+        "key": "relation_boundary",
+        "source": "cable",
+        "field": "Summary",
+        "quote": "a bent or kinked actuation cable",
+        "statement": "对照两个独立缺陷机制，不能仅由同车型/部件断定同一缺陷或个车适用。",
+        "requires_semantic_boundary_judgment": true
+      }
+    ]
+  },
+  "profile": {
+    "version": "fixed-investigation/0.1",
+    "retrieval_method": "hybrid",
+    "retrieve_k": 6,
+    "expand_k": 2,
+    "max_tool_calls": 10,
+    "max_model_calls": 8,
+    "prompt_characters": 32000,
+    "generation_tokens": 2000,
+    "total_prompt_characters": 96000,
+    "total_generation_tokens": 4000,
+    "wall_seconds": 900,
+    "repeated_action_limit": 2,
+    "no_progress_limit": 2,
+    "tool_timeout_retries": 1,
+    "context_mode": "structured",
+    "multi_agent_enabled": true,
+    "branch_timeout_seconds": 120.0
+  },
+  "dataset_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+  "manifest_sha256": "6968e90b0dd994699f2aee9649d8520276bb2c65fd09ec40990be8a6af638836",
+  "cases": [
+    {
+      "case_id": "DEV2-PRIUS-RECALL",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "direct",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010,
+        "campaign_number": "10V039000",
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-PRIUS-RECALL",
+        "question": "依据允许的冻结召回资料，说明2010 Prius的特定适用范围、ABS制动触发条件、缺陷表现、碰撞风险和免费补救；不得确认具体个车适用。",
+        "retrieval_query": "ABS slow steady brake rough slick surface stopping distance crash reprogram",
+        "intent": "record_lookup",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "56e5e3127d893c863dadb042ef7b82ee1b0c5d93222cd55d1ff2d935ec3146d1"
+    },
+    {
+      "case_id": "DEV2-PRIUS-JOINT",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000",
+        "NHTSA-INV-PE10006-CLOSE"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-PRIUS-JOINT",
+        "question": "基于允许冻结资料，说明2010 Prius的ABS制动问题、结案依据和后续监测；结案能否支持所有混动车均已安全？请直接核对该推断并说明边界。",
+        "retrieval_query": "ABS braking rough road investigation closed monitor software recall",
+        "intent": "cross_source",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "666e4f6548bc665e028aa57e96a0ddf37c0dd1cfce55cc023d3d393b09a67527"
+    },
+    {
+      "case_id": "DEV2-FORD-PAIR",
+      "event_cluster_id": "DEV-FORD-DOORS",
+      "split": "development",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-17V331000",
+        "NHTSA-API-CAMPAIGN-17V652000"
+      ],
+      "scope": {
+        "make": "FORD",
+        "model": "F-150",
+        "model_year": 2016,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-FORD-PAIR",
+        "question": "对照17V331与17V652，说明2016 F-150相关记录各自的条件、缺陷、伤害风险与补救；同车型和车门部件能否证明同一缺陷或个车适用？",
+        "retrieval_query": "door handle cover side impact cable water freeze latch remedy",
+        "intent": "relationship",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "f7c828b88c7c43c2a4785895d30db3df",
+              "ordinal": 2
+            },
+            "right": {
+              "snapshot_id": "c0aef8c97d7d488d8eb72eb3355f866a",
+              "ordinal": 1
+            }
+          }
+        ]
+      },
+      "reference_sha256": "b0f5021199bae23df0868566d7b829249d457bc1c21af71987f5da6c926f5a8a"
+    },
+    {
+      "case_id": "DEV2-MISSING-YEAR",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "direct",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": null,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-MISSING-YEAR",
+        "question": "请检查该Prius是否在允许召回记录的车型范围内；缺少年份时先澄清。",
+        "retrieval_query": "Prius ABS recall",
+        "intent": "record_lookup",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [
+          "model_year"
+        ],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "60e625590d5f5b5f0feaca81c2fb3a63658390da0a1fbdc2d99a37bfc382b959"
+    },
+    {
+      "case_id": "DEV2-INDIVIDUAL",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-INDIVIDUAL",
+        "question": "能否确认我的这辆2010 Prius需要这次召回且维修后永久安全？未提供生产日期、配置和VIN。",
+        "retrieval_query": "Prius ABS individual applicability",
+        "intent": "applicability",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "51c4e8d89d29ead9480fa41dfd547b8ad01d29347d79f5c24bd3c33609e10d6e"
+    },
+    {
+      "case_id": "DEV2-COMPLAINTS",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "cross_source",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-COMPLAINTS",
+        "question": "只根据允许的召回资料给出投诉总数和故障发生率；资料不足时明确说明。",
+        "retrieval_query": "braking complaints count incidence",
+        "intent": "complaint_statistics",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [
+          "SERVICE BRAKES"
+        ],
+        "pairs": []
+      },
+      "reference_sha256": "7e493c00405cd574845e1611f4b0f51a23f6c25b9decb926b08c633adceaaa84"
+    },
+    {
+      "case_id": "DEV2-WRONG-YEAR",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "direct",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2011,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-WRONG-YEAR",
+        "question": "仅核查允许的10V039000冻结来源内2011款Prius的匹配情况，不外推全球召回覆盖。",
+        "retrieval_query": "Prius 2011 10V039000",
+        "intent": "record_lookup",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "1d18800e9a00a4bd4ffcd94e450f16f7b67d27a24eb128af382f41de18d3665b"
+    },
+    {
+      "case_id": "DEV2-HISTORICAL",
+      "event_cluster_id": "DEV-PRIUS",
+      "split": "development",
+      "category": "direct",
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000"
+      ],
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010,
+        "campaign_number": null,
+        "component": null,
+        "production_date": null,
+        "configurations": {}
+      },
+      "request": {
+        "task_id": "DEV2-HISTORICAL",
+        "question": "只使用2010年2月1日当时可知资料回答，不能用后来取得的快照代替。",
+        "retrieval_query": "Prius ABS historical knowledge",
+        "intent": "record_lookup",
+        "expected_release_id": "035708451b144f0835e15fe940ab7e0c9eb7bfc168f4baba9dd379d1f43c2c1f",
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2010-02-01T00:00:00Z",
+          "date_filter_basis": "only information known at the requested cutoff"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      },
+      "reference_sha256": "6a007a7d994742660b534c5ff99461e1947c13a43e243c67200d38dbd7b7f88b"
+    }
+  ],
+  "references": {
+    "DEV2-PRIUS-RECALL": {
+      "case_id": "DEV2-PRIUS-RECALL",
+      "split": "development",
+      "slots": [
+        {
+          "slot_id": "prius_scope",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "83afe5970caa4b848d345bae9955adefd284a812bf711f73c955068006c376d0",
+              "start": 20,
+              "end": 92,
+              "quote_sha256": "a4660a1c9d3c66040ed36a39da7ede9253f97f6d5e8053435250e58d5844e001"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "ebf19308bd7e06d7342b1e07df7c68246d486efa0d4e5f01e52ef410b7484d61",
+              "start": 20,
+              "end": 92,
+              "quote_sha256": "a4660a1c9d3c66040ed36a39da7ede9253f97f6d5e8053435250e58d5844e001"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "prius_trigger",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "83afe5970caa4b848d345bae9955adefd284a812bf711f73c955068006c376d0",
+              "start": 166,
+              "end": 246,
+              "quote_sha256": "27eba04feb7e93288ed9c42d02199e0c241e14101754681aebaf0a64dd657d7c"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "ebf19308bd7e06d7342b1e07df7c68246d486efa0d4e5f01e52ef410b7484d61",
+              "start": 166,
+              "end": 246,
+              "quote_sha256": "27eba04feb7e93288ed9c42d02199e0c241e14101754681aebaf0a64dd657d7c"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "prius_symptom",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "83afe5970caa4b848d345bae9955adefd284a812bf711f73c955068006c376d0",
+              "start": 122,
+              "end": 145,
+              "quote_sha256": "3c2d13ac41a79956e8b1ed6ede8dc31763ec4b7d9616a1a89372ac5735e781c3"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "ebf19308bd7e06d7342b1e07df7c68246d486efa0d4e5f01e52ef410b7484d61",
+              "start": 122,
+              "end": 145,
+              "quote_sha256": "3c2d13ac41a79956e8b1ed6ede8dc31763ec4b7d9616a1a89372ac5735e781c3"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "prius_risk",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "bfc3be94f914eec38438d389f6685d9e553bad40e65f55c906ec58a03c8ee03e",
+              "start": 77,
+              "end": 107,
+              "quote_sha256": "7e1a2b8561db96c10e71c43dcbff3fa621430fa9898221e87d2c55e57d2ad83a"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "8dd05d8b07afe242daee9791e6ce621890ae4f58a5969549aa66f27942e8a6c3",
+              "start": 77,
+              "end": 107,
+              "quote_sha256": "7e1a2b8561db96c10e71c43dcbff3fa621430fa9898221e87d2c55e57d2ad83a"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "prius_remedy",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "702dc31168c7526e72acfde2eb363c406c69c430ccab848bdded20f5075e1433",
+              "start": 13,
+              "end": 75,
+              "quote_sha256": "7103a97764c229908a21aeae40fff3aa45d897c055735e92fda90e2d1d998c5e"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "feba7696e20e934f0a652933568f58be2ace2a12398154b8145d3b95149315c6",
+              "start": 13,
+              "end": 75,
+              "quote_sha256": "7103a97764c229908a21aeae40fff3aa45d897c055735e92fda90e2d1d998c5e"
+            }
+          ],
+          "expected_fields": {}
+        }
+      ],
+      "required_claims": [
+        {
+          "reference_claim_id": "R-PRIUS-SCOPE",
+          "statement": "适用仅限原文certain 2010 Prius与Lexus HS250H范围，不能确认个车。",
+          "evidence_sets": [
+            [
+              "prius_scope"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-PRIUS-TRIGGER",
+          "statement": "保留ABS相关、粗糙或湿滑路面缓慢平稳制动的条件。",
+          "evidence_sets": [
+            [
+              "prius_trigger"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-PRIUS-SYMPTOM",
+          "statement": "踏板感不一致，不将投诉表述升级为所有车辆永久失去制动。",
+          "evidence_sets": [
+            [
+              "prius_symptom"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-PRIUS-RISK",
+          "statement": "制动距离超出预期可增加碰撞风险。",
+          "evidence_sets": [
+            [
+              "prius_risk"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-PRIUS-REMEDY",
+          "statement": "经销商免费重写ABS控制单元程序。",
+          "evidence_sets": [
+            [
+              "prius_remedy"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        }
+      ],
+      "acceptable_dispositions": [
+        "answered"
+      ]
+    },
+    "DEV2-PRIUS-JOINT": {
+      "case_id": "DEV2-PRIUS-JOINT",
+      "split": "development",
+      "slots": [
+        {
+          "slot_id": "prius_trigger",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "83afe5970caa4b848d345bae9955adefd284a812bf711f73c955068006c376d0",
+              "start": 166,
+              "end": 246,
+              "quote_sha256": "27eba04feb7e93288ed9c42d02199e0c241e14101754681aebaf0a64dd657d7c"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "ebf19308bd7e06d7342b1e07df7c68246d486efa0d4e5f01e52ef410b7484d61",
+              "start": 166,
+              "end": 246,
+              "quote_sha256": "27eba04feb7e93288ed9c42d02199e0c241e14101754681aebaf0a64dd657d7c"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "prius_symptom",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+              "unit_id": "83afe5970caa4b848d345bae9955adefd284a812bf711f73c955068006c376d0",
+              "start": 122,
+              "end": 145,
+              "quote_sha256": "3c2d13ac41a79956e8b1ed6ede8dc31763ec4b7d9616a1a89372ac5735e781c3"
+            },
+            {
+              "source_version_id": "d2aa17c4027e816aca1682b243c25e5793d88425c141544406d96ac78286b522",
+              "unit_id": "ebf19308bd7e06d7342b1e07df7c68246d486efa0d4e5f01e52ef410b7484d61",
+              "start": 122,
+              "end": 145,
+              "quote_sha256": "3c2d13ac41a79956e8b1ed6ede8dc31763ec4b7d9616a1a89372ac5735e781c3"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "closure_basis",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 3262,
+              "end": 3315,
+              "quote_sha256": "35acf683133ae413e58a49613b1be9fa734018cbf4a3ede0f8e7b54277207628"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "continued_monitoring",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 3319,
+              "end": 3434,
+              "quote_sha256": "0f77157dee4a5dfa92b61e743bf5e60b52c881019ccefc95ef46404a46a398c2"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "safety_boundary",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 3262,
+              "end": 3315,
+              "quote_sha256": "35acf683133ae413e58a49613b1be9fa734018cbf4a3ede0f8e7b54277207628"
+            }
+          ],
+          "expected_fields": {}
+        }
+      ],
+      "required_claims": [
+        {
+          "reference_claim_id": "R-PRIUS-TRIGGER",
+          "statement": "保留ABS相关、粗糙或湿滑路面缓慢平稳制动的条件。",
+          "evidence_sets": [
+            [
+              "prius_trigger"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-PRIUS-SYMPTOM",
+          "statement": "踏板感不一致，不将投诉表述升级为所有车辆永久失去制动。",
+          "evidence_sets": [
+            [
+              "prius_symptom"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-CLOSURE-BASIS",
+          "statement": "基于丰田针对该特定ABS问题的软件召回行动结案。",
+          "evidence_sets": [
+            [
+              "closure_basis"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-CONTINUED-MONITORING",
+          "statement": "ODI继续监测涉事车辆并视未来情况进一步行动，保留监测对象范围。",
+          "evidence_sets": [
+            [
+              "continued_monitoring"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-SAFETY-BOUNDARY",
+          "statement": "直接指出该特定调查结案不足以证明所有混动车均已安全；不反向断言所有混动车不安全。",
+          "evidence_sets": [
+            [
+              "safety_boundary"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        }
+      ],
+      "acceptable_dispositions": [
+        "answered"
+      ]
+    },
+    "DEV2-FORD-PAIR": {
+      "case_id": "DEV2-FORD-PAIR",
+      "split": "development",
+      "slots": [
+        {
+          "slot_id": "cover_condition",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "c8c98328ba2e83106ba53e2630fe3b7dc12ce1badeaaa8b7113dc6819e7d297e",
+              "unit_id": "3040555d91e1f990e6a2598d7c5d30c0ecd3b3842380367c4cac09066de17379",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            },
+            {
+              "source_version_id": "d59f1563c75622925f8ef44f1bd504b59b907c8b4725f408d46fb8790fff54a4",
+              "unit_id": "f6e5bf5b735948518973ac3b998b872bd22afb98ce82d59dc2b813446c25644b",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            },
+            {
+              "source_version_id": "e348103ee07493cd02a5130cc9e575a2e8a1d97265631aa2e21fc0c42e062233",
+              "unit_id": "18d71baa40961da9d216290db0e22e5d4624145c1c3ad8eb62e26fbf8c3269f2",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            },
+            {
+              "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+              "unit_id": "3d330b0a3fcdfa3317b721d32ade0bcc89d945bccd5d5d68f1b2444db7ad284d",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            },
+            {
+              "source_version_id": "8190ec7f31f81d78efaff6f1e3f2f8db6c5ee3181e8ff19804c824b73b445370",
+              "unit_id": "f495d6f4841e2485bb73ad214142ffbc1242945d28147727d442fe28422e6f72",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            },
+            {
+              "source_version_id": "34b55a442f156b68519229ea8a3971f199c2e5e8e5a661d4ce98ffe743e0024c",
+              "unit_id": "d4f5adf88f13b83a6566cb97227b56de6088c82f725e22367ab72de9c7978849",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            },
+            {
+              "source_version_id": "2ab8445d597fdb51dbf2176a9d1d989cf1de060ef2cd8ccc1625eb254d1591e9",
+              "unit_id": "3e088142708777491d7acbfc30c51d2ac880045b43935a761b69e920e468599c",
+              "start": 113,
+              "end": 306,
+              "quote_sha256": "c0c74c4d1792fda8f2f9b71edd566c295bce61ad512dd05fd2ff452c61a16efb"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "cover_defect",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "c8c98328ba2e83106ba53e2630fe3b7dc12ce1badeaaa8b7113dc6819e7d297e",
+              "unit_id": "3040555d91e1f990e6a2598d7c5d30c0ecd3b3842380367c4cac09066de17379",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            },
+            {
+              "source_version_id": "d59f1563c75622925f8ef44f1bd504b59b907c8b4725f408d46fb8790fff54a4",
+              "unit_id": "f6e5bf5b735948518973ac3b998b872bd22afb98ce82d59dc2b813446c25644b",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            },
+            {
+              "source_version_id": "e348103ee07493cd02a5130cc9e575a2e8a1d97265631aa2e21fc0c42e062233",
+              "unit_id": "18d71baa40961da9d216290db0e22e5d4624145c1c3ad8eb62e26fbf8c3269f2",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            },
+            {
+              "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+              "unit_id": "3d330b0a3fcdfa3317b721d32ade0bcc89d945bccd5d5d68f1b2444db7ad284d",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            },
+            {
+              "source_version_id": "8190ec7f31f81d78efaff6f1e3f2f8db6c5ee3181e8ff19804c824b73b445370",
+              "unit_id": "f495d6f4841e2485bb73ad214142ffbc1242945d28147727d442fe28422e6f72",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            },
+            {
+              "source_version_id": "34b55a442f156b68519229ea8a3971f199c2e5e8e5a661d4ce98ffe743e0024c",
+              "unit_id": "d4f5adf88f13b83a6566cb97227b56de6088c82f725e22367ab72de9c7978849",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            },
+            {
+              "source_version_id": "2ab8445d597fdb51dbf2176a9d1d989cf1de060ef2cd8ccc1625eb254d1591e9",
+              "unit_id": "3e088142708777491d7acbfc30c51d2ac880045b43935a761b69e920e468599c",
+              "start": 309,
+              "end": 402,
+              "quote_sha256": "b74a8dd11e87b6ef174bd807bc7f7346a3f250ae26ca46af1d063ea6686b3017"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "cover_risk",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "c8c98328ba2e83106ba53e2630fe3b7dc12ce1badeaaa8b7113dc6819e7d297e",
+              "unit_id": "831d102184702d95cc2924dbdf273800d0ec9396e8d977ee5e045527bd67c783",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            },
+            {
+              "source_version_id": "d59f1563c75622925f8ef44f1bd504b59b907c8b4725f408d46fb8790fff54a4",
+              "unit_id": "f20faa3054fe8aa0c8df07b80a5a83a18078157d0c8697d6142b4b12f614bd7a",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            },
+            {
+              "source_version_id": "e348103ee07493cd02a5130cc9e575a2e8a1d97265631aa2e21fc0c42e062233",
+              "unit_id": "993af9e62aca88e04fa9361e6577d556e8481d55c60b0b0f528910ea36d972c3",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            },
+            {
+              "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+              "unit_id": "38980860c2d9b7aacb40ac7283f05f695dcb840d1ca06ec861637fed0b379280",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            },
+            {
+              "source_version_id": "8190ec7f31f81d78efaff6f1e3f2f8db6c5ee3181e8ff19804c824b73b445370",
+              "unit_id": "f4447344a02322b2122d596a2c97bde6c79e2871a3bc2a47261c5e20982da1cf",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            },
+            {
+              "source_version_id": "34b55a442f156b68519229ea8a3971f199c2e5e8e5a661d4ce98ffe743e0024c",
+              "unit_id": "5b91112369876da9e3351daddeb8266bb380476a32921d97527e04fa34b4c9ef",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            },
+            {
+              "source_version_id": "2ab8445d597fdb51dbf2176a9d1d989cf1de060ef2cd8ccc1625eb254d1591e9",
+              "unit_id": "46f0ab6f6df9f4108b91afdeca267e2824b922f083d07e8fcce8fc9c222602eb",
+              "start": 58,
+              "end": 104,
+              "quote_sha256": "1726132155f64a77608024fecde174f8c3f1944fb9ddeb682a39a08b6c4a27d7"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "cover_remedy",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "c8c98328ba2e83106ba53e2630fe3b7dc12ce1badeaaa8b7113dc6819e7d297e",
+              "unit_id": "62c18abdebb5fc108ae3687d50321991d95be686fb97a30e8a6a7a6dcdd22e59",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            },
+            {
+              "source_version_id": "d59f1563c75622925f8ef44f1bd504b59b907c8b4725f408d46fb8790fff54a4",
+              "unit_id": "7cfa3318f1e7c01aae1bdc85c4383ba153f30c32bb5254dc21dfb1cf81ea2c71",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            },
+            {
+              "source_version_id": "e348103ee07493cd02a5130cc9e575a2e8a1d97265631aa2e21fc0c42e062233",
+              "unit_id": "c9cad3d55cffb1b3cc5dbaf468024d17fc1a419ebc4049fa51817d6f3ff7ffd5",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            },
+            {
+              "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+              "unit_id": "1fca17dcc90f3eaff47ebbc41b56befeef86d302b27859637d748a7449ccb1eb",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            },
+            {
+              "source_version_id": "8190ec7f31f81d78efaff6f1e3f2f8db6c5ee3181e8ff19804c824b73b445370",
+              "unit_id": "436aea0c7a95db3be66448e931074b84f2bab838d13bb12f29d9b538b746ce0a",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            },
+            {
+              "source_version_id": "34b55a442f156b68519229ea8a3971f199c2e5e8e5a661d4ce98ffe743e0024c",
+              "unit_id": "b1a1f4820ec1e2017f37d979c94be521a6dd18b8e813d8a3beadb9a8d11957ca",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            },
+            {
+              "source_version_id": "2ab8445d597fdb51dbf2176a9d1d989cf1de060ef2cd8ccc1625eb254d1591e9",
+              "unit_id": "366234ce3795ed433e9ef72e8d0e316bded76cf33376849b1a01bc8109a2772e",
+              "start": 29,
+              "end": 99,
+              "quote_sha256": "8cf4224cfdb23c69232c3c8bf403c2fd9363b003f09a6a7a8e2229fa69e52620"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "cable_defect",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "0390c876537f5088efd299c8c759d98e688b13234e0b0408dd1571f4c6fe2754",
+              "unit_id": "91063c80bc32fd842879e1600e5ff2d67bb5965c32b1c7bfa3935f17d0eff3d4",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            },
+            {
+              "source_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3",
+              "unit_id": "61b3e00e91b0f25c3ea9adc8e7b0cc471364393ba269e0019609991ac47f0714",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            },
+            {
+              "source_version_id": "ccf448a0308e1c5906bec35e6f0edf13cd69938da8f2283d0953bdb378fa72ad",
+              "unit_id": "5140bb8ea4d4c3c9f6fd63a751d181247ea15333f7c03eefa97326b9938b774e",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            },
+            {
+              "source_version_id": "302fc0184926a13b4b17ab8e752945a085688475767f0a29ea4aaeb59b46ed4c",
+              "unit_id": "5ba279443a8ce96065671819419bae4ac3ecef9c5e7b47ffe4976637c8e19169",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            },
+            {
+              "source_version_id": "ff98961294792a526afb323d89fb4d04cfc0cc09dcbd5c7ae09b303a1c3453bd",
+              "unit_id": "8a032b460cbbb21212f48a69cc830370e0729a82d3fbe7296af44f4de0f2f4ba",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            },
+            {
+              "source_version_id": "ec33de68ce33f8b8ee7816df0fd797f2e135fe08bdd14a4ef7300c3d41e800f7",
+              "unit_id": "f13ae2e3c7e1c5fc6a34dd18b59c7191a9a90e3afa85a1afd5083b6840ebac7a",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            },
+            {
+              "source_version_id": "ac30c8237aaa4a953a8c0aa365443c7801327195fd331cb7cd684450ff6a1201",
+              "unit_id": "bcd9ce6b7acfd569e0a4134fcec1ce533e01c811513d7370d41964b7c4b9f845",
+              "start": 166,
+              "end": 261,
+              "quote_sha256": "30819e59da5a7e302db7164d6d10111c70c6ed00b3ca65dc013a5e04e1bf20a1"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "cable_risk",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "0390c876537f5088efd299c8c759d98e688b13234e0b0408dd1571f4c6fe2754",
+              "unit_id": "69366cb8e0f57c8d0777f34bea9ffda104d5195b9b080c77d737780de561ad83",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            },
+            {
+              "source_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3",
+              "unit_id": "aa3bf87480c40a6a7e1cdaa1e9fb91a006199f65b3be305e8e2b761080c35709",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            },
+            {
+              "source_version_id": "ccf448a0308e1c5906bec35e6f0edf13cd69938da8f2283d0953bdb378fa72ad",
+              "unit_id": "d1e30039288c86747468972727c09f4a2ac3143d2774458d2ad13f59d6b609ea",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            },
+            {
+              "source_version_id": "302fc0184926a13b4b17ab8e752945a085688475767f0a29ea4aaeb59b46ed4c",
+              "unit_id": "ccdbf02d89cc27af1a4a1c089cfff76cfb5026affa8c8e4360f11775a045561e",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            },
+            {
+              "source_version_id": "ff98961294792a526afb323d89fb4d04cfc0cc09dcbd5c7ae09b303a1c3453bd",
+              "unit_id": "87165fa4fb339e1d7d6ce2d1ef1b6c00c438577ad58efd6a9bf01bd9c4ed25be",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            },
+            {
+              "source_version_id": "ec33de68ce33f8b8ee7816df0fd797f2e135fe08bdd14a4ef7300c3d41e800f7",
+              "unit_id": "6dc40a6b2280df9ee109136c9726165db5892d4f88b9db6abc60195a9b00560d",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            },
+            {
+              "source_version_id": "ac30c8237aaa4a953a8c0aa365443c7801327195fd331cb7cd684450ff6a1201",
+              "unit_id": "5e656e11095b03151dba0a5310b785c309d7ae37f7185cd4c135250859b65609",
+              "start": 0,
+              "end": 64,
+              "quote_sha256": "647a1023dd62e7b0a0600217d6ee42928e73f47bb9f2923e7fdce15a77380c15"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "cable_remedy",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "0390c876537f5088efd299c8c759d98e688b13234e0b0408dd1571f4c6fe2754",
+              "unit_id": "4ffaedfdac488ff161ee5c41c4ee788a615ac96e96b812524ededbcb1b8242eb",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            },
+            {
+              "source_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3",
+              "unit_id": "4a65860da6128aeeb9d15b5d21414161747317f166477d8a58c735781d129592",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            },
+            {
+              "source_version_id": "ccf448a0308e1c5906bec35e6f0edf13cd69938da8f2283d0953bdb378fa72ad",
+              "unit_id": "7c226452e8e7eaa4ec4632ad0fa9b0de04dc51fd816bc46b5ff857b5a86b8b48",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            },
+            {
+              "source_version_id": "302fc0184926a13b4b17ab8e752945a085688475767f0a29ea4aaeb59b46ed4c",
+              "unit_id": "49a6658470fa5988db72a1bcb9a1c9114b7eac28a3b07c89bea62341fc13273e",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            },
+            {
+              "source_version_id": "ff98961294792a526afb323d89fb4d04cfc0cc09dcbd5c7ae09b303a1c3453bd",
+              "unit_id": "32002e89f1698e515fdd2543e987214c9bd19c42ef7dc4afac9c2c133c34a89f",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            },
+            {
+              "source_version_id": "ec33de68ce33f8b8ee7816df0fd797f2e135fe08bdd14a4ef7300c3d41e800f7",
+              "unit_id": "44e046905f257c7153c680ee2435c1c8c4002d363b782eb3ac80b6715eea3439",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            },
+            {
+              "source_version_id": "ac30c8237aaa4a953a8c0aa365443c7801327195fd331cb7cd684450ff6a1201",
+              "unit_id": "cb60c902e1496e84d8bbde64958a6f59cf2c917bb70b88a8e74f2c0420b1d5cb",
+              "start": 42,
+              "end": 170,
+              "quote_sha256": "6de1bd26a5cf1473dcb609b31341e00916d7c3c30fbbe72d2279e9ec6a1e14de"
+            }
+          ],
+          "expected_fields": {}
+        },
+        {
+          "slot_id": "relation_boundary",
+          "kind": "text",
+          "alternatives": [
+            {
+              "source_version_id": "0390c876537f5088efd299c8c759d98e688b13234e0b0408dd1571f4c6fe2754",
+              "unit_id": "91063c80bc32fd842879e1600e5ff2d67bb5965c32b1c7bfa3935f17d0eff3d4",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            },
+            {
+              "source_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3",
+              "unit_id": "61b3e00e91b0f25c3ea9adc8e7b0cc471364393ba269e0019609991ac47f0714",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            },
+            {
+              "source_version_id": "ccf448a0308e1c5906bec35e6f0edf13cd69938da8f2283d0953bdb378fa72ad",
+              "unit_id": "5140bb8ea4d4c3c9f6fd63a751d181247ea15333f7c03eefa97326b9938b774e",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            },
+            {
+              "source_version_id": "302fc0184926a13b4b17ab8e752945a085688475767f0a29ea4aaeb59b46ed4c",
+              "unit_id": "5ba279443a8ce96065671819419bae4ac3ecef9c5e7b47ffe4976637c8e19169",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            },
+            {
+              "source_version_id": "ff98961294792a526afb323d89fb4d04cfc0cc09dcbd5c7ae09b303a1c3453bd",
+              "unit_id": "8a032b460cbbb21212f48a69cc830370e0729a82d3fbe7296af44f4de0f2f4ba",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            },
+            {
+              "source_version_id": "ec33de68ce33f8b8ee7816df0fd797f2e135fe08bdd14a4ef7300c3d41e800f7",
+              "unit_id": "f13ae2e3c7e1c5fc6a34dd18b59c7191a9a90e3afa85a1afd5083b6840ebac7a",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            },
+            {
+              "source_version_id": "ac30c8237aaa4a953a8c0aa365443c7801327195fd331cb7cd684450ff6a1201",
+              "unit_id": "bcd9ce6b7acfd569e0a4134fcec1ce533e01c811513d7370d41964b7c4b9f845",
+              "start": 166,
+              "end": 198,
+              "quote_sha256": "fe45e9bdc04e3a460e30230a4eda96f911474a4a3443fef04d8650aee035a4d5"
+            }
+          ],
+          "expected_fields": {}
+        }
+      ],
+      "required_claims": [
+        {
+          "reference_claim_id": "R-COVER-CONDITION",
+          "statement": "17V331保留原门把颜色/后装经销商镀铬盖附件的限定。",
+          "evidence_sets": [
+            [
+              "cover_condition"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-COVER-DEFECT",
+          "statement": "门把盖附件可在侧碰中导致车门解锁。",
+          "evidence_sets": [
+            [
+              "cover_defect"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-COVER-RISK",
+          "statement": "侧碰中车门解锁打开可增加乘员受伤风险。",
+          "evidence_sets": [
+            [
+              "cover_risk"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-COVER-REMEDY",
+          "statement": "移除门把盖附件并退款。",
+          "evidence_sets": [
+            [
+              "cover_remedy"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-CABLE-DEFECT",
+          "statement": "17V652包括拉索弯折和门锁进水结冰两类条件。",
+          "evidence_sets": [
+            [
+              "cable_defect"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-CABLE-RISK",
+          "statement": "行车中开门可增加受伤风险。",
+          "evidence_sets": [
+            [
+              "cable_risk"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-CABLE-REMEDY",
+          "statement": "免费检查并按需修复拉索、安装门锁防水罩。",
+          "evidence_sets": [
+            [
+              "cable_remedy"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        },
+        {
+          "reference_claim_id": "R-RELATION-BOUNDARY",
+          "statement": "对照两个独立缺陷机制，不能仅由同车型/部件断定同一缺陷或个车适用。",
+          "evidence_sets": [
+            [
+              "relation_boundary"
+            ]
+          ],
+          "forbidden_inferences": [
+            "individual_applicability",
+            "all_vehicles_safe"
+          ]
+        }
+      ],
+      "acceptable_dispositions": [
+        "answered"
+      ]
+    },
+    "DEV2-MISSING-YEAR": {
+      "case_id": "DEV2-MISSING-YEAR",
+      "split": "development",
+      "slots": [],
+      "required_claims": [],
+      "acceptable_dispositions": [
+        "needs_clarification"
+      ]
+    },
+    "DEV2-INDIVIDUAL": {
+      "case_id": "DEV2-INDIVIDUAL",
+      "split": "development",
+      "slots": [],
+      "required_claims": [],
+      "acceptable_dispositions": [
+        "needs_clarification"
+      ]
+    },
+    "DEV2-COMPLAINTS": {
+      "case_id": "DEV2-COMPLAINTS",
+      "split": "development",
+      "slots": [],
+      "required_claims": [],
+      "acceptable_dispositions": [
+        "insufficient_evidence"
+      ]
+    },
+    "DEV2-WRONG-YEAR": {
+      "case_id": "DEV2-WRONG-YEAR",
+      "split": "development",
+      "slots": [],
+      "required_claims": [],
+      "acceptable_dispositions": [
+        "no_matching_records"
+      ]
+    },
+    "DEV2-HISTORICAL": {
+      "case_id": "DEV2-HISTORICAL",
+      "split": "development",
+      "slots": [],
+      "required_claims": [],
+      "acceptable_dispositions": [
+        "unsupported_time"
+      ]
+    }
+  },
+  "parsed_artifact_sha256": [
+    "0b25f63ac78aa6a39d171ab9748a969ebe6bdfe8ebda69edacb9bb15d2a1a4b7",
+    "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+    "1cf612a08a301c533f86651a838b9cc1ac1ee942b240c7e9f265533aa799259f",
+    "2f5befd0a4fb9c3a467539db63c4d8e293dea20141dafce59679a5275cbf593b",
+    "33983b686d37bc32d194ed647055b85914ac2eed6dd0005653e2eac11956fbd0",
+    "474d3e8e73dc8feab103bae4fb4f61eecac07d256f50c96667c343f85a0466a9",
+    "56cce76b163306b03a7d4ff05f53117c756ac7fb22bba5a6aae7b7bd4c5a11a5",
+    "645426c781bfcd5adb146baca801b7dd8a82d09a5daa9af9d3e1ab1cda337375",
+    "8a5900943b7c864c67632075cc750e84e4b04fe633fa974d3569aa1c9722a91e",
+    "99243553a8335e77c263b5fac58fe0356b11a97a7e535cebc797cff2101f2c09",
+    "a7e1bae4c1eec41e3fe7a22f5ab0878281e39eca91116fe723554f0fe1104a10",
+    "ba85ac8dd33d611ab9c2a9c702edc8a535d04579273b31b978e33c65405daba8",
+    "c2aa5f273e0e17ef8f92a67e51985f13d459f53a77a9d9bce0fadec33d4b3644",
+    "e5a2360bc0e4f08547c6ef8f7ee899c0065932d73bdb7d5d66ebf7e55084dff3",
+    "f488615ef35624234830ebf5af5c39435c95e45a8dca6fbf8d50ccae8ee8311c",
+    "fa6e7fcc4e25c27ebe60c629066666ee5f18acfffec0158a91411f9900ac0626",
+    "fdbab0f808bbdc9b6f6ca98129d71a65345280c6ade2924503bc4e930620247c"
+  ],
+  "generator_implementation": {
+    "app/__init__.py": "24315af176e994ad85dbf10b3a1a1fb310b41d4a3a5be673df028bc4e8148b47",
+    "app/__main__.py": "a6b92a020cc93806594ae2c2b8333c0e660dbd3ab98ac49c578b78d1d07afd9e",
+    "app/api.py": "ea84ba6b8338fce003106a4d8ecc2a9b058aec9c545ae233ee312b7ec0078192",
+    "app/control_api.py": "33c8ee242d24ff83a32cef040e9365cead8460340cab0e6a0377800128fc7270",
+    "app/development.py": "73a2e21008929557f8c52ffdef26762aaeddd7a60c8250162435f527dff6569d",
+    "app/episode_api.py": "1cfd542ddcf88f801e947812c395310ea76e633619e786a88aba34f2d3be1eaf",
+    "app/memory_api.py": "f8a8862a5644bfb25633351c8f51ea1cda653e5a531c9a6e3f1fad1af9fd7c35",
+    "app/procedure_api.py": "c0694ec85f6dc4c1b9f1993941bffc69b7ff523580f829c0499f90489a07086e",
+    "app/query_api.py": "e5a4fe296b47f10a6a85e7087effd35d7308330086b9c8b142b15dddf47fe1f1",
+    "app/release_api.py": "1b8f1c2132f4de8b364bec3a0a1fc1b9a60b96ead7b467d9798e8d408cfece6f",
+    "app/retrieval_api.py": "072aa456e74b8972b9acb173da8ae4a3bddec01a273dd47d7d2ddc952086745f",
+    "control/__init__.py": "a7d3ed5a0f2111746fb9b76842dd5cb886b3e6c46f5b82e871d8173c09fd0d29",
+    "control/__main__.py": "741e75204af90ef7ffd2aaaa4ed12d0c64a1a30c7bfe1a8cb4f5e8cd37a94517",
+    "control/access.py": "2c2de8db0399f301b9ece8040627cbd15efb4ed8c0c2ce42b7d5c5415bd2e3b6",
+    "control/contracts.py": "488e95f12f0bfeae32bacd430356b90c9994a1d38f01de028aa42240ad6fa694",
+    "control/dispatch.py": "8a5326ed8ce4fda21d9322125023165ad7785e16b543cffca1a28bd92de1f1c1",
+    "control/journal.py": "5562fedc3c5a9497a5c391ea8fabdea266507bbaf63860dee547df4ca20b7299",
+    "control/queue_contracts.py": "d4394c29b4bdfe264a9151c25cf180a06a145b86059adebcd12023e15a2c8c0b",
+    "control/queue_schema.py": "2de229647389e30e8687238d7690aafe398d9a26dd5f08e392e2c5054284752e",
+    "control/schema.py": "d1888549c7fdd1ef977c7bdaf8cc0f42b625b60d87b0b78b9cf304c31dba7d9f",
+    "control/service.py": "8ef2d5c46be91315ab976d6acb5d238aa7c6cd297289ed9158ff02ae2b6c32e6",
+    "control/worker.py": "ac27c4f2de3df0c7e18e1b5312b9e66248027b8bb627ba3ac9cb061b08f9a3f6",
+    "database/__init__.py": "d72a475d7ec2067dcfb4f9a89975d10995e9a1fa882b73473579d2dd0069bf34",
+    "database/__main__.py": "a5ffa6c474d0f32335090b6f70cef54cc7ba06aed0b6f9d203af0daee269fbd5",
+    "database/archive.py": "5dffb23aac6ace3908a8f6ba94868ff875ec6052af087f5c6d583f912dae26d7",
+    "database/config.py": "7e3f447064397f27a272333a63b08105db1f0ad53235bd8b294bca6c3fb1a871",
+    "database/migrations/env.py": "3e86dc974d1bcfb498d93a0c7c5248a7d567ac194b1b5c5d83e89b5cc4bdc870",
+    "database/migrations/versions/0001_control_tables.py": "0540ac5e7b73a86816df986ae7312e6b90eb55f355c50da4e70049e794fa6fe7",
+    "database/migrations/versions/0002_source_records.py": "b5f9dc7b626fedc226fc675cbcaf8dcc1937d8eedf6dfb75d483f611e6b2de23",
+    "database/migrations/versions/0003_entity_projections.py": "a562baf0fc67a6c3ed5ef68aa8b896fc4ec6eabaf738cc5e62977f44e12ef93c",
+    "database/migrations/versions/0004_dataset_releases.py": "b72f16a95ee9d303826df40c55e1fb4afe66661a6bb18ffe4e89e49ff3650ded",
+    "database/migrations/versions/0005_task_control.py": "70846de2ba25ed4364eb7f906da1271d48c1966c8e5b42c658b9a2ce8fe17efe",
+    "database/migrations/versions/0006_durable_dispatch.py": "f8dc00de6bfd726618aaa0dd1f423757f87a840d8d1c145a4f620d0ace8ef8d1",
+    "database/migrations/versions/0007_semantic_memory.py": "5f7b9722d84fea578ae60fec1a726041e644c9e2c24156f12b8b1dc6284a0676",
+    "database/migrations/versions/0008_episodic_memory.py": "04643bdf9da8d8f15d2894417995349bec8dbd28ae43f1f2d8e9f075f7851375",
+    "database/migrations/versions/0009_procedural_memory.py": "4492ec13a678b22e33ca2c60663309c0f8f2f4843c618fee27a1ebc1f13bb481",
+    "database/schema.py": "4ea4223afb4f79b56d39543224e44eb06e53cd56d590ba8addd3bfab1f3af1c5",
+    "domain/__init__.py": "f574a9bd4e11c5f68d924909d52f9de71c34115de5f8a39d7ff38b5de1892d98",
+    "domain/tasks.py": "f3564b76d3f1495de207f7384cdb5f436c9b914996136f721d41b8f1322153f6",
+    "entities/__init__.py": "b6402e8256d69353287da4ce783948cf6393a01a606f891b89f5dd688a346b7f",
+    "entities/__main__.py": "063ae5c17aeb748207ad975e14405dbf500f3fe18035201e457fc4a999e32d93",
+    "entities/counts.py": "e3fd91446130c61cfabca23dc7e61e619df1559b12315d669b59200257c5f013",
+    "entities/errors.py": "c574e58e4163deb83be6a1186a5f54d5562797f3438a85413d42e623ca5c3583",
+    "entities/links.py": "9875cea2bdcf7d4433e81ff6d7bd22755e2dc46dacf561331cf99e58c5b0f693",
+    "entities/normalize.py": "615b040fb05fa5a9df336bf2f8ef1bb938ac64ec883eb73c72be48aca30c8bda",
+    "entities/query.py": "1d86cdcb1acca58b40fb3016120a0e2a54fd6e043d2e0a39680d76f165f0dc19",
+    "entities/scopes.py": "a9e37de64c78f75ee65271956a2355df6d8202a333fff592687465066d01d576",
+    "entities/store.py": "5df1009522ac312a02132a4cf286080d1fd2f7d329e41322f4c096d8294cab29",
+    "evaluation/__init__.py": "fcf5c0b4718aded5cd62db7e92a00d9070c97a615656c403543b22d7d046a9a5",
+    "evaluation/__main__.py": "275aa48515ff883542284c07d1c676d3d4006641dbcc726a142785a1ac8106a4",
+    "evaluation/analysis.py": "de515d37fc623ccdb8cb144276899bdf6de129410149e0ceabd4dd61d01ca79c",
+    "evaluation/challenges.py": "6850f05c9ca148bcd69938509fae3d25b4e053de9e61054ff94654f9bcb3b96c",
+    "evaluation/contracts.py": "e69efe8bbb430c93d1369ff42586c0d67c77e7704f385b1bf408fdc789ad7d59",
+    "evaluation/costs.py": "44b1f545e6e783a68105ecf44c6070f01bd9bfed07f11ddae2fa8c60754a953f",
+    "evaluation/executor.py": "90c1d798a7133151b7d80e2d96ce5d904bbb162c54bb237066229f56886eb81a",
+    "evaluation/freeze.py": "846a2fb8621118f36a83c4aa62ae2834e304da1d025786e76e4f92458a7766d2",
+    "evaluation/records.py": "2a1a3ba55e3ba90d8a9a79a0c1a642609b4d9cd22e5ea9a781bc7239eb4e0114",
+    "evaluation/render.py": "c9964df4614e7527492e450635837a3ac74ec90cc975b710a35e2052145621a2",
+    "evaluation/retrieval_benchmark.py": "1e8197bf652516c861f87a98ad5ccd01a8b24c822959c5b605406c91f1cdd7ae",
+    "evaluation/review.py": "8cd4ff5be853113b98759389b49771e880c935ec5aa24cb32f4c8afb028ffe9e",
+    "evaluation/session.py": "5fc074e673d54abe38dd8b9a68fd548122b706123f38125376b1d235768beb32",
+    "examples/procedure-event-families.json": "dac65ee0c0b817ccda2c9c11cbb0715ace1e97a5fc6a1d385a211e7192766763",
+    "ingestion/__init__.py": "411e8e5ac4601bfdedcc55fc370f92aab61c733474b98b95ff5cba59c8794ff8",
+    "ingestion/__main__.py": "6e06197a511a3327169e098dd1577a4f85436ed4ccdf1b29740b8bc62116a8e0",
+    "ingestion/contracts.py": "34d2b509b9a8f8c93bd22e7138fcf34a52c12fe99d9a9f87eae4716e1e262d16",
+    "ingestion/importer.py": "ae6d8ca4441a0b7332862ba72923366a395a611f13d8c410e4f05fbe3df5753c",
+    "ingestion/records.py": "6e992b6e36f4336a9eeb587e00ace91c27914072e186ef70cb92b7cf0bad2d53",
+    "ingestion/snapshots.py": "425a10b4e708636b3185697d0c05fb070e0f1dd7a712b01d38131c0ad8771648",
+    "ingestion/sources.py": "8ed2f40d5af672db66be9bc0c2104c8e3be40e73911b738b522476371d238106",
+    "ingestion/temporal.py": "29cab61a7bbf954d0c7062b43db054c62c7e4a5258fa8961fa62747e7f2e7649",
+    "investigation/__init__.py": "fee6dceaab3901c463fabeb53cb15fbc6b35a725d16bdf6581549c35d7de5a0a",
+    "investigation/__main__.py": "95ab4b8831aa0dc282dab872586be2fdf058f0a8dc3b410d5f648a2e970d74ed",
+    "investigation/agent.py": "e37ac69f535d3bcb3954f537b6807630e71ae77443cd68e9ce5dcb796e889245",
+    "investigation/agent_contracts.py": "e647406b606f2754078c48f0219e82d4a114d9ed20e7487c6d499cd57bc68b5e",
+    "investigation/collaboration_contracts.py": "41b352e84c213546ec2460eb32194a7129693d4e0d651ec2dbbcb7ae5912ccc4",
+    "investigation/context.py": "cd2ff4c9621a3f59b8c31b1c77c44cfaeca2f859e4b4ea8638a62d2a56327bb8",
+    "investigation/contracts.py": "602bf4f79a03679f557a29758ab468a98be78c4ac0975b7221db193962e073a4",
+    "investigation/cooperation.py": "1c7a11596e60d16504589c4fe6ae487e469fce901fae3d357e2659fe0868a427",
+    "investigation/evidence.py": "a0f5d882890b9d4231d4f461ef81aef9b4ecb679b195024cb80ec12a33fa5718",
+    "investigation/flow.py": "3e0de966f039e1e44687dd33e21095767fe62d0646956c407505a16ecd77fbd1",
+    "investigation/inspection.py": "f6f102b9405b773633d44e85f22fd935f90a90c1a253ca47de99fa504b2f6f84",
+    "investigation/prompt_context.py": "062fd09857406ddafe0293c97265caccdaeb476f2adc555ad89a4bfe07082663",
+    "investigation/resources.py": "c48310af66eafab9ae24422009d94e0356a88f8876c42154d6152f4344bdbbec",
+    "investigation/review.py": "c2307da04ffc2736ca8b279d71c66aa775b22424489ab49a9502b22359b2b7d2",
+    "investigation/scoring.py": "0ce3765a942c897ff675b5745cdd52b29ce861b90fa0755f9e91e6f0196b91d5",
+    "investigation/team_runtime.py": "7f47fda35bfe5de3a0075e6501ad7a244916c8cdf25755dbf21184276875ac82",
+    "memory/__init__.py": "f67a5c1134cfff91af422c4c2cb6f3bf3de74abebdb7cb8fe72c58bb08991b47",
+    "memory/__main__.py": "b010e31975eca72d95ad3a5d1ead106d284327171af366cdff4f39c52ad1862e",
+    "memory/contracts.py": "b68018a9a90a384d3e5bf9292f9174d743850304a993cc81b2cb5764bd09ca06",
+    "memory/episode_contracts.py": "cc534f5723cceb2a1f4389ce922cda7e9fe98c99b6607e97831ac86713a87e35",
+    "memory/episode_projection.py": "c8119adf72e50338213863f2bd13475f025395aff0fb6cb6abacd87c16f1060c",
+    "memory/episode_runtime.py": "d49a26a5bbbad7d37ddd523b4a192c5da9add4bbbf616a6767fbe1e24c0c52ac",
+    "memory/episode_schema.py": "221a2575e3b5dfa58be6cfa886f64dee6916d9ca5313afc897741475885d60cd",
+    "memory/episodes.py": "277485d58555555e980c3194060329499b657170d4020a84ff1227ec6d502479",
+    "memory/policies.py": "100fe2739c63b016eaece1785df4c52cdc7821aa30dc1225faf1c8f408b12e99",
+    "memory/procedure_contracts.py": "b350b33a7a3426cd241b1aedbb3f3cc26b1571f2b45a38bafd270ac7a7b7594e",
+    "memory/procedure_engine.py": "ebe9be1c11e24094d4610257417da7ea2edb0b2042684be3748616a90dd31123",
+    "memory/procedure_runtime.py": "0e7d9cef6e3f595ff34fab5e03249671e5e813c5e44f440acb782d07ca85ec15",
+    "memory/procedure_schema.py": "1801a60839c399a4e0f46dec09a5936e2aa4883b7aac4946e6e5c2258ba6bd0c",
+    "memory/procedures.py": "826b1a67ef649d1e6a6f182a7045b53850390dae37fec93b0a2aab1761269427",
+    "memory/runtime.py": "24cdcc696bdf6b4a7d6feec619268520aaa6fb85d93c3e82fa908702591801f1",
+    "memory/schema.py": "314258dcf369afc4f5dad03610a1500d6b73203a6af46d3e2b40bc88c269458c",
+    "memory/service.py": "0c1cd9023021ec019d424be54faa004022a2fb4dbdd6a070ad0a6b2baadabcd0",
+    "models/__init__.py": "3b2664fa7009c42961673ca69f08a89062bde96009443ad2daef87a33ba16b14",
+    "models/adapter.py": "d80e327863c1c8f2f5eca24d0a3ab8692b71eab9a0d6e8592db424da0394002c",
+    "models/chat_api.py": "ba09bf31cd99b9ef73163a3bfb37e00b3f2e112dc0b8b49787e8a008aa96d717",
+    "models/request_allowance.py": "fde4b27f33a46846540c203024c91595279feb1be592b609bafb1a93e00fb06e",
+    "parsing/__init__.py": "74084e055ba11ae398ee177932b419792796c5e5797ddd10772d4a58422f3d62",
+    "parsing/__main__.py": "32010b9dd1b673cf0be41c249449cbe71640cf4eef36bd64d3af1a5e0d873828",
+    "parsing/audit.py": "80e84839cb5973a44d6e6e26149a211a16ec1afbd44040c60cf0d645d9995015",
+    "parsing/chunk_contracts.py": "fdf3a66fc59edda5a25e34ff77a01d2a31c712903ca1ab6b1c0c70bf113473e4",
+    "parsing/chunk_review.py": "95bc0a5f64b81a74c88d529456e05e3f97bedeffda2126198957113e0ff0547e",
+    "parsing/chunks.py": "2ff1e83f7e2487091629de71ed2c975b58308855bc82e5192abbe2fd44feaf41",
+    "parsing/citations.py": "68c5f2bf897fffbbae8e59fa3eb0f0310c3890169dd66e9eaeceed6380262837",
+    "parsing/contracts.py": "5d2e459930f9ed96c8e88e0f1ab80ca93964a87738993ec14fb21d9c00dcfd23",
+    "parsing/parser.py": "b6f70664582ca6cd832feee3a4453f4bf4734315df6d355aea2160b881eefc3e",
+    "pyproject.toml": "2ca9ca8f12516b4cde844d47cd04485d549e611b77269f27f4b632934bccfee6",
+    "releases/__init__.py": "bbd372c0032909fe76338320ea9f67dcc7d433c9168870b4d95cdd4a6c074572",
+    "releases/__main__.py": "0dee2d016afc079154ad6b42f5a8b8a247b26c7b535d6eb7706afa4bd4d95e8a",
+    "releases/bundle.py": "27dd4e2919ec07cc745f9c1ae5cfa70a2da1c1bd4f8669b56baf7c3c7accf11b",
+    "releases/catalog.py": "3539af5c6e125ddfde065635a813693f405f7d5518dda96496bc941a63de03c4",
+    "releases/contracts.py": "568d13f04fd1489d0bf5b8408f1e3d899774984d818bcf4020a54b8b54e826e2",
+    "releases/service.py": "52ce0689d803f30b5cfe36abb190bfe701914df39d8ed7e9c1846d8d390b9d61",
+    "retrieval/__init__.py": "c113004cea80372d295468650377f4014707321d0b853f57324d462b6020c657",
+    "retrieval/__main__.py": "eca316615359acc9828b73ce9acc4ef3047303c6109168de27d32da46b1fe2d6",
+    "retrieval/contracts.py": "57a64dad4bd40b62b1ad867bbbac178aa3bcde0224e96a6a2b1c6968378d6897",
+    "retrieval/corpus.py": "18f99972d7511f6a8cc14aedf93f7f9bf9931cbe859cc702f58d5a91f1e347a1",
+    "retrieval/diagnostics.py": "6da7905e5feab08a89b6c6441c5ae1bbfff51d4dcf9e0331f0fa9402ce8f869e",
+    "retrieval/index.py": "5b4e0486631b08344822834900803476a44a1ce959b92517606b6d5d72295d19",
+    "retrieval/metrics.py": "4bc50fa81895ecf75e4886e793f839f7f771c9c4d3b4bf0ca51e2a8b652c9deb",
+    "retrieval/models.py": "2f7bc9bd5c2cdaf4f6e86a34061beeb629e9eb9e01f5d6a6b06193661f4da144",
+    "retrieval/ranking.py": "de35d60472a2f5a05dded829724305b097bc440f48f2dfe7ceedc1a8ba3c02c9",
+    "retrieval/scope.py": "fb32a0f8fbf46f1d62243062272d750e39ada76bd8e69963db97218633e709b9",
+    "retrieval/service.py": "e1f69443984ec743d61e55fcdb614f65c971e5256e4024c6da5fa807c181f573",
+    "retrieval/vector_store.py": "52a26c16986221552893ff54ed6d16c9468046dcc2b937a0a0dc0a6ade00a134",
+    "runtime/__init__.py": "4240c701af00c4366941e38cf08c21618194f282a9af990797aacfb628e5e168",
+    "runtime/artifacts.py": "1ba0be37e1a87dcd45b173e5b342719975d30204c80190c13a034c9b87fa02a8",
+    "runtime/config.py": "d82f38021270868b087c9089d6310675b6a16856c5e4c3ef9b067b96b43937b9",
+    "runtime/demo.py": "735287222dfb824136e28732dba846b4c6e8f745b2167afe384519dcfffe22af",
+    "runtime/durable.py": "290a8c7f4e22f6825808082a257416f3f96722f8e81b377fea3b4e360f447b31",
+    "runtime/model_call.py": "42e68ff85ad616d24da8cc6704070b9e673e03d0b885f22f1d749097a0741270",
+    "scripts/export_evaluation_verification.py": "335266d709432b5f4e9b1b1ef9a2cb23ba855c7311eba6e8f1c72ff19231f6d3",
+    "scripts/prepare_evaluation.py": "5aa8ade1ecbc28e570cbd29fc2337587cd4e1618854c27594cd2fc08b6f97160",
+    "scripts/prepare_evaluation_sources.py": "6d6edd44368438d8020882c03ff6178d044f7d52569af6a0f73c64030162fec5",
+    "scripts/restore_evaluation_sources.py": "9fef28d5f284ebc489a59458e2f4cb4f3d0ee1145294b738504ba6869e4de923",
+    "scripts/run_evaluation_local.py": "37e81310dbe75264f3ac481cb4b2ef03bbb31efeb1e8c1265e320574bab2a1aa",
+    "scripts/verify_evaluation_preview.py": "8a9eab5575cecf38ab248c33c23173d625bd5228bb8009113410479141dc138b",
+    "uv.lock": "52bb4ffdc5c53d2183eddf0880d77e9fab8fcb7a0ce668e679bf4b73ccb4b8ed"
+  },
+  "wrapper_implementation": {
+    "baselining/__init__.py": "80b9b2de01fd6361c4f3fd1c503dfccffe59c92d85b9b74cac715031fc6ed901",
+    "baselining/__main__.py": "09fa5f7a8fbda22b7d465ad1cbc2cbe1ffb1847a214eba1fa662db30b05877b6",
+    "baselining/preparation.py": "6829f14f4a741223fde0a8c7661124f3909fc16dd5789ce5b43e7f5c93d31a6f",
+    "baselining/runner.py": "3a706d8509f15c8eba6a5196f2daae486906627ab4fe61bbaee3a89546c4641b"
+  },
+  "provider_approval": "pending_actual_human_reply"
+}

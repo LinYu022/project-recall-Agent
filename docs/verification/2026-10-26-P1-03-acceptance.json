@@ -1,0 +1,102 @@
+{
+  "timestamp": "2026-10-26T12:13:42.987601+00:00",
+  "module": "P1-03",
+  "status": "implementation_and_local_acceptance_complete_awaiting_user_understanding",
+  "original_plan_sha256": "04b03e1cfe4a5d855608a970eb6e5a097e8fae34a9ed52742af941b836f4a5a7",
+  "original_plan_unchanged": true,
+  "criteria": [
+    {
+      "criterion": "raw_and_canonical_entities",
+      "result": "passed_for_reviewed_sources",
+      "evidence": [
+        "entities/normalize.py",
+        "entities/scopes.py",
+        "examples/scope-rules.json"
+      ]
+    },
+    {
+      "criterion": "distinct_complaint_count_avoids_join_multiplication",
+      "result": "passed",
+      "different_odi_union": 86,
+      "matching_component_positions": 88
+    },
+    {
+      "criterion": "unknown_production_dates_not_inside_range",
+      "result": "passed",
+      "status": "partial",
+      "confirmed": 0,
+      "unknown": 86
+    },
+    {
+      "criterion": "five_relation_types_bind_evidence_versions_and_do_not_establish_causation",
+      "result": "passed",
+      "real_reference_pairs": 3
+    },
+    {
+      "criterion": "same_vehicle_year_component_different_defect_example",
+      "result": "passed",
+      "campaigns": [
+        "17V331000",
+        "17V652000"
+      ],
+      "make_model_year": [
+        "FORD",
+        "F-150",
+        2016
+      ]
+    },
+    {
+      "criterion": "predefined_read_only_query_api",
+      "result": "passed",
+      "routes": [
+        "/queries/complaints/count",
+        "/queries/entity-links"
+      ],
+      "transaction": "READ ONLY REPEATABLE READ"
+    },
+    {
+      "criterion": "temporal_refusal_and_version_conflicts",
+      "result": "passed",
+      "unsupported_is_not_zero": true,
+      "future_receipt_cannot_supply_historical_citation": true
+    },
+    {
+      "criterion": "candidate_exclusion_unknown_and_confirmation_explainable",
+      "result": "passed",
+      "reference": "evals/entity-link-reference-v0.1.json"
+    }
+  ],
+  "verification": {
+    "offline_pytest": 153,
+    "real_postgres_pytest": 38,
+    "total_pytest": 191,
+    "demo_loopback_cases": 7,
+    "synthetic_query_loopback_cases": 7,
+    "saved_official_postgres_loopback_cases": 13,
+    "real_fact_replays": 7,
+    "real_link_reference_pairs": 3,
+    "ruff": "passed",
+    "mypy_selected_source_files": 27,
+    "server_and_schemas_cleaned": true
+  },
+  "records": [
+    "docs/verification/2026-10-26-query-offline.json",
+    "docs/verification/2026-10-26-query-postgres.json",
+    "docs/verification/2026-10-26-P1-03-links-replay.json"
+  ],
+  "reference_review": "implementation_agent_source_review_not_independent_human_gold_labels",
+  "scope_limits": [
+    "finite_reviewed_entity_and_condition_rules",
+    "no_VIN_membership_or_causal_finding",
+    "ambiguous_multi_product_conditions_refused",
+    "selected_archived_responses_not_complete_population",
+    "bounded_observed_history_only",
+    "dataset_release_binding_in_P1-06",
+    "independent_annotations_before_formal_evaluation"
+  ],
+  "new_external_source_requests": 0,
+  "external_model_calls": 0,
+  "github_actions_run": false,
+  "github_uploaded": false,
+  "P1_04_started": false
+}

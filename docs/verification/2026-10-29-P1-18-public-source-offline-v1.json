@@ -1,0 +1,111 @@
+{
+  "timestamp": "2026-10-29T14:30:02.539834+00:00",
+  "classification": "local_equivalent_of_offline_ci_with_synthetic_data_and_fake_model",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "mypy"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "mypy",
+        "reviewing",
+        "baselining"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "alembic",
+        "upgrade",
+        "head",
+        "--sql"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp",
+        ".local\\pt\\0d5abcc0e3a3",
+        "--junitxml",
+        ".local\\offline-checks\\f7e3153cad7b4552966ae7040691f986\\tests.xml"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scripts.verify_http",
+        "--output",
+        ".local\\offline-checks\\f7e3153cad7b4552966ae7040691f986\\http.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scripts.verify_query_http",
+        "--output",
+        ".local\\offline-checks\\f7e3153cad7b4552966ae7040691f986\\query-http.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "tests": {
+    "tests": 557,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "http_checks": 7,
+  "http_server_stopped": true,
+  "query_http_checks": 7,
+  "query_http_server_stopped": true,
+  "external_model_calls": 0,
+  "github_actions_run": false,
+  "fingerprints": {
+    "pyproject.toml": "2ca9ca8f12516b4cde844d47cd04485d549e611b77269f27f4b632934bccfee6",
+    "uv.lock": "52bb4ffdc5c53d2183eddf0880d77e9fab8fcb7a0ce668e679bf4b73ccb4b8ed",
+    ".github/workflows/ci.yml": "e8328cb102dc28297ce3e0d89cee117cd28f9b206ae3d092f7a677848cc1dce3"
+  },
+  "logs": ".local/offline-checks/f7e3153cad7b4552966ae7040691f986",
+  "pytest_temp": ".local/pt/0d5abcc0e3a3",
+  "immutable_record": ".local/offline-checks/f7e3153cad7b4552966ae7040691f986/verification.json"
+}

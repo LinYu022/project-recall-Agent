@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-10-26T07:28:25.274319+00:00",
+  "classification": "real_postgresql_with_synthetic_run_data",
+  "binary_version": "postgres (PostgreSQL) 18.6",
+  "server_version": "18.6",
+  "authentication": "ephemeral_password_scram_sha_256",
+  "host": "127.0.0.1",
+  "server_stopped": true,
+  "external_model_calls": 0,
+  "pytest_exit_code": 0,
+  "tests": {
+    "tests": 12,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cases": [
+    "test_upgrade_matches_schema_and_roundtrip_downgrade",
+    "test_archive_roundtrips_lineage_and_preserves_first_run[success-succeeded-fake_query]",
+    "test_archive_roundtrips_lineage_and_preserves_first_run[tool-error-failed-fake_query]",
+    "test_archive_roundtrips_lineage_and_preserves_first_run[success-denied-forbidden]",
+    "test_late_insert_failure_rolls_back_task_run_and_events",
+    "test_same_task_id_cannot_overwrite_a_different_task",
+    "test_database_rejects_invalid_event_rows[missing-run]",
+    "test_database_rejects_invalid_event_rows[duplicate-sequence]",
+    "test_database_rejects_invalid_event_rows[zero-sequence]",
+    "test_database_rejects_invalid_event_rows[zero-generation]",
+    "test_database_rejects_invalid_event_rows[non-object-payload]",
+    "test_online_migration_and_archive_cli_do_not_expose_credentials"
+  ],
+  "artifacts": ".local/postgres-check-85b4e344847f48ad8127c68279e36d9f",
+  "binary_archive": {
+    "file": "postgresql-18.6-5.zip",
+    "bytes": 384620317,
+    "sha256": "e2246ba91d22345bc3d017586c09ede52d9df180b1eeb480f050445f1cad84e2",
+    "download_url": "https://get.enterprisedb.com/postgresql/postgresql-18.6-5-windows-x64-binaries.zip",
+    "checksum_scope": "locally_observed_fingerprint_not_independent_upstream_verification"
+  },
+  "github_actions_run": false
+}

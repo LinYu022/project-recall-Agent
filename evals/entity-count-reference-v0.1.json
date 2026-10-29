@@ -1,0 +1,43 @@
+{
+  "schema_version": "entity-count-reference/0.1",
+  "recorded_at": "2026-10-26T08:54:24.697141+00:00",
+  "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+  "raw_sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+  "rules_version": "entity-rules/0.1",
+  "rules_sha256": "c7d8b9f312e9f84785800cbe07e96234420d61863ff5fb379c3869772306d418",
+  "scope": {
+    "make": "FORD",
+    "model": "F-150",
+    "model_year": 2016,
+    "usage": "exploration_only"
+  },
+  "reference_method": "independent raw-row ODI set counting; scope and overlap positions manually reviewed; no complaint factual adjudication",
+  "expected": {
+    "distinct_odi_all": 103,
+    "component_positions": 124,
+    "power_train": 83,
+    "service_brakes": 5,
+    "power_train_or_brakes": 86
+  },
+  "overlap_examples": [
+    {
+      "raw_pointer": "/results/0/components",
+      "odi_number": 11772861,
+      "component_labels": [
+        "POWER TRAIN",
+        "AIR BAGS",
+        "SERVICE BRAKES"
+      ]
+    },
+    {
+      "raw_pointer": "/results/76/components",
+      "odi_number": 11755993,
+      "component_labels": [
+        "POWER TRAIN",
+        "SERVICE BRAKES"
+      ]
+    }
+  ],
+  "unknown_production_date_note": "No confirmed production dates in supported structured fields; model year is not a substitute.",
+  "not_a_fault_rate_or_causal_reference": true
+}

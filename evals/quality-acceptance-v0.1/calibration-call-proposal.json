@@ -1,0 +1,60 @@
+{
+  "schema_version": "quality-calibration-call-proposal/0.1",
+  "plan_id": "0bbf2dd8b81521940924ffbb2e25527ebc5e7f9a65efba4ae6a15728d418aab6",
+  "model": "deepseek-v4-pro",
+  "endpoint": "https://api.deepseek.com",
+  "jobs": [
+    {
+      "job_id": "DEV-BLIND-b0f073c1176a",
+      "input_sha256": "dd02dc8af6510741b243bc25b9967d378e76e6166e4b1c775b1ddd9d8365d021",
+      "characters": 17267
+    },
+    {
+      "job_id": "DEV-BLIND-95cee9ebfdee",
+      "input_sha256": "4d0f55c7fff8fb5d158b4cb09464de3e5be1ef6f9b9186ede6207c92f4040f0c",
+      "characters": 31128
+    },
+    {
+      "job_id": "DEV-BLIND-adbcda2666d8",
+      "input_sha256": "9c1f78a2bde895e69ea7057c7ef7560fecfbdaa9657be41cc3866f47263d9f4a",
+      "characters": 128173
+    },
+    {
+      "job_id": "DEV-BLIND-53ac2882b280",
+      "input_sha256": "e7d0b4b4b72f57d5966f8b7e02817bbd495ade7ddfff7afd902997c139d71c4f",
+      "characters": 3472
+    },
+    {
+      "job_id": "DEV-BLIND-3bbc60801d77",
+      "input_sha256": "16b9ea85d87adfc79aa07a5657a5e61d3220f3158bc7d013810d446ba94864f0",
+      "characters": 3535
+    },
+    {
+      "job_id": "DEV-BLIND-5f63e8d13912",
+      "input_sha256": "d9bf85ee886ddf561decb552b94c8b6c8ff521ea306d4babb4cc5e44951913f2",
+      "characters": 4986
+    },
+    {
+      "job_id": "DEV-BLIND-7dcf51b563f8",
+      "input_sha256": "9c24a798da942b1fce58c8b3b951dfe9a4ecaa9aee49f2253445b71b81e2becc",
+      "characters": 5036
+    },
+    {
+      "job_id": "DEV-BLIND-84378628fdad",
+      "input_sha256": "a6d7f17bba96bfe5bca3b63de3d21e50d239702de8260d0525f653b78a06fcb5",
+      "characters": 3488
+    },
+    {
+      "job_id": "OLD-BLIND-525c27d5cddc",
+      "input_sha256": "ae2747de5d5f69c0e7aab4c77e24b163a593449599a5a997b995784af28f4906",
+      "characters": 32879
+    }
+  ],
+  "maximum_requests": 18,
+  "initial_requests": 9,
+  "per_request_completion_tokens": 8192,
+  "maximum_completion_tokens": 147456,
+  "per_request_input_characters": 160000,
+  "approval_status": "not_yet_approved",
+  "new_model_calls": 0
+}

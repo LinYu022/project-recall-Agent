@@ -1,0 +1,9 @@
+{
+  "case_id": "QTEST-24V744000-INSUFFICIENT",
+  "split": "test",
+  "slots": [],
+  "required_claims": [],
+  "acceptable_dispositions": [
+    "insufficient_evidence"
+  ]
+}

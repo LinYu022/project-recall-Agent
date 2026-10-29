@@ -1,0 +1,143 @@
+{
+  "schema_version": "raw-snapshot-observation-index/0.1",
+  "usage": "exploration_only",
+  "raw_root": ".local/source-snapshots",
+  "snapshots": [
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "61cd818ad3ae45c7bbdc94ecf0b479bc",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=10V039000",
+        "selection": {
+          "campaign_number": "10V039000"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T07:38:09.625806Z",
+      "completed_at": "2026-10-26T07:38:15.306977Z",
+      "fetched_at": "2026-10-26T07:38:15.306977Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 07:38:15 GMT",
+        "content-length": "2725"
+      },
+      "raw": {
+        "sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+        "byte_size": 2725
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 2,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "d0be027566e94ad2aa0737d166df64b1",
+      "source": {
+        "source_id": "NHTSA-COMPLAINTS-F150-2016",
+        "kind": "complaint_api",
+        "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=FORD&model=F-150&modelYear=2016",
+        "selection": {
+          "make": "FORD",
+          "model": "F-150",
+          "model_year": 2016
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T07:39:51.792495Z",
+      "completed_at": "2026-10-26T07:39:59.194639Z",
+      "fetched_at": "2026-10-26T07:39:59.194639Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 07:39:58 GMT"
+      },
+      "raw": {
+        "sha256": "ffdbed2ad2e0b789127b2f7be9f6ec6eb5560f1129ebf12c0bd5181cdaeade2d",
+        "byte_size": 130391
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 103,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+      "source": {
+        "source_id": "NHTSA-INV-PE10006-CLOSE",
+        "kind": "investigation_pdf",
+        "url": "https://static.nhtsa.gov/odi/inv/2010/INCLA-PE10006-1281.pdf",
+        "selection": {
+          "investigation_id": "PE10006",
+          "document": "closing_resume"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T07:39:59.450831Z",
+      "completed_at": "2026-10-26T07:40:05.630274Z",
+      "fetched_at": "2026-10-26T07:40:05.630274Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/pdf",
+        "content-length": "254390",
+        "last-modified": "Mon, 28 Feb 2022 13:56:34 GMT",
+        "etag": "\"ad4e5ca129cb0640a01fcbfdc207aed7\"",
+        "date": "Mon, 26 Oct 2026 07:40:05 GMT"
+      },
+      "raw": {
+        "sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "byte_size": 254390
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": null,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "81312fe0084a4aafa99db307bc64eb90",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=10V039000",
+        "selection": {
+          "campaign_number": "10V039000"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T07:41:23.010579Z",
+      "completed_at": "2026-10-26T07:41:28.464593Z",
+      "fetched_at": "2026-10-26T07:41:28.464593Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 07:41:28 GMT",
+        "content-length": "2725"
+      },
+      "raw": {
+        "sha256": "751c19db03eab693f43c57503b50703cffeb2b98d1644b4f9e8a361b4d2c462c",
+        "byte_size": 2725
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 2,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    }
+  ]
+}

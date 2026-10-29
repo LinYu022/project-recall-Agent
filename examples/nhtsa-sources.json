@@ -1,0 +1,125 @@
+[
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-10V039000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=10V039000",
+    "selection": {
+      "campaign_number": "10V039000"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-COMPLAINTS-F150-2016",
+    "kind": "complaint_api",
+    "url": "https://api.nhtsa.gov/complaints/complaintsByVehicle?make=FORD&model=F-150&modelYear=2016",
+    "selection": {
+      "make": "FORD",
+      "model": "F-150",
+      "model_year": 2016
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-INV-PE10006-CLOSE",
+    "kind": "investigation_pdf",
+    "url": "https://static.nhtsa.gov/odi/inv/2010/INCLA-PE10006-1281.pdf",
+    "selection": {
+      "investigation_id": "PE10006",
+      "document": "closing_resume"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-14V284000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=14V284000",
+    "selection": {
+      "campaign_number": "14V284000"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-20V332000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=20V332000",
+    "selection": {
+      "campaign_number": "20V332000"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-17V331000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=17V331000",
+    "selection": {
+      "campaign_number": "17V331000"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-17V652000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=17V652000",
+    "selection": {
+      "campaign_number": "17V652000"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-22V150000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V150000",
+    "selection": {
+      "campaign_number": "22V150000"
+    },
+    "max_bytes": 2097152,
+    "usage": "exploration_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-23V838000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V838000",
+    "selection": {
+      "campaign_number": "23V838000"
+    },
+    "max_bytes": 2097152,
+    "usage": "development_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-23V651000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V651000",
+    "selection": {
+      "campaign_number": "23V651000"
+    },
+    "max_bytes": 2097152,
+    "usage": "development_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-22V859000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V859000",
+    "selection": {
+      "campaign_number": "22V859000"
+    },
+    "max_bytes": 2097152,
+    "usage": "development_only"
+  },
+  {
+    "source_id": "NHTSA-API-CAMPAIGN-23V080000",
+    "kind": "recall_api",
+    "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V080000",
+    "selection": {
+      "campaign_number": "23V080000"
+    },
+    "max_bytes": 2097152,
+    "usage": "development_only"
+  }
+]

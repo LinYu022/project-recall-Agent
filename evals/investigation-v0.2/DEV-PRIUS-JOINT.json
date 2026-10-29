@@ -1,0 +1,113 @@
+{
+  "case_id": "DEV-PRIUS-JOINT",
+  "split": "development",
+  "slots": [
+    {
+      "slot_id": "vehicle_scope",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+          "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+          "start": 578,
+          "end": 994,
+          "quote_sha256": "a06fd32c63234d5faa1166784939537acab18c2eadbdddd6182cdf32d617e2c0"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "action",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+          "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+          "start": 2167,
+          "end": 2234,
+          "quote_sha256": "4bcf253c43e3e81f9f42c1aaa15afa4c148cf0cd75f5377afde3a602563de020"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+          "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+          "start": 2836,
+          "end": 3446,
+          "quote_sha256": "249e177f8a690183f36bc83fbb260aed73aa90d17511f6e3e51cb99f0ed08eb9"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "recall_summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "9b9b98c27b869f73e0530a57a5c9ddddf99e568aaeea0d7b6bf365b7f3c23b37",
+          "unit_id": "83afe5970caa4b848d345bae9955adefd284a812bf711f73c955068006c376d0",
+          "start": 0,
+          "end": 348,
+          "quote_sha256": "07d966faf76e302755818616c477b4c9b1b45a78decc16c512558fc0fe5b57dd"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SCOPE-CONDITION",
+      "statement": "2010 Prius范围内特定ABS制动条件及软件召回措施，不可泛化到所有混动车。",
+      "evidence_sets": [
+        [
+          "vehicle_scope",
+          "summary"
+        ],
+        [
+          "vehicle_scope",
+          "recall_summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "all_hybrids_safe",
+        "individual_vehicle_confirmed"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CLOSE-MONITOR",
+      "statement": "ODI基于Toyota的召回措施将该2010 Prius调查结案。",
+      "evidence_sets": [
+        [
+          "vehicle_scope",
+          "summary",
+          "action"
+        ]
+      ],
+      "forbidden_inferences": [
+        "closure_proves_no_defect"
+      ]
+    },
+    {
+      "reference_claim_id": "R-MONITOR",
+      "statement": "ODI仍将继续监测并视情况采取行动。",
+      "evidence_sets": [
+        [
+          "vehicle_scope",
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "closure_proves_no_defect",
+        "all_hybrids_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

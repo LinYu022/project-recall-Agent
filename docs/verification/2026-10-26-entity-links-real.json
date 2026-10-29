@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-10-26T09:23:57.694051+00:00",
+  "classification": "saved_real_official_json_and_agent_reviewed_reference_checks",
+  "source_snapshots": 5,
+  "source_response_rows": 33,
+  "scope_rules_version": "scope-rules/0.1",
+  "scope_rules_sha256": "cba6fc24e5eb494c357bb3095fe4b1882d05ac4c98099b1cec021d95261646f5",
+  "fact_checks": [
+    {
+      "source_version_id": "616bf06326353928ef08edc025052cb7c32ce0401acea0970c876f95c0507b4c",
+      "facet": "production_range",
+      "key": "production_range",
+      "canonical": {
+        "start": "2006-08-18",
+        "end": "2010-09-11"
+      },
+      "field_pointer": "/results/0/Summary",
+      "quote_replayed": true
+    },
+    {
+      "source_version_id": "4d90a795a5841421c3828cdd5dc492b6f198ab6630e347775b06884602473073",
+      "facet": "configuration",
+      "key": "engine",
+      "canonical": "3.5L ECOBOOST",
+      "field_pointer": "/results/0/Summary",
+      "quote_replayed": true
+    },
+    {
+      "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+      "facet": "configuration",
+      "key": "chrome_handle_kit_condition",
+      "canonical": "POTENTIALLY_EQUIPPED",
+      "field_pointer": "/results/2/Summary",
+      "quote_replayed": true
+    },
+    {
+      "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+      "facet": "symptom",
+      "key": "door_state",
+      "canonical": "DOOR_UNLATCHING",
+      "field_pointer": "/results/2/Summary",
+      "quote_replayed": true
+    },
+    {
+      "source_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3",
+      "facet": "symptom",
+      "key": "door_state",
+      "canonical": "DOOR_UNLATCHING",
+      "field_pointer": "/results/1/Summary",
+      "quote_replayed": true
+    },
+    {
+      "source_version_id": "a46d8e599782c739bb77b59032d64dc454b8ecbf3d044ae170f85484bdec6bd2",
+      "facet": "official_reference",
+      "key": "recall_mention",
+      "canonical": "20V332000",
+      "field_pointer": "/results/0/Remedy",
+      "quote_replayed": true
+    },
+    {
+      "source_version_id": "a46d8e599782c739bb77b59032d64dc454b8ecbf3d044ae170f85484bdec6bd2",
+      "facet": "configuration",
+      "key": "engine",
+      "canonical": "3.5L ECOBOOST",
+      "field_pointer": "/results/0/Summary",
+      "quote_replayed": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "same_vehicle_component_different_defects",
+      "observed": {
+        "scope_overlap": "confirmed",
+        "symptom_similar": "confirmed",
+        "officially_referenced": "candidate",
+        "excluded_by_scope": "candidate",
+        "applicability_unknown": "confirmed"
+      },
+      "assessment_id": "2b9afb3f3af1c4bb53f7b8175a8b1b9d559889797d2f18cb6e0487e73f5bd269",
+      "idempotent_save": true
+    },
+    {
+      "case_id": "explicit_directional_official_reference",
+      "observed": {
+        "scope_overlap": "confirmed",
+        "symptom_similar": "candidate",
+        "officially_referenced": "confirmed",
+        "excluded_by_scope": "candidate",
+        "applicability_unknown": "confirmed"
+      },
+      "assessment_id": "605f92100b15183d319c1be606093617a78d8ed829377605df2e4de5e85e5cda",
+      "idempotent_save": true
+    },
+    {
+      "case_id": "known_vehicle_scope_exclusion",
+      "observed": {
+        "scope_overlap": "rejected",
+        "symptom_similar": "candidate",
+        "officially_referenced": "candidate",
+        "excluded_by_scope": "confirmed",
+        "applicability_unknown": "rejected"
+      },
+      "assessment_id": "ab138252296e0245273b4adc5918973eedad605db04d3edf5d1f664031cab354",
+      "idempotent_save": true
+    }
+  ],
+  "reference_labels": "implementation_agent_review_not_independent_human_annotation",
+  "dataset_release": null,
+  "historical_reconstruction": false,
+  "external_model_calls": 0,
+  "network_calls_during_replay": 0
+}

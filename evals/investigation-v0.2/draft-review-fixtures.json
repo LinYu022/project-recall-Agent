@@ -1,0 +1,313 @@
+{
+  "DEV-COUNT-86": {
+    "reviewed_report_content_sha256": "68b5665e393edf378ef7e20fc70055bc572b4378827d3202d197b318531590c3",
+    "review": {
+      "claims": [
+        {
+          "claim_id": "C001",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-COUNT"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "预定义DISTINCT ODI查询给出86，范围和部件OR语义一致。"
+        },
+        {
+          "claim_id": "C002",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "工具明确标注selected_archived_responses_only及总体完整性未确立。"
+        },
+        {
+          "claim_id": "C003",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-NO-RATE",
+            "R-NO-CAUSE"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "投诉标签计数缺少发生率分母及因果识别；没有以投诉数证明二者。"
+        },
+        {
+          "claim_id": "C004",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "忠实说明另一个召回查询因来源类型不支持，虽与题目关系有限但没有把零值当作不存在。"
+        }
+      ],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-DOOR-PAIR": {
+    "reviewed_report_content_sha256": "c63913f434683827b60ccd2a557ccd0e46160b36c732802466f1f9df34b3ce95",
+    "review": {
+      "claims": [
+        {
+          "claim_id": "C001",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "17V331的Summary支持原厂把手和后装镀铬套件范围。"
+        },
+        {
+          "claim_id": "C002",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-COVER"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "已核对17V331的Summary与Remedy，支持附件罩、侧碰解锁和拆除退款。"
+        },
+        {
+          "claim_id": "C003",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-CABLE"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "已核对17V652的Summary，支持拉索弯折或进水冻结以及车门可能打开。"
+        },
+        {
+          "claim_id": "C004",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "Remedy确实给出检查拉索、加防水罩及2018-10-12开始日期。"
+        },
+        {
+          "claim_id": "C005",
+          "verdict": "partial",
+          "reference_claim_ids": [],
+          "scope_correct": false,
+          "counterevidence_handled": false,
+          "reason": "车型年范围和共同症状受支持；但镀铬把手套件是已知范围要求，未知的是个车是否满足要求，原句把两者混称未知。"
+        },
+        {
+          "claim_id": "C006",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-DIFFERENT"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "关系结果和两端已审查事实不建立同一缺陷、同一个车适用或因果，限定结论合理。"
+        }
+      ],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [
+        {
+          "reference_claim_id": "R-COVER",
+          "evidence_ids": [
+            "12c1a6d5a34556f987de11bfa5ee3547d17b3a510fc998f9cd5e38e0a62a5997"
+          ],
+          "accepted": true,
+          "reason": "同一17V331官方Summary的当前2016车型记录，来源版本不同于初始槽但原文支持附件罩和侧碰事实。 仅实现代理临时审查，独立人员待复核。"
+        },
+        {
+          "reference_claim_id": "R-CABLE",
+          "evidence_ids": [
+            "70df81a70ccc2457c40190ac777eeda84839b9403e8b2124957233f82056e9fe"
+          ],
+          "accepted": true,
+          "reason": "同一17V652官方Summary的当前2016车型记录，支持拉索和冻结条件。 仅实现代理临时审查，独立人员待复核。"
+        },
+        {
+          "reference_claim_id": "R-DIFFERENT",
+          "evidence_ids": [
+            "37407bcd63a91f81f976c42de5a75d1256bd5086265b6d0b23929b5ca89cdfff"
+          ],
+          "accepted": true,
+          "reason": "完整关联工具卡保留两端原文事实及同一缺陷/因果未确立边界，可作为此限制性结论的等价联合证据。 仅实现代理临时审查，独立人员待复核。"
+        }
+      ],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-INSUFFICIENT": {
+    "reviewed_report_content_sha256": "8ba05b4b4b1d96bf827f31020282f147139feab7a475ac523c2bf814d37f3bca",
+    "review": {
+      "claims": [],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-MISSING": {
+    "reviewed_report_content_sha256": "7c9d3c80f3b7491f0f22b13a140357fe3831ab0e99777dcedd044ec6a08ffbc4",
+    "review": {
+      "claims": [],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-PRIUS-JOINT": {
+    "reviewed_report_content_sha256": "c9075e83bb031849cf68a272dbb6ec11716d7ae55b62b1d42985880177a1188b",
+    "review": {
+      "claims": [
+        {
+          "claim_id": "C001",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "Products和Problem Description原文限定2010 Prius，并明确是消费者指控。"
+        },
+        {
+          "claim_id": "C002",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-SCOPE-CONDITION"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "范围段与Summary联合支持ABS条件及软件措施；未提升为个车故障确认。"
+        },
+        {
+          "claim_id": "C003",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-CLOSE-MONITOR",
+            "R-MONITOR"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "Action和Summary确实记载基于Toyota行动结案及继续监测。"
+        },
+        {
+          "claim_id": "C004",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "召回Summary、Consequence和Remedy支持所列车型、条件、潜在后果和开始日期；超出参考槽的事实未自动算错。"
+        },
+        {
+          "claim_id": "C005",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "明确限定允许资料并拒绝泛化到所有混动车，处理了题目中的过强推断。"
+        },
+        {
+          "claim_id": "C006",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "仅表示固定资料未提供个车有效性和完整性证明，没有断言无缺陷。"
+        }
+      ],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-SCOPE-EXCLUSION": {
+    "reviewed_report_content_sha256": "e30a87eb2969ee62b08d1ba3dc29a867df50e0241b6c2506a19af5dae29fc72a",
+    "review": {
+      "claims": [
+        {
+          "claim_id": "C001",
+          "verdict": "supported",
+          "reference_claim_ids": [
+            "R-EXCLUDE"
+          ],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "两端结构化车型年款冲突及excluded_by_scope支持已知排除；没有推出无缺陷。"
+        },
+        {
+          "claim_id": "C002",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "关系工具的make_model_year冲突与其他未确认条件保留，未当成个车适用确认。"
+        },
+        {
+          "claim_id": "C003",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "Summary确实描述2014-2017 F-150、3.5L Ecoboost和主缸向助力器泄漏。"
+        },
+        {
+          "claim_id": "C004",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "Consequence确实使用可能导致制动变化和增大碰撞风险的表述，未确认个车因果。"
+        },
+        {
+          "claim_id": "C005",
+          "verdict": "partial",
+          "reference_claim_ids": [],
+          "scope_correct": false,
+          "counterevidence_handled": false,
+          "reason": "仅引Remedy不足以支撑对整份文本配置覆盖的否定；Summary已给出3.5L配置要求，应明确未知的是个车配置及成员资格。"
+        },
+        {
+          "claim_id": "C006",
+          "verdict": "supported",
+          "reference_claim_ids": [],
+          "scope_correct": true,
+          "counterevidence_handled": true,
+          "reason": "全集lookup为1匹配和11排除，覆盖有限；零值解释是通用约束而非本次结果为零，表述可再简化。"
+        }
+      ],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-TIME": {
+    "reviewed_report_content_sha256": "1e42cfc3e03791510d13d7e643bbac8f98f6951d8c61ef3ee72b526e3addabdd",
+    "review": {
+      "claims": [],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  },
+  "DEV-ZERO": {
+    "reviewed_report_content_sha256": "35840a6c13072362b8627fe642572bf4fef514db04fa4372555fa374bc5a9413",
+    "review": {
+      "claims": [],
+      "disposition_correct": true,
+      "complete": true,
+      "novel_evidence_decisions": [],
+      "dispute_status": "none",
+      "notes": "实现代理逐条对照固定资料的临时审查；已知模型输出且未盲，非独立人工金标准。部分支持判断及新等价证据仍需独立复核。"
+    }
+  }
+}

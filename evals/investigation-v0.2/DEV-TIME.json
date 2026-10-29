@@ -1,0 +1,9 @@
+{
+  "case_id": "DEV-TIME",
+  "split": "development",
+  "slots": [],
+  "required_claims": [],
+  "acceptable_dispositions": [
+    "unsupported_time"
+  ]
+}

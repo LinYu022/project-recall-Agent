@@ -1,0 +1,98 @@
+{
+  "case_id": "TEST-21V165000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d0d502a7da4045f7fcb4bc5d10d1940e520a4ac458435edee6a848e4c7f29b2c",
+          "unit_id": "60d32037388d65b90e1ad0b24e1955c40e677041a2e9614820519d2d0118e400",
+          "start": 0,
+          "end": 237,
+          "quote_sha256": "bcdc98c8f231ac0842e83f4d2b3acf7debbe3cf3b78bc73c3b8a841d4ec0d1fb"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d0d502a7da4045f7fcb4bc5d10d1940e520a4ac458435edee6a848e4c7f29b2c",
+          "unit_id": "4c5c475886c80f0e472817b9c65d1638366c8571df9b819d19faf8df74cc0512",
+          "start": 0,
+          "end": 240,
+          "quote_sha256": "40afd8623a92c9558aa556fd1d8da91c4c1cca865cfb2c6242e658a63a873a7c"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d0d502a7da4045f7fcb4bc5d10d1940e520a4ac458435edee6a848e4c7f29b2c",
+          "unit_id": "411cb089784b77ade6ba47e5898a64e4343d0d6e540b870cfca449e1e7a9c8ea",
+          "start": 0,
+          "end": 267,
+          "quote_sha256": "062e14ac58f1e8e25d7db5b33f53569dba1148957e1ef4c94b526fb0c5d81976"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SUMMARY",
+      "statement": "Honda (American Honda Motor Co.) is recalling certain 2019-2020 Passport and Pilot vehicles equipped with Continental tires.  On the affected vehicles, it is possible that one or more tires were cured for too long during tire production.",
+      "evidence_sets": [
+        [
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CONSEQUENCE",
+      "statement": "Overcured tires may develop a break in the sidewall, resulting in sudden air loss or belt edge separation, which could lead to tread/belt loss.  Either condition can cause a loss of vehicle control, increasing the risk of a crash or injury.",
+      "evidence_sets": [
+        [
+          "consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-REMEDY",
+      "statement": "Honda will notify owners, and dealers will inspect all four tires and replace them as necessary, free of charge.  The recall began April 22, 2021.  Owners may contact American Honda Motor Co. customer service at 1-888-234-2138.  Honda's number for this recall is UA2.",
+      "evidence_sets": [
+        [
+          "remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "rules_version": "entity-rules/0.1",
+  "models_by_make": {"FORD": ["F-150"], "TOYOTA": ["PRIUS"], "LEXUS": ["HS"]},
+  "component_labels": ["POWER TRAIN", "AIR BAGS", "SERVICE BRAKES", "ELECTRICAL SYSTEM", "VEHICLE SPEED CONTROL", "VISIBILITY/WIPER", "ENGINE", "EXTERIOR LIGHTING", "STEERING", "FUEL/PROPULSION SYSTEM", "SERVICE BRAKES, AIR:ANTILOCK:CONTROL UNIT/MODULE"],
+  "unknown_labels": ["", "UNKNOWN", "UNKNOWN OR OTHER", "N/A"]
+}

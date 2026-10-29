@@ -1,0 +1,98 @@
+{
+  "case_id": "TEST-22V746000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "15c72db939b80762d1cf12ed8570254892488e2a47ed2eb85d9b2a78b0622ad6",
+          "unit_id": "744550fc08b04d68aa5625cf4c9f6fbc97d5b29607727d62aac0e18bd69d02f6",
+          "start": 0,
+          "end": 319,
+          "quote_sha256": "e76de0890c3ba2b885f9488153da32a0696df803f3de538b4b1c347f3a28de3a"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "15c72db939b80762d1cf12ed8570254892488e2a47ed2eb85d9b2a78b0622ad6",
+          "unit_id": "b79a7ad823a5acad8ea97add5e92c7f8544f9e81b16492bfcca9b59cd04881d1",
+          "start": 0,
+          "end": 50,
+          "quote_sha256": "8161d09ae205755550b57dae8278ebda7b4589e5f116d7c5e1dc2a0a31cea86e"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "15c72db939b80762d1cf12ed8570254892488e2a47ed2eb85d9b2a78b0622ad6",
+          "unit_id": "c6075eb4c8c881c11a817680b790abddf0fb334d1966f18ab254629bec80b152",
+          "start": 0,
+          "end": 341,
+          "quote_sha256": "8e773e7659454a8ced473a5749fd4de8fec4d3bee3d17ff098942a0408783b57"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SUMMARY",
+      "statement": "Hyundai Motor Company (Hyundai) is recalling certain 2021-2022 Santa Fe, Sonata, Veloster N, 2022 Santa Cruz, Elantra N, and Kona N vehicles.  The vehicle's \"fail-safe\" limited-mobility drive mode may be impaired, when prompted by a transmission oil pump malfunction, which can result in a complete loss of drive power.",
+      "evidence_sets": [
+        [
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CONSEQUENCE",
+      "statement": "Loss of drive power increases the risk of a crash.",
+      "evidence_sets": [
+        [
+          "consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-REMEDY",
+      "statement": "Dealers will inspect and replace the transmission, as necessary.  Dealers will also update the transmission control unit software.  All repairs will be performed free of charge.  Owner notification letters were mailed January 10, 2023.  Owners may contact Hyundai customer service at 1-855-371-9460.  Hyundai's number for this recall is 236.",
+      "evidence_sets": [
+        [
+          "remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

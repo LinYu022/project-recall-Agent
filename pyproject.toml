@@ -1,0 +1,57 @@
+[project]
+name = "recall-evidence-agent"
+version = "0.1.0"
+description = "Traceable investigation of US vehicle complaints and recalls"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pydantic>=2.0,<3",
+    "fastapi>=0.115,<1",
+    "uvicorn>=0.30,<1",
+    "sqlalchemy>=2,<3",
+    "alembic>=1.16,<2",
+    "psycopg[binary]>=3,<4",
+    "pypdf>=6,<8",
+    "numpy>=2,<3",
+    "onnxruntime>=1.22,<2",
+    "tokenizers>=0.22,<0.23",
+    "qdrant-client>=1.16,<2",
+]
+
+[dependency-groups]
+dev = [
+    "jsonschema>=4.18,<5",
+    "pytest>=8,<10",
+    "httpx2",
+    "ruff",
+    "mypy",
+    "matplotlib>=3.10,<4",
+]
+
+[tool.uv]
+package = false
+cache-dir = ".local/uv-cache"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-m 'not postgres'"
+markers = ["postgres: requires a real disposable PostgreSQL database"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = [".local"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["domain", "runtime/config.py", "models/adapter.py", "models/chat_api.py", "models/request_allowance.py", "investigation", "control", "memory", "evaluation", "tools", "database/config.py", "database/schema.py", "database/archive.py", "ingestion", "entities", "app/query_api.py", "app/retrieval_api.py", "app/release_api.py", "app/control_api.py", "app/memory_api.py", "app/episode_api.py", "app/procedure_api.py", "parsing", "retrieval", "releases"]
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+module = ["onnxruntime", "tokenizers"]
+ignore_missing_imports = true

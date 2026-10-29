@@ -1,0 +1,43 @@
+{
+  "schema_version": "public-confirmation-witness/0.1",
+  "classification": "privacy_filtered_derivative_of_actual_review_not_new_model_or_human_score",
+  "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+  "blind_id": "BLIND-dd150e5633dc",
+  "original_packet_content_sha256": "9296c47460f218c0bb7d50ba3394c67426a69624910d7c8d6e780978b56bcf7f",
+  "claim": {
+    "claim_id": "C002",
+    "counter_ids": [],
+    "kind": "source_fact",
+    "scope": {
+      "campaign_number": "25V065000",
+      "component": null,
+      "configurations": {},
+      "make": "HYUNDAI",
+      "model": "IONIQ 5",
+      "model_year": 2025,
+      "production_date": null
+    },
+    "statement": "触发条件为LFB功能被激活时；制动性能下降可增加停车所需距离，从而提高碰撞风险，但该来源未给出故障发生率或个体因果结论。",
+    "support_ids": [
+      "E003"
+    ]
+  },
+  "actual_cited_evidence": {
+    "alias": "E003",
+    "source_ids": [
+      "NHTSA-QA-CAMPAIGN-25V065000"
+    ],
+    "text": "Reduced braking performance can increase the distance required to stop the vehicle, increasing the risk of a crash."
+  },
+  "available_elsewhere_not_a_C002_citation": {
+    "alias": "E002",
+    "text": "Hyundai Motor America (Hyundai) is recalling certain 2025 Hyundai IONIQ 5 \"N\" vehicles equipped with a left-foot braking (LFB) feature.  The integrated electronic brake (IEB) and vehicle control unit (VCU) software may cause reduced braking performance when LFB is activated."
+  },
+  "source_url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=25V065000",
+  "actual_human_atom_verdict": "unsupported",
+  "scope": "C002 LFB trigger only; risk chain remains supported",
+  "reason": "The actual C002 citation describes stopping distance and crash risk but contains no LFB activation condition. E002 in another conclusion is not silently added.",
+  "consequence_for_frozen_goal": "One verified unsupported atom refutes a zero-unsupported target; complete population rates remain unmeasured.",
+  "historical_acceptance": "not_passed",
+  "source_quotation_license": "Not relicensed by the project MIT license; see THIRD_PARTY_NOTICES.md"
+}

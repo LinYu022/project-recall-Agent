@@ -1,0 +1,28 @@
+{
+  "schema_version": "evaluation-prefix/0.1",
+  "history_policy": "Only earlier completed prefix tasks; no target answers or reference labels; source scope inspection only; reset every frozen cell and every sequential arm/repetition.",
+  "declarations": [
+    {
+      "kind": "preference",
+      "scope": "project",
+      "semantic_key": "response.format",
+      "value": "SYNTHETIC evaluation preference: use Chinese and list unknown conditions."
+    }
+  ],
+  "origin_scopes": [
+    {
+      "make": "TOYOTA",
+      "model": "PRIUS",
+      "model_year": 2010,
+      "campaign_number": "10V039000"
+    },
+    {
+      "make": "FORD",
+      "model": "F-250",
+      "model_year": 2017,
+      "campaign_number": "17V331000"
+    }
+  ],
+  "generation": "scripted_insufficient_evidence_scope_inspection_not_target_answer",
+  "setup_cost_included": true
+}

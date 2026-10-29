@@ -1,0 +1,4 @@
+{
+  "snapshot_ids": ["61cd818ad3ae45c7bbdc94ecf0b479bc", "d0be027566e94ad2aa0737d166df64b1", "9d2d065bf1f844e7ab4ea63494a4b2f9"],
+  "time": {"mode": "historical_as_of", "event_interval": null, "knowledge_cutoff": "2014-02-15T23:59:59Z", "date_filter_basis": "Require version-specific observation evidence by cutoff; old report dates cannot substitute."}
+}

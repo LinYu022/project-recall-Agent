@@ -1,0 +1,36 @@
+{
+  "case_id": "DEV-SCOPE-EXCLUSION",
+  "split": "development",
+  "slots": [
+    {
+      "slot_id": "exclusion",
+      "kind": "relationship",
+      "alternatives": [],
+      "expected_fields": {
+        "status": "assessed",
+        "endpoint_scope_channels": [
+          "excluded",
+          "matched"
+        ]
+      }
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-EXCLUDE",
+      "statement": "已知车型年款不匹配足以排除此Escape行作为2016 F-150适用证据；不证明任何个车安全。",
+      "evidence_sets": [
+        [
+          "exclusion"
+        ]
+      ],
+      "forbidden_inferences": [
+        "no_defects",
+        "individual_vehicle_confirmed"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "rules_version": "retrieval-entity-rules/0.1",
+  "models_by_make": {
+    "FORD": [
+      "BRONCO SPORT",
+      "ESCAPE",
+      "EXPEDITION",
+      "F-150",
+      "F-250",
+      "F-250 SD",
+      "F-350",
+      "F-350 SD",
+      "F-450",
+      "F-450 SD",
+      "F-550",
+      "F-550 SD"
+    ],
+    "TOYOTA": [
+      "PRIUS"
+    ],
+    "LEXUS": [
+      "HS"
+    ],
+    "MERCURY": [
+      "MARINER"
+    ],
+    "LINCOLN": [
+      "NAVIGATOR"
+    ],
+    "TESLA": [
+      "MODEL 3",
+      "MODEL S",
+      "MODEL X",
+      "MODEL Y"
+    ],
+    "HYUNDAI": [
+      "ACCENT",
+      "AZERA",
+      "ELANTRA",
+      "ELANTRA COUPE",
+      "EQUUS",
+      "GENESIS COUPE",
+      "SANTA FE",
+      "SANTA FE SPORT",
+      "SONATA HYBRID",
+      "TUCSON",
+      "TUCSON FUEL CELL",
+      "VELOSTER",
+      "VERACRUZ"
+    ],
+    "SUBARU": [
+      "CROSSTREK HYBRID"
+    ]
+  },
+  "component_labels": [
+    "AIR BAGS",
+    "ELECTRICAL SYSTEM",
+    "ELECTRICAL SYSTEM:12V/24V/48V BATTERY",
+    "ELECTRICAL SYSTEM:ADAS:AUTONOMOUS/SELF DRIVING:SOFTWARE",
+    "ENGINE",
+    "EXTERIOR LIGHTING",
+    "FUEL SYSTEM, GASOLINE:FUEL INJECTION SYSTEM",
+    "FUEL/PROPULSION SYSTEM",
+    "LATCHES/LOCKS/LINKAGES:DOORS:LATCH",
+    "POWER TRAIN",
+    "SERVICE BRAKES",
+    "SERVICE BRAKES, AIR:ANTILOCK:CONTROL UNIT/MODULE",
+    "SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE",
+    "SERVICE BRAKES, HYDRAULIC:FOUNDATION COMPONENTS:MASTER CYLINDER",
+    "SERVICE BRAKES, HYDRAULIC:POWER ASSIST",
+    "STEERING",
+    "STEERING:ELECTRIC POWER ASSIST SYSTEM",
+    "VEHICLE SPEED CONTROL",
+    "VISIBILITY/WIPER"
+  ],
+  "unknown_labels": [
+    "",
+    "UNKNOWN",
+    "UNKNOWN OR OTHER",
+    "N/A"
+  ]
+}

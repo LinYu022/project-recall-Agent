@@ -1,0 +1,23 @@
+{
+  "schema_version": "development-obligation-quotes/0.1",
+  "author": "implementation_agent_pending_independent_review",
+  "source_ids": {"prius": "NHTSA-API-CAMPAIGN-10V039000", "investigation": "NHTSA-INV-PE10006-CLOSE", "cover": "NHTSA-API-CAMPAIGN-17V331000", "cable": "NHTSA-API-CAMPAIGN-17V652000"},
+  "atoms": [
+    {"key": "prius_scope", "source": "prius", "field": "Summary", "quote": "CERTAIN MODEL YEAR 2010 TOYOTA PRIUS AND LEXUS HS250H PASSENGER VEHICLES", "statement": "适用仅限原文certain 2010 Prius与Lexus HS250H范围，不能确认个车。"},
+    {"key": "prius_trigger", "source": "prius", "field": "Summary", "quote": "DURING SLOW AND STEADY APPLICATION OF THE BRAKES ON ROUGH OR SLICK ROAD SURFACES", "statement": "保留ABS相关、粗糙或湿滑路面缓慢平稳制动的条件。"},
+    {"key": "prius_symptom", "source": "prius", "field": "Summary", "quote": "INCONSISTENT BRAKE FEEL", "statement": "踏板感不一致，不将投诉表述升级为所有车辆永久失去制动。"},
+    {"key": "prius_risk", "source": "prius", "field": "Consequence", "quote": "INCREASING THE RISK OF A CRASH", "statement": "制动距离超出预期可增加碰撞风险。"},
+    {"key": "prius_remedy", "source": "prius", "field": "Remedy", "quote": "REWRITE THE PROGRAMMING OF THE ABS CONTROL UNIT FREE OF CHARGE", "statement": "经销商免费重写ABS控制单元程序。"},
+    {"key": "closure_basis", "source": "investigation", "field": null, "quote": "Based on Toyota's action the investigation is closed.", "statement": "基于丰田针对该特定ABS问题的软件召回行动结案。"},
+    {"key": "continued_monitoring", "source": "investigation", "field": null, "quote": "ODI will continue to monitor the subject vehicles' performance and will take further action as future circumstances", "statement": "ODI继续监测涉事车辆并视未来情况进一步行动，保留监测对象范围。"},
+    {"key": "safety_boundary", "source": "investigation", "field": null, "quote": "Based on Toyota's action the investigation is closed.", "statement": "直接指出该特定调查结案不足以证明所有混动车均已安全；不反向断言所有混动车不安全。", "requires_semantic_boundary_judgment": true},
+    {"key": "cover_condition", "source": "cover", "field": "Summary", "quote": "originally produced with black or body colored exterior door handles that may have been subsequently equipped with a chrome exterior door handle cover accessory kit purchased from a Ford dealer", "statement": "17V331保留原门把颜色/后装经销商镀铬盖附件的限定。"},
+    {"key": "cover_defect", "source": "cover", "field": "Summary", "quote": "These accessory door handle covers may cause the doors to unlatch in a side impact collision.", "statement": "门把盖附件可在侧碰中导致车门解锁。"},
+    {"key": "cover_risk", "source": "cover", "field": "Consequence", "quote": "the occupants have an increased risk of injury", "statement": "侧碰中车门解锁打开可增加乘员受伤风险。"},
+    {"key": "cover_remedy", "source": "cover", "field": "Remedy", "quote": "dealers will remove the accessory covers and refund the purchase price", "statement": "移除门把盖附件并退款。"},
+    {"key": "cable_defect", "source": "cable", "field": "Summary", "quote": "a bent or kinked actuation cable or the door latches may freeze after water gets into the latch", "statement": "17V652包括拉索弯折和门锁进水结冰两类条件。"},
+    {"key": "cable_risk", "source": "cable", "field": "Consequence", "quote": "A door that opens while driving can increase the risk of injury.", "statement": "行车中开门可增加受伤风险。"},
+    {"key": "cable_remedy", "source": "cable", "field": "Remedy", "quote": "inspect the door latch actuation cables and repair if necessary, and install water shields over the door latches, free of charge", "statement": "免费检查并按需修复拉索、安装门锁防水罩。"},
+    {"key": "relation_boundary", "source": "cable", "field": "Summary", "quote": "a bent or kinked actuation cable", "statement": "对照两个独立缺陷机制，不能仅由同车型/部件断定同一缺陷或个车适用。", "requires_semantic_boundary_judgment": true}
+  ]
+}

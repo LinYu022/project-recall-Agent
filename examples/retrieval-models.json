@@ -1,0 +1,73 @@
+{
+  "schema_version": "retrieval-models/0.1",
+  "models": [
+    {
+      "role": "encoder",
+      "repository": "Xenova/all-MiniLM-L6-v2",
+      "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+      "upstream": "sentence-transformers/all-MiniLM-L6-v2",
+      "upstream_license": "apache-2.0",
+      "conversion_license_declared": "apache-2.0",
+      "quantization": "int8",
+      "max_length": 256,
+      "dimensions": 384,
+      "pooling": "attention_masked_mean_l2",
+      "files": [
+        {
+          "path": "onnx/model_quantized.onnx",
+          "sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1",
+          "byte_size": 22972370
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "byte_size": 711661
+        },
+        {
+          "path": "config.json",
+          "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7",
+          "byte_size": 650
+        },
+        {
+          "path": "README.md",
+          "sha256": "63ea99bf681a2e9eda4f6a537d5ed8fda95d1677111656da37e9cfd080c3af02",
+          "byte_size": 1767
+        }
+      ]
+    },
+    {
+      "role": "reranker",
+      "repository": "Xenova/ms-marco-MiniLM-L-6-v2",
+      "revision": "a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+      "upstream": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "upstream_license": "apache-2.0",
+      "conversion_license_declared": null,
+      "quantization": "int8",
+      "max_length": 512,
+      "dimensions": 1,
+      "pooling": "raw_sequence_classification_logit",
+      "files": [
+        {
+          "path": "onnx/model_quantized.onnx",
+          "sha256": "e9d8ebf845c413e981c175bfe49a3bfa9b3dcce2a3ba54875ee5df5a58639fbe",
+          "byte_size": 23143499
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+          "byte_size": 711396
+        },
+        {
+          "path": "config.json",
+          "sha256": "d827779a72d27ae68cf878a6fc2e954542663fe21ca515d9f4783fc96be2d37e",
+          "byte_size": 824
+        },
+        {
+          "path": "README.md",
+          "sha256": "5ab9570ca405274a5eed93c119b32bc6415e6dfcc5f822b00e5d6757b4190a31",
+          "byte_size": 1783
+        }
+      ]
+    }
+  ]
+}

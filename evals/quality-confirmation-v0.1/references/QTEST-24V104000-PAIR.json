@@ -1,0 +1,204 @@
+{
+  "case_id": "QTEST-24V104000-PAIR",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "24V104000-summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d2501a6a55be5a6553e7bf03a9e652323a2c0b11d7958fd07bb2aec73a544b9c",
+          "unit_id": "6895cb36c6ba2edccde0c833fea957ab29e837bd90bc087c14af435aacc5b02f",
+          "start": 0,
+          "end": 374,
+          "quote_sha256": "1a7a4797d73157f6da1dd0ab1af1274bd68dd49c785428351bdfab47907b72d8"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V104000-consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d2501a6a55be5a6553e7bf03a9e652323a2c0b11d7958fd07bb2aec73a544b9c",
+          "unit_id": "6539052d1e0a7ba3cbb76827cfd9ddd3fab995b474cde7e02d7b9abcfa940669",
+          "start": 0,
+          "end": 233,
+          "quote_sha256": "ad2f2e598709413a77ac6a04c2681623ad28b786d850f923e82c107dda105e30"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V104000-remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d2501a6a55be5a6553e7bf03a9e652323a2c0b11d7958fd07bb2aec73a544b9c",
+          "unit_id": "98d6d3b3a6f28a0a31fe21289b4bcd6343cecda22974a8d399625d845ad7e50c",
+          "start": 0,
+          "end": 247,
+          "quote_sha256": "c8d857d615de00b7022596623049078ca6d8b8c7d2da6df41c5aec37f741da90"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V697000-summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "f34a002ba0ec206768a6a7e0e74d9f8d9335475353cf320adf6d5f5b3d1de7c6",
+          "unit_id": "13bcce87641f3313cb958a5e2e343e0e83dfe5cf1b422b69a71162a8e64fc725",
+          "start": 0,
+          "end": 609,
+          "quote_sha256": "da0f4023086c483124153691e0b08e0f82e0caa7f750173405aa80209d8d850e"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V697000-consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "f34a002ba0ec206768a6a7e0e74d9f8d9335475353cf320adf6d5f5b3d1de7c6",
+          "unit_id": "a7cb1120b4fa54ee3ecf9e29ea2e6fe88d5f436b90f8ed28ee24e993784c881a",
+          "start": 0,
+          "end": 226,
+          "quote_sha256": "33a71e87360cba3ffd9e54fcecbb86be329c1c5ff1d76245abc99af115b29654"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V697000-remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "f34a002ba0ec206768a6a7e0e74d9f8d9335475353cf320adf6d5f5b3d1de7c6",
+          "unit_id": "1708f2eb985d665c40ddb109c84629e477cdf53d145d11e6b6d63c2f7af9540f",
+          "start": 0,
+          "end": 184,
+          "quote_sha256": "586c205ac30f5906bcc7438896cd95b30708d84af293c984809b7fe5c043990c"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "typed-relation",
+      "kind": "relationship",
+      "alternatives": [],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-24V104000-SUMMARY",
+      "statement": "BMW of North America, LLC. (BMW) is recalling certain 2023-2025 BMW, MINI, and Rolls-Royce vehicles.  Please see the recall report for a complete list of models and model years.  The integrated brake (IB) system may malfunction and result in a loss of power brake assist or cause the Antilock Brake (ABS) and Dynamic Stability Control (DSC) systems to not function properly.\nHuman-audited mandatory aspects (within relevant query scope): certain 2023-2025 BMW/MINI/Rolls-Royce, full list refers to recall report; IB malfunction; loss of power brake assist or ABS/DSC function",
+      "evidence_sets": [
+        [
+          "24V104000-summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V104000-CONSEQUENCE",
+      "statement": "A loss of power brake assist can extend the distance required to stop the vehicle.  Additionally, malfunctioning ABS and/or DSC systems can cause a loss of vehicle control.  Either of these scenarios can increase the risk of a crash.\nHuman-audited mandatory aspects (within relevant query scope): longer stopping distance; loss of handling/control with ABS/DSC malfunction; crash risk",
+      "evidence_sets": [
+        [
+          "24V104000-consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V104000-REMEDY",
+      "statement": "Dealers will replace the integrated brake system, free of charge.  Owner notification letters were mailed between June and December 2024.  Owners may contact BMW customer service at 1-800-525-7417 or Rolls Royce customer service at 1-877-877-3735.\nHuman-audited mandatory aspects (within relevant query scope): free integrated brake system replacement",
+      "evidence_sets": [
+        [
+          "24V104000-remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V697000-SUMMARY",
+      "statement": "BMW of North America (BMW) is recalling certain 2023-2024 X1, 2024-2025 X5, 2025 X6, 2023-2025 X7, 740i, 760i, 2024 XM, 530i, 540i, i7, 750e, X2, 2024-2025 i5, 2024 Rolls Royce Spectre, 2025 MINI Countryman S ALL4, JCW Countryman ALL4, and 2025 MINI Hardtop 2 Door (Cooper, Cooper S) vehicles.  Please refer to the recall report for the complete list of models.  The welds in the servomotor of the integrated brake control module may break, causing a loss of power brake assist and rear brake function.  In addition, the Antilock Brake System (ABS) and Dynamic Stability Control (DSC) system may not function.\nHuman-audited mandatory aspects (within relevant query scope): certain relevant 2024-2025 X5; servomotor welds in integrated brake control module may break; loss of brake assist AND rear brake function; ABS/DSC may not work",
+      "evidence_sets": [
+        [
+          "24V697000-summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V697000-CONSEQUENCE",
+      "statement": "A loss of brake power assist or rear brake function can result in extended stopping distance.  A loss of ABS or DSC can cause a loss of vehicle handling and control.  Either of these scenarios can increase the risk of a crash.\nHuman-audited mandatory aspects (within relevant query scope): longer stopping distance from loss of assist or rear brake function; ABS/DSC loss impairs handling/control; crash risk",
+      "evidence_sets": [
+        [
+          "24V697000-consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V697000-REMEDY",
+      "statement": "Dealers will replace the integrated brake system, free of charge.  Owner notification letters were mailed November 13, 2024.  Owners can contact BMW Customer Service at 1-800-525-7417.\nHuman-audited mandatory aspects (within relevant query scope): free integrated brake system replacement",
+      "evidence_sets": [
+        [
+          "24V697000-remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-RELATION-BOUNDARY",
+      "statement": "两来源机制/条件分别核对，关系类型与未知保留；不能由车型或部件外推同一缺陷/个车适用。",
+      "evidence_sets": [
+        [
+          "typed-relation"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

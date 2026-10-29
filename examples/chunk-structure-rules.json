@@ -1,0 +1,175 @@
+{
+  "rules_version": "reviewed-layouts/0.1",
+  "documents": [
+    {
+      "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+      "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+      "review_note": "Implementation-agent full-page review of saved PE10006 closing resume; explicit manufacturer/product scope, complete table header/rows/footnote, action and both summary paragraphs; no independent human gold labels.",
+      "sections": [
+        {
+          "key": "identity",
+          "title_path": [
+            "ODI RESUME",
+            "Investigation metadata"
+          ],
+          "ranges": [
+            {
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 65,
+              "end": 534,
+              "text_sha256": "3fe175eeafd0b51cbc0a000239020855155e219967f3db42eed99272228b96fd"
+            }
+          ],
+          "context_keys": [],
+          "parts": [
+            {
+              "kind": "metadata",
+              "ranges": [
+                {
+                  "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+                  "start": 113,
+                  "end": 534,
+                  "text_sha256": "23ae258dfdff429b5663b35e1548f4af424f3f35210b11626e1412fb5306dbc0"
+                }
+              ],
+              "table": null
+            }
+          ]
+        },
+        {
+          "key": "vehicle_scope",
+          "title_path": [
+            "ODI RESUME",
+            "MANUFACTURER & PRODUCT INFORMATION"
+          ],
+          "ranges": [
+            {
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 578,
+              "end": 994,
+              "text_sha256": "a06fd32c63234d5faa1166784939537acab18c2eadbdddd6182cdf32d617e2c0"
+            }
+          ],
+          "context_keys": [],
+          "parts": [
+            {
+              "kind": "metadata",
+              "ranges": [
+                {
+                  "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+                  "start": 578,
+                  "end": 994,
+                  "text_sha256": "a06fd32c63234d5faa1166784939537acab18c2eadbdddd6182cdf32d617e2c0"
+                }
+              ],
+              "table": null
+            }
+          ]
+        },
+        {
+          "key": "failure_reports",
+          "title_path": [
+            "ODI RESUME",
+            "FAILURE REPORT SUMMARY"
+          ],
+          "ranges": [
+            {
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 1050,
+              "end": 2083,
+              "text_sha256": "56e3ac7e93dd61b91683d541bcbe96456887864dd7cb731af51849067dcfa21a"
+            }
+          ],
+          "context_keys": [
+            "vehicle_scope"
+          ],
+          "parts": [
+            {
+              "kind": "table",
+              "ranges": [
+                {
+                  "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+                  "start": 1147,
+                  "end": 2083,
+                  "text_sha256": "852625e75a5098c1cbe1e58df06341ad910a243ea8e347f9edfc9ebfa2733202"
+                }
+              ],
+              "table": {
+                "columns": [
+                  "ODI",
+                  "Manufacturer",
+                  "Total"
+                ],
+                "row_labels": [
+                  "Complaints:",
+                  "Crashes/Fires:",
+                  "Injury Incidents:",
+                  "Number of Injuries:",
+                  "Fatality Incidents:",
+                  "Other*:"
+                ],
+                "footnote_prefix": "*Description of Other:"
+              }
+            }
+          ]
+        },
+        {
+          "key": "action_summary",
+          "title_path": [
+            "ODI RESUME",
+            "ACTION / SUMMARY INFORMATION"
+          ],
+          "ranges": [
+            {
+              "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+              "start": 2134,
+              "end": 3446,
+              "text_sha256": "c6fb57ac1a5d3c105f314049594e2d3cd8903d2f97864606a88c37eb74d594be"
+            }
+          ],
+          "context_keys": [
+            "vehicle_scope"
+          ],
+          "parts": [
+            {
+              "kind": "paragraph",
+              "ranges": [
+                {
+                  "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+                  "start": 2167,
+                  "end": 2234,
+                  "text_sha256": "4bcf253c43e3e81f9f42c1aaa15afa4c148cf0cd75f5377afde3a602563de020"
+                }
+              ],
+              "table": null
+            },
+            {
+              "kind": "paragraph",
+              "ranges": [
+                {
+                  "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+                  "start": 2250,
+                  "end": 2831,
+                  "text_sha256": "5eb890972b60b72a0a7cc4c6a9aad325a8e87d8dac6ab0ad2c602d46abcfc46e"
+                }
+              ],
+              "table": null
+            },
+            {
+              "kind": "paragraph",
+              "ranges": [
+                {
+                  "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+                  "start": 2836,
+                  "end": 3446,
+                  "text_sha256": "249e177f8a690183f36bc83fbb260aed73aa90d17511f6e3e51cb99f0ed08eb9"
+                }
+              ],
+              "table": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

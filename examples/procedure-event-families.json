@@ -1,0 +1,11 @@
+{
+  "schema_version": "procedure-event-family/0.1",
+  "classification": "conservative_known_development_linkage_not_independent_semantic_review",
+  "groups": {
+    "17V331000": "f150-door-related-campaigns",
+    "17V652000": "f150-door-related-campaigns",
+    "14V284000": "ford-steering-related-campaigns",
+    "20V332000": "ford-steering-related-campaigns"
+  },
+  "unknown_campaign_policy": "distinct_campaign_only_no_general_independence_claim"
+}

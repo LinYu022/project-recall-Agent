@@ -1,0 +1,232 @@
+{
+  "timestamp": "2026-10-26T13:20:38.299492+00:00",
+  "classification": "saved_source_replay_with_implementation_agent_reviewed_reference",
+  "audit_artifact": {
+    "sha256": "416b1178f86550b27b881b7563cec196c8fee4860a409c807ee8e7314ca3bfda",
+    "byte_size": 274155
+  },
+  "counts": {
+    "requests": 106,
+    "parsed": 106,
+    "chunk_sets": 212,
+    "blocked_items": 0,
+    "failures": 0,
+    "warnings": 1
+  },
+  "failures": [],
+  "warnings": [
+    {
+      "request": {
+        "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "ordinal": 0
+      },
+      "source": {
+        "snapshot_id": "9d2d065bf1f844e7ab4ea63494a4b2f9",
+        "ordinal": 0,
+        "source_id": "NHTSA-INV-PE10006-CLOSE",
+        "source_kind": "investigation_pdf",
+        "source_url": "https://static.nhtsa.gov/odi/inv/2010/INCLA-PE10006-1281.pdf",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "source_content_sha256": "852de62a477befa4dda8c130c97e774af2801976176cbdc967ebdf6b4a9d01c0",
+        "mapping_version": "source-record/0.1",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "raw_object_path": "objects/e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "snapshot_manifest_path": "snapshots/9d2d065bf1f844e7ab4ea63494a4b2f9.json",
+        "row_pointer": "$document"
+      },
+      "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+      "stage": "coverage",
+      "strategy": "structure",
+      "page_number": null,
+      "code": "root_only_text",
+      "next_action": "inspect_root_only_ranges_and_decide_whether_profile_needs_revision",
+      "issue_id": "386a45c8b077c7bec61011d21b8854590165680718b1b8310575e6dd6e646fb1"
+    }
+  ],
+  "condition_checks": [
+    {
+      "id": "product_scope",
+      "strategy": "structure",
+      "focus_chunk_id": "660713e7bff981c0cda81d92fe54949add5f9c1dcf426922166545ef66b31d4f",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 707,
+        "end": 735,
+        "quote": "Model Year 2010 Toyota Prius",
+        "quote_sha256": "65c129e50707b8cc4f85686fdff49f49dbf0cb686e1a0d81daf72e170576117b"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "产品范围为 2010 Toyota Prius；不能扩大成所有混合动力车型。"
+    },
+    {
+      "id": "abs_condition",
+      "strategy": "structure",
+      "focus_chunk_id": "76c368e65d2f1756b6a92cf07d5e3397c4fb0a13ff95c849805238bb5cd6f2c8",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 3027,
+        "end": 3159,
+        "quote": "may occur during braking events requiring ABS\n   operation, such as would occur when braking on rough or low friction road surfaces.",
+        "quote_sha256": "4153c8f55733892b93cd3ad887f698b79eb8af79b27f7f3f11495ba2d7e298fe"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "保留可能发生及需要 ABS 介入的条件；粗糙或低摩擦路面是原文举例，不能写成任何制动都会发生。"
+    },
+    {
+      "id": "closure_basis",
+      "strategy": "structure",
+      "focus_chunk_id": "76c368e65d2f1756b6a92cf07d5e3397c4fb0a13ff95c849805238bb5cd6f2c8",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 3262,
+        "end": 3315,
+        "quote": "Based on Toyota's action the investigation is closed.",
+        "quote_sha256": "35acf683133ae413e58a49613b1be9fa734018cbf4a3ede0f8e7b54277207628"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "结案依据是 Toyota 的行动；不能由结案推断不存在缺陷。"
+    },
+    {
+      "id": "continued_monitoring",
+      "strategy": "structure",
+      "focus_chunk_id": "76c368e65d2f1756b6a92cf07d5e3397c4fb0a13ff95c849805238bb5cd6f2c8",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 3319,
+        "end": 3446,
+        "quote": "ODI will continue to monitor the subject vehicles' performance and will take further action as future circumstances\n   dictate.",
+        "quote_sha256": "d1b46a347d8ceeb451966c542753816ada7c76b52f93c0a25171fc7d20cbace8"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "机构继续监测，并依据未来情况采取进一步行动；不能删成不再关注。"
+    },
+    {
+      "id": "product_scope",
+      "strategy": "fixed",
+      "focus_chunk_id": "bfdcfd89e48e0bd9da20903a860f84e679fb4d4523a908c46d129b07165b29a7",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 707,
+        "end": 735,
+        "quote": "Model Year 2010 Toyota Prius",
+        "quote_sha256": "65c129e50707b8cc4f85686fdff49f49dbf0cb686e1a0d81daf72e170576117b"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "产品范围为 2010 Toyota Prius；不能扩大成所有混合动力车型。"
+    },
+    {
+      "id": "abs_condition",
+      "strategy": "fixed",
+      "focus_chunk_id": "8cdea6cdcf52b339097d61a23a54ad729b09e849617d795de9fdc3e2ef24258b",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 3027,
+        "end": 3159,
+        "quote": "may occur during braking events requiring ABS\n   operation, such as would occur when braking on rough or low friction road surfaces.",
+        "quote_sha256": "4153c8f55733892b93cd3ad887f698b79eb8af79b27f7f3f11495ba2d7e298fe"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "保留可能发生及需要 ABS 介入的条件；粗糙或低摩擦路面是原文举例，不能写成任何制动都会发生。"
+    },
+    {
+      "id": "closure_basis",
+      "strategy": "fixed",
+      "focus_chunk_id": "a33c1bd9ff7a8b8307accf51847a6fea597f42bb9763f34d9ff20dd41bbb6592",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 3262,
+        "end": 3315,
+        "quote": "Based on Toyota's action the investigation is closed.",
+        "quote_sha256": "35acf683133ae413e58a49613b1be9fa734018cbf4a3ede0f8e7b54277207628"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "结案依据是 Toyota 的行动；不能由结案推断不存在缺陷。"
+    },
+    {
+      "id": "continued_monitoring",
+      "strategy": "fixed",
+      "focus_chunk_id": "a33c1bd9ff7a8b8307accf51847a6fea597f42bb9763f34d9ff20dd41bbb6592",
+      "exact_citation": {
+        "schema_version": "text-citation/0.1",
+        "parse_artifact_sha256": "0fe534557720cdae5ad25ae52cae06d4df58d9bdb406765c92bec580c1278a42",
+        "source_version_id": "20a3e9405d73e2c0d2c723a01d9933fa02381ee2ef5ed8f2180d6c8168847f66",
+        "raw_sha256": "e6fe568c5f521b7a1171bfb898431736077103d02755d41d563e7cd321180350",
+        "parser_sha256": "9c1bca83b959ccc1433dc55374071d2c94b01f19f1f0ad77dc690dae6e1c0852",
+        "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+        "text_sha256": "ca4de7cad19b8ff038313c7eca470cb3c161f57c0d3d943e0fa40d445597f5b7",
+        "start": 3319,
+        "end": 3446,
+        "quote": "ODI will continue to monitor the subject vehicles' performance and will take further action as future circumstances\n   dictate.",
+        "quote_sha256": "d1b46a347d8ceeb451966c542753816ada7c76b52f93c0a25171fc7d20cbace8"
+      },
+      "expanded_context_contains_exact_quote": true,
+      "reference_answer": "机构继续监测，并依据未来情况采取进一步行动；不能删成不再关注。"
+    }
+  ],
+  "root_only_reviews": [
+    {
+      "strategy": "structure",
+      "unit_id": "5efe3ba3ad77a6c8739390f3f70c6ea8277884e79aec5b442096939ab3ab9d1c",
+      "page_number": 1,
+      "field_pointer": null,
+      "start": 3446,
+      "end": 3666,
+      "nonwhitespace_characters": 41,
+      "text_sha256": "7405c7f8721369939fdb585a4ed850b4314d3e69536ce357cbdd0fe050b8c491",
+      "decision": "retained_only_in_document_root",
+      "reason": "该范围只有空白、重复调查编号和页码页脚；完整原文与根节点保留，不要求默认加入正文上下文。若出现实质条件须修订结构配置。"
+    }
+  ],
+  "reference_sha256": "cf8c194d8a0e4bd547348ec80142ddf933f6ece6876bc0bb46603bac9db89102",
+  "inspection_basis": "original_full_page_image_review_reused_no_pdf_changes",
+  "reviewed_by": "implementation_agent_not_independent_human_gold_labels",
+  "synthetic_negation_checks": "see tests/test_parse_audit.py and offline verification",
+  "real_explicit_negation_conclusion_available": false,
+  "semantic_support_automatically_evaluated": false,
+  "new_external_source_requests": 0,
+  "external_model_calls": 0,
+  "ocr_performed": false,
+  "dataset_release": null
+}

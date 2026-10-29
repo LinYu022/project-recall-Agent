@@ -1,0 +1,272 @@
+{
+  "$defs": {
+    "EventInterval": {
+      "additionalProperties": false,
+      "description": "Inclusive dates; these are incident dates, not filing dates.",
+      "properties": {
+        "start": {
+          "format": "date",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date",
+          "title": "End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "EventInterval",
+      "type": "object"
+    },
+    "TimeScope": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "snapshot_analysis",
+            "historical_as_of"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "event_interval": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EventInterval"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "knowledge_cutoff": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Knowledge Cutoff"
+        },
+        "date_filter_basis": {
+          "minLength": 1,
+          "title": "Date Filter Basis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mode",
+        "event_interval",
+        "knowledge_cutoff",
+        "date_filter_basis"
+      ],
+      "title": "TimeScope",
+      "type": "object"
+    },
+    "VehicleScope": {
+      "additionalProperties": false,
+      "properties": {
+        "country": {
+          "const": "US",
+          "title": "Country",
+          "type": "string"
+        },
+        "make": {
+          "minLength": 1,
+          "title": "Make",
+          "type": "string"
+        },
+        "model": {
+          "minLength": 1,
+          "title": "Model",
+          "type": "string"
+        },
+        "model_year": {
+          "maximum": 2100,
+          "minimum": 1886,
+          "title": "Model Year",
+          "type": "integer"
+        },
+        "component_topic": {
+          "minLength": 1,
+          "title": "Component Topic",
+          "type": "string"
+        },
+        "campaign_number": {
+          "pattern": "^\\d{2}V\\d{6}$",
+          "title": "Campaign Number",
+          "type": "string"
+        }
+      },
+      "required": [
+        "country",
+        "make",
+        "model",
+        "model_year",
+        "component_topic",
+        "campaign_number"
+      ],
+      "title": "VehicleScope",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "exploration-task/0.2",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "task_id": {
+      "pattern": "^[A-Z][A-Z0-9-]+$",
+      "title": "Task Id",
+      "type": "string"
+    },
+    "task_kind": {
+      "enum": [
+        "record_lookup",
+        "cross_source",
+        "complaint_review",
+        "complaint_statistics"
+      ],
+      "title": "Task Kind",
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "exploration",
+        "development",
+        "test"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "event_cluster_id": {
+      "minLength": 1,
+      "title": "Event Cluster Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "ready"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "question": {
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "scope": {
+      "$ref": "#/$defs/VehicleScope"
+    },
+    "time": {
+      "$ref": "#/$defs/TimeScope"
+    },
+    "release_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Release Id"
+    },
+    "grant_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Grant Id"
+    },
+    "revision_id": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Revision Id"
+    },
+    "allowed_source_ids": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Allowed Source Ids",
+      "type": "array"
+    },
+    "required_outputs": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Required Outputs",
+      "type": "array"
+    },
+    "forbidden_inferences": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Forbidden Inferences",
+      "type": "array"
+    },
+    "missing_information_behavior": {
+      "additionalProperties": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minProperties": 1,
+      "propertyNames": {
+        "minLength": 1
+      },
+      "title": "Missing Information Behavior",
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "task_kind",
+    "split",
+    "event_cluster_id",
+    "status",
+    "question",
+    "scope",
+    "time",
+    "release_id",
+    "grant_id",
+    "revision_id",
+    "allowed_source_ids",
+    "required_outputs",
+    "forbidden_inferences",
+    "missing_information_behavior"
+  ],
+  "title": "TaskSpec",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

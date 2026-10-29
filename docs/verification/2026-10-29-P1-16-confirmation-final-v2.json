@@ -1,0 +1,4181 @@
+{
+  "schema_version": "quality-confirmation-analysis/0.1",
+  "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+  "run_index_sha256": "1163644f6cd9d6a8431cb31bbba96f1fa33957df5df14526dfbeb6939464ed72",
+  "provider_ledger_sha256": "944ce606fa97c6ab8344b4f4e09a61d091292b15ee50e152818ed5504260db51",
+  "frozen_units": 140,
+  "observed_units": 140,
+  "states": {
+    "completed": 72,
+    "guarded": 40,
+    "failed": 28
+  },
+  "partial_snapshot": false,
+  "by_arm": {
+    "fixed": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 25,
+        "guarded": 10
+      },
+      "provider_requests": 15,
+      "known_output_tokens": 10268,
+      "observed_latency_median_ms": 12659.525700000813,
+      "actual_human_component_reviews": 2,
+      "actual_human_stage_reviews": 20,
+      "actual_human_readings_with_pending_components": 13,
+      "actual_human_failed_task_reviews": 0,
+      "whole_population_semantic_metrics": null
+    },
+    "single_agent": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 15,
+        "failed": 10,
+        "guarded": 10
+      },
+      "provider_requests": 32,
+      "known_output_tokens": 9514,
+      "observed_latency_median_ms": 13144.450799998594,
+      "actual_human_component_reviews": 0,
+      "actual_human_stage_reviews": 20,
+      "actual_human_readings_with_pending_components": 3,
+      "actual_human_failed_task_reviews": 3,
+      "whole_population_semantic_metrics": null
+    },
+    "parallel_tools": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 15,
+        "guarded": 10,
+        "failed": 10
+      },
+      "provider_requests": 31,
+      "known_output_tokens": 10229,
+      "observed_latency_median_ms": 12954.798299993854,
+      "actual_human_component_reviews": 0,
+      "actual_human_stage_reviews": 20,
+      "actual_human_readings_with_pending_components": 1,
+      "actual_human_failed_task_reviews": 7,
+      "whole_population_semantic_metrics": null
+    },
+    "multi_agent": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 17,
+        "guarded": 10,
+        "failed": 8
+      },
+      "provider_requests": 38,
+      "known_output_tokens": 12317,
+      "observed_latency_median_ms": 15505.049400002463,
+      "actual_human_component_reviews": 0,
+      "actual_human_stage_reviews": 20,
+      "actual_human_readings_with_pending_components": 2,
+      "actual_human_failed_task_reviews": 5,
+      "whole_population_semantic_metrics": null
+    }
+  },
+  "paired": [
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "end_to_end_ms",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -1976.449102859312,
+      "interval_95": [
+        -4622.66250000144,
+        881.3861542817905
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "provider_requests",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 0.4857142857142857,
+      "interval_95": [
+        0.02857142857142857,
+        0.9428571428571428
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "provider_output_tokens",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -21.542857142857137,
+      "interval_95": [
+        -199.62857142857143,
+        156.54285714285714
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "formal_task_success",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 0,
+      "missing_pairs": 35,
+      "mean_delta": null,
+      "interval_95": null,
+      "limitation": "missing_pairs_no_complete_denominator_comparison"
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "end_to_end_ms",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -2092.24474857079,
+      "interval_95": [
+        -4461.015505712879,
+        383.9154485712893
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "provider_requests",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 0.45714285714285713,
+      "interval_95": [
+        0.08571428571428572,
+        0.8285714285714285
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "provider_output_tokens",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -1.1142857142857197,
+      "interval_95": [
+        -142.37142857142857,
+        155.9142857142857
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "formal_task_success",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 0,
+      "missing_pairs": 35,
+      "mean_delta": null,
+      "interval_95": null,
+      "limitation": "missing_pairs_no_complete_denominator_comparison"
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "end_to_end_ms",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 777.361677142991,
+      "interval_95": [
+        -1252.8827142822722,
+        2647.2305800009053
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "provider_requests",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 0.6571428571428571,
+      "interval_95": [
+        0.22857142857142856,
+        1.0285714285714285
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "provider_output_tokens",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 58.54285714285715,
+      "interval_95": [
+        -109.19999999999999,
+        208.31428571428572
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "formal_task_success",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 0,
+      "missing_pairs": 35,
+      "mean_delta": null,
+      "interval_95": null,
+      "limitation": "missing_pairs_no_complete_denominator_comparison"
+    }
+  ],
+  "paired_comparison_limits": "Time and token/request intervals include failures and guards. No semantic benefit inferred from faster failures; five clusters give limited precision and no coverage of old ablation arms.",
+  "provider": {
+    "requests": 116,
+    "maximum_requests": 375,
+    "states": {
+      "completed": 116
+    },
+    "known_usage_subtotal": {
+      "prompt_tokens": 454045,
+      "completion_tokens": 42328,
+      "total_tokens": 496373
+    },
+    "complete_usage": {
+      "prompt_tokens": 454045,
+      "completion_tokens": 42328,
+      "total_tokens": 496373
+    },
+    "requests_without_complete_usage": 0,
+    "reserved_or_actual_output_tokens": 42328,
+    "maximum_root_input_characters_observed": 83914,
+    "request_and_root_budgets_respected": true,
+    "actual_cost": null
+  },
+  "human_rows": [
+    {
+      "case_id": "QTEST-25V065000-FACTS",
+      "source_packet_sha256": "4d4ba23c733576700d5d302a0ffa8e9112d9dd2ddb7564069f892e639e7f6242",
+      "human_source_sha256": "324e1f6b9e1e6fe0c95c6a316478383a7866fc081caa53e604db4a0c13d3ee59",
+      "atoms": [
+        {
+          "atom_id": "C001-N01",
+          "navigation_ids": [
+            "C001-A01",
+            "C001-A02",
+            "C001-A03"
+          ],
+          "verdict": "partial",
+          "support_ids": [
+            "E002"
+          ],
+          "basis": "Human retained minor omission of explicitly required certain qualifier.",
+          "claim_id": "C001",
+          "start": 0,
+          "end": 93,
+          "quote": "在冻结来源中，2025款Hyundai IONIQ 5 \"N\"车辆若配备左脚踏制动（LFB）功能，其集成电子制动（IEB）与整车控制单元（VCU）软件在LFB启用时可能导致制动性能下降；"
+        },
+        {
+          "atom_id": "C001-N02",
+          "navigation_ids": [
+            "C001-A04",
+            "C001-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E002"
+          ],
+          "claim_id": "C001",
+          "start": 93,
+          "end": 132,
+          "quote": "该描述限于召回25V065000所述范围，不证明任何具体车辆适用或存在该缺陷。"
+        },
+        {
+          "atom_id": "C002-N01",
+          "navigation_ids": [
+            "C002-A01"
+          ],
+          "verdict": "unsupported",
+          "support_ids": [
+            "E003"
+          ],
+          "basis": "Actual C002 citation E003 contains no LFB trigger. E002 in C001 supports the fact but is not a C002 citation; no contradiction or source-wide factual falsity inferred.",
+          "claim_id": "C002",
+          "start": 0,
+          "end": 15,
+          "quote": "触发条件为LFB功能被激活时；"
+        },
+        {
+          "atom_id": "C002-N02",
+          "navigation_ids": [
+            "C002-A02",
+            "C002-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E003"
+          ],
+          "claim_id": "C002",
+          "start": 15,
+          "end": 40,
+          "quote": "制动性能下降可增加停车所需距离，从而提高碰撞风险，"
+        },
+        {
+          "atom_id": "C002-N03",
+          "navigation_ids": [
+            "C002-A04"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E003"
+          ],
+          "claim_id": "C002",
+          "start": 40,
+          "end": 60,
+          "quote": "但该来源未给出故障发生率或个体因果结论。"
+        },
+        {
+          "atom_id": "C003-N01",
+          "navigation_ids": [
+            "C003-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C003",
+          "start": 0,
+          "end": 22,
+          "quote": "补救措施为经销商免费更新IEB与VCU软件；"
+        },
+        {
+          "atom_id": "C003-N02",
+          "navigation_ids": [
+            "C003-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C003",
+          "start": 22,
+          "end": 50,
+          "quote": "未获补救的车主被建议在完成更新补救前不要使用LFB功能，"
+        },
+        {
+          "atom_id": "C003-N03",
+          "navigation_ids": [
+            "C003-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C003",
+          "start": 50,
+          "end": 85,
+          "quote": "已获补救的车主被建议在完成更新补救前不要使用“N”E-shift功能。"
+        },
+        {
+          "atom_id": "C004-N01",
+          "navigation_ids": [
+            "C004-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C004",
+          "start": 0,
+          "end": 24,
+          "quote": "该召回已被NHTSA召回编号25V-235取代，"
+        },
+        {
+          "atom_id": "C004-N02",
+          "navigation_ids": [
+            "C004-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C004",
+          "start": 24,
+          "end": 47,
+          "quote": "且已在此前召回下维修过的车辆仍需完成新的补救；"
+        },
+        {
+          "atom_id": "C004-N03",
+          "navigation_ids": [
+            "C004-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C004",
+          "start": 47,
+          "end": 66,
+          "quote": "车主通知信于2025年3月12日寄出。"
+        },
+        {
+          "atom_id": "C005-N01",
+          "navigation_ids": [
+            "C005-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C005",
+          "start": 0,
+          "end": 21,
+          "quote": "冻结来源仅覆盖允许的冻结来源中选定的版本，"
+        },
+        {
+          "atom_id": "C005-N02",
+          "navigation_ids": [
+            "C005-A02",
+            "C005-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C005",
+          "start": 21,
+          "end": 43,
+          "quote": "未提供具体车辆识别、生产日期或配置匹配信息，"
+        },
+        {
+          "atom_id": "C005-N03",
+          "navigation_ids": [
+            "C005-A04",
+            "C005-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C005",
+          "start": 43,
+          "end": 76,
+          "quote": "因此不能确认任何个别车辆适用该召回，也不能推算故障率或普遍安全性。"
+        }
+      ],
+      "atom_counts": {
+        "partial": 1,
+        "supported": 12,
+        "unsupported": 1
+      },
+      "obligations": {
+        "R-25V065000-SUMMARY": "partially_satisfied",
+        "R-25V065000-CONSEQUENCE": "satisfied",
+        "R-25V065000-REMEDY": "satisfied"
+      },
+      "all_requirements": "partially_satisfied_with_minor_caveats",
+      "exhaustive": true,
+      "original_candidate_judgments": {
+        "C001-A01": "not_evaluable_adverbial_fragment_requires_merge",
+        "C001-A02": "partial_missing_certain_requires_condition_merge",
+        "C001-A03": "supported_requires_scope_condition_merge",
+        "C001-A04": "supported_requires_boundary_merge",
+        "C001-A05": "supported",
+        "C002-A01": "unsupported_by_actual_citation_E003_missing_E002",
+        "C002-A02": "supported_requires_risk_chain_merge",
+        "C002-A03": "partial_requires_preceding_cause_merge",
+        "C002-A04": "supported",
+        "C003-A01": "supported",
+        "C003-A02": "supported",
+        "C003-A03": "supported",
+        "C004-A01": "supported",
+        "C004-A02": "supported",
+        "C004-A03": "supported",
+        "C005-A01": "supported",
+        "C005-A02": "partial_requires_parallel_object_merge",
+        "C005-A03": "not_evaluable_predicateless_fragment_requires_merge",
+        "C005-A04": "supported",
+        "C005-A05": "supported_requires_subject_and_premise_merge"
+      },
+      "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "citation_roles": [
+        {
+          "atom_ids": [
+            "C001-N01",
+            "C001-N02"
+          ],
+          "alias": "E002",
+          "role": "direct",
+          "qualification": "C001-N01 is partial because certain was omitted."
+        },
+        {
+          "atom_ids": [
+            "C002-N01"
+          ],
+          "alias": "E003",
+          "role": "does_not_support_named_LFB_trigger"
+        },
+        {
+          "atom_ids": [
+            "C002-N02",
+            "C002-N03"
+          ],
+          "alias": "E003",
+          "role": "direct"
+        },
+        {
+          "atom_ids": [
+            "C003-N01",
+            "C003-N02",
+            "C003-N03",
+            "C004-N01",
+            "C004-N02",
+            "C004-N03"
+          ],
+          "alias": "E004",
+          "role": "direct"
+        },
+        {
+          "atom_ids": [
+            "C005-N01",
+            "C005-N02",
+            "C005-N03"
+          ],
+          "alias": "E001",
+          "role": "direct"
+        }
+      ],
+      "relation_judgments": null,
+      "source_path": "docs/experiments/P1-16-confirmation-human-dd150e5633dc.json"
+    },
+    {
+      "case_id": "QTEST-25V065000-PAIR",
+      "source_packet_sha256": "f8310f3a097257eddc30d4e8c97bf8e3ebf780d6ed8ef8c0315ebd51ef6c4f46",
+      "human_source_sha256": "4ce0fb5367ea32d459cfc74c8bb67db5da598040233cc7865a04327e1835ba37",
+      "atoms": [
+        {
+          "atom_id": "C001-N01",
+          "navigation_ids": [
+            "C001-A01",
+            "C001-A02"
+          ],
+          "verdict": "partial",
+          "support_ids": [
+            "E003"
+          ],
+          "basis": "Actual human review retained missing certain qualifier.",
+          "claim_id": "C001",
+          "start": 0,
+          "end": 91,
+          "quote": "25V065000 涉及配备左脚踏板制动（LFB）功能的 2025 Hyundai IONIQ 5 \"N\" 车辆，其 IEB 与 VCU 软件在 LFB 启用时可能导致制动性能下降；"
+        },
+        {
+          "atom_id": "C001-N02",
+          "navigation_ids": [
+            "C001-A03",
+            "C001-A04"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E003"
+          ],
+          "claim_id": "C001",
+          "start": 91,
+          "end": 117,
+          "quote": "该来源仅覆盖所引文本，未给出生产日期范围或具体配置。"
+        },
+        {
+          "atom_id": "C002-N01",
+          "navigation_ids": [
+            "C002-A01",
+            "C002-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C002",
+          "start": 0,
+          "end": 37,
+          "quote": "25V065000 所述风险为制动性能下降可能延长停车距离、增加碰撞风险；"
+        },
+        {
+          "atom_id": "C002-N02",
+          "navigation_ids": [
+            "C002-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E005"
+          ],
+          "claim_id": "C002",
+          "start": 37,
+          "end": 61,
+          "quote": "补救为经销商免费更新 IEB 与 VCU 软件，"
+        },
+        {
+          "atom_id": "C002-N03",
+          "navigation_ids": [
+            "C002-A04",
+            "C002-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E005"
+          ],
+          "claim_id": "C002",
+          "start": 61,
+          "end": 102,
+          "quote": "并建议未获补救的车主不使用 LFB、已获补救的车主不使用 \"N\" E-shift，"
+        },
+        {
+          "atom_id": "C002-N04",
+          "navigation_ids": [
+            "C002-A06",
+            "C002-A07"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E005"
+          ],
+          "claim_id": "C002",
+          "start": 102,
+          "end": 136,
+          "quote": "且该召回被 25V-235 取代、已按此召回维修的车辆需完成新补救。"
+        },
+        {
+          "atom_id": "C003-N01",
+          "navigation_ids": [
+            "C003-A01",
+            "C003-A02",
+            "C003-A03"
+          ],
+          "verdict": "partial",
+          "support_ids": [
+            "E008"
+          ],
+          "basis": "Actual human review retained missing certain qualifier.",
+          "claim_id": "C003",
+          "start": 0,
+          "end": 127,
+          "quote": "25V235000 涉及配备 LFB 与 N e-shift 功能的 2025 Hyundai IONIQ 5 \"N\" 车辆，其 IEB 与 VCU 软件在 LFB 启用时可能导致制动性能下降，且在 N e-shift 启用时松开踏板后车辆可能继续加速；"
+        },
+        {
+          "atom_id": "C003-N02",
+          "navigation_ids": [
+            "C003-A04"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E008"
+          ],
+          "claim_id": "C003",
+          "start": 127,
+          "end": 138,
+          "quote": "该来源仅覆盖所引文本，"
+        },
+        {
+          "atom_id": "C003-N03",
+          "navigation_ids": [
+            "C003-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E008"
+          ],
+          "context_atoms": [
+            "C003-N02"
+          ],
+          "claim_id": "C003",
+          "start": 138,
+          "end": 153,
+          "quote": "未给出生产日期范围或具体配置。"
+        },
+        {
+          "atom_id": "C004-N01",
+          "navigation_ids": [
+            "C004-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E009"
+          ],
+          "claim_id": "C004",
+          "start": 0,
+          "end": 35,
+          "quote": "25V235000 所述风险为制动性能下降与意外持续加速增加碰撞风险；"
+        },
+        {
+          "atom_id": "C004-N02",
+          "navigation_ids": [
+            "C004-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E010"
+          ],
+          "claim_id": "C004",
+          "start": 35,
+          "end": 67,
+          "quote": "补救为通过 OTA 或经销商免费更新 IEB 与 VCU 软件，"
+        },
+        {
+          "atom_id": "C004-N03",
+          "navigation_ids": [
+            "C004-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E010"
+          ],
+          "claim_id": "C004",
+          "start": 67,
+          "end": 95,
+          "quote": "建议在补救完成前不使用 LFB 或 N e-Shift，"
+        },
+        {
+          "atom_id": "C004-N04",
+          "navigation_ids": [
+            "C004-A04"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E010"
+          ],
+          "claim_id": "C004",
+          "start": 95,
+          "end": 110,
+          "quote": "且该召回取代 25V-065、"
+        },
+        {
+          "atom_id": "C004-N05",
+          "navigation_ids": [
+            "C004-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E010"
+          ],
+          "claim_id": "C004",
+          "start": 110,
+          "end": 127,
+          "quote": "此前召回下已维修车辆需完成新补救。"
+        },
+        {
+          "atom_id": "C005-N01",
+          "navigation_ids": [
+            "C005-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E002"
+          ],
+          "claim_id": "C005",
+          "start": 0,
+          "end": 54,
+          "quote": "两条召回在已审阅的 make/model/year 范围上重叠（HYUNDAI IONIQ 5 2025），"
+        },
+        {
+          "atom_id": "C005-N02",
+          "navigation_ids": [
+            "C005-A02"
+          ],
+          "verdict": "unsupported",
+          "support_ids": [
+            "E002"
+          ],
+          "basis": "Final actual human recheck resolves the category as 夸大或不支持: E002 candidate does not support definite replacement; E005/E010 remain citations of other claims.",
+          "claim_id": "C005",
+          "start": 54,
+          "end": 81,
+          "quote": "且 25V235000 明确取代 25V065000；"
+        },
+        {
+          "atom_id": "C005-N03",
+          "navigation_ids": [
+            "C005-A03",
+            "C005-A04"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E002"
+          ],
+          "claim_id": "C005",
+          "start": 81,
+          "end": 112,
+          "quote": "但生产日期范围、未审阅的配置条件与个车是否属于召回范围均未知，"
+        },
+        {
+          "atom_id": "C005-N04",
+          "navigation_ids": [
+            "C005-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E002"
+          ],
+          "claim_id": "C005",
+          "start": 112,
+          "end": 133,
+          "quote": "故共享车型/部件不证明同一缺陷或个车适用，"
+        },
+        {
+          "atom_id": "C005-N05",
+          "navigation_ids": [
+            "C005-A06"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E002"
+          ],
+          "claim_id": "C005",
+          "start": 133,
+          "end": 141,
+          "quote": "因果关系未确立。"
+        },
+        {
+          "atom_id": "C006-N01",
+          "navigation_ids": [
+            "C006-A01",
+            "C006-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C006",
+          "start": 0,
+          "end": 32,
+          "quote": "冻结来源仅覆盖两条指定召回记录（匹配 2 条、2 个不同召回），"
+        },
+        {
+          "atom_id": "C006-N02",
+          "navigation_ids": [
+            "C006-A03",
+            "C006-A04",
+            "C006-A05",
+            "C006-A06"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C006",
+          "start": 32,
+          "end": 78,
+          "quote": "不能据此推断全球召回情况、缺陷发生率、普遍安全性或完整性，也不能确认任何具体车辆适用或因果。"
+        }
+      ],
+      "atom_counts": {
+        "partial": 2,
+        "supported": 18,
+        "unsupported": 1
+      },
+      "obligations": {},
+      "all_requirements": "not_fully_satisfied_missing_certain_and_citation_misalignment",
+      "exhaustive": true,
+      "original_candidate_judgments": {
+        "C001-A01": "partial_missing_certain_requires_scope_merge",
+        "C001-A02": "supported",
+        "C001-A03": "supported",
+        "C001-A04": "supported",
+        "C002-A01": "supported",
+        "C002-A02": "supported",
+        "C002-A03": "supported",
+        "C002-A04": "supported",
+        "C002-A05": "supported",
+        "C002-A06": "supported",
+        "C002-A07": "supported",
+        "C003-A01": "partial_missing_certain_requires_scope_merge",
+        "C003-A02": "supported",
+        "C003-A03": "supported",
+        "C003-A04": "supported",
+        "C003-A05": "supported",
+        "C004-A01": "supported",
+        "C004-A02": "supported",
+        "C004-A03": "supported",
+        "C004-A04": "supported",
+        "C004-A05": "supported",
+        "C005-A01": "supported",
+        "C005-A02": "supported",
+        "C005-A03": "partial_fragment_requires_merge",
+        "C005-A04": "supported",
+        "C005-A05": "supported",
+        "C005-A06": "supported",
+        "C006-A01": "supported",
+        "C006-A02": "supported",
+        "C006-A03": "supported",
+        "C006-A04": "supported",
+        "C006-A05": "supported",
+        "C006-A06": "supported"
+      },
+      "cell_id": "fixed:QTEST-25V065000-PAIR:1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "citation_roles": [
+        {
+          "atom_ids": [
+            "C005-N02"
+          ],
+          "alias": "E002",
+          "role": "does_not_support_named_definite_replacement"
+        }
+      ],
+      "relation_judgments": {
+        "scope_overlap": "human_correct",
+        "officially_referenced": "human_citation_support_failure_for_C005",
+        "symptom_similar": "text_symptoms_supported_by_E003_E008_but_E002_remains_candidate; no unconditional final type-handling grade supplied",
+        "excluded_by_scope": "human_appropriate_non_assertion",
+        "applicability_unknown": "human_correct_unknown"
+      },
+      "source_path": "docs/experiments/P1-16-confirmation-human-063f11838e34-components-v1.json"
+    }
+  ],
+  "human_stage_rows": [
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "single_agent:QTEST-25V065000-YEAR:1",
+      "group_id": "6afbbdc6d99a7990686c15ff1a556bc7a43e947d858616bcb296a5dfff72345e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "parallel_tools:QTEST-25V065000-YEAR:1",
+      "group_id": "6afbbdc6d99a7990686c15ff1a556bc7a43e947d858616bcb296a5dfff72345e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "multi_agent:QTEST-25V065000-YEAR:1",
+      "group_id": "6afbbdc6d99a7990686c15ff1a556bc7a43e947d858616bcb296a5dfff72345e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S02",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "fixed:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "6e7d01be09d97c76dec43530c18d4ce87531224100a1c128b81d016330bfe1df",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "single_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "9bcdca901c8b77a475e15c73b9ae32d5ee919e60c529124e6beba1ffc9e57a6b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "parallel_tools:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "9bcdca901c8b77a475e15c73b9ae32d5ee919e60c529124e6beba1ffc9e57a6b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "multi_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "9bcdca901c8b77a475e15c73b9ae32d5ee919e60c529124e6beba1ffc9e57a6b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "fixed:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "single_agent:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "parallel_tools:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "multi_agent:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S05",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "fixed:QTEST-25V065000-YEAR:1",
+      "group_id": "bd7507614fc3cf3f24c51cb1775f9bf9a33c2e059ee4f6ff0acfed1e0aa479de",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "fixed:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "single_agent:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "parallel_tools:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "multi_agent:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "fixed:QTEST-24V935000-INSUFFICIENT:1",
+      "group_id": "2c34926f8f2da8faee77ce4b214615a2b2395d093f6689dce3445ec295875915",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S05",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "single_agent:QTEST-25V058000-YEAR:1",
+      "group_id": "2cce127585d88f20e0a7dd9343daf1a21f6ac7487ef7d9349c56eaf334348d4c",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S05",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "parallel_tools:QTEST-25V058000-YEAR:1",
+      "group_id": "2cce127585d88f20e0a7dd9343daf1a21f6ac7487ef7d9349c56eaf334348d4c",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S05",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "multi_agent:QTEST-25V058000-YEAR:1",
+      "group_id": "2cce127585d88f20e0a7dd9343daf1a21f6ac7487ef7d9349c56eaf334348d4c",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "fixed:QTEST-24V104000-INSUFFICIENT:1",
+      "group_id": "39406228c3c2b6749c0f33d2dc129c34bd2a277b89c9ee0d69df5f9500331658",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S07",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "single_agent:QTEST-24V744000-YEAR:1",
+      "group_id": "3dc2533423ba0cc1f77c4f206fe147147906657074812b2c08e73fceb64d9324",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S07",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "parallel_tools:QTEST-24V744000-YEAR:1",
+      "group_id": "3dc2533423ba0cc1f77c4f206fe147147906657074812b2c08e73fceb64d9324",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S07",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "multi_agent:QTEST-24V744000-YEAR:1",
+      "group_id": "3dc2533423ba0cc1f77c4f206fe147147906657074812b2c08e73fceb64d9324",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S08",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "fixed:QTEST-24V104000-YEAR:1",
+      "group_id": "45e4884c84807f6c48b7658566763f127ef7323e7df4e13e783219f8f74b3aaa",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S09",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "fixed:QTEST-24V935000-TIME:1",
+      "group_id": "4842e2d5c4f05f765431f140de3cf877568258a85f1551ee62729b357586cebd",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S09",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "single_agent:QTEST-24V935000-TIME:1",
+      "group_id": "4842e2d5c4f05f765431f140de3cf877568258a85f1551ee62729b357586cebd",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S09",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "parallel_tools:QTEST-24V935000-TIME:1",
+      "group_id": "4842e2d5c4f05f765431f140de3cf877568258a85f1551ee62729b357586cebd",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S09",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "multi_agent:QTEST-24V935000-TIME:1",
+      "group_id": "4842e2d5c4f05f765431f140de3cf877568258a85f1551ee62729b357586cebd",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S10",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "fixed:QTEST-24V935000-CONDITIONS:1",
+      "group_id": "4b0dad6fa853dee3b0ee70c038c0f028aa193e3a61847c5da34dbed0f9354e98",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S10",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "single_agent:QTEST-24V935000-CONDITIONS:1",
+      "group_id": "4b0dad6fa853dee3b0ee70c038c0f028aa193e3a61847c5da34dbed0f9354e98",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S10",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "parallel_tools:QTEST-24V935000-CONDITIONS:1",
+      "group_id": "4b0dad6fa853dee3b0ee70c038c0f028aa193e3a61847c5da34dbed0f9354e98",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S10",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "multi_agent:QTEST-24V935000-CONDITIONS:1",
+      "group_id": "4b0dad6fa853dee3b0ee70c038c0f028aa193e3a61847c5da34dbed0f9354e98",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S11",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "fixed:QTEST-25V058000-INSUFFICIENT:1",
+      "group_id": "4f7dfa089862a622c1586d5f4bfe7d9e31ccd7daa6808196b7d8c98d7f72bf48",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S12",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "fixed:QTEST-24V744000-TIME:1",
+      "group_id": "50897d36bca5f43a9be351e972b7a8e320b862371f3349baddf7dce2fb43a3d2",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S12",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "single_agent:QTEST-24V744000-TIME:1",
+      "group_id": "50897d36bca5f43a9be351e972b7a8e320b862371f3349baddf7dce2fb43a3d2",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S12",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "parallel_tools:QTEST-24V744000-TIME:1",
+      "group_id": "50897d36bca5f43a9be351e972b7a8e320b862371f3349baddf7dce2fb43a3d2",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S12",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "multi_agent:QTEST-24V744000-TIME:1",
+      "group_id": "50897d36bca5f43a9be351e972b7a8e320b862371f3349baddf7dce2fb43a3d2",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S13",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "fixed:QTEST-24V744000-INSUFFICIENT:1",
+      "group_id": "59d1575479a993709e74f2e2b62d65c098f53dd413207c732c3456959b2bcd1b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S14",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "fixed:QTEST-24V935000-YEAR:1",
+      "group_id": "5d6798db4a5d11252d71c3e89286405a7b7e046c81f7d3110def5ffb69776a83",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S15",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "fixed:QTEST-24V744000-CONDITIONS:1",
+      "group_id": "819b2b2ec5bf211b8af2795625a5bdc51141713cabc2b2a178f1153a65505e55",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S15",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "single_agent:QTEST-24V744000-CONDITIONS:1",
+      "group_id": "819b2b2ec5bf211b8af2795625a5bdc51141713cabc2b2a178f1153a65505e55",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S15",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "parallel_tools:QTEST-24V744000-CONDITIONS:1",
+      "group_id": "819b2b2ec5bf211b8af2795625a5bdc51141713cabc2b2a178f1153a65505e55",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S15",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "multi_agent:QTEST-24V744000-CONDITIONS:1",
+      "group_id": "819b2b2ec5bf211b8af2795625a5bdc51141713cabc2b2a178f1153a65505e55",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S16",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "single_agent:QTEST-24V744000-INSUFFICIENT:1",
+      "group_id": "92c984eb521696dd299510bd28ce44744406bbb17277edd074fb69733ebb62b0",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S16",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "parallel_tools:QTEST-24V744000-INSUFFICIENT:1",
+      "group_id": "92c984eb521696dd299510bd28ce44744406bbb17277edd074fb69733ebb62b0",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S16",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "multi_agent:QTEST-24V744000-INSUFFICIENT:1",
+      "group_id": "92c984eb521696dd299510bd28ce44744406bbb17277edd074fb69733ebb62b0",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S17",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "fixed:QTEST-25V058000-CONDITIONS:1",
+      "group_id": "95ccde5935aaf0ac5f40e472acb9594193e4ed7ce0f25cac4669337b7ebb80ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S17",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "single_agent:QTEST-25V058000-CONDITIONS:1",
+      "group_id": "95ccde5935aaf0ac5f40e472acb9594193e4ed7ce0f25cac4669337b7ebb80ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S17",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "parallel_tools:QTEST-25V058000-CONDITIONS:1",
+      "group_id": "95ccde5935aaf0ac5f40e472acb9594193e4ed7ce0f25cac4669337b7ebb80ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S17",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+      "cell_id": "multi_agent:QTEST-25V058000-CONDITIONS:1",
+      "group_id": "95ccde5935aaf0ac5f40e472acb9594193e4ed7ce0f25cac4669337b7ebb80ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S18",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "fixed:QTEST-24V744000-YEAR:1",
+      "group_id": "9a877f4957a92eae99e0cbb3d59e6578cba23193f9da2e900ebc66cdcffb4826",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S19",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "single_agent:QTEST-25V058000-INSUFFICIENT:1",
+      "group_id": "9e4b1893d9b037a85d32c1cb82b27c5a2c1dd505384b467568cd6593617836a6",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S19",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "parallel_tools:QTEST-25V058000-INSUFFICIENT:1",
+      "group_id": "9e4b1893d9b037a85d32c1cb82b27c5a2c1dd505384b467568cd6593617836a6",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S19",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "multi_agent:QTEST-25V058000-INSUFFICIENT:1",
+      "group_id": "9e4b1893d9b037a85d32c1cb82b27c5a2c1dd505384b467568cd6593617836a6",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S20",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "fixed:QTEST-24V104000-TIME:1",
+      "group_id": "b6f6276d39ad94ecd9728af7b736b5e5f96e361327fe52a01f73cca7cb84d1fe",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S20",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "single_agent:QTEST-24V104000-TIME:1",
+      "group_id": "b6f6276d39ad94ecd9728af7b736b5e5f96e361327fe52a01f73cca7cb84d1fe",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S20",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "parallel_tools:QTEST-24V104000-TIME:1",
+      "group_id": "b6f6276d39ad94ecd9728af7b736b5e5f96e361327fe52a01f73cca7cb84d1fe",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S20",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "multi_agent:QTEST-24V104000-TIME:1",
+      "group_id": "b6f6276d39ad94ecd9728af7b736b5e5f96e361327fe52a01f73cca7cb84d1fe",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S21",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "fixed:QTEST-25V058000-YEAR:1",
+      "group_id": "bbc65b536e011a94e6cf40123fa389d14aae53c2629d138bed853ff0dc1e09d3",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S22",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "fixed:QTEST-25V058000-TIME:1",
+      "group_id": "db57ebb891b17d2d04d7257a2f88ed3c7803e8a386beb133ae66e7a03f6b6294",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S22",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "single_agent:QTEST-25V058000-TIME:1",
+      "group_id": "db57ebb891b17d2d04d7257a2f88ed3c7803e8a386beb133ae66e7a03f6b6294",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S22",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "parallel_tools:QTEST-25V058000-TIME:1",
+      "group_id": "db57ebb891b17d2d04d7257a2f88ed3c7803e8a386beb133ae66e7a03f6b6294",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S22",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受历史时点。",
+      "cell_id": "multi_agent:QTEST-25V058000-TIME:1",
+      "group_id": "db57ebb891b17d2d04d7257a2f88ed3c7803e8a386beb133ae66e7a03f6b6294",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S23",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "single_agent:QTEST-24V104000-INSUFFICIENT:1",
+      "group_id": "e8f922bb4f89577a2d451af5e6540eb360387591ee184283aa8fb33f8d6ef472",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S23",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "parallel_tools:QTEST-24V104000-INSUFFICIENT:1",
+      "group_id": "e8f922bb4f89577a2d451af5e6540eb360387591ee184283aa8fb33f8d6ef472",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S23",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "multi_agent:QTEST-24V104000-INSUFFICIENT:1",
+      "group_id": "e8f922bb4f89577a2d451af5e6540eb360387591ee184283aa8fb33f8d6ef472",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S24",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "single_agent:QTEST-24V104000-YEAR:1",
+      "group_id": "ebf9297e340cfdeb832a30878cb254a63ba8f77bdd668e495fbf213be858d98f",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S24",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "parallel_tools:QTEST-24V104000-YEAR:1",
+      "group_id": "ebf9297e340cfdeb832a30878cb254a63ba8f77bdd668e495fbf213be858d98f",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S24",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配边界完整，没有跨年替换。",
+      "cell_id": "multi_agent:QTEST-24V104000-YEAR:1",
+      "group_id": "ebf9297e340cfdeb832a30878cb254a63ba8f77bdd668e495fbf213be858d98f",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "7b64cce0f0aaa07d59646beed87f02a9746309ab848847a8f363c3ee16920fcb"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "处置为 insufficient_evidence 合适；阶段义务部分满足，实际文本未说明缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "single_agent:QTEST-24V935000-INSUFFICIENT:1",
+      "group_id": "0804ecb40fe96a7dffa90262f42e93e78e3d5f9c2e37d34b02092ff6a5804d87",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "处置为 insufficient_evidence 合适；阶段义务部分满足，实际文本未说明缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "parallel_tools:QTEST-24V935000-INSUFFICIENT:1",
+      "group_id": "0804ecb40fe96a7dffa90262f42e93e78e3d5f9c2e37d34b02092ff6a5804d87",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "处置为 insufficient_evidence 合适；阶段义务部分满足，实际文本未说明缺少投诉全集与车辆暴露量分母。",
+      "cell_id": "multi_agent:QTEST-24V935000-INSUFFICIENT:1",
+      "group_id": "0804ecb40fe96a7dffa90262f42e93e78e3d5f9c2e37d34b02092ff6a5804d87",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S02",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "all_conditions_fully_satisfied": true,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "2019 Model Y 在允许记录中零匹配，有界零匹配说明完整，没有遗漏。",
+      "cell_id": "single_agent:QTEST-24V935000-YEAR:1",
+      "group_id": "110186c9000fab007ce4af10f0269d478fb0c70df9a42505a4b52728f577a1f4",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S02",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "all_conditions_fully_satisfied": true,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "2019 Model Y 在允许记录中零匹配，有界零匹配说明完整，没有遗漏。",
+      "cell_id": "parallel_tools:QTEST-24V935000-YEAR:1",
+      "group_id": "110186c9000fab007ce4af10f0269d478fb0c70df9a42505a4b52728f577a1f4",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S02",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "all_conditions_fully_satisfied": true,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "2019 Model Y 在允许记录中零匹配，有界零匹配说明完整，没有遗漏。",
+      "cell_id": "multi_agent:QTEST-24V935000-YEAR:1",
+      "group_id": "110186c9000fab007ce4af10f0269d478fb0c70df9a42505a4b52728f577a1f4",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "澄清方向合适；阶段义务部分满足，要求日期/配置但未告知补齐并完成召回仍不证明永久安全。",
+      "cell_id": "fixed:QTEST-24V104000-CONDITIONS:1",
+      "group_id": "2b33808b17396fcd932d9c99f73480fd3865aba888125f03288bcbabbefdd3ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "澄清方向合适；阶段义务部分满足，要求日期/配置但未告知补齐并完成召回仍不证明永久安全。",
+      "cell_id": "single_agent:QTEST-24V104000-CONDITIONS:1",
+      "group_id": "2b33808b17396fcd932d9c99f73480fd3865aba888125f03288bcbabbefdd3ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "澄清方向合适；阶段义务部分满足，要求日期/配置但未告知补齐并完成召回仍不证明永久安全。",
+      "cell_id": "parallel_tools:QTEST-24V104000-CONDITIONS:1",
+      "group_id": "2b33808b17396fcd932d9c99f73480fd3865aba888125f03288bcbabbefdd3ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": null,
+      "all_conditions_fully_satisfied": false,
+      "all_conditions_basis": "Not full when the human explicitly identifies a required-stage omission; no numerical or categorical total score added.",
+      "reason": "澄清方向合适；阶段义务部分满足，要求日期/配置但未告知补齐并完成召回仍不证明永久安全。",
+      "cell_id": "multi_agent:QTEST-24V104000-CONDITIONS:1",
+      "group_id": "2b33808b17396fcd932d9c99f73480fd3865aba888125f03288bcbabbefdd3ac",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "369b7688df26ac5582ae95dcf5cd4ec0bb36a948638b1333945f1972b0ca12a0"
+    }
+  ],
+  "human_readings_pending_components": [
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-25V065000-COUNTER:1",
+      "case_id": "QTEST-25V065000-COUNTER",
+      "blind_id": "BLIND-0d409e053000",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-0d409e053000-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-0d409e053000.json",
+      "source_packet_sha256": "8b7984090dbbd0eb35c36f57f4347822f4d64fde150c59a6ada74283a1fa9db0",
+      "observation_sha256": "9f2f26b4aa03ca9405b5a2e3777ddffb2b8a2d6359e3d871ba80b602b3f71d2e",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied_with_minor_scope_caveat",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-0d409e053000-claims-v1.json",
+      "initial_review_sha256": "c13bfee39f6248c5aaff7f76127631026f363070d0d8fb02eaf2780fe35dc09a",
+      "limits": "Initial batch prose said the single-agent package omitted certain, while its detailed package review explicitly recognized 特定 and gave complete satisfaction; preserve that discrepancy and use the explicit per-package judgment without inventing atomic grades.",
+      "human_source_sha256": "cecf04475add150a1ffda8110bda51da17b7004781eb93591dc23c3c13e659f0",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "single_agent:QTEST-25V065000-COUNTER:1",
+      "case_id": "QTEST-25V065000-COUNTER",
+      "blind_id": "BLIND-01c4a3968d3f",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-01c4a3968d3f-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-01c4a3968d3f.json",
+      "source_packet_sha256": "bd59cf1caa230092026b04bdb7cfb5e5d59ae8e88c34cc77838dd1f05e3b035a",
+      "observation_sha256": "fc1413cfd42d2bae86bf53bc5f54cc6c8d43b4ecbda2182d612cf5a8bb58e133",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-01c4a3968d3f-claims-v1.json",
+      "initial_review_sha256": "09fbc0d5b432a0ea303539eb5481ec56af3e9ce2dd59b2f082fa24d82be0eac0",
+      "limits": "Initial batch prose said the single-agent package omitted certain, while its detailed package review explicitly recognized 特定 and gave complete satisfaction; preserve that discrepancy and use the explicit per-package judgment without inventing atomic grades.",
+      "human_source_sha256": "4ded5834ba1e6050ebc7124399d2f6ed73c3b8f09810493ec48c4dbf2f99d9b2",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "parallel_tools:QTEST-25V065000-COUNTER:1",
+      "case_id": "QTEST-25V065000-COUNTER",
+      "blind_id": "BLIND-16abe45635d5",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-16abe45635d5-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-16abe45635d5.json",
+      "source_packet_sha256": "48c6a39ccf06b44e8fc08c89ac6581470b3bdeb6b1fe9e9d06c0aeeb188e9eae",
+      "observation_sha256": "93be9b63f1d993873b50d198c89244c4e0fd36b4f75598341c121f3330bf0509",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-16abe45635d5-claims-v1.json",
+      "initial_review_sha256": "a10675e783d269c2826e136ed28b924f3f4bbc75b171ac669918c65ff3d4672b",
+      "limits": "Initial batch prose said the single-agent package omitted certain, while its detailed package review explicitly recognized 特定 and gave complete satisfaction; preserve that discrepancy and use the explicit per-package judgment without inventing atomic grades.",
+      "human_source_sha256": "bc9d05a61903d3cb1ccb8e78f5e637c84cf41eea1e07880308fce6f8d14127ec",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "multi_agent:QTEST-25V065000-COUNTER:1",
+      "case_id": "QTEST-25V065000-COUNTER",
+      "blind_id": "BLIND-5a5a37efb5f5",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-5a5a37efb5f5-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-5a5a37efb5f5.json",
+      "source_packet_sha256": "6a61fe0dbbeb214320ae3fcddebfb5d226f137e906e688cbbf4fc3abbe83e158",
+      "observation_sha256": "f2992ef6edf0501f784f5e17631e2b4c89f2dd0db248c9ab206e5b8d6f7aeb58",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-5a5a37efb5f5-claims-v1.json",
+      "initial_review_sha256": "1fde14c194b38ebd3df15c59e45ef2423d3b64abea837eacd75b8797f608fc62",
+      "limits": "Initial batch prose said the single-agent package omitted certain, while its detailed package review explicitly recognized 特定 and gave complete satisfaction; preserve that discrepancy and use the explicit per-package judgment without inventing atomic grades.",
+      "human_source_sha256": "d450a42c59d7729aa22bfb2b9ca6d4553aee3cf51bb1bbe20bff78b0db47d4f0",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V935000-FACTS:1",
+      "case_id": "QTEST-24V935000-FACTS",
+      "blind_id": "BLIND-65b17903280f",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-65b17903280f-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-65b17903280f.json",
+      "source_packet_sha256": "b0ad49cd2ae5bfd79f083defc54f05d3031454cf751bfc9d4401214b159366c6",
+      "observation_sha256": "208acbd24cacb045dba74d32709f1898cb5fd3a15ecb75b2c632a1cae2479d8f",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE",
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-65b17903280f-claims-v1.json",
+      "initial_review_sha256": "d5ef5c57e81d8f8cc22cb651cb61bacd8278344602f44ba6ba5f0a847fbc32e9",
+      "limits": "Some certain/risk-completeness descriptions conflict with actual statements. Initial claims-level grades are preserved; targeted recheck pending for 65b17903280f,589aa6c9dbd8,1804961441ae.",
+      "adjudication_path": "docs/experiments/P1-16-confirmation-human-65b17903280f-adjudication-v1.json",
+      "adjudication_sha256": "e81d1a3fac9989916294bda9cd947da5d54942740425885de56005c4b67053e4",
+      "latest_adjudication_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "94a5f61e73bf2756a16e9e5e0eaed858889fcf0251e75bf073c0514a9085a3a9",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V935000-COUNTER:1",
+      "case_id": "QTEST-24V935000-COUNTER",
+      "blind_id": "BLIND-41cf033ac211",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-41cf033ac211-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-41cf033ac211.json",
+      "source_packet_sha256": "7ab084f7bea2c1d73ba0fd60166ad6b8949c72c932bc0eaeec459378796ece88",
+      "observation_sha256": "658d87f98fd778334b58852eaebfc46f19032b94581d8d791773de817f8964f3",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-41cf033ac211-claims-v1.json",
+      "initial_review_sha256": "66345170a3c99b9bcafac2f84a6799d9504873ee4c856862cb1a6088d9bee7f4",
+      "limits": "Some certain/risk-completeness descriptions conflict with actual statements. Initial claims-level grades are preserved; targeted recheck pending for 65b17903280f,589aa6c9dbd8,1804961441ae.",
+      "human_source_sha256": "2df78fb81c7e3a6432de36a13fe6d1a8775fd916859b3d0513d0309d89909ac4",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V935000-PAIR:1",
+      "case_id": "QTEST-24V935000-PAIR",
+      "blind_id": "BLIND-589aa6c9dbd8",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-589aa6c9dbd8-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-589aa6c9dbd8.json",
+      "source_packet_sha256": "e3a02e08e4af2b6225ea818771e8e8ef5e82364b82ed9c58c0180d41c18675c0",
+      "observation_sha256": "ca042a38bd7b8c7a280a461e90a619e15834df8bf79216d6458d9ecb1d13cbb5",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "human_keeps_overall_satisfaction_with_scope_caveat",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE",
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-589aa6c9dbd8-claims-v1.json",
+      "initial_review_sha256": "7c69c9c1553cfb00248f13252f1ca8c88f230eac45055be5c57c339417160714",
+      "limits": "Some certain/risk-completeness descriptions conflict with actual statements. Initial claims-level grades are preserved; targeted recheck pending for 65b17903280f,589aa6c9dbd8,1804961441ae.",
+      "adjudication_path": "docs/experiments/P1-16-confirmation-human-589aa6c9dbd8-adjudication-v1.json",
+      "adjudication_sha256": "1aac6fa0a087a444ee06dc4ca77697789ec601a9140cef4c3cfaf495233bf89c",
+      "latest_adjudication_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "cbb74861a0579c8e64baefe22ad8888e9d42f01eb2b9d5be7a5c06e717766f16",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "multi_agent:QTEST-24V935000-PAIR:1",
+      "case_id": "QTEST-24V935000-PAIR",
+      "blind_id": "BLIND-1804961441ae",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-1804961441ae-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-1804961441ae.json",
+      "source_packet_sha256": "204486862fe73f4bd168f5585f7b0be03387ada9e4f4c734d9f4149e4c1b2961",
+      "observation_sha256": "1e3734ea649c55b4ff8a05c8b85ed1a34316291220e0281f696530771fa601d6",
+      "disposition_appropriate": true,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Whole C statements were graded; no new implementation-selected atomic denominator or atom verdicts are inferred."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE",
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-1804961441ae-claims-v1.json",
+      "initial_review_sha256": "b2dd6601279ccb51a1ee01ecb92d492de81ba584dc11daa2115f205d4de823b7",
+      "limits": "Some certain/risk-completeness descriptions conflict with actual statements. Initial claims-level grades are preserved; targeted recheck pending for 65b17903280f,589aa6c9dbd8,1804961441ae.",
+      "adjudication_path": "docs/experiments/P1-16-confirmation-human-1804961441ae-adjudication-v1.json",
+      "adjudication_sha256": "447365a51c4db1a756d3f0660c1d5ed39fc2d65b67a950410cc1a9f45a3d695f",
+      "latest_adjudication_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "adjudicated_obligations": {
+        "R-24V935000-CONSEQUENCE": "missing",
+        "R-25V002000-CONSEQUENCE": "missing"
+      },
+      "human_source_sha256": "b76d918a6e5ed4aa86934384c273a72064847d2d1172d4352e9efc28089441e3",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-25V058000-FACTS:1",
+      "case_id": "QTEST-25V058000-FACTS",
+      "blind_id": "BLIND-baf34b307a6c",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-baf34b307a6c-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-baf34b307a6c.json",
+      "source_packet_sha256": "0fe034cba859099a5d3db2071704921d92d90f8ed2a14a4797063227a6f7491a",
+      "observation_sha256": "7d626e86d37b3472f3479438ab93e46bf4c312249debdd561a423f9a65750b64",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied_with_minor_scope_caveat",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-baf34b307a6c-claims-v1.json",
+      "initial_review_sha256": "2ae85ddaf7747f60d598dd491671bdc01f70021fcdfc8c392c1ea7ee620183c1",
+      "human_source_sha256": "42e6efe5928f73b2391b08194576808a45bdcac483c8ab46196edf409e07fcc8",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-25V058000-COUNTER:1",
+      "case_id": "QTEST-25V058000-COUNTER",
+      "blind_id": "BLIND-91b265ea93c1",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-91b265ea93c1-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-91b265ea93c1.json",
+      "source_packet_sha256": "21a495561412c902e645f4d857e6d94befbe61018522831a77454aa50b2ae738",
+      "observation_sha256": "64735e02abefe9f05aae76e1640b8ef71f498a9a2b45539bf59025df8eb70201",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-91b265ea93c1-claims-v1.json",
+      "initial_review_sha256": "6413b8b24f03577d61abf461ce0aea75bd3c6bbdf2968d74439b2b413741ecd5",
+      "human_source_sha256": "77fa1500f61d5c297d742bbe5a6ac17a65247fa87dd4f9c83bf73b8000465647",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-25V058000-PAIR:1",
+      "case_id": "QTEST-25V058000-PAIR",
+      "blind_id": "BLIND-617d2ea7de63",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-617d2ea7de63-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-617d2ea7de63.json",
+      "source_packet_sha256": "523b162caa51de0b70b01c8b27f55bd51934767ee42ffc1fca59bb93471b7c18",
+      "observation_sha256": "3db0056caf2ad21b2341ea311b8594c9b8cfd5a2d0c88d0700ce175959d12a21",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-617d2ea7de63-claims-v1.json",
+      "initial_review_sha256": "86843498edb11781ff2fe9bf53e68e091dcde39c93190982acfd59749e24fbbd",
+      "human_source_sha256": "2985c18c8d4b5a8626a0c1c337bacc9606264fec552e408ed1c92b8af33e8838",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "single_agent:QTEST-25V058000-FACTS:1",
+      "case_id": "QTEST-25V058000-FACTS",
+      "blind_id": "BLIND-d96e6ddf5867",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-d96e6ddf5867-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-d96e6ddf5867.json",
+      "source_packet_sha256": "29e1052beb0d400ed66db9d19cb46dfd07bdced91d881e2b77b4809901b657a9",
+      "observation_sha256": "f8903ae4190bd51ab5ffc5e89203d7e7f98b3f65001030e9b0b510bf7a672fc6",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-d96e6ddf5867-claims-v1.json",
+      "initial_review_sha256": "69196016e31f98e6b51dbf1239d24cfb52e460a4d4de24a3d266efa52b19e5a5",
+      "human_source_sha256": "00f63beb73775cc4f4a57f54bf714a118275d8b00c0985c299561246c1d81ef9",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "single_agent:QTEST-25V058000-COUNTER:1",
+      "case_id": "QTEST-25V058000-COUNTER",
+      "blind_id": "BLIND-9f60aa724239",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-9f60aa724239-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-9f60aa724239.json",
+      "source_packet_sha256": "d2f2306b0293e92b88fb72a83672e53330d5ba04f743c46371308f1e2d5849c8",
+      "observation_sha256": "664914a94c2252cc8ccfde7ffad680e84e53d079bd97231ea515509a1a3dc46c",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-9f60aa724239-claims-v1.json",
+      "initial_review_sha256": "25e3ad2b7f9c5948716ad17f85a90cd69677f12c976e8089b58ea1fa137f0e16",
+      "human_source_sha256": "cc1d72fa5225ab82f8a34099024c8f9feddb40ce8c22b05fa2107ea2c97328e0",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V744000-FACTS:1",
+      "case_id": "QTEST-24V744000-FACTS",
+      "blind_id": "BLIND-35807d60b318",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-35807d60b318-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-35807d60b318.json",
+      "source_packet_sha256": "8a1cecd87666a306dcee27dd7040c69fc019c6be386dc59ede73d19d04a6ada5",
+      "observation_sha256": "630764a01a874cbab79d17a956958302961372e5466fe0231f644b41e366b2cf",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied_with_minor_scope_caveat",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE",
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-35807d60b318-claims-v1.json",
+      "initial_review_sha256": "412c9ec95a7b65af7cbfc652e8c90fda1f7d4f507c44eb8dece4d2c9c4eeee5c",
+      "adjudication_path": "docs/experiments/P1-16-confirmation-human-35807d60b318-adjudication-v1.json",
+      "adjudication_sha256": "d12adfa79d2b8b969438099ba6e310c1bf219fa0ad0cb9a3668ca03bb08a7228",
+      "latest_adjudication_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "05bdc88380bec3fa841f58b1dcb5803bb11bb5e2366ba70159149bff2c780af9",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V744000-COUNTER:1",
+      "case_id": "QTEST-24V744000-COUNTER",
+      "blind_id": "BLIND-aea966b99bfa",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-aea966b99bfa-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-aea966b99bfa.json",
+      "source_packet_sha256": "e2ef6ec5b850699f60d1516cec7fb2dc58e513f36d71587b8cc37fd56267362a",
+      "observation_sha256": "ac53006b930b1597cdab578ba690d5c615c810f5aa93c6466da961e361575b6b",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-aea966b99bfa-claims-v1.json",
+      "initial_review_sha256": "2e984b302ef80646125365f80122ba3eb2fea576b2af7bac0d545dc565c30c0c",
+      "human_source_sha256": "bac2d5cd986dc9f2cfc1fd25107caf189b82df3d1336bc1f3d8c3a642ce7a6e1",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V744000-PAIR:1",
+      "case_id": "QTEST-24V744000-PAIR",
+      "blind_id": "BLIND-c625ac978277",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-c625ac978277-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-c625ac978277.json",
+      "source_packet_sha256": "c65acf93daf36a5bc644dac70a3d67e199c8702fe2642c2351a37733eb5061ae",
+      "observation_sha256": "4079731dc3113d0c2a6208c0f3f68e1edf4c754dd6eb767caf8c11930cbea380",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-c625ac978277-claims-v1.json",
+      "initial_review_sha256": "d27c736ed1748d567425bc9544ff9e479c4ecfc0877df15ea4a218f40dee1222",
+      "human_source_sha256": "539cec955168614589373013f655061988d39106387ff39fb11e905aeab80c89",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V104000-FACTS:1",
+      "case_id": "QTEST-24V104000-FACTS",
+      "blind_id": "BLIND-addd1ad25099",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-addd1ad25099-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-addd1ad25099.json",
+      "source_packet_sha256": "f8ebcd62f8e3554f084c924fd61c54a23baff8b8589985a189bbf07a252fd4ae",
+      "observation_sha256": "338b78028739f17c9133e5d752dc28a21f3d7c9e6dabce7abed2ac6ca5a05886",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-addd1ad25099-claims-v1.json",
+      "initial_review_sha256": "7201f893e37252a8aaac6b77de34ac2e37a4775e73bbfd83f0b99874ce2e1ec2",
+      "human_source_sha256": "6151acf6d7f3fa7a6e3afb777d25be46ab500916519048da14f9184138f1003c",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V104000-COUNTER:1",
+      "case_id": "QTEST-24V104000-COUNTER",
+      "blind_id": "BLIND-9b8567c77333",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-9b8567c77333-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-9b8567c77333.json",
+      "source_packet_sha256": "f8a109c9eda2bdd3a24fc7ad10c7a1303ce596ad7fe291b6cf8247f60e85d59a",
+      "observation_sha256": "8ea91e1a39e0df9e3a6fa476accc21aec3700fda296185de3fd17bfe0eadaa84",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-9b8567c77333-claims-v1.json",
+      "initial_review_sha256": "4112d8819bccd5a8d26076d928d9575defb32985e5a5a371a003aa9921a1b964",
+      "human_source_sha256": "b1459ace26fec8b5f299aa4887406b13f1decc1111b02e34faf41991a4d3434c",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    },
+    {
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "cell_id": "fixed:QTEST-24V104000-PAIR:1",
+      "case_id": "QTEST-24V104000-PAIR",
+      "blind_id": "BLIND-f8aa3ecd8492",
+      "candidate_packet": ".local/q16/human-confirmation/final-v1/BLIND-f8aa3ecd8492-reading.json",
+      "source_packet": ".local/q16/confirmation-review-final-v1/packets/BLIND-f8aa3ecd8492.json",
+      "source_packet_sha256": "b141e8d22ef71e0c30f0a2114ec7b3cfa41db31da91ed2f184aaf3c3e3e187cf",
+      "observation_sha256": "2bc1642856955adeebb1daec4789c68b1dea5b7eae581fad6b889fec0b3559a1",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "satisfied_with_scope_and_citation_caveats",
+      "complete_task_reading": true,
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Reply supplies whole-claim/task judgments; no implementation-generated atomic grades or complete per-obligation/type table."
+      ],
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE",
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-f8aa3ecd8492-claims-v1.json",
+      "initial_review_sha256": "c5edd6eb34702ea835465ef489db68e9813a31b1499d8a1c584074c61a6d410c",
+      "adjudication_path": "docs/experiments/P1-16-confirmation-human-f8aa3ecd8492-adjudication-v1.json",
+      "adjudication_sha256": "4b841991e8e4a4a64a9094debde3e20ef74329868d3d2b11aefec7388ca48559",
+      "latest_adjudication_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "unambiguous_adjudicated_findings": [
+        {
+          "claim_id": "C006",
+          "named_aspect": "相似症状（制动助力丧失、ABS/DSC失效）",
+          "evidence_aliases": [
+            "E001",
+            "E002"
+          ],
+          "finding": "does_not_directly_support_named_symptoms",
+          "source_question_id": "PRIVATE_REVIEW_REFERENCE"
+        }
+      ],
+      "human_source_sha256": "bd5e92dd0ca8c53ee3a1b84ae3f6f7cf0efb472eb7507089a03bb0c27e40d4fc",
+      "task_judgment_question_ids": {
+        "disposition_appropriate": "PRIVATE_REVIEW_REFERENCE",
+        "core_task_complete": "PRIVATE_REVIEW_REFERENCE",
+        "all_requirements_verdict": "PRIVATE_REVIEW_REFERENCE"
+      }
+    }
+  ],
+  "human_failed_task_reviews": [
+    {
+      "review_id": "F01",
+      "cell_id": "single_agent:QTEST-25V065000-PAIR:1",
+      "blind_id": "BLIND-84fff82cc49b",
+      "observation_sha256": "c941cac0f3172cbee80e0ad013d1de801d13881694b58063a4b02a5b7c7c0fb3",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F02",
+      "cell_id": "single_agent:QTEST-24V935000-FACTS:1",
+      "blind_id": "BLIND-b6925aac4609",
+      "observation_sha256": "40be1778f44a2426ba1c860cd5a2824472e696c7d1be90b559926db635e81467",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F03",
+      "cell_id": "single_agent:QTEST-24V104000-FACTS:1",
+      "blind_id": "BLIND-b59e052e7f12",
+      "observation_sha256": "65979b6c89e032536fc7b6f553a573927966cd693294325b53588eeae6f19dab",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F04",
+      "cell_id": "parallel_tools:QTEST-24V935000-FACTS:1",
+      "blind_id": "BLIND-0bcab8fb9c2b",
+      "observation_sha256": "069b2e6f27f68bb4e038052cc4bc235075b2b716e7b9a5c38451efb5280228fd",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F05",
+      "cell_id": "parallel_tools:QTEST-24V935000-COUNTER:1",
+      "blind_id": "BLIND-31f94087b622",
+      "observation_sha256": "42642704c0dafb01a1f0509e0df80929b4680bf42a718bd3eb191165119908b1",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F06",
+      "cell_id": "parallel_tools:QTEST-24V935000-PAIR:1",
+      "blind_id": "BLIND-33eb25dea7f8",
+      "observation_sha256": "a1901839c4e2e2320a30a79bb098018c35027aa4d7da8bddb094bc7f5ecec59c",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F07",
+      "cell_id": "parallel_tools:QTEST-25V058000-FACTS:1",
+      "blind_id": "BLIND-fa57c6e687f0",
+      "observation_sha256": "7ce3c56ce5da17ec9d9a59b873c16fad71fa3c65e804e5842bc379c67e88df99",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F08",
+      "cell_id": "parallel_tools:QTEST-25V058000-PAIR:1",
+      "blind_id": "BLIND-923779c41401",
+      "observation_sha256": "19ed1d17472a5acf4a8ed9cced3aa3030e6b5bb32788a0193bb3c072c5fd169b",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F09",
+      "cell_id": "parallel_tools:QTEST-24V744000-COUNTER:1",
+      "blind_id": "BLIND-33aee5321e43",
+      "observation_sha256": "3b73bb4f90e995ca2eca17856f8f99988f9a722ca58382fd8e27f0dd4d2047f1",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F10",
+      "cell_id": "parallel_tools:QTEST-24V104000-FACTS:1",
+      "blind_id": "BLIND-f55bc5721610",
+      "observation_sha256": "7fa173a113daa9eb16b5d28a816946078e9859d84020af422680a69dd3a3d320",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F11",
+      "cell_id": "multi_agent:QTEST-24V935000-COUNTER:1",
+      "blind_id": "BLIND-db570828145b",
+      "observation_sha256": "67a931f4d79c801c7fddb8bbad891a14f2d6a051b0d0ed63c499cbcca51e333e",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F12",
+      "cell_id": "multi_agent:QTEST-25V058000-PAIR:1",
+      "blind_id": "BLIND-9d56b3e972b2",
+      "observation_sha256": "6fd96892c2c72ccdedfa79d590e492129a4589e316801351d6539baf3e204790",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F13",
+      "cell_id": "multi_agent:QTEST-24V744000-FACTS:1",
+      "blind_id": "BLIND-34edb9ad3497",
+      "observation_sha256": "81b07bb30f7eb1f2295cd903eff1cbd0d0da6eebca2625094e3831b3f0feecc1",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F14",
+      "cell_id": "multi_agent:QTEST-24V744000-COUNTER:1",
+      "blind_id": "BLIND-267874fd6143",
+      "observation_sha256": "a33b3b798ee7e7b34b0648b7baa1390cdf0071738d677da373679596d73d1046",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    },
+    {
+      "review_id": "F15",
+      "cell_id": "multi_agent:QTEST-24V104000-COUNTER:1",
+      "blind_id": "BLIND-b8053d216dc6",
+      "observation_sha256": "4f3cf20a72881bb64be33d163ccd95663aaf9e87d620c3b977007ed72597025f",
+      "disposition_appropriate": false,
+      "acceptable_limited_source_disposition": false,
+      "core_task_complete": false,
+      "all_requirements_verdict": "not_completed",
+      "fact_atom_count": 0,
+      "reason": "Actual failed execution has no answer or proposal; neither an acceptable limited-source answer nor a clarification wait.",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "11b22188dffd756831327f9531c1204c8a0b5427c2a497257f1a0602037ebc81"
+    }
+  ],
+  "generated_metric_coverage": {
+    "fixed": {
+      "core_task_complete": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 15,
+        "complete_metric_denominator": true,
+        "missing_cell_ids": [],
+        "event_cluster_mean": 1,
+        "judgments": [
+          {
+            "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V065000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V935000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V935000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V935000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V058000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V058000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V058000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V744000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V744000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V744000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V104000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V104000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V104000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      },
+      "unqualified_requirements": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 15,
+        "complete_metric_denominator": true,
+        "missing_cell_ids": [],
+        "event_cluster_mean": 0.5333333333333333,
+        "judgments": [
+          {
+            "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V065000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V065000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V935000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V935000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V935000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V058000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V058000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-25V058000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V744000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V744000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V744000-PAIR:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V104000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V104000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "fixed:QTEST-24V104000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      }
+    },
+    "multi_agent": {
+      "core_task_complete": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 7,
+        "complete_metric_denominator": false,
+        "missing_cell_ids": [
+          "multi_agent:QTEST-25V065000-FACTS:1",
+          "multi_agent:QTEST-25V065000-PAIR:1",
+          "multi_agent:QTEST-24V935000-FACTS:1",
+          "multi_agent:QTEST-25V058000-FACTS:1",
+          "multi_agent:QTEST-25V058000-COUNTER:1",
+          "multi_agent:QTEST-24V744000-PAIR:1",
+          "multi_agent:QTEST-24V104000-FACTS:1",
+          "multi_agent:QTEST-24V104000-PAIR:1"
+        ],
+        "event_cluster_mean": null,
+        "judgments": [
+          {
+            "cell_id": "multi_agent:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V935000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V935000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-25V058000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V744000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V744000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V104000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      },
+      "unqualified_requirements": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 7,
+        "complete_metric_denominator": false,
+        "missing_cell_ids": [
+          "multi_agent:QTEST-25V065000-FACTS:1",
+          "multi_agent:QTEST-25V065000-PAIR:1",
+          "multi_agent:QTEST-24V935000-FACTS:1",
+          "multi_agent:QTEST-25V058000-FACTS:1",
+          "multi_agent:QTEST-25V058000-COUNTER:1",
+          "multi_agent:QTEST-24V744000-PAIR:1",
+          "multi_agent:QTEST-24V104000-FACTS:1",
+          "multi_agent:QTEST-24V104000-PAIR:1"
+        ],
+        "event_cluster_mean": null,
+        "judgments": [
+          {
+            "cell_id": "multi_agent:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V935000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V935000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-25V058000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V744000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V744000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "multi_agent:QTEST-24V104000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      }
+    },
+    "parallel_tools": {
+      "core_task_complete": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 8,
+        "complete_metric_denominator": false,
+        "missing_cell_ids": [
+          "parallel_tools:QTEST-25V065000-FACTS:1",
+          "parallel_tools:QTEST-25V065000-PAIR:1",
+          "parallel_tools:QTEST-25V058000-COUNTER:1",
+          "parallel_tools:QTEST-24V744000-FACTS:1",
+          "parallel_tools:QTEST-24V744000-PAIR:1",
+          "parallel_tools:QTEST-24V104000-COUNTER:1",
+          "parallel_tools:QTEST-24V104000-PAIR:1"
+        ],
+        "event_cluster_mean": null,
+        "judgments": [
+          {
+            "cell_id": "parallel_tools:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V935000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V935000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V935000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-25V058000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-25V058000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V744000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V104000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      },
+      "unqualified_requirements": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 8,
+        "complete_metric_denominator": false,
+        "missing_cell_ids": [
+          "parallel_tools:QTEST-25V065000-FACTS:1",
+          "parallel_tools:QTEST-25V065000-PAIR:1",
+          "parallel_tools:QTEST-25V058000-COUNTER:1",
+          "parallel_tools:QTEST-24V744000-FACTS:1",
+          "parallel_tools:QTEST-24V744000-PAIR:1",
+          "parallel_tools:QTEST-24V104000-COUNTER:1",
+          "parallel_tools:QTEST-24V104000-PAIR:1"
+        ],
+        "event_cluster_mean": null,
+        "judgments": [
+          {
+            "cell_id": "parallel_tools:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V935000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V935000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V935000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-25V058000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-25V058000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V744000-COUNTER:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "parallel_tools:QTEST-24V104000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      }
+    },
+    "single_agent": {
+      "core_task_complete": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 6,
+        "complete_metric_denominator": false,
+        "missing_cell_ids": [
+          "single_agent:QTEST-25V065000-FACTS:1",
+          "single_agent:QTEST-24V935000-COUNTER:1",
+          "single_agent:QTEST-24V935000-PAIR:1",
+          "single_agent:QTEST-25V058000-PAIR:1",
+          "single_agent:QTEST-24V744000-FACTS:1",
+          "single_agent:QTEST-24V744000-COUNTER:1",
+          "single_agent:QTEST-24V744000-PAIR:1",
+          "single_agent:QTEST-24V104000-COUNTER:1",
+          "single_agent:QTEST-24V104000-PAIR:1"
+        ],
+        "event_cluster_mean": null,
+        "judgments": [
+          {
+            "cell_id": "single_agent:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-25V065000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-24V935000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-25V058000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-25V058000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-24V104000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      },
+      "unqualified_requirements": {
+        "frozen_generated_attempts": 15,
+        "actually_judged": 6,
+        "complete_metric_denominator": false,
+        "missing_cell_ids": [
+          "single_agent:QTEST-25V065000-FACTS:1",
+          "single_agent:QTEST-24V935000-COUNTER:1",
+          "single_agent:QTEST-24V935000-PAIR:1",
+          "single_agent:QTEST-25V058000-PAIR:1",
+          "single_agent:QTEST-24V744000-FACTS:1",
+          "single_agent:QTEST-24V744000-COUNTER:1",
+          "single_agent:QTEST-24V744000-PAIR:1",
+          "single_agent:QTEST-24V104000-COUNTER:1",
+          "single_agent:QTEST-24V104000-PAIR:1"
+        ],
+        "event_cluster_mean": null,
+        "judgments": [
+          {
+            "cell_id": "single_agent:QTEST-25V065000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-25V065000-PAIR:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-24V935000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-25V058000-FACTS:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-25V058000-COUNTER:1",
+            "value": true,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          },
+          {
+            "cell_id": "single_agent:QTEST-24V104000-FACTS:1",
+            "value": false,
+            "human_source_question_id": "PRIVATE_REVIEW_REFERENCE"
+          }
+        ]
+      }
+    }
+  },
+  "per_arm_diagnostic_target_comparisons": [
+    {
+      "metric": "generated_unqualified_requirements_event_cluster_mean_minimum",
+      "arm_id": "fixed",
+      "actual_event_cluster_mean": 0.5333333333333333,
+      "minimum": 0.75,
+      "complete_metric_denominator": 15,
+      "reason": "This arm has a complete denominator for this individual metric. This diagnostic comparison does not substitute for incomplete pooled semantic measurements or add a post-run acceptance rule."
+    }
+  ],
+  "failed_execution_contract_rechecks": [
+    {
+      "cell_id": "single_agent:QTEST-25V065000-PAIR:1",
+      "observation_sha256": "c941cac0f3172cbee80e0ad013d1de801d13881694b58063a4b02a5b7c7c0fb3",
+      "report_sha256": "ab6477a1b2e18448ea36c04cf7430066c6b7110c5d8a2cf16c4d0caf9f1f8a27",
+      "diagnosis": {
+        "kind": "saved_proposal_constraint_failure",
+        "reason": "claim lacks evidence of its declared kind"
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V935000-FACTS:1",
+      "observation_sha256": "40be1778f44a2426ba1c860cd5a2824472e696c7d1be90b559926db635e81467",
+      "report_sha256": "8ca9d762e4b0bcc879959eb5df5db51bf34a268298a8faee921c2ab70cbca0c3",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V935000-COUNTER:1",
+      "observation_sha256": "bb7834f6badeb28dd7b1174227d99f8f9708e9c62c58fa6d53f2a5ef0b146442",
+      "report_sha256": "f5f1c964380baf49c89d2dc54727bcb61f0272437c4f39374138c90425966599",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V935000-PAIR:1",
+      "observation_sha256": "48442c517a01fe798fa9984e0c7cd8cb582066b3ff13f2412882359f13490a8d",
+      "report_sha256": "b619b4ef438f28de4b68dd986e795d9b275d451f067faa19f83adf32561aa9aa",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V744000-FACTS:1",
+      "observation_sha256": "31338ea9afe321a726936df8306e77ce09ea331db076f971c74c39de4a158b66",
+      "report_sha256": "eba4f1c80ce30309bfc3baeb3eced6fd67569f738769ca1fb8490364e68dceaf",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V744000-COUNTER:1",
+      "observation_sha256": "98df06756c59783c00074108609c22d7327edc89bc26b02c63b80581ad17403c",
+      "report_sha256": "4b50b94847766ac8b423a8edc868f70d457db0844699ed5766f483cff2d61c40",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V744000-PAIR:1",
+      "observation_sha256": "775d09b9a4161ec771320d758b0a173788eedcd32c423b58cccb2c3fad5f1364",
+      "report_sha256": "8e2e485474338e54989d69ab5b7909fb37e48acf03fd61bfeed0399fba242635",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V104000-FACTS:1",
+      "observation_sha256": "65979b6c89e032536fc7b6f553a573927966cd693294325b53588eeae6f19dab",
+      "report_sha256": "0043a11c7ef260ac1c31abadd166e7d3125c186e5403039bd5296d21fb86d9de",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V104000-COUNTER:1",
+      "observation_sha256": "cbf432c9f2106f3de25d355f33cd3cb5d4672cf05bf2eb8166e20ba504b0c47c",
+      "report_sha256": "7a3f297b043137a1799f84743455a897951a31d90d06d878448823ab3f7e84fe",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V104000-PAIR:1",
+      "observation_sha256": "7186e707cca18db81b93d0bf6fe8507d9470a5807192458d7c8949df9e955b6c",
+      "report_sha256": "d568bb3d717b16ca2b0ac33f1994910836a3e05ae6e4e7115f6906b79ec932df",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V935000-FACTS:1",
+      "observation_sha256": "069b2e6f27f68bb4e038052cc4bc235075b2b716e7b9a5c38451efb5280228fd",
+      "report_sha256": "946fe93f350a3d5438ddba85a4cb4211b1a269d4a6dc770ebd4d54f66783be47",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V935000-COUNTER:1",
+      "observation_sha256": "42642704c0dafb01a1f0509e0df80929b4680bf42a718bd3eb191165119908b1",
+      "report_sha256": "09b6ea19373e277a6d4f0f828cb7739d35b3bb42bbaa7f0e7da3ec94d7b860b0",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V935000-PAIR:1",
+      "observation_sha256": "a1901839c4e2e2320a30a79bb098018c35027aa4d7da8bddb094bc7f5ecec59c",
+      "report_sha256": "a75fa8522f89caa2cb4c8fb26aae045b0860e72ff37fe69ccdce11fe3eb2fb1e",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-25V058000-FACTS:1",
+      "observation_sha256": "7ce3c56ce5da17ec9d9a59b873c16fad71fa3c65e804e5842bc379c67e88df99",
+      "report_sha256": "ff6b2bdad532e2d2d2b5e40b39eb55a5d830174db858b11ed53b183b0d5e35a1",
+      "diagnosis": {
+        "kind": "saved_proposal_constraint_failure",
+        "reason": "claim lacks evidence of its declared kind"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-25V058000-PAIR:1",
+      "observation_sha256": "19ed1d17472a5acf4a8ed9cced3aa3030e6b5bb32788a0193bb3c072c5fd169b",
+      "report_sha256": "d43fb7fff24837671ee6f2affe6d2aa5ed546fa9951df487cc598da74060cb45",
+      "diagnosis": {
+        "kind": "remaining_runtime_cause_unresolved",
+        "last_action": "batch"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V744000-FACTS:1",
+      "observation_sha256": "309aede40928b1d3208df32f5ba9f880a775c64f2523dc38ed5c558782c6a796",
+      "report_sha256": "13321ecb9e8eeb465612001abac6b4741a8a300f3353356ff7c0a49c93928242",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V744000-COUNTER:1",
+      "observation_sha256": "3b73bb4f90e995ca2eca17856f8f99988f9a722ca58382fd8e27f0dd4d2047f1",
+      "report_sha256": "5f58628669e2be1d6729b3a1cabd69298348e9ef1f07f92c3766349c331cfe28",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V104000-FACTS:1",
+      "observation_sha256": "7fa173a113daa9eb16b5d28a816946078e9859d84020af422680a69dd3a3d320",
+      "report_sha256": "0add1a7251c5c5597f7b8b15f1919ca406f5e76caf71e3b049a1e7316227f235",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V104000-COUNTER:1",
+      "observation_sha256": "ee25d90b0284d447c70ee6c3518001119984f7085f4bda7d0485c4efc952ad3b",
+      "report_sha256": "134d088d3ad2ce7a27dcafc50511c86de8315a2118df9cb19e3ac6f388426a59",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "finish"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V104000-PAIR:1",
+      "observation_sha256": "903fa094f7f3d61664f683d142446168bc2b40d6ec285c328eb1b5f36715d04a",
+      "report_sha256": "abcf2c5c2f9eea98d980cac90ee4dd53dcc46f0284745286b9282a4a536ab6a9",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V935000-FACTS:1",
+      "observation_sha256": "3f45ff91f1a3c5338b3c2b131de4268ed3c710c780678be951ae169e3968a4d4",
+      "report_sha256": "00807f0f6db23d3690c1ba51fa9e620d098fe793df64c972b9ede1663604a47e",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V935000-COUNTER:1",
+      "observation_sha256": "67a931f4d79c801c7fddb8bbad891a14f2d6a051b0d0ed63c499cbcca51e333e",
+      "report_sha256": "a46a76def866ae6fed1150dd1b8543d66e531ceabbf6217d90bdeb15f9701503",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-25V058000-PAIR:1",
+      "observation_sha256": "6fd96892c2c72ccdedfa79d590e492129a4589e316801351d6539baf3e204790",
+      "report_sha256": "d1ae7ed8e2a07db1d75c1c7f373f465fe1674986f5837fcce9514ffc7a8fa0fa",
+      "diagnosis": {
+        "kind": "unresolved_runtime_or_branch_failure",
+        "error_code": "ValueError"
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V744000-FACTS:1",
+      "observation_sha256": "81b07bb30f7eb1f2295cd903eff1cbd0d0da6eebca2625094e3831b3f0feecc1",
+      "report_sha256": "ee8a628e266024f8e31c993ca55b4ca49b4e2385d5786d5175cdf23792fbc4bf",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V744000-COUNTER:1",
+      "observation_sha256": "a33b3b798ee7e7b34b0648b7baa1390cdf0071738d677da373679596d73d1046",
+      "report_sha256": "b1c3f666974449d09dc5f93dacf6d6349a3521019ffa5500510c2c0908e6415f",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V744000-PAIR:1",
+      "observation_sha256": "765ccea8b3919041f248d5adea5a7d44918e207d5455b6a314f576ddf3ff5218",
+      "report_sha256": "a09896ecb0c3a5ff987e330791607b428c8f88e8e37acef52064ed902986920d",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V104000-FACTS:1",
+      "observation_sha256": "2a631de1e89d1b991d37f0dfcf9a94377f25e27805c942280b75061bffd173c1",
+      "report_sha256": "dff8545632f1129d019b9387b240a7f1f9653ac36740456cab44ea4e81c2fced",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V104000-COUNTER:1",
+      "observation_sha256": "4f3cf20a72881bb64be33d163ccd95663aaf9e87d620c3b977007ed72597025f",
+      "report_sha256": "110487f42b81ea590fc81ff49ecad3a55b1a15e6488ef9b4be3c8d99ca2a27e7",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    }
+  ],
+  "mandatory_human_coverage": {
+    "predeclared": 80,
+    "component_reviews_completed": 2,
+    "stage_reviews_completed": 44,
+    "readings_pending_component_adjudication": 19,
+    "failed_task_reviews_completed": 15,
+    "any_actual_human_review_completed": 80,
+    "remaining_cell_ids": [],
+    "stage_reviews_counted_here": true
+  },
+  "acceptance": {
+    "status": "not_passed",
+    "verified_target_violations": [
+      {
+        "metric": "atomic_unsupported_event_cluster_mean_maximum",
+        "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+        "atom_id": "C002-N01",
+        "quote": "触发条件为LFB功能被激活时；",
+        "actual_citations": [
+          "E003"
+        ],
+        "basis": "Actual C002 citation E003 contains no LFB trigger. E002 in C001 supports the fact but is not a C002 citation; no contradiction or source-wide factual falsity inferred.",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "One verified unsupported atom makes a finite, nonnegative event-cluster mean strictly positive; full rate remains unmeasured."
+      },
+      {
+        "metric": "named_aspect_citation_support_minimum",
+        "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+        "atom_ids": [
+          "C002-N01"
+        ],
+        "actual_citation": "E003",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "Human explicitly found the named aspect absent from its actual citation; missing rates remain null."
+      },
+      {
+        "metric": "atomic_unsupported_event_cluster_mean_maximum",
+        "cell_id": "fixed:QTEST-25V065000-PAIR:1",
+        "atom_id": "C005-N02",
+        "quote": "且 25V235000 明确取代 25V065000；",
+        "actual_citations": [
+          "E002"
+        ],
+        "basis": "Final actual human recheck resolves the category as 夸大或不支持: E002 candidate does not support definite replacement; E005/E010 remain citations of other claims.",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "One verified unsupported atom makes a finite, nonnegative event-cluster mean strictly positive; full rate remains unmeasured."
+      },
+      {
+        "metric": "named_aspect_citation_support_minimum",
+        "cell_id": "fixed:QTEST-25V065000-PAIR:1",
+        "atom_ids": [
+          "C005-N02"
+        ],
+        "actual_citation": "E002",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "Human explicitly found the named aspect absent from its actual citation; missing rates remain null."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-25V065000-INSUFFICIENT:1"
+        ],
+        "review_id": "S02",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-25V065000-INSUFFICIENT:1",
+          "parallel_tools:QTEST-25V065000-INSUFFICIENT:1",
+          "multi_agent:QTEST-25V065000-INSUFFICIENT:1"
+        ],
+        "review_id": "S03",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-25V065000-CONDITIONS:1",
+          "single_agent:QTEST-25V065000-CONDITIONS:1",
+          "parallel_tools:QTEST-25V065000-CONDITIONS:1",
+          "multi_agent:QTEST-25V065000-CONDITIONS:1"
+        ],
+        "review_id": "S06",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-24V935000-INSUFFICIENT:1"
+        ],
+        "review_id": "S04",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-24V104000-INSUFFICIENT:1"
+        ],
+        "review_id": "S06",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-24V935000-CONDITIONS:1",
+          "single_agent:QTEST-24V935000-CONDITIONS:1",
+          "parallel_tools:QTEST-24V935000-CONDITIONS:1",
+          "multi_agent:QTEST-24V935000-CONDITIONS:1"
+        ],
+        "review_id": "S10",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-25V058000-INSUFFICIENT:1"
+        ],
+        "review_id": "S11",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-24V744000-INSUFFICIENT:1"
+        ],
+        "review_id": "S13",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-24V744000-CONDITIONS:1",
+          "single_agent:QTEST-24V744000-CONDITIONS:1",
+          "parallel_tools:QTEST-24V744000-CONDITIONS:1",
+          "multi_agent:QTEST-24V744000-CONDITIONS:1"
+        ],
+        "review_id": "S15",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-24V744000-INSUFFICIENT:1",
+          "parallel_tools:QTEST-24V744000-INSUFFICIENT:1",
+          "multi_agent:QTEST-24V744000-INSUFFICIENT:1"
+        ],
+        "review_id": "S16",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-25V058000-CONDITIONS:1",
+          "single_agent:QTEST-25V058000-CONDITIONS:1",
+          "parallel_tools:QTEST-25V058000-CONDITIONS:1",
+          "multi_agent:QTEST-25V058000-CONDITIONS:1"
+        ],
+        "review_id": "S17",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "要求配置与生产日期正确，但没有在澄清中回应召回后永久安全的边界。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-25V058000-INSUFFICIENT:1",
+          "parallel_tools:QTEST-25V058000-INSUFFICIENT:1",
+          "multi_agent:QTEST-25V058000-INSUFFICIENT:1"
+        ],
+        "review_id": "S19",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-24V104000-INSUFFICIENT:1",
+          "parallel_tools:QTEST-24V104000-INSUFFICIENT:1",
+          "multi_agent:QTEST-24V104000-INSUFFICIENT:1"
+        ],
+        "review_id": "S23",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "资料不足处置正确，但没有具体解释缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-24V935000-INSUFFICIENT:1",
+          "parallel_tools:QTEST-24V935000-INSUFFICIENT:1",
+          "multi_agent:QTEST-24V935000-INSUFFICIENT:1"
+        ],
+        "review_id": "S01",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "处置为 insufficient_evidence 合适；阶段义务部分满足，实际文本未说明缺少投诉全集与车辆暴露量分母。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "stop_stage_appropriateness_minimum",
+        "cell_ids": [
+          "fixed:QTEST-24V104000-CONDITIONS:1",
+          "single_agent:QTEST-24V104000-CONDITIONS:1",
+          "parallel_tools:QTEST-24V104000-CONDITIONS:1",
+          "multi_agent:QTEST-24V104000-CONDITIONS:1"
+        ],
+        "review_id": "S03",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "澄清方向合适；阶段义务部分满足，要求日期/配置但未告知补齐并完成召回仍不证明永久安全。",
+        "qualification": "Disposition direction was accepted; human found stage explanation/obligation only partially satisfied. No numerical partial score imputed."
+      },
+      {
+        "metric": "named_aspect_citation_support_minimum",
+        "cell_id": "fixed:QTEST-24V104000-PAIR:1",
+        "navigation_id": null,
+        "claim_id": "C006",
+        "named_aspect": "相似症状（制动助力丧失、ABS/DSC失效）",
+        "actual_citations": [
+          "E001",
+          "E002"
+        ],
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "Actual human recheck found that the actual citation does not directly support this named claim aspect. No implementation-selected atomic category or denominator is inferred."
+      },
+      {
+        "metric": "generated_core_event_cluster_mean_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-25V065000-PAIR:1",
+          "single_agent:QTEST-24V935000-FACTS:1",
+          "single_agent:QTEST-24V104000-FACTS:1",
+          "parallel_tools:QTEST-24V935000-FACTS:1",
+          "parallel_tools:QTEST-24V935000-COUNTER:1",
+          "parallel_tools:QTEST-24V935000-PAIR:1",
+          "parallel_tools:QTEST-25V058000-FACTS:1",
+          "parallel_tools:QTEST-25V058000-PAIR:1",
+          "parallel_tools:QTEST-24V744000-COUNTER:1",
+          "parallel_tools:QTEST-24V104000-FACTS:1",
+          "multi_agent:QTEST-24V935000-COUNTER:1",
+          "multi_agent:QTEST-25V058000-PAIR:1",
+          "multi_agent:QTEST-24V744000-FACTS:1",
+          "multi_agent:QTEST-24V744000-COUNTER:1",
+          "multi_agent:QTEST-24V104000-COUNTER:1",
+          "multi_agent:QTEST-24V935000-PAIR:1"
+        ],
+        "human_source_question_ids": [
+          "PRIVATE_REVIEW_REFERENCE",
+          "PRIVATE_REVIEW_REFERENCE"
+        ],
+        "reason": "Actual human review marked these tasks not fully core-complete because of failed execution or required-content omissions; a required all-complete event-cluster mean cannot equal one. Full rate remains unmeasured."
+      },
+      {
+        "metric": "disposition_appropriateness_minimum",
+        "cell_ids": [
+          "single_agent:QTEST-25V065000-PAIR:1",
+          "single_agent:QTEST-24V935000-FACTS:1",
+          "single_agent:QTEST-24V104000-FACTS:1",
+          "parallel_tools:QTEST-24V935000-FACTS:1",
+          "parallel_tools:QTEST-24V935000-COUNTER:1",
+          "parallel_tools:QTEST-24V935000-PAIR:1",
+          "parallel_tools:QTEST-25V058000-FACTS:1",
+          "parallel_tools:QTEST-25V058000-PAIR:1",
+          "parallel_tools:QTEST-24V744000-COUNTER:1",
+          "parallel_tools:QTEST-24V104000-FACTS:1",
+          "multi_agent:QTEST-24V935000-COUNTER:1",
+          "multi_agent:QTEST-25V058000-PAIR:1",
+          "multi_agent:QTEST-24V744000-FACTS:1",
+          "multi_agent:QTEST-24V744000-COUNTER:1",
+          "multi_agent:QTEST-24V104000-COUNTER:1"
+        ],
+        "human_source_question_ids": [
+          "PRIVATE_REVIEW_REFERENCE"
+        ],
+        "reason": "Actual human explicitly rejected failed empty output as an acceptable limited-source disposition; no numerical population rate imputed."
+      }
+    ],
+    "complete_population_semantic_rates": null,
+    "passing_acceptance_allowed": false,
+    "human_reviews_are_not_imputed": true
+  },
+  "lifecycle": {
+    "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+    "database_pid_exists": false,
+    "provider_requests": 116,
+    "formal_quality_acceptance": "pending_actual_human_adjudication",
+    "original_270_cells_changed": false
+  },
+  "new_provider_calls_by_analysis": 0,
+  "limitations": [
+    "Subset human rates never replace whole-population semantic rates.",
+    "Citation-local lack of support does not establish factual falsity in the source corpus.",
+    "All frozen failures and unstarted units remain in the denominator.",
+    "Old retrieval/context/memory/recovery/interference semantic gaps remain separately open."
+  ],
+  "human_source_index_sha256": "0279331ac158c77140bb24015b0f598c17ff346af8c7c26413ef99389c5e8746"
+}

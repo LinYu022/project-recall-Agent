@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-10-29T11:00:55.547828+00:00",
+  "classification": "local_equivalent_of_offline_ci_with_synthetic_data_and_fake_model",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "mypy"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "mypy",
+        "reviewing",
+        "baselining"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "alembic",
+        "upgrade",
+        "head",
+        "--sql"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp",
+        ".local\\pt\\482e47389a8f",
+        "--junitxml",
+        ".local\\q16\\offline-confirmation-v2\\tests.xml"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scripts.verify_http",
+        "--output",
+        ".local\\q16\\offline-confirmation-v2\\http.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "scripts.verify_query_http",
+        "--output",
+        ".local\\q16\\offline-confirmation-v2\\query-http.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "tests": {
+    "tests": 519,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "http_checks": 7,
+  "http_server_stopped": true,
+  "query_http_checks": 7,
+  "query_http_server_stopped": true,
+  "external_model_calls": 0,
+  "github_actions_run": false,
+  "fingerprints": {
+    "pyproject.toml": "2ca9ca8f12516b4cde844d47cd04485d549e611b77269f27f4b632934bccfee6",
+    "uv.lock": "52bb4ffdc5c53d2183eddf0880d77e9fab8fcb7a0ce668e679bf4b73ccb4b8ed",
+    ".github/workflows/ci.yml": "32f6f9d080cca1c85e4b0f0d9c5e09afcf29bd5d1e3fc5833628f1eca78285f6"
+  },
+  "logs": ".local/q16/offline-confirmation-v2",
+  "pytest_temp": ".local/pt/482e47389a8f",
+  "immutable_record": ".local/q16/offline-confirmation-v2/verification.json",
+  "source_record_sha256": "81a97c788d387fa1b63bd6681455bd859f62dfc8573b57cb91d1411544f7b75e",
+  "model_quality_acceptance": "not_asserted_by_engineering_tests",
+  "new_provider_calls": 0
+}

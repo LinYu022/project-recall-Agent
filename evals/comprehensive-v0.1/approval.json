@@ -1,0 +1,15 @@
+{
+  "schema_version": "evaluation-authorization-record/0.1",
+  "status": "explicit_user_approved",
+  "date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "human_reply": "批准本批资料及最多584次请求",
+  "proposal": "docs/experiments/P1-16-live-call-proposal.md",
+  "protocol_content_sha256": "adf197db91e7b499f173ab2a022e2b6909983bbb73f7313104631815c901ddae",
+  "maximum_requests": 584,
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "model": "deepseek-flash",
+  "failed_and_unknown_requests_consume_allowance": true,
+  "automatic_retry": false,
+  "does_not_expand_P1_09_allowance": true
+}

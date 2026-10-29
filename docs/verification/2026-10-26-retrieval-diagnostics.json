@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "classification": "actual_final_qdrant_development_ranking",
+      "query_id": "DEV-23V838000-REMEDY",
+      "method": "bm25",
+      "diagnosis": {
+        "diagnosis": "ranked_below_cutoff",
+        "target_documents": 31,
+        "candidate_target_groups": 1,
+        "best_returned_rank": 2,
+        "cutoff": 1
+      },
+      "trace_artifact": {
+        "sha256": "73db0876d75fbaa6d74a252f2de842dbc7aa031a0b29dc02545658068a108a33",
+        "byte_size": 155737
+      }
+    },
+    {
+      "classification": "controlled_no_lexical_overlap_query_not_model_failure",
+      "diagnosis": {
+        "diagnosis": "not_retrieved",
+        "target_documents": 31,
+        "candidate_target_groups": 0,
+        "best_returned_rank": null,
+        "cutoff": 1
+      }
+    },
+    {
+      "classification": "controlled_wrong_request_year_correctly_filtered_not_engine_bug",
+      "diagnosis": {
+        "diagnosis": "filtered_or_not_allowed",
+        "target_documents": 31,
+        "scope_reasons": [
+          "model_mismatch",
+          "model_year_mismatch"
+        ]
+      }
+    }
+  ],
+  "real_model_boundary": {
+    "overlong_reranker_query": "rejected_before_inference"
+  },
+  "new_source_requests": 0,
+  "index_artifact_sha256": "46373e84c19beb44a37ed3b2a2cf079d98b86ebf15f7a6cfbcc2b8852a616982"
+}

@@ -1,0 +1,98 @@
+{
+  "case_id": "QTEST-24V104000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "24V104000-summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d2501a6a55be5a6553e7bf03a9e652323a2c0b11d7958fd07bb2aec73a544b9c",
+          "unit_id": "6895cb36c6ba2edccde0c833fea957ab29e837bd90bc087c14af435aacc5b02f",
+          "start": 0,
+          "end": 374,
+          "quote_sha256": "1a7a4797d73157f6da1dd0ab1af1274bd68dd49c785428351bdfab47907b72d8"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V104000-consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d2501a6a55be5a6553e7bf03a9e652323a2c0b11d7958fd07bb2aec73a544b9c",
+          "unit_id": "6539052d1e0a7ba3cbb76827cfd9ddd3fab995b474cde7e02d7b9abcfa940669",
+          "start": 0,
+          "end": 233,
+          "quote_sha256": "ad2f2e598709413a77ac6a04c2681623ad28b786d850f923e82c107dda105e30"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "24V104000-remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "d2501a6a55be5a6553e7bf03a9e652323a2c0b11d7958fd07bb2aec73a544b9c",
+          "unit_id": "98d6d3b3a6f28a0a31fe21289b4bcd6343cecda22974a8d399625d845ad7e50c",
+          "start": 0,
+          "end": 247,
+          "quote_sha256": "c8d857d615de00b7022596623049078ca6d8b8c7d2da6df41c5aec37f741da90"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-24V104000-SUMMARY",
+      "statement": "BMW of North America, LLC. (BMW) is recalling certain 2023-2025 BMW, MINI, and Rolls-Royce vehicles.  Please see the recall report for a complete list of models and model years.  The integrated brake (IB) system may malfunction and result in a loss of power brake assist or cause the Antilock Brake (ABS) and Dynamic Stability Control (DSC) systems to not function properly.\nHuman-audited mandatory aspects (within relevant query scope): certain 2023-2025 BMW/MINI/Rolls-Royce, full list refers to recall report; IB malfunction; loss of power brake assist or ABS/DSC function",
+      "evidence_sets": [
+        [
+          "24V104000-summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V104000-CONSEQUENCE",
+      "statement": "A loss of power brake assist can extend the distance required to stop the vehicle.  Additionally, malfunctioning ABS and/or DSC systems can cause a loss of vehicle control.  Either of these scenarios can increase the risk of a crash.\nHuman-audited mandatory aspects (within relevant query scope): longer stopping distance; loss of handling/control with ABS/DSC malfunction; crash risk",
+      "evidence_sets": [
+        [
+          "24V104000-consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-24V104000-REMEDY",
+      "statement": "Dealers will replace the integrated brake system, free of charge.  Owner notification letters were mailed between June and December 2024.  Owners may contact BMW customer service at 1-800-525-7417 or Rolls Royce customer service at 1-877-877-3735.\nHuman-audited mandatory aspects (within relevant query scope): free integrated brake system replacement",
+      "evidence_sets": [
+        [
+          "24V104000-remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

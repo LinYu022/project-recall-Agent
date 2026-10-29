@@ -1,0 +1,78 @@
+{
+  "schema_version": "P1-16-finalization/0.1",
+  "at": "2026-10-28T12:50:13.608392+00:00",
+  "experiment_id": "04977b4c562ad6b533b2fefe89098c1c3515d3542ac4216a8f7b6e260e7099ef",
+  "frozen_implementation_git": "6fa6cb347029919cc8cf4b5ae1451312e456842b",
+  "execution_accounting_closed": true,
+  "all_cells_have_execution_observations": false,
+  "states": {
+    "completed": 85,
+    "guarded": 120,
+    "failed": 64,
+    "not_started": 1
+  },
+  "provider_requests": 209,
+  "provider_usage": {
+    "prompt_tokens": {
+      "known_subtotal": 883465,
+      "observed_requests": 209,
+      "missing_requests": 0,
+      "complete_total": 883465
+    },
+    "completion_tokens": {
+      "known_subtotal": 74327,
+      "observed_requests": 209,
+      "missing_requests": 0,
+      "complete_total": 74327
+    },
+    "total_tokens": {
+      "known_subtotal": 957792,
+      "observed_requests": 209,
+      "missing_requests": 0,
+      "complete_total": 957792
+    },
+    "prompt_cache_hit_tokens": {
+      "known_subtotal": 247424,
+      "observed_requests": 209,
+      "missing_requests": 0,
+      "complete_total": 247424
+    },
+    "prompt_cache_miss_tokens": {
+      "known_subtotal": 636041,
+      "observed_requests": 209,
+      "missing_requests": 0,
+      "complete_total": 636041
+    }
+  },
+  "formal_semantic_acceptance": "pending_uniform_review_and_independent_development_baseline",
+  "qualitative_human_reviews": 1,
+  "human_reviewed_claims": 6,
+  "raw_verification_content_sha256": "e9abe8f2e0cf737b0ef6edcb8c171127a2823ca88af9715c9babb254d7e716b0",
+  "posthoc_analysis_content_sha256": "4ddf43ca711260ae7c0ac3dd05e43e38c7d591ec78126a30f4fcf3b36bc79ca5",
+  "human_supplement_content_sha256": "0c9b26ddbd7367fb9cc25204ff90f187aeaec09acbc902b7b136faa7c4519af1",
+  "figures": {
+    "png": {
+      "path": "docs/experiments/P1-16-figures/quality-cost.png",
+      "sha256": "c005092519c4f2cccdbd7b2a3d9c13de8b98de5b37f57f83dbb9f52b4d971470",
+      "bytes": 88777
+    },
+    "pdf": {
+      "path": "docs/experiments/P1-16-figures/quality-cost.pdf",
+      "sha256": "4bf914fe0ea189fe24f90b58cb1d87986a4e427f6dcab6fe0f623666a68740c4",
+      "bytes": 20195
+    }
+  },
+  "checks": {
+    "frozen_generation_unchanged": true,
+    "JSON_and_links": true,
+    "provider_input_response_usage_and_caps": true,
+    "old_P1_09_ledger_unchanged": true,
+    "postgres_stopped": true,
+    "no_new_provider_requests_for_finalization": true,
+    "PNG_visual_inspection": "passed_execution_counts_and_deliberately_empty_unreviewed_quality_cost_panel"
+  },
+  "offline_tests_at_frozen_implementation": 429,
+  "postgres_tests_at_frozen_implementation": 204,
+  "not_started_cell_observation_fabricated": false,
+  "P1_17_started": false
+}

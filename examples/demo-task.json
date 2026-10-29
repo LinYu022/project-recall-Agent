@@ -1,0 +1,32 @@
+{
+  "schema_version": "exploration-task/0.2",
+  "task_id": "DEMO-001",
+  "task_kind": "record_lookup",
+  "split": "exploration",
+  "event_cluster_id": "synthetic-training-only",
+  "status": "ready",
+  "question": "Read a synthetic complaint to demonstrate execution tracing; do not produce a real vehicle conclusion.",
+  "scope": {
+    "country": "US",
+    "make": "EXAMPLE",
+    "model": "LEARNING-CAR",
+    "model_year": 2020,
+    "component_topic": "braking",
+    "campaign_number": "00V000000"
+  },
+  "time": {
+    "mode": "snapshot_analysis",
+    "event_interval": null,
+    "knowledge_cutoff": null,
+    "date_filter_basis": "Synthetic record lookup; no historical visibility claim."
+  },
+  "release_id": "demo-fixture-v1",
+  "grant_id": "dev-readonly-v1",
+  "revision_id": "demo-plan-v1",
+  "allowed_source_ids": ["SIM-COMPLAINT-001"],
+  "required_outputs": ["Return a synthetic record with a source ID and traceable artifacts."],
+  "forbidden_inferences": ["Treating training fixtures or 00V000000 as a real NHTSA recall."],
+  "missing_information_behavior": {
+    "tool_error": "Record failure; do not convert it into a successful empty result."
+  }
+}

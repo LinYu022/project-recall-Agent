@@ -1,0 +1,412 @@
+{
+  "schema_version": "P1-14-delivery/0.1",
+  "timestamp": "2026-10-27T16:07:56.431378+00:00",
+  "classification": "real_postgresql_history_navigation_and_official_sources_with_scripted_generation",
+  "migration_head": "0008_episodic_memory",
+  "offline_tests": {
+    "tests": 404,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgres_tests": {
+    "tests": 172,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "official_followup_tests": {
+    "tests": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "official_followup_filter": "episodes",
+  "offline_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "legacy_http_checks": [
+    7,
+    7
+  ],
+  "development_history": [
+    {
+      "record": "initial.json",
+      "tests": {
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "content_sha256": "de898d47238710efe025a34f335002692a581397300b23701b26a898cdc64df9"
+    },
+    {
+      "record": "round2.json",
+      "tests": {
+        "tests": 16,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "content_sha256": "3541e09536d07ce9c2de865aef752939db715de81582420fc069c44ad27a6429"
+    }
+  ],
+  "first_official_followup_failure": {
+    "full_postgres_tests": {
+      "tests": 172,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "official_script_exit_code": 1,
+    "reason": "A literal brake query was incorrectly expected to enumerate braking-only summaries; final harness enumerates eligible history with an empty query.",
+    "all_four_task_outcomes_recorded": true,
+    "retained_observations": {
+      "timestamp": "2026-10-27T15:48:27.355960+00:00",
+      "classification": "real_postgresql_official_NHTSA_sources_local_models_and_history_tools_scripted_generation",
+      "new_api_requests": 0,
+      "new_source_requests": 0,
+      "actual_provider_usage": null,
+      "estimated_cost": null,
+      "independent_human_reviews": 0,
+      "formal_semantic_metrics": null,
+      "generation_usage_is_synthetic": true,
+      "runs": [
+        {
+          "task_id": "OLD",
+          "task_state": "COMPLETED",
+          "disposition": "insufficient_evidence",
+          "error_code": null,
+          "model_calls": 3,
+          "tool_calls": 3,
+          "elapsed_ms": 42267.98950000375,
+          "resources": {
+            "completion_tokens_reserved_or_used": 120,
+            "elapsed_ms": 42267.986999999266,
+            "model_calls": 3,
+            "prompt_characters": 33397,
+            "provider_usage_totals": {
+              "completion_tokens": 120,
+              "prompt_tokens": 0,
+              "total_tokens": 120
+            },
+            "usage_complete": true,
+            "wall_limit_is_checked_between_operations": true
+          },
+          "history_references": 0,
+          "report_reference": {
+            "artifact_root": ".local/P1-14/demo-df26e3a8/runs/private-runs/AGENT-fdfcbafa520a4952b6ef951bfd5ea2bf",
+            "report_artifact": {
+              "sha256": "7ea41da86313444662d4de2d1edf999f4ae31ea92cf9f031ce14699aa81b2688",
+              "byte_size": 35078
+            }
+          },
+          "report_content_sha256": "05c2d24ef1f8ace6006f61253d23dd66bcaa1dfeb06d1701621a2b9aa8bf213b"
+        },
+        {
+          "task_id": "OTHER-YEAR",
+          "task_state": "COMPLETED",
+          "disposition": "insufficient_evidence",
+          "error_code": "no_progress_limit",
+          "model_calls": 2,
+          "tool_calls": 3,
+          "elapsed_ms": 43036.386900013895,
+          "resources": {
+            "completion_tokens_reserved_or_used": 80,
+            "elapsed_ms": 43036.384800012456,
+            "model_calls": 2,
+            "prompt_characters": 16657,
+            "provider_usage_totals": {
+              "completion_tokens": 80,
+              "prompt_tokens": 0,
+              "total_tokens": 80
+            },
+            "usage_complete": true,
+            "wall_limit_is_checked_between_operations": true
+          },
+          "history_references": 0,
+          "report_reference": {
+            "artifact_root": ".local/P1-14/demo-df26e3a8/runs/private-runs/AGENT-4ae8e59339d24e488dd4cedd767a90d8",
+            "report_artifact": {
+              "sha256": "43be35be7eeb76546bf47ae678907f5fc047b5a17a4b5436d7b503b60d8bd66e",
+              "byte_size": 13473
+            }
+          },
+          "report_content_sha256": "181ab6086ff988e0a9d82a2f45e89eff3366581ba7cae2c2521f3c2b4fe0888e"
+        },
+        {
+          "task_id": "FAILED",
+          "task_state": "FAILED",
+          "disposition": null,
+          "error_code": "ValueError",
+          "model_calls": 1,
+          "tool_calls": 1,
+          "elapsed_ms": 13459.52689999831,
+          "resources": {
+            "completion_tokens_reserved_or_used": 40,
+            "elapsed_ms": 13459.52479999687,
+            "model_calls": 1,
+            "prompt_characters": 8064,
+            "provider_usage_totals": {
+              "completion_tokens": 40,
+              "prompt_tokens": 0,
+              "total_tokens": 40
+            },
+            "usage_complete": true,
+            "wall_limit_is_checked_between_operations": true
+          },
+          "history_references": 0,
+          "report_reference": {
+            "artifact_root": ".local/P1-14/demo-df26e3a8/runs/private-runs/AGENT-eae1c91b854a43da98554d854344f206",
+            "report_artifact": {
+              "sha256": "38474f3e81622fe916e4cf799471452ce6eb44a0bd5d27a3bc2c2d74cd6d9a34",
+              "byte_size": 9122
+            }
+          },
+          "report_content_sha256": "c7da3892796a75a0a66534792b1cf0f08711188518034788818d54534d59d5d8"
+        },
+        {
+          "task_id": "NEW",
+          "task_state": "COMPLETED",
+          "disposition": "insufficient_evidence",
+          "error_code": null,
+          "model_calls": 5,
+          "tool_calls": 5,
+          "elapsed_ms": 40181.446799993864,
+          "resources": {
+            "completion_tokens_reserved_or_used": 200,
+            "elapsed_ms": 40181.44499999471,
+            "model_calls": 5,
+            "prompt_characters": 85517,
+            "provider_usage_totals": {
+              "completion_tokens": 200,
+              "prompt_tokens": 0,
+              "total_tokens": 200
+            },
+            "usage_complete": true,
+            "wall_limit_is_checked_between_operations": true
+          },
+          "history_references": 2,
+          "report_reference": {
+            "artifact_root": ".local/P1-14/demo-df26e3a8/runs/private-runs/AGENT-fe029051efc44060b285ec4d5187428d",
+            "report_artifact": {
+              "sha256": "09c00a3da672cb042b232bc5c9a32a401fb70f7bb69cdfc036fd1621a083bc6c",
+              "byte_size": 56025
+            }
+          },
+          "report_content_sha256": "fdecad8c2217c45d03f2d8755d81876f7e0c207dd9d113a597442787d903a29d"
+        }
+      ],
+      "schema_removed": true
+    }
+  },
+  "official_demonstration": {
+    "timestamp": "2026-10-27T16:00:28.791900+00:00",
+    "classification": "real_postgresql_official_NHTSA_sources_local_models_and_history_tools_scripted_generation",
+    "new_api_requests": 0,
+    "new_source_requests": 0,
+    "actual_provider_usage": null,
+    "estimated_cost": null,
+    "independent_human_reviews": 0,
+    "formal_semantic_metrics": null,
+    "generation_usage_is_synthetic": true,
+    "runs": [
+      {
+        "task_id": "OLD",
+        "task_state": "COMPLETED",
+        "disposition": "insufficient_evidence",
+        "error_code": null,
+        "model_calls": 3,
+        "tool_calls": 3,
+        "elapsed_ms": 48997.03199999931,
+        "resources": {
+          "completion_tokens_reserved_or_used": 120,
+          "elapsed_ms": 48997.02850000176,
+          "model_calls": 3,
+          "prompt_characters": 33397,
+          "provider_usage_totals": {
+            "completion_tokens": 120,
+            "prompt_tokens": 0,
+            "total_tokens": 120
+          },
+          "usage_complete": true,
+          "wall_limit_is_checked_between_operations": true
+        },
+        "history_references": 0,
+        "report_reference": {
+          "artifact_root": ".local/P1-14/demo-be557c13/runs/private-runs/AGENT-fbd9dae07bbf40ddb6f15a14176debbe",
+          "report_artifact": {
+            "sha256": "bac205f76b6acc6473b9087e81e9985eec9e55994b75531c53c7fac0a104d3ce",
+            "byte_size": 35076
+          }
+        },
+        "report_content_sha256": "10436cc855f66ec5b7cfa083583a96a597ec2f3ebfebdf6e046a648dbf9eca67"
+      },
+      {
+        "task_id": "OTHER-YEAR",
+        "task_state": "COMPLETED",
+        "disposition": "insufficient_evidence",
+        "error_code": "no_progress_limit",
+        "model_calls": 2,
+        "tool_calls": 3,
+        "elapsed_ms": 48560.02109999827,
+        "resources": {
+          "completion_tokens_reserved_or_used": 80,
+          "elapsed_ms": 48560.0173999992,
+          "model_calls": 2,
+          "prompt_characters": 16657,
+          "provider_usage_totals": {
+            "completion_tokens": 80,
+            "prompt_tokens": 0,
+            "total_tokens": 80
+          },
+          "usage_complete": true,
+          "wall_limit_is_checked_between_operations": true
+        },
+        "history_references": 0,
+        "report_reference": {
+          "artifact_root": ".local/P1-14/demo-be557c13/runs/private-runs/AGENT-4c0978d588174e999bc3a82d2cc45d85",
+          "report_artifact": {
+            "sha256": "5965fe02a609557d2dc04e1f0f2d7c34a7b738303e35b00e34e73b4439c58f1c",
+            "byte_size": 13469
+          }
+        },
+        "report_content_sha256": "9ae9f33ba92a3a7be79acc39ca1c06bf3cb215521e55b49560e56cfdb47ba6af"
+      },
+      {
+        "task_id": "FAILED",
+        "task_state": "FAILED",
+        "disposition": null,
+        "error_code": "ValueError",
+        "model_calls": 1,
+        "tool_calls": 1,
+        "elapsed_ms": 16112.258499997552,
+        "resources": {
+          "completion_tokens_reserved_or_used": 40,
+          "elapsed_ms": 16112.255999993067,
+          "model_calls": 1,
+          "prompt_characters": 8064,
+          "provider_usage_totals": {
+            "completion_tokens": 40,
+            "prompt_tokens": 0,
+            "total_tokens": 40
+          },
+          "usage_complete": true,
+          "wall_limit_is_checked_between_operations": true
+        },
+        "history_references": 0,
+        "report_reference": {
+          "artifact_root": ".local/P1-14/demo-be557c13/runs/private-runs/AGENT-c562294f511f4eee9cbbaf341642b5e3",
+          "report_artifact": {
+            "sha256": "bf4ac213779f197b7885721418bdc105c8006652051cd587ea2b49804b728c6b",
+            "byte_size": 9123
+          }
+        },
+        "report_content_sha256": "858916e12cdc376c8cc1bfea19b07a6ca1690d8f7d7002da53ee1dc00d0e43b2"
+      },
+      {
+        "task_id": "NEW",
+        "task_state": "COMPLETED",
+        "disposition": "insufficient_evidence",
+        "error_code": null,
+        "model_calls": 5,
+        "tool_calls": 5,
+        "elapsed_ms": 48314.10930000129,
+        "resources": {
+          "completion_tokens_reserved_or_used": 200,
+          "elapsed_ms": 48314.10709999909,
+          "model_calls": 5,
+          "prompt_characters": 85517,
+          "provider_usage_totals": {
+            "completion_tokens": 200,
+            "prompt_tokens": 0,
+            "total_tokens": 200
+          },
+          "usage_complete": true,
+          "wall_limit_is_checked_between_operations": true
+        },
+        "history_references": 2,
+        "report_reference": {
+          "artifact_root": ".local/P1-14/demo-be557c13/runs/private-runs/AGENT-f7197b43dcad41ff8826ccb8b45a6e76",
+          "report_artifact": {
+            "sha256": "a43f3218ed67019767af072758f180674b4437de75f492866c80d200b8c1b13e",
+            "byte_size": 56024
+          }
+        },
+        "report_content_sha256": "6485fb7839be40a6478f9a1fea4141640c9fb7a3f6538c97cca72571ea3ecaf3"
+      }
+    ],
+    "schema_removed": true,
+    "episodes": 4,
+    "adoption_records": 2,
+    "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "case_id": "DEV-PRIUS-JOINT",
+    "profile": {
+      "version": "fixed-investigation/0.1",
+      "retrieval_method": "hybrid",
+      "retrieve_k": 6,
+      "expand_k": 2,
+      "max_tool_calls": 8,
+      "max_model_calls": 6,
+      "prompt_characters": 32000,
+      "generation_tokens": 2000,
+      "total_prompt_characters": 96000,
+      "total_generation_tokens": 4000,
+      "wall_seconds": 900,
+      "repeated_action_limit": 2,
+      "no_progress_limit": 2,
+      "tool_timeout_retries": 1,
+      "context_mode": "structured",
+      "multi_agent_enabled": true,
+      "branch_timeout_seconds": 120.0
+    },
+    "wrong_year_excluded": true,
+    "failed_task_retained": true,
+    "negative_hypothesis_retained_as_proposal": true,
+    "window_event_count": 5,
+    "historical_source_verification": {
+      "status": "verified",
+      "cards_checked": 6,
+      "origin_replays": 2,
+      "semantic_support": "requires_separate_review"
+    },
+    "history_is_navigation_only": true,
+    "root": ".local/P1-14/demo-be557c13"
+  },
+  "legacy_model_responses_replayed": 8,
+  "legacy_outcomes_match": true,
+  "P1_09_request_ledger_unchanged": true,
+  "new_api_requests": 0,
+  "new_source_requests": 0,
+  "summary_model_calls": 0,
+  "actual_new_provider_usage": null,
+  "estimated_cost": null,
+  "independent_human_reviews": 0,
+  "formal_semantic_metrics": null,
+  "temporary_postgres_stopped": true,
+  "temporary_http_stopped": true,
+  "experiment_schemas_removed": true,
+  "record_content_sha256": {
+    "offline": "0fd718f6cdd177356e0b8db16d779c28c99de0985a222d40c1def6f39c7bc39c",
+    "database": "1ad07c9bfeac0d37050428faaa3aff80cca7eb8964a1586eaf017af136441a7c",
+    "replay_round": "35c9ec21f1f436b3cf7ff8e9c472a492e9306790954df8ae16b6a7741f757fbd",
+    "official": "484d48dc81fe498175ef9e892316d317f1e4eb338c2f024c9c56f7799259bf20",
+    "request_ledger": "43871e9d45b66127432601660c6f9bfd0367e1bb12a34c758292eae57e07ce1a"
+  },
+  "limits": [
+    "Historical hypotheses/outcomes are model proposals and execution observations, not independent semantic truth.",
+    "Current source verification and current E evidence are required; historical IDs cannot become current evidence aliases.",
+    "The event window uses recorded section/array order; absolute concurrent chronology is not reconstructed.",
+    "History retrieval uses literal word/character matching with no stemming or evaluated vector retrieval benefit.",
+    "Seed search is server context preparation; its separate history_preparation cost is not included in runner total_elapsed_ms.",
+    "Official sources, SQL and tools are real; generated responses and negative hypothesis labels are scripted.",
+    "The demonstration uses a 32000-character prompt cap and is not an equal-budget memory benefit comparison.",
+    "The full database suite, saved-response replay and official followup are separate recorded verification phases."
+  ]
+}

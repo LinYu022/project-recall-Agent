@@ -1,0 +1,39 @@
+{
+  "classification": "final_source_and_bundle_integrity_check_not_new_model_experiment",
+  "candidates": {
+    "baseline": {
+      "release_id": "e05ac3d6f0d8cc77373d1a0b219058f170d9b2a02fff2cefd236023f0749a98e",
+      "manifest_sha256": "9ff2b8278573bd7fc4cfb68a9ad3e3088a69703af2cd8189e7387ac1e35671d2",
+      "dataset_build_id": "42457ab3d927bde5a8ba9ecab1c86ec070b5e277da0788c2893d1b04d3e4dd5e",
+      "status": "sealed",
+      "index_artifact_sha256": "e5173f43f166e6f65d78452e9ad0fb80cd814fd2817a8a6522696d79d7e88a88",
+      "documents": 117
+    },
+    "expanded": {
+      "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+      "manifest_sha256": "87bc8e746be3a1f621016f5149937ed927e78e8bec1c20f81587c7d5398b8b80",
+      "dataset_build_id": "b84089a6465f68feab955ecaff920d444427c9f5b7a7c1e9a9e0bd37a0001980",
+      "status": "sealed",
+      "index_artifact_sha256": "46373e84c19beb44a37ed3b2a2cf079d98b86ebf15f7a6cfbcc2b8852a616982",
+      "documents": 593
+    }
+  },
+  "implementation_sha256": {
+    "releases/__init__.py": "bbd372c0032909fe76338320ea9f67dcc7d433c9168870b4d95cdd4a6c074572",
+    "releases/__main__.py": "0dee2d016afc079154ad6b42f5a8b8a247b26c7b535d6eb7706afa4bd4d95e8a",
+    "releases/bundle.py": "27dd4e2919ec07cc745f9c1ae5cfa70a2da1c1bd4f8669b56baf7c3c7accf11b",
+    "releases/catalog.py": "a06bcefa62dae0d78a832f9d93a1407f6e67803f5bc0de196e1ab2ccaeb7779e",
+    "releases/contracts.py": "568d13f04fd1489d0bf5b8408f1e3d899774984d818bcf4020a54b8b54e826e2",
+    "releases/service.py": "c062b45e8962751e4c8da56b7eaa7ea391d65dbef8b5e91e295645dbed24d0d7",
+    "app/release_api.py": "7dc9f418c348feb3c2f98bc62433216bb70e022cdb31151d3c7a1e84d67785e5",
+    "database/schema.py": "4ea4223afb4f79b56d39543224e44eb06e53cd56d590ba8addd3bfab1f3af1c5",
+    "database/migrations/versions/0004_dataset_releases.py": "b72f16a95ee9d303826df40c55e1fb4afe66661a6bb18ffe4e89e49ff3650ded",
+    "retrieval/corpus.py": "18f99972d7511f6a8cc14aedf93f7f9bf9931cbe859cc702f58d5a91f1e347a1",
+    "retrieval/vector_store.py": "207d18e3340810ea6837fdec977c9496cb57818a128b62e9b7b5cfd06839daa7",
+    "scripts/verify_releases_real.py": "0c298c35128eea867d526f28058909f16dbdd700a3ee529cafc3e90ee6024bed"
+  },
+  "plan_sha256": "04b03e1cfe4a5d855608a970eb6e5a097e8fae34a9ed52742af941b836f4a5a7",
+  "package_lock_changed": false,
+  "new_source_requests": 0,
+  "real_bundle_validation_passed": true
+}

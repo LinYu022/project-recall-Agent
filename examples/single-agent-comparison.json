@@ -1,0 +1,32 @@
+{
+  "schema_version": "single-agent-comparison/0.1",
+  "case_ids": ["DEV-PRIUS-JOINT", "DEV-DOOR-PAIR"],
+  "profile": {
+    "version": "fixed-investigation/0.1",
+    "retrieval_method": "hybrid",
+    "retrieve_k": 6,
+    "expand_k": 2,
+    "max_tool_calls": 6,
+    "max_model_calls": 6,
+    "prompt_characters": 24000,
+    "generation_tokens": 2000,
+    "total_prompt_characters": 96000,
+    "total_generation_tokens": 4000,
+    "wall_seconds": 900,
+    "repeated_action_limit": 2,
+    "no_progress_limit": 2,
+    "tool_timeout_retries": 1
+  },
+  "label_root": "evals/investigation-v0.2",
+  "split": "development",
+  "label_policy": "Labels were already inspected in P1-07. Never feed labels or draft reviews to either method.",
+  "model": "deepseek-flash",
+  "maximum_new_api_requests_for_full_comparison": 14,
+  "notes": [
+    "Preserve historical P1-07 defaults and results. Both methods receive this common upper envelope for the new comparison.",
+    "The fixed method uses its existing single-generation sequence; the agent spends calls on decisions and a final answer.",
+    "Report actual tool/model calls, observed tokens, replay modes, elapsed time and semantic review status separately.",
+    "The common evidence prompt projection omits opaque administrative task IDs; audited source identities and text remain intact.",
+    "Formal semantic metrics remain null without independent human reviews."
+  ]
+}

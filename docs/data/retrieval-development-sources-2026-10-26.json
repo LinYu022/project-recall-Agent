@@ -1,0 +1,270 @@
+{
+  "classification": "new_official_sources_for_development_not_test",
+  "snapshots": [
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "ba598567ad1643f08b435eace6f36d6f",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-23V838000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V838000",
+        "selection": {
+          "campaign_number": "23V838000"
+        },
+        "max_bytes": 2097152,
+        "usage": "development_only"
+      },
+      "request_started_at": "2026-10-26T13:37:20.775240Z",
+      "completed_at": "2026-10-26T13:37:21.308050Z",
+      "fetched_at": "2026-10-26T13:37:21.308050Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:37:20 GMT",
+        "content-length": "46845"
+      },
+      "raw": {
+        "sha256": "592db74bf3de82a4176292e7bcc11bba22bc0a487bef6adab8a4f5d6d3d7c49b",
+        "byte_size": 46845
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 31,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "161240d82d0543e49f56d2d92fc2da9f",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-23V651000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V651000",
+        "selection": {
+          "campaign_number": "23V651000"
+        },
+        "max_bytes": 2097152,
+        "usage": "development_only"
+      },
+      "request_started_at": "2026-10-26T13:37:21.311224Z",
+      "completed_at": "2026-10-26T13:37:22.097742Z",
+      "fetched_at": "2026-10-26T13:37:22.097742Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:37:21 GMT"
+      },
+      "raw": {
+        "sha256": "dbe9f561632de90f7c73380f6bef7041fd5280439c5adfdebf4786ff630909af",
+        "byte_size": 64610
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 44,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "e8655c6c820345c1a98772f22d513734",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-22V859000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V859000",
+        "selection": {
+          "campaign_number": "22V859000"
+        },
+        "max_bytes": 2097152,
+        "usage": "development_only"
+      },
+      "request_started_at": "2026-10-26T13:37:22.099250Z",
+      "completed_at": "2026-10-26T13:37:23.635611Z",
+      "fetched_at": "2026-10-26T13:37:23.635611Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:37:23 GMT",
+        "content-length": "10359"
+      },
+      "raw": {
+        "sha256": "55395febd2f958cb46ce0bd522d8c0d5bed2c5fc92f23f1fa0e15b36531b9261",
+        "byte_size": 10359
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 7,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "b571c65605354e6984b59ebffe1adee5",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-23V080000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V080000",
+        "selection": {
+          "campaign_number": "23V080000"
+        },
+        "max_bytes": 2097152,
+        "usage": "development_only"
+      },
+      "request_started_at": "2026-10-26T13:37:23.636612Z",
+      "completed_at": "2026-10-26T13:37:24.254089Z",
+      "fetched_at": "2026-10-26T13:37:24.254089Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:37:23 GMT",
+        "content-length": "5157"
+      },
+      "raw": {
+        "sha256": "443d8944fb8336ed0e3709eec406157e4cca4b1014961bb2fc4f8cdde8063b60",
+        "byte_size": 5157
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 4,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    }
+  ],
+  "discovery_snapshots": [
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "3aec959da71d44aa9cf4cc94c9b54573",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-23V838000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V838000",
+        "selection": {
+          "campaign_number": "23V838000"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T13:36:13.673952Z",
+      "completed_at": "2026-10-26T13:36:15.361263Z",
+      "fetched_at": "2026-10-26T13:36:15.361263Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:36:14 GMT",
+        "content-length": "46845"
+      },
+      "raw": {
+        "sha256": "592db74bf3de82a4176292e7bcc11bba22bc0a487bef6adab8a4f5d6d3d7c49b",
+        "byte_size": 46845
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 31,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "7014b3de74094ba0b4fbb530eade2872",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-23V651000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V651000",
+        "selection": {
+          "campaign_number": "23V651000"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T13:36:15.399068Z",
+      "completed_at": "2026-10-26T13:36:16.391266Z",
+      "fetched_at": "2026-10-26T13:36:16.391266Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:36:15 GMT"
+      },
+      "raw": {
+        "sha256": "dbe9f561632de90f7c73380f6bef7041fd5280439c5adfdebf4786ff630909af",
+        "byte_size": 64610
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 44,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "867e831636b749459b1e08ce5fcaa1f8",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-22V859000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V859000",
+        "selection": {
+          "campaign_number": "22V859000"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T13:36:16.424194Z",
+      "completed_at": "2026-10-26T13:36:17.176227Z",
+      "fetched_at": "2026-10-26T13:36:17.176227Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:36:16 GMT",
+        "content-length": "10359"
+      },
+      "raw": {
+        "sha256": "55395febd2f958cb46ce0bd522d8c0d5bed2c5fc92f23f1fa0e15b36531b9261",
+        "byte_size": 10359
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 7,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    },
+    {
+      "schema_version": "raw-snapshot/0.1",
+      "snapshot_id": "7cec37ea5708412d835675255003b011",
+      "source": {
+        "source_id": "NHTSA-API-CAMPAIGN-23V080000",
+        "kind": "recall_api",
+        "url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=23V080000",
+        "selection": {
+          "campaign_number": "23V080000"
+        },
+        "max_bytes": 2097152,
+        "usage": "exploration_only"
+      },
+      "request_started_at": "2026-10-26T13:36:17.205893Z",
+      "completed_at": "2026-10-26T13:36:17.874423Z",
+      "fetched_at": "2026-10-26T13:36:17.874423Z",
+      "status": "captured",
+      "http_status": 200,
+      "http_headers": {
+        "content-type": "application/json;charset=UTF-8",
+        "date": "Mon, 26 Oct 2026 13:36:17 GMT",
+        "content-length": "5157"
+      },
+      "raw": {
+        "sha256": "443d8944fb8336ed0e3709eec406157e4cca4b1014961bb2fc4f8cdde8063b60",
+        "byte_size": 5157
+      },
+      "inspector_version": "raw-container/0.1",
+      "record_count": 4,
+      "error_code": null,
+      "version_public_at": null,
+      "historical_evidence": "local_fetch_only"
+    }
+  ],
+  "note": "Initial discovery receipts retain exploration_only; explicit development receipts captured after adding development_only to SourceSpec. No receipt was modified."
+}

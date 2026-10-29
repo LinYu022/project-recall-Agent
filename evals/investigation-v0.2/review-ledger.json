@@ -1,0 +1,43 @@
+{
+  "schema_version": "investigation-review-ledger/0.1",
+  "independent_human_review_count": 0,
+  "entries": [
+    {
+      "id": "SEM-002",
+      "case_id": "DEV-DOOR-PAIR C005 / DEV-SCOPE-EXCLUSION C005",
+      "round": "final_selected_responses",
+      "issue": "Some final claims blur a documented configuration requirement with uncertainty about whether an individual vehicle satisfies that requirement.",
+      "implementation_agent_judgment": "partial support: retain the known chrome-accessory or 3.5L requirement, and identify individual membership/configuration satisfaction as unknown; do not equate unknown membership with absent source conditions.",
+      "engineering_action": "Retain original final answers and attributed partial-support draft judgments; do not hide the remaining semantic limitation or treat execution checks as full quality approval.",
+      "human_adjudication": null,
+      "status": "pending_independent_review"
+    },
+    {
+      "id": "SEM-001",
+      "case_id": "DEV-DOOR-PAIR",
+      "round": "round3",
+      "issue": "The real model swapped the campaign identifiers for two correctly quoted defect descriptions: E003 belongs to 17V652000 (cable/water/freezing), E008 to 17V331000 (accessory cover/side impact).",
+      "implementation_agent_judgment": "C001 and C002 are overstated/unsupported in their identifier-to-defect association despite valid citations; mandatory source identity was absent from the model-facing text-card projection.",
+      "engineering_action": "Include readable source IDs in all text-card payloads and retain the mistaken original response; later development generation is a distinct round.",
+      "human_adjudication": null,
+      "status": "pending_independent_review"
+    },
+    {
+      "id": "LABEL-001",
+      "case_id": "DEV-COUNT-86 / DEV-PRIUS-JOINT",
+      "issue": "v0.1 combines independently assessable reference conclusions, making completeness depend on whether the answer combines sentences.",
+      "implementation_agent_judgment": "Split closure/monitoring and count/rate/causation in v0.2 without changing admissible evidence or dispositions; retain v0.1 and rescore every saved round.",
+      "human_adjudication": null,
+      "status": "development_revision_applied_independent_review_pending"
+    },
+    {
+      "id": "HUMAN-001",
+      "case_id": "all_8_development_cases",
+      "issue": "No independent human has assessed semantic support, counterevidence handling, completeness or new equivalent evidence.",
+      "implementation_agent_judgment": "Draft reviews are attributed to the implementation agent. Blind export/import and scoring are implemented; formal semantic metrics stay null.",
+      "human_adjudication": null,
+      "status": "pending_independent_review"
+    }
+  ],
+  "note": "This is a truthful pending-review ledger, not fabricated human adjudication or a claim that implementation-agent judgments are independent."
+}

@@ -1,0 +1,98 @@
+{
+  "case_id": "TEST-21V652000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "995dd521423c756c4af618853bded7545d9b35d807e9917deb93a83610fc0677",
+          "unit_id": "f9fedeb80d60be6b27ac4edb7684a9d2dfbb6d848a4c723d52fa59514e540f25",
+          "start": 0,
+          "end": 357,
+          "quote_sha256": "e5be2240e7bcc95019d0ee9b4cd663d1a85ed84654856561d207fd5374a6ee42"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "995dd521423c756c4af618853bded7545d9b35d807e9917deb93a83610fc0677",
+          "unit_id": "258b6185243a60555ca5d695015b919de0982605d0d67c7ece6e92efab84f178",
+          "start": 0,
+          "end": 82,
+          "quote_sha256": "8515c4a1b2595b733471f19551518d4b0870fe1bfa3396671b375d2c3386b46e"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "995dd521423c756c4af618853bded7545d9b35d807e9917deb93a83610fc0677",
+          "unit_id": "e37631d8c50f89704d93995bdffb22e406c72688aeb584dca07b61e4cd9936a2",
+          "start": 0,
+          "end": 227,
+          "quote_sha256": "c7383ed269320015753197127e400331827d8273e80755bfa72875b300639c48"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SUMMARY",
+      "statement": "Ford Motor Company (Ford) is recalling certain 2021 Explorer and Lincoln Aviator vehicles.  The side air bag attachment weld studs could detach during the deployment of the side air bag, resulting in an improper deployment.  As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle Safety Standard 214, \"Side Impact Protection\".",
+      "evidence_sets": [
+        [
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CONSEQUENCE",
+      "statement": "Improper deployment of a side air bag increases the risk of injury during a crash.",
+      "evidence_sets": [
+        [
+          "consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-REMEDY",
+      "statement": "Dealers will replace the side air bag assemblies, free of charge.  Owner notification letters were mailed September 10, 2021.  Owners may contact Ford customer service at 1-866-436-7332.  Ford's number for this recall is 21C19.",
+      "evidence_sets": [
+        [
+          "remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

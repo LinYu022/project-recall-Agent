@@ -1,0 +1,1320 @@
+{
+  "schema_version": "quality-confirmation-analysis/0.1",
+  "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+  "run_index_sha256": "1163644f6cd9d6a8431cb31bbba96f1fa33957df5df14526dfbeb6939464ed72",
+  "provider_ledger_sha256": "944ce606fa97c6ab8344b4f4e09a61d091292b15ee50e152818ed5504260db51",
+  "frozen_units": 140,
+  "observed_units": 140,
+  "states": {
+    "completed": 72,
+    "guarded": 40,
+    "failed": 28
+  },
+  "partial_snapshot": false,
+  "by_arm": {
+    "fixed": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 25,
+        "guarded": 10
+      },
+      "provider_requests": 15,
+      "known_output_tokens": 10268,
+      "observed_latency_median_ms": 12659.525700000813,
+      "actual_human_component_reviews": 1,
+      "actual_human_stage_reviews": 4,
+      "actual_human_readings_with_pending_components": 1,
+      "whole_population_semantic_metrics": null
+    },
+    "single_agent": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 15,
+        "failed": 10,
+        "guarded": 10
+      },
+      "provider_requests": 32,
+      "known_output_tokens": 9514,
+      "observed_latency_median_ms": 13144.450799998594,
+      "actual_human_component_reviews": 0,
+      "actual_human_stage_reviews": 4,
+      "actual_human_readings_with_pending_components": 0,
+      "whole_population_semantic_metrics": null
+    },
+    "parallel_tools": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 15,
+        "guarded": 10,
+        "failed": 10
+      },
+      "provider_requests": 31,
+      "known_output_tokens": 10229,
+      "observed_latency_median_ms": 12954.798299993854,
+      "actual_human_component_reviews": 0,
+      "actual_human_stage_reviews": 4,
+      "actual_human_readings_with_pending_components": 0,
+      "whole_population_semantic_metrics": null
+    },
+    "multi_agent": {
+      "frozen_units": 35,
+      "states": {
+        "completed": 17,
+        "guarded": 10,
+        "failed": 8
+      },
+      "provider_requests": 38,
+      "known_output_tokens": 12317,
+      "observed_latency_median_ms": 15505.049400002463,
+      "actual_human_component_reviews": 0,
+      "actual_human_stage_reviews": 4,
+      "actual_human_readings_with_pending_components": 0,
+      "whole_population_semantic_metrics": null
+    }
+  },
+  "paired": [
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "end_to_end_ms",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -1976.449102859312,
+      "interval_95": [
+        -4622.66250000144,
+        881.3861542817905
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "provider_requests",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 0.4857142857142857,
+      "interval_95": [
+        0.02857142857142857,
+        0.9428571428571428
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "provider_output_tokens",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -21.542857142857137,
+      "interval_95": [
+        -199.62857142857143,
+        156.54285714285714
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "single_agent",
+      "metric": "formal_task_success",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 0,
+      "missing_pairs": 35,
+      "mean_delta": null,
+      "interval_95": null,
+      "limitation": "missing_pairs_no_complete_denominator_comparison"
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "end_to_end_ms",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -2092.24474857079,
+      "interval_95": [
+        -4461.015505712879,
+        383.9154485712893
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "provider_requests",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 0.45714285714285713,
+      "interval_95": [
+        0.08571428571428572,
+        0.8285714285714285
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "provider_output_tokens",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": -1.1142857142857197,
+      "interval_95": [
+        -142.37142857142857,
+        155.9142857142857
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "parallel_tools",
+      "metric": "formal_task_success",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 0,
+      "missing_pairs": 35,
+      "mean_delta": null,
+      "interval_95": null,
+      "limitation": "missing_pairs_no_complete_denominator_comparison"
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "end_to_end_ms",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 777.361677142991,
+      "interval_95": [
+        -1252.8827142822722,
+        2647.2305800009053
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "provider_requests",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 0.6571428571428571,
+      "interval_95": [
+        0.22857142857142856,
+        1.0285714285714285
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "provider_output_tokens",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 5,
+      "missing_pairs": 0,
+      "mean_delta": 58.54285714285715,
+      "interval_95": [
+        -109.19999999999999,
+        208.31428571428572
+      ],
+      "limitation": null
+    },
+    {
+      "left": "fixed",
+      "right": "multi_agent",
+      "metric": "formal_task_success",
+      "statistical_unit": "equally_weighted_event_cluster_mean_of_paired_task_and_repeat_deltas",
+      "paired_clusters": 0,
+      "missing_pairs": 35,
+      "mean_delta": null,
+      "interval_95": null,
+      "limitation": "missing_pairs_no_complete_denominator_comparison"
+    }
+  ],
+  "paired_comparison_limits": "Time and token/request intervals include failures and guards. No semantic benefit inferred from faster failures; five clusters give limited precision and no coverage of old ablation arms.",
+  "provider": {
+    "requests": 116,
+    "maximum_requests": 375,
+    "states": {
+      "completed": 116
+    },
+    "known_usage_subtotal": {
+      "prompt_tokens": 454045,
+      "completion_tokens": 42328,
+      "total_tokens": 496373
+    },
+    "complete_usage": {
+      "prompt_tokens": 454045,
+      "completion_tokens": 42328,
+      "total_tokens": 496373
+    },
+    "requests_without_complete_usage": 0,
+    "reserved_or_actual_output_tokens": 42328,
+    "maximum_root_input_characters_observed": 83914,
+    "request_and_root_budgets_respected": true,
+    "actual_cost": null
+  },
+  "human_rows": [
+    {
+      "case_id": "QTEST-25V065000-FACTS",
+      "source_packet_sha256": "4d4ba23c733576700d5d302a0ffa8e9112d9dd2ddb7564069f892e639e7f6242",
+      "human_source_sha256": "324e1f6b9e1e6fe0c95c6a316478383a7866fc081caa53e604db4a0c13d3ee59",
+      "atoms": [
+        {
+          "atom_id": "C001-N01",
+          "navigation_ids": [
+            "C001-A01",
+            "C001-A02",
+            "C001-A03"
+          ],
+          "verdict": "partial",
+          "support_ids": [
+            "E002"
+          ],
+          "basis": "Human retained minor omission of explicitly required certain qualifier.",
+          "claim_id": "C001",
+          "start": 0,
+          "end": 93,
+          "quote": "在冻结来源中，2025款Hyundai IONIQ 5 \"N\"车辆若配备左脚踏制动（LFB）功能，其集成电子制动（IEB）与整车控制单元（VCU）软件在LFB启用时可能导致制动性能下降；"
+        },
+        {
+          "atom_id": "C001-N02",
+          "navigation_ids": [
+            "C001-A04",
+            "C001-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E002"
+          ],
+          "claim_id": "C001",
+          "start": 93,
+          "end": 132,
+          "quote": "该描述限于召回25V065000所述范围，不证明任何具体车辆适用或存在该缺陷。"
+        },
+        {
+          "atom_id": "C002-N01",
+          "navigation_ids": [
+            "C002-A01"
+          ],
+          "verdict": "unsupported",
+          "support_ids": [
+            "E003"
+          ],
+          "basis": "Actual C002 citation E003 contains no LFB trigger. E002 in C001 supports the fact but is not a C002 citation; no contradiction or source-wide factual falsity inferred.",
+          "claim_id": "C002",
+          "start": 0,
+          "end": 15,
+          "quote": "触发条件为LFB功能被激活时；"
+        },
+        {
+          "atom_id": "C002-N02",
+          "navigation_ids": [
+            "C002-A02",
+            "C002-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E003"
+          ],
+          "claim_id": "C002",
+          "start": 15,
+          "end": 40,
+          "quote": "制动性能下降可增加停车所需距离，从而提高碰撞风险，"
+        },
+        {
+          "atom_id": "C002-N03",
+          "navigation_ids": [
+            "C002-A04"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E003"
+          ],
+          "claim_id": "C002",
+          "start": 40,
+          "end": 60,
+          "quote": "但该来源未给出故障发生率或个体因果结论。"
+        },
+        {
+          "atom_id": "C003-N01",
+          "navigation_ids": [
+            "C003-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C003",
+          "start": 0,
+          "end": 22,
+          "quote": "补救措施为经销商免费更新IEB与VCU软件；"
+        },
+        {
+          "atom_id": "C003-N02",
+          "navigation_ids": [
+            "C003-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C003",
+          "start": 22,
+          "end": 50,
+          "quote": "未获补救的车主被建议在完成更新补救前不要使用LFB功能，"
+        },
+        {
+          "atom_id": "C003-N03",
+          "navigation_ids": [
+            "C003-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C003",
+          "start": 50,
+          "end": 85,
+          "quote": "已获补救的车主被建议在完成更新补救前不要使用“N”E-shift功能。"
+        },
+        {
+          "atom_id": "C004-N01",
+          "navigation_ids": [
+            "C004-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C004",
+          "start": 0,
+          "end": 24,
+          "quote": "该召回已被NHTSA召回编号25V-235取代，"
+        },
+        {
+          "atom_id": "C004-N02",
+          "navigation_ids": [
+            "C004-A02"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C004",
+          "start": 24,
+          "end": 47,
+          "quote": "且已在此前召回下维修过的车辆仍需完成新的补救；"
+        },
+        {
+          "atom_id": "C004-N03",
+          "navigation_ids": [
+            "C004-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E004"
+          ],
+          "claim_id": "C004",
+          "start": 47,
+          "end": 66,
+          "quote": "车主通知信于2025年3月12日寄出。"
+        },
+        {
+          "atom_id": "C005-N01",
+          "navigation_ids": [
+            "C005-A01"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C005",
+          "start": 0,
+          "end": 21,
+          "quote": "冻结来源仅覆盖允许的冻结来源中选定的版本，"
+        },
+        {
+          "atom_id": "C005-N02",
+          "navigation_ids": [
+            "C005-A02",
+            "C005-A03"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C005",
+          "start": 21,
+          "end": 43,
+          "quote": "未提供具体车辆识别、生产日期或配置匹配信息，"
+        },
+        {
+          "atom_id": "C005-N03",
+          "navigation_ids": [
+            "C005-A04",
+            "C005-A05"
+          ],
+          "verdict": "supported",
+          "support_ids": [
+            "E001"
+          ],
+          "claim_id": "C005",
+          "start": 43,
+          "end": 76,
+          "quote": "因此不能确认任何个别车辆适用该召回，也不能推算故障率或普遍安全性。"
+        }
+      ],
+      "atom_counts": {
+        "partial": 1,
+        "supported": 12,
+        "unsupported": 1
+      },
+      "obligations": {
+        "R-25V065000-SUMMARY": "partially_satisfied",
+        "R-25V065000-CONSEQUENCE": "satisfied",
+        "R-25V065000-REMEDY": "satisfied"
+      },
+      "all_requirements": "partially_satisfied_with_minor_caveats",
+      "exhaustive": true,
+      "original_candidate_judgments": {
+        "C001-A01": "not_evaluable_adverbial_fragment_requires_merge",
+        "C001-A02": "partial_missing_certain_requires_condition_merge",
+        "C001-A03": "supported_requires_scope_condition_merge",
+        "C001-A04": "supported_requires_boundary_merge",
+        "C001-A05": "supported",
+        "C002-A01": "unsupported_by_actual_citation_E003_missing_E002",
+        "C002-A02": "supported_requires_risk_chain_merge",
+        "C002-A03": "partial_requires_preceding_cause_merge",
+        "C002-A04": "supported",
+        "C003-A01": "supported",
+        "C003-A02": "supported",
+        "C003-A03": "supported",
+        "C004-A01": "supported",
+        "C004-A02": "supported",
+        "C004-A03": "supported",
+        "C005-A01": "supported",
+        "C005-A02": "partial_requires_parallel_object_merge",
+        "C005-A03": "not_evaluable_predicateless_fragment_requires_merge",
+        "C005-A04": "supported",
+        "C005-A05": "supported_requires_subject_and_premise_merge"
+      },
+      "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "citation_roles": [
+        {
+          "atom_ids": [
+            "C001-N01",
+            "C001-N02"
+          ],
+          "alias": "E002",
+          "role": "direct",
+          "qualification": "C001-N01 is partial because certain was omitted."
+        },
+        {
+          "atom_ids": [
+            "C002-N01"
+          ],
+          "alias": "E003",
+          "role": "does_not_support_named_LFB_trigger"
+        },
+        {
+          "atom_ids": [
+            "C002-N02",
+            "C002-N03"
+          ],
+          "alias": "E003",
+          "role": "direct"
+        },
+        {
+          "atom_ids": [
+            "C003-N01",
+            "C003-N02",
+            "C003-N03",
+            "C004-N01",
+            "C004-N02",
+            "C004-N03"
+          ],
+          "alias": "E004",
+          "role": "direct"
+        },
+        {
+          "atom_ids": [
+            "C005-N01",
+            "C005-N02",
+            "C005-N03"
+          ],
+          "alias": "E001",
+          "role": "direct"
+        }
+      ],
+      "source_path": "docs/experiments/P1-16-confirmation-human-dd150e5633dc.json"
+    }
+  ],
+  "human_stage_rows": [
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "single_agent:QTEST-25V065000-YEAR:1",
+      "group_id": "6afbbdc6d99a7990686c15ff1a556bc7a43e947d858616bcb296a5dfff72345e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "parallel_tools:QTEST-25V065000-YEAR:1",
+      "group_id": "6afbbdc6d99a7990686c15ff1a556bc7a43e947d858616bcb296a5dfff72345e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S01",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "multi_agent:QTEST-25V065000-YEAR:1",
+      "group_id": "6afbbdc6d99a7990686c15ff1a556bc7a43e947d858616bcb296a5dfff72345e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S02",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "fixed:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "6e7d01be09d97c76dec43530c18d4ce87531224100a1c128b81d016330bfe1df",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "single_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "9bcdca901c8b77a475e15c73b9ae32d5ee919e60c529124e6beba1ffc9e57a6b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "parallel_tools:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "9bcdca901c8b77a475e15c73b9ae32d5ee919e60c529124e6beba1ffc9e57a6b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S03",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-NO-COMPLAINT-EXPOSURE-DATA": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "insufficient_evidence 方向正确，但实际答案没有说明缺少投诉全集与车辆分母暴露量。",
+      "cell_id": "multi_agent:QTEST-25V065000-INSUFFICIENT:1",
+      "group_id": "9bcdca901c8b77a475e15c73b9ae32d5ee919e60c529124e6beba1ffc9e57a6b",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "fixed:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "single_agent:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "parallel_tools:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S04",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-TIME-SCOPE-CLARIFICATION": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "停止并要求 accept_frozen_time，未自动接受或编造历史时点。",
+      "cell_id": "multi_agent:QTEST-25V065000-TIME:1",
+      "group_id": "ac9e9e16dd728aa4e3a2f297f868bef49536ef3dc9bf65d76184053b5073250e",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S05",
+      "disposition_verdict": "appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-BOUNDED-ZERO-MATCH": "satisfied"
+      },
+      "all_requirements_verdict": "satisfied",
+      "reason": "有界零匹配解释充分，保留年份与车型。",
+      "cell_id": "fixed:QTEST-25V065000-YEAR:1",
+      "group_id": "bd7507614fc3cf3f24c51cb1775f9bf9a33c2e059ee4f6ff0acfed1e0aa479de",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "fixed:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "single_agent:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "parallel_tools:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    },
+    {
+      "review_id": "S06",
+      "disposition_verdict": "partially_appropriate",
+      "disposition_code_or_guard_direction_appropriate": true,
+      "stage_obligations": {
+        "R-CLARIFY-INDIVIDUAL-CONDITIONS": "partially_satisfied"
+      },
+      "all_requirements_verdict": "partially_satisfied",
+      "reason": "正确停止并要求生产日期/配置，但澄清提示没有说明即便适用并完成召回也不能证明永久安全。",
+      "cell_id": "multi_agent:QTEST-25V065000-CONDITIONS:1",
+      "group_id": "f13fc5cfa6310abe458d78a009a0e91a5ff74e6d17a7c7076c1d664a6fc63fe1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "human_source_sha256": "4f9d0edaeaa886149f82a57c904d2018297e7456b16b1006f818d49c21c7a748"
+    }
+  ],
+  "human_readings_pending_components": [
+    {
+      "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+      "source_kind": "actual_human_reply",
+      "reviewer_kind": "human",
+      "reviewer_id": "learner-01",
+      "cell_id": "fixed:QTEST-25V065000-PAIR:1",
+      "case_id": "QTEST-25V065000-PAIR",
+      "blind_id": "BLIND-063f11838e34",
+      "candidate_packet": ".local/q16/human-confirmation/BLIND-063f11838e34-reading.json",
+      "source_packet": ".local/q16/confirmation-review-snapshot5/packets/BLIND-063f11838e34.json",
+      "source_packet_sha256": "f8310f3a097257eddc30d4e8c97bf8e3ebf780d6ed8ef8c0315ebd51ef6c4f46",
+      "observation_sha256": "57304467205524482a521c2dd2f5e8c1b916e114675c5a07c68650716feeaa95",
+      "schema_version": "actual-human-confirmation-reading-receipt/0.1",
+      "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+      "source_question_ids": [
+        "PRIVATE_REVIEW_REFERENCE",
+        "PRIVATE_REVIEW_REFERENCE"
+      ],
+      "complete_task_reading": true,
+      "initial_review_path": "docs/experiments/P1-16-confirmation-human-063f11838e34-initial.json",
+      "initial_review_sha256": "09b8492f16673f258b421f9a009945f27cf83096725a4a99c7f778102090225e",
+      "adjudication_path": "docs/experiments/P1-16-confirmation-human-063f11838e34-adjudication-v1.json",
+      "adjudication_sha256": "5821824b543cebfdfb4f5586d6a45b70aca6971dc47200a722c60178764a8ee6",
+      "disposition_appropriate": true,
+      "core_task_complete": true,
+      "all_requirements_verdict": "degraded_due_to_citation_support_misalignment_plus_missing_certain",
+      "atomic_grades_complete": false,
+      "pending_components": [
+        "Final atomic layout not yet explicitly confirmed as a unique table; human supplied optional merges.",
+        "C005-A02 exact category unsupported versus not_evaluable left unresolved in actual revision.",
+        "Five relation-type judgments not fully reconciled: symptom_similar card is candidate although prose shares a braking symptom."
+      ],
+      "unambiguous_adjudicated_findings": [
+        {
+          "navigation_id": "C005-A02",
+          "evidence_alias": "E002",
+          "finding": "does_not_directly_support_definite_replacement",
+          "source_question_id": "PRIVATE_REVIEW_REFERENCE"
+        }
+      ],
+      "limits": "Counts an actual completed reading, not complete atomic/relation measurement or a passing task. Original support judgment is superseded by the separately archived actual recheck.",
+      "human_source_sha256": "f7f8ff6627cef87901e2a8200ca7af7d3609d5e9696206b7511f55ad22e47f2e"
+    }
+  ],
+  "failed_execution_contract_rechecks": [
+    {
+      "cell_id": "single_agent:QTEST-25V065000-PAIR:1",
+      "observation_sha256": "c941cac0f3172cbee80e0ad013d1de801d13881694b58063a4b02a5b7c7c0fb3",
+      "report_sha256": "ab6477a1b2e18448ea36c04cf7430066c6b7110c5d8a2cf16c4d0caf9f1f8a27",
+      "diagnosis": {
+        "kind": "saved_proposal_constraint_failure",
+        "reason": "claim lacks evidence of its declared kind"
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V935000-FACTS:1",
+      "observation_sha256": "40be1778f44a2426ba1c860cd5a2824472e696c7d1be90b559926db635e81467",
+      "report_sha256": "8ca9d762e4b0bcc879959eb5df5db51bf34a268298a8faee921c2ab70cbca0c3",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V935000-COUNTER:1",
+      "observation_sha256": "bb7834f6badeb28dd7b1174227d99f8f9708e9c62c58fa6d53f2a5ef0b146442",
+      "report_sha256": "f5f1c964380baf49c89d2dc54727bcb61f0272437c4f39374138c90425966599",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V935000-PAIR:1",
+      "observation_sha256": "48442c517a01fe798fa9984e0c7cd8cb582066b3ff13f2412882359f13490a8d",
+      "report_sha256": "b619b4ef438f28de4b68dd986e795d9b275d451f067faa19f83adf32561aa9aa",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V744000-FACTS:1",
+      "observation_sha256": "31338ea9afe321a726936df8306e77ce09ea331db076f971c74c39de4a158b66",
+      "report_sha256": "eba4f1c80ce30309bfc3baeb3eced6fd67569f738769ca1fb8490364e68dceaf",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V744000-COUNTER:1",
+      "observation_sha256": "98df06756c59783c00074108609c22d7327edc89bc26b02c63b80581ad17403c",
+      "report_sha256": "4b50b94847766ac8b423a8edc868f70d457db0844699ed5766f483cff2d61c40",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V744000-PAIR:1",
+      "observation_sha256": "775d09b9a4161ec771320d758b0a173788eedcd32c423b58cccb2c3fad5f1364",
+      "report_sha256": "8e2e485474338e54989d69ab5b7909fb37e48acf03fd61bfeed0399fba242635",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V104000-FACTS:1",
+      "observation_sha256": "65979b6c89e032536fc7b6f553a573927966cd693294325b53588eeae6f19dab",
+      "report_sha256": "0043a11c7ef260ac1c31abadd166e7d3125c186e5403039bd5296d21fb86d9de",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V104000-COUNTER:1",
+      "observation_sha256": "cbf432c9f2106f3de25d355f33cd3cb5d4672cf05bf2eb8166e20ba504b0c47c",
+      "report_sha256": "7a3f297b043137a1799f84743455a897951a31d90d06d878448823ab3f7e84fe",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "single_agent:QTEST-24V104000-PAIR:1",
+      "observation_sha256": "7186e707cca18db81b93d0bf6fe8507d9470a5807192458d7c8949df9e955b6c",
+      "report_sha256": "d568bb3d717b16ca2b0ac33f1994910836a3e05ae6e4e7115f6906b79ec932df",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V935000-FACTS:1",
+      "observation_sha256": "069b2e6f27f68bb4e038052cc4bc235075b2b716e7b9a5c38451efb5280228fd",
+      "report_sha256": "946fe93f350a3d5438ddba85a4cb4211b1a269d4a6dc770ebd4d54f66783be47",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V935000-COUNTER:1",
+      "observation_sha256": "42642704c0dafb01a1f0509e0df80929b4680bf42a718bd3eb191165119908b1",
+      "report_sha256": "09b6ea19373e277a6d4f0f828cb7739d35b3bb42bbaa7f0e7da3ec94d7b860b0",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V935000-PAIR:1",
+      "observation_sha256": "a1901839c4e2e2320a30a79bb098018c35027aa4d7da8bddb094bc7f5ecec59c",
+      "report_sha256": "a75fa8522f89caa2cb4c8fb26aae045b0860e72ff37fe69ccdce11fe3eb2fb1e",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-25V058000-FACTS:1",
+      "observation_sha256": "7ce3c56ce5da17ec9d9a59b873c16fad71fa3c65e804e5842bc379c67e88df99",
+      "report_sha256": "ff6b2bdad532e2d2d2b5e40b39eb55a5d830174db858b11ed53b183b0d5e35a1",
+      "diagnosis": {
+        "kind": "saved_proposal_constraint_failure",
+        "reason": "claim lacks evidence of its declared kind"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-25V058000-PAIR:1",
+      "observation_sha256": "19ed1d17472a5acf4a8ed9cced3aa3030e6b5bb32788a0193bb3c072c5fd169b",
+      "report_sha256": "d43fb7fff24837671ee6f2affe6d2aa5ed546fa9951df487cc598da74060cb45",
+      "diagnosis": {
+        "kind": "remaining_runtime_cause_unresolved",
+        "last_action": "batch"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V744000-FACTS:1",
+      "observation_sha256": "309aede40928b1d3208df32f5ba9f880a775c64f2523dc38ed5c558782c6a796",
+      "report_sha256": "13321ecb9e8eeb465612001abac6b4741a8a300f3353356ff7c0a49c93928242",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V744000-COUNTER:1",
+      "observation_sha256": "3b73bb4f90e995ca2eca17856f8f99988f9a722ca58382fd8e27f0dd4d2047f1",
+      "report_sha256": "5f58628669e2be1d6729b3a1cabd69298348e9ef1f07f92c3766349c331cfe28",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V104000-FACTS:1",
+      "observation_sha256": "7fa173a113daa9eb16b5d28a816946078e9859d84020af422680a69dd3a3d320",
+      "report_sha256": "0add1a7251c5c5597f7b8b15f1919ca406f5e76caf71e3b049a1e7316227f235",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V104000-COUNTER:1",
+      "observation_sha256": "ee25d90b0284d447c70ee6c3518001119984f7085f4bda7d0485c4efc952ad3b",
+      "report_sha256": "134d088d3ad2ce7a27dcafc50511c86de8315a2118df9cb19e3ac6f388426a59",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "finish"
+      }
+    },
+    {
+      "cell_id": "parallel_tools:QTEST-24V104000-PAIR:1",
+      "observation_sha256": "903fa094f7f3d61664f683d142446168bc2b40d6ec285c328eb1b5f36715d04a",
+      "report_sha256": "abcf2c5c2f9eea98d980cac90ee4dd53dcc46f0284745286b9282a4a536ab6a9",
+      "diagnosis": {
+        "kind": "unavailable_tool_requested",
+        "action": "read"
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V935000-FACTS:1",
+      "observation_sha256": "3f45ff91f1a3c5338b3c2b131de4268ed3c710c780678be951ae169e3968a4d4",
+      "report_sha256": "00807f0f6db23d3690c1ba51fa9e620d098fe793df64c972b9ede1663604a47e",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V935000-COUNTER:1",
+      "observation_sha256": "67a931f4d79c801c7fddb8bbad891a14f2d6a051b0d0ed63c499cbcca51e333e",
+      "report_sha256": "a46a76def866ae6fed1150dd1b8543d66e531ceabbf6217d90bdeb15f9701503",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-25V058000-PAIR:1",
+      "observation_sha256": "6fd96892c2c72ccdedfa79d590e492129a4589e316801351d6539baf3e204790",
+      "report_sha256": "d1ae7ed8e2a07db1d75c1c7f373f465fe1674986f5837fcce9514ffc7a8fa0fa",
+      "diagnosis": {
+        "kind": "unresolved_runtime_or_branch_failure",
+        "error_code": "ValueError"
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V744000-FACTS:1",
+      "observation_sha256": "81b07bb30f7eb1f2295cd903eff1cbd0d0da6eebca2625094e3831b3f0feecc1",
+      "report_sha256": "ee8a628e266024f8e31c993ca55b4ca49b4e2385d5786d5175cdf23792fbc4bf",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V744000-COUNTER:1",
+      "observation_sha256": "a33b3b798ee7e7b34b0648b7baa1390cdf0071738d677da373679596d73d1046",
+      "report_sha256": "b1c3f666974449d09dc5f93dacf6d6349a3521019ffa5500510c2c0908e6415f",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V744000-PAIR:1",
+      "observation_sha256": "765ccea8b3919041f248d5adea5a7d44918e207d5455b6a314f576ddf3ff5218",
+      "report_sha256": "a09896ecb0c3a5ff987e330791607b428c8f88e8e37acef52064ed902986920d",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V104000-FACTS:1",
+      "observation_sha256": "2a631de1e89d1b991d37f0dfcf9a94377f25e27805c942280b75061bffd173c1",
+      "report_sha256": "dff8545632f1129d019b9387b240a7f1f9653ac36740456cab44ea4e81c2fced",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    },
+    {
+      "cell_id": "multi_agent:QTEST-24V104000-COUNTER:1",
+      "observation_sha256": "4f3cf20a72881bb64be33d163ccd95663aaf9e87d620c3b977007ed72597025f",
+      "report_sha256": "110487f42b81ea590fc81ff49ecad3a55b1a15e6488ef9b4be3c8d99ca2a27e7",
+      "diagnosis": {
+        "kind": "saved_decision_contract_failure",
+        "errors": [
+          {
+            "type": "value_error",
+            "loc": [],
+            "msg": "Value error, read requires exactly one registered artifact or evidence alias"
+          }
+        ]
+      }
+    }
+  ],
+  "mandatory_human_coverage": {
+    "predeclared": 80,
+    "component_reviews_completed": 1,
+    "stage_reviews_completed": 9,
+    "readings_pending_component_adjudication": 1,
+    "any_actual_human_review_completed": 11,
+    "remaining_cell_ids": [
+      "fixed:QTEST-24V104000-CONDITIONS:1",
+      "fixed:QTEST-24V104000-COUNTER:1",
+      "fixed:QTEST-24V104000-FACTS:1",
+      "fixed:QTEST-24V104000-INSUFFICIENT:1",
+      "fixed:QTEST-24V104000-PAIR:1",
+      "fixed:QTEST-24V104000-TIME:1",
+      "fixed:QTEST-24V104000-YEAR:1",
+      "fixed:QTEST-24V744000-CONDITIONS:1",
+      "fixed:QTEST-24V744000-COUNTER:1",
+      "fixed:QTEST-24V744000-FACTS:1",
+      "fixed:QTEST-24V744000-INSUFFICIENT:1",
+      "fixed:QTEST-24V744000-PAIR:1",
+      "fixed:QTEST-24V744000-TIME:1",
+      "fixed:QTEST-24V744000-YEAR:1",
+      "fixed:QTEST-24V935000-CONDITIONS:1",
+      "fixed:QTEST-24V935000-COUNTER:1",
+      "fixed:QTEST-24V935000-FACTS:1",
+      "fixed:QTEST-24V935000-INSUFFICIENT:1",
+      "fixed:QTEST-24V935000-PAIR:1",
+      "fixed:QTEST-24V935000-TIME:1",
+      "fixed:QTEST-24V935000-YEAR:1",
+      "fixed:QTEST-25V058000-CONDITIONS:1",
+      "fixed:QTEST-25V058000-COUNTER:1",
+      "fixed:QTEST-25V058000-FACTS:1",
+      "fixed:QTEST-25V058000-INSUFFICIENT:1",
+      "fixed:QTEST-25V058000-PAIR:1",
+      "fixed:QTEST-25V058000-TIME:1",
+      "fixed:QTEST-25V058000-YEAR:1",
+      "fixed:QTEST-25V065000-COUNTER:1",
+      "multi_agent:QTEST-24V104000-COUNTER:1",
+      "multi_agent:QTEST-24V104000-INSUFFICIENT:1",
+      "multi_agent:QTEST-24V104000-TIME:1",
+      "multi_agent:QTEST-24V744000-CONDITIONS:1",
+      "multi_agent:QTEST-24V744000-COUNTER:1",
+      "multi_agent:QTEST-24V744000-FACTS:1",
+      "multi_agent:QTEST-24V935000-COUNTER:1",
+      "multi_agent:QTEST-24V935000-PAIR:1",
+      "multi_agent:QTEST-24V935000-YEAR:1",
+      "multi_agent:QTEST-25V058000-CONDITIONS:1",
+      "multi_agent:QTEST-25V058000-PAIR:1",
+      "multi_agent:QTEST-25V058000-TIME:1",
+      "multi_agent:QTEST-25V065000-COUNTER:1",
+      "parallel_tools:QTEST-24V104000-FACTS:1",
+      "parallel_tools:QTEST-24V104000-TIME:1",
+      "parallel_tools:QTEST-24V104000-YEAR:1",
+      "parallel_tools:QTEST-24V744000-CONDITIONS:1",
+      "parallel_tools:QTEST-24V744000-COUNTER:1",
+      "parallel_tools:QTEST-24V744000-YEAR:1",
+      "parallel_tools:QTEST-24V935000-COUNTER:1",
+      "parallel_tools:QTEST-24V935000-FACTS:1",
+      "parallel_tools:QTEST-24V935000-PAIR:1",
+      "parallel_tools:QTEST-25V058000-CONDITIONS:1",
+      "parallel_tools:QTEST-25V058000-FACTS:1",
+      "parallel_tools:QTEST-25V058000-PAIR:1",
+      "parallel_tools:QTEST-25V065000-COUNTER:1",
+      "single_agent:QTEST-24V104000-FACTS:1",
+      "single_agent:QTEST-24V104000-TIME:1",
+      "single_agent:QTEST-24V104000-YEAR:1",
+      "single_agent:QTEST-24V744000-CONDITIONS:1",
+      "single_agent:QTEST-24V744000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V744000-TIME:1",
+      "single_agent:QTEST-24V935000-FACTS:1",
+      "single_agent:QTEST-24V935000-INSUFFICIENT:1",
+      "single_agent:QTEST-24V935000-TIME:1",
+      "single_agent:QTEST-25V058000-COUNTER:1",
+      "single_agent:QTEST-25V058000-FACTS:1",
+      "single_agent:QTEST-25V058000-INSUFFICIENT:1",
+      "single_agent:QTEST-25V065000-COUNTER:1",
+      "single_agent:QTEST-25V065000-PAIR:1"
+    ],
+    "stage_reviews_counted_here": true
+  },
+  "acceptance": {
+    "status": "not_passed",
+    "verified_target_violations": [
+      {
+        "metric": "atomic_unsupported_event_cluster_mean_maximum",
+        "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+        "atom_id": "C002-N01",
+        "quote": "触发条件为LFB功能被激活时；",
+        "actual_citations": [
+          "E003"
+        ],
+        "basis": "Actual C002 citation E003 contains no LFB trigger. E002 in C001 supports the fact but is not a C002 citation; no contradiction or source-wide factual falsity inferred.",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "One verified unsupported atom makes a finite, nonnegative event-cluster mean strictly positive; full rate remains unmeasured."
+      },
+      {
+        "metric": "named_aspect_citation_support_minimum",
+        "cell_id": "fixed:QTEST-25V065000-FACTS:1",
+        "atom_ids": [
+          "C002-N01"
+        ],
+        "actual_citation": "E003",
+        "human_source_question_id": "PRIVATE_REVIEW_REFERENCE",
+        "reason": "Human explicitly found the named LFB-trigger aspect absent from its actual citation; missing rates remain null."
+      }
+    ],
+    "complete_population_semantic_rates": null,
+    "passing_acceptance_allowed": false,
+    "human_reviews_are_not_imputed": true
+  },
+  "lifecycle": {
+    "experiment_id": "2b06ef696d3151c30bb81bdc420bc66549390fb0c6192aae1f1cf476a7c85aa3",
+    "database_pid_exists": false,
+    "provider_requests": 116,
+    "formal_quality_acceptance": "pending_actual_human_adjudication",
+    "original_270_cells_changed": false
+  },
+  "new_provider_calls_by_analysis": 0,
+  "limitations": [
+    "Subset human rates never replace whole-population semantic rates.",
+    "Citation-local lack of support does not establish factual falsity in the source corpus.",
+    "All frozen failures and unstarted units remain in the denominator.",
+    "Old retrieval/context/memory/recovery/interference semantic gaps remain separately open."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-10-29T13:26:50.860839+00:00",
+  "classification": "real_postgresql_with_synthetic_run_data",
+  "binary_version": "postgres (PostgreSQL) 18.6",
+  "server_version": "18.6",
+  "authentication": "ephemeral_password_scram_sha_256",
+  "host": "127.0.0.1",
+  "server_stopped": true,
+  "external_model_calls": 0,
+  "pytest_exit_code": 0,
+  "tests": {
+    "tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "cases": [
+    "test_publication_rejects_a_locally_unsupported_trigger_without_extra_calls[fixed]",
+    "test_publication_rejects_a_locally_unsupported_trigger_without_extra_calls[single_agent]",
+    "test_publication_rejects_a_locally_unsupported_trigger_without_extra_calls[parallel_tools]",
+    "test_no_source_stops_explain_missing_complaints_and_exposure_without_a_model[fixed]",
+    "test_no_source_stops_explain_missing_complaints_and_exposure_without_a_model[single_agent]",
+    "test_control_waiting_prompt_includes_boundary_before_receiving_vehicle_fields",
+    "test_coordinator_cannot_publish_the_same_unsupported_trigger"
+  ],
+  "test_filter": "quality_repairs",
+  "artifacts": ".local/postgres-check-2486bfd29fe64feda253588ee79cc707"
+}

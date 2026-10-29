@@ -1,0 +1,15 @@
+{
+  "schema_version": "query-settings/0.1",
+  "snapshot_root": ".local/source-snapshots",
+  "allowed_snapshot_ids": [
+    "61cd818ad3ae45c7bbdc94ecf0b479bc",
+    "d0be027566e94ad2aa0737d166df64b1",
+    "9d2d065bf1f844e7ab4ea63494a4b2f9",
+    "81312fe0084a4aafa99db307bc64eb90",
+    "7e2a7f7b671a41b29b70ca4287c5d7fe",
+    "a383e549c8274613a765266427173a1d",
+    "f7c828b88c7c43c2a4785895d30db3df",
+    "c0aef8c97d7d488d8eb72eb3355f866a",
+    "e38fe78667a34a27befd8af43c85941f"
+  ]
+}

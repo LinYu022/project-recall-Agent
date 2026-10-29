@@ -1,0 +1,57 @@
+{
+  "classification": "real_official_http_fetches_exploration_only",
+  "dataset_release": null,
+  "sources": [
+    {
+      "snapshot_id": "7e2a7f7b671a41b29b70ca4287c5d7fe",
+      "source_id": "NHTSA-API-CAMPAIGN-14V284000",
+      "source_url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=14V284000",
+      "fetched_at": "2026-10-26T09:08:11.677754+00:00",
+      "raw_sha256": "0d6dafd71cf1c3751c4e3fdea71fbc23482ea697e19786763e3acd19b6bc7f23",
+      "record_count": 8,
+      "reviewed_ordinal": 0,
+      "reviewed_version_id": "616bf06326353928ef08edc025052cb7c32ce0401acea0970c876f95c0507b4c"
+    },
+    {
+      "snapshot_id": "a383e549c8274613a765266427173a1d",
+      "source_id": "NHTSA-API-CAMPAIGN-20V332000",
+      "source_url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=20V332000",
+      "fetched_at": "2026-10-26T09:08:17.459009+00:00",
+      "raw_sha256": "31426864d2750208bed837335fe7c8729a9b581969979b853d1eff3722e01b49",
+      "record_count": 4,
+      "reviewed_ordinal": 0,
+      "reviewed_version_id": "4d90a795a5841421c3828cdd5dc492b6f198ab6630e347775b06884602473073"
+    },
+    {
+      "snapshot_id": "f7c828b88c7c43c2a4785895d30db3df",
+      "source_id": "NHTSA-API-CAMPAIGN-17V331000",
+      "source_url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=17V331000",
+      "fetched_at": "2026-10-26T09:08:23.110105+00:00",
+      "raw_sha256": "e5c788fc88d340632d9e2462c8305d9e3b2f2a416a582be4ccfe2289a1f44afb",
+      "record_count": 7,
+      "reviewed_ordinal": 2,
+      "reviewed_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495"
+    },
+    {
+      "snapshot_id": "c0aef8c97d7d488d8eb72eb3355f866a",
+      "source_id": "NHTSA-API-CAMPAIGN-17V652000",
+      "source_url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=17V652000",
+      "fetched_at": "2026-10-26T09:08:28.711480+00:00",
+      "raw_sha256": "3df83f5aeb5554755a750dd5e3e9f71656b9b379ed81ce15c49de4e8a9d7b58b",
+      "record_count": 7,
+      "reviewed_ordinal": 1,
+      "reviewed_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3"
+    },
+    {
+      "snapshot_id": "e38fe78667a34a27befd8af43c85941f",
+      "source_id": "NHTSA-API-CAMPAIGN-22V150000",
+      "source_url": "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=22V150000",
+      "fetched_at": "2026-10-26T09:15:14.860949+00:00",
+      "raw_sha256": "d99d980ab6c006e22f171c996989dd0df5f7bbefdd398bc06e63eac190833128",
+      "record_count": 7,
+      "reviewed_ordinal": 0,
+      "reviewed_version_id": "a46d8e599782c739bb77b59032d64dc454b8ecbf3d044ae170f85484bdec6bd2"
+    }
+  ],
+  "external_model_calls": 0
+}

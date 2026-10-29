@@ -1,0 +1,10 @@
+{
+  "case_id": "QTEST-24V935000-TIME",
+  "split": "test",
+  "slots": [],
+  "required_claims": [],
+  "acceptable_dispositions": [
+    "unsupported_time",
+    "needs_clarification"
+  ]
+}

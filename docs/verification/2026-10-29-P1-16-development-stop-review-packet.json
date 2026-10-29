@@ -1,0 +1,10 @@
+{
+  "schema_version": "development-stop-review-binding/0.1",
+  "packet_path": ".local/b16/17a29b947517/l/review-packets/stops-review.json",
+  "packet_sha256": "7256999d51bc8efc0763e930975d6229c3c266e561990309b4f4bfeef7f63d22",
+  "markdown_path": ".local/b16/17a29b947517/l/review-packets/stops-review.md",
+  "markdown_sha256": "766b749d501c713f962757c88b1c7762e7d758ef03f772486072b43a4b802df2",
+  "cases": 5,
+  "actual_human_judgments": 0,
+  "new_provider_requests": 0
+}

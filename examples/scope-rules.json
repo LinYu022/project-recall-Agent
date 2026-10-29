@@ -1,0 +1,120 @@
+{
+  "rules_version": "scope-rules/0.1",
+  "entity_rules": {
+    "rules_version": "entity-rules/0.2",
+    "models_by_make": {
+      "FORD": [
+        "F-150",
+        "ESCAPE"
+      ],
+      "TOYOTA": [
+        "PRIUS"
+      ],
+      "LEXUS": [
+        "HS"
+      ]
+    },
+    "component_labels": [
+      "POWER TRAIN",
+      "AIR BAGS",
+      "SERVICE BRAKES",
+      "ELECTRICAL SYSTEM",
+      "VEHICLE SPEED CONTROL",
+      "VISIBILITY/WIPER",
+      "ENGINE",
+      "EXTERIOR LIGHTING",
+      "STEERING",
+      "FUEL/PROPULSION SYSTEM",
+      "SERVICE BRAKES, AIR:ANTILOCK:CONTROL UNIT/MODULE",
+      "STEERING:ELECTRIC POWER ASSIST SYSTEM",
+      "SERVICE BRAKES, HYDRAULIC:FOUNDATION COMPONENTS:MASTER CYLINDER",
+      "LATCHES/LOCKS/LINKAGES:DOORS:LATCH",
+      "SERVICE BRAKES, HYDRAULIC:POWER ASSIST"
+    ],
+    "unknown_labels": [
+      "",
+      "UNKNOWN",
+      "UNKNOWN OR OTHER",
+      "N/A"
+    ]
+  },
+  "configuration_domains": {
+    "engine": [
+      "3.5L ECOBOOST",
+      "5.0L V8"
+    ],
+    "chrome_handle_kit_condition": [
+      "POTENTIALLY_EQUIPPED",
+      "VERIFIED_NOT_EQUIPPED"
+    ]
+  },
+  "facts": [
+    {
+      "source_version_id": "616bf06326353928ef08edc025052cb7c32ce0401acea0970c876f95c0507b4c",
+      "field": "Summary",
+      "quote": "manufactured August 18, 2006, through September 11, 2010",
+      "facet": "production_range",
+      "key": "production_range",
+      "value": {
+        "start": "2006-08-18",
+        "end": "2010-09-11"
+      },
+      "review_note": "Inclusive manufacture dates explicitly stated in Summary; not model years."
+    },
+    {
+      "source_version_id": "4d90a795a5841421c3828cdd5dc492b6f198ab6630e347775b06884602473073",
+      "field": "Summary",
+      "quote": "equipped with 3.5L Ecoboost engines",
+      "facet": "configuration",
+      "key": "engine",
+      "value": "3.5L ECOBOOST",
+      "review_note": "Engine restriction explicitly stated; not inferred from F-150 model year."
+    },
+    {
+      "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+      "field": "Summary",
+      "quote": "originally produced with black or body colored exterior door handles that may have been subsequently equipped with a chrome exterior door handle cover accessory kit purchased from a Ford dealer",
+      "facet": "configuration",
+      "key": "chrome_handle_kit_condition",
+      "value": "POTENTIALLY_EQUIPPED",
+      "review_note": "Preserve both original-handle alternatives and uncertainty about subsequent dealer kit fitment. Not proof that any individual vehicle has the accessory."
+    },
+    {
+      "source_version_id": "de09926a8baa923154b35201e7b3902605ec69679ba5b2c927f01342ddcee495",
+      "field": "Summary",
+      "quote": "may cause the doors to unlatch in a side impact collision",
+      "facet": "symptom",
+      "key": "door_state",
+      "value": "DOOR_UNLATCHING",
+      "review_note": "Broad descriptive tag only; trigger is side impact and accessory kit, not frozen latch."
+    },
+    {
+      "source_version_id": "120a2f34b5dc7d57788547869d178437fd580fe1143188e0fde34f6e9bb3c5f3",
+      "field": "Summary",
+      "quote": "Either condition can result in the doors opening while driving although they appear to be closed.",
+      "facet": "symptom",
+      "key": "door_state",
+      "value": "DOOR_UNLATCHING",
+      "review_note": "Broad descriptive tag only; bent/kinked cable or water/freeze conditions differ from accessory kit recall."
+    },
+    {
+      "source_version_id": "a46d8e599782c739bb77b59032d64dc454b8ecbf3d044ae170f85484bdec6bd2",
+      "field": "Remedy",
+      "quote": "This recall is an expansion of NHTSA recall number 20V-332.",
+      "facet": "official_reference",
+      "key": "recall_mention",
+      "value": "20V332000",
+      "mentioned_identifier": "20V-332",
+      "review_note": "The source calls this an expansion; this narrow link confirms the explicit mention only. Short campaign-number format is explicitly reviewed, not fuzzy matching."
+    },
+    {
+      "source_version_id": "a46d8e599782c739bb77b59032d64dc454b8ecbf3d044ae170f85484bdec6bd2",
+      "field": "Summary",
+      "quote": "equipped with 3.5L Ecoboost engines",
+      "facet": "configuration",
+      "key": "engine",
+      "value": "3.5L ECOBOOST",
+      "review_note": "Explicit engine restriction; not evidence of engine configuration for an individual F-150."
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "P1-16-role-review-integrity/0.2",
+  "classification": "post_hoc_read_only_audit_not_new_generation_or_quality_acceptance",
+  "assessment_id": "137288e5a173ef36db82beb91b0bdf39a0237f5d20e1e5a64e29bf62b94ea752",
+  "experiment_id": "04977b4c562ad6b533b2fefe89098c1c3515d3542ac4216a8f7b6e260e7099ef",
+  "analysis_implementation": {
+    "reviewing/__init__.py": "cf7bd23bc0eb4c348ebbfaeab11d0787236ad25617bd8c51bcac590d7e2275cb",
+    "reviewing/__main__.py": "18824d4a355bd865c71842989c9cddb2f5f2e71d81e9583b848190ee4afd112b",
+    "reviewing/contracts.py": "9aa5d0c1c75d6b1780f1bbfcf13682472b9d1e889f910d5f0d8cc40b21407094",
+    "reviewing/corpus.py": "4618628ec559ec36f48695d8b8e6392032a4b5d310c7dd037f17ca74300cdbab",
+    "reviewing/legacy.py": "417ee1a35d9d4bb298ebf8576c7e9c2e6e5af669d96663764f84fb90dbc9b51a",
+    "reviewing/policy.py": "aed1ba9cfd48c07768c6a4b307d4b1fb270702acd921eb47823d4829238af842",
+    "reviewing/scoring.py": "d34effac6018538c9c777ff61265821c92911547d01055b395f491952280a9c0"
+  },
+  "audit_script_sha256": "6f5bd4dbd906b419b46737ca5b03b87d555830a0cfd73b6ad9aa6f59dd0a49f5",
+  "generator_freeze_load": "passed",
+  "frozen_states": {
+    "completed": 85,
+    "guarded": 120,
+    "failed": 64,
+    "not_started": 1
+  },
+  "public_summary_content_sha256": "bb98f31d2b875e4722d0b1431b4c2eea0cc9d8e6fac93e4195690fc42d166c79",
+  "original_public_records_preserved": {
+    "docs/verification/2026-10-28-P1-16-evaluation.json": "e9abe8f2e0cf737b0ef6edcb8c171127a2823ca88af9715c9babb254d7e716b0",
+    "docs/verification/2026-10-28-P1-16-analysis-supplement.json": "4ddf43ca711260ae7c0ac3dd05e43e38c7d591ec78126a30f4fcf3b36bc79ca5",
+    "docs/verification/2026-10-28-P1-16-human-review.json": "0c9b26ddbd7367fb9cc25204ff90f187aeaec09acbc902b7b136faa7c4519af1",
+    "docs/verification/2026-10-28-P1-16-finalization.json": "bd52c29e0e5c6b47014f7683ad37cfe772c8e93f0f751fe8824eae46695d27be"
+  },
+  "original_figures_bytes_verified": true,
+  "original_plan_sha256": "04b03e1cfe4a5d855608a970eb6e5a097e8fae34a9ed52742af941b836f4a5a7",
+  "P1_16_ledger_content_sha256": "f98411c50517a82da8e3a098787d7dfbbb8c7ac9fee1f8a7505da22f1cf16230",
+  "P1_16_total_provider_requests": 209,
+  "P1_09_ledger_content_sha256": "43871e9d45b66127432601660c6f9bfd0367e1bb12a34c758292eae57e07ce1a",
+  "P1_09_total_provider_requests": 12,
+  "new_provider_requests": 0,
+  "frozen_denominator": 270,
+  "blind_packets": 269,
+  "unobserved_cell_has_packet": false,
+  "actual_human_reviews": {
+    "frozen_test": 1,
+    "historical_development": 1
+  },
+  "actual_human_reviewed_claims": 12,
+  "strict_frozen_test_review": {
+    "task_success": false,
+    "disposition_correct": true,
+    "reviewed_claim_count": 6,
+    "reported_claim_verdict_counts": {
+      "supported": 2,
+      "partial": 4
+    },
+    "claim_judgments_complete": true,
+    "citation_pairs_expected": 20,
+    "citation_pairs_reviewed": 20,
+    "citation_roles_complete": true,
+    "context_only_citation_pairs": 5,
+    "direct_citation_pairs": 15,
+    "direct_citation_verdict_counts": {
+      "supported": 13,
+      "partial": 2
+    },
+    "direct_citation_aspect_support_rate": 0.8666666666666667,
+    "direct_metric_scope": "reviewer_named_aspect_not_necessarily_all_assertions_in_claim",
+    "whole_claim_citation_support_rate": null,
+    "required_context_links_expected": 8,
+    "required_context_links_present": 8,
+    "required_context_coverage": 1.0,
+    "context_coverage_is_mechanical_not_semantic": true,
+    "atomic_assertions_exhaustive": false,
+    "reviewed_atomic_assertion_count": 0,
+    "unsupported_atomic_assertion_count": 0,
+    "partial_atomic_assertion_count": 0,
+    "unsupported_atomic_assertion_rate": null,
+    "partial_atomic_assertion_rate": null,
+    "required_obligations_reviewed": 0,
+    "required_obligations_expected": 3,
+    "required_obligation_recall": null,
+    "relations_ready": true,
+    "relation_judgments": []
+  },
+  "historical_development_qualitative_task_success": true,
+  "historical_development_formal_uniform_metrics": null,
+  "historical_calibration_manifest_content_sha256": "7533e99adf63b59df9edd7e10d23dfc82f2904e7d06afc9278887f1ff187938b",
+  "historical_review_content_sha256": "abb575f1d9bd2aaa65408e6af69d8cdcbf9529061682825979d9d45e864c77b8",
+  "offline_record": {
+    "timestamp": "2026-10-28T14:19:00.555893+00:00",
+    "classification": "local_equivalent_of_offline_ci_with_synthetic_data_and_fake_model",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "checks": [
+      {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "mypy"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "alembic",
+          "upgrade",
+          "head",
+          "--sql"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "pytest",
+          "-q",
+          "--basetemp",
+          ".local\\P1-16\\review-v02-offline-round2\\pytest",
+          "--junitxml",
+          ".local\\P1-16\\review-v02-offline-round2\\tests.xml"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "scripts.verify_http",
+          "--output",
+          ".local\\P1-16\\review-v02-offline-round2\\http.json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python",
+          "-m",
+          "scripts.verify_query_http",
+          "--output",
+          ".local\\P1-16\\review-v02-offline-round2\\query-http.json"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "tests": {
+      "tests": 469,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "http_checks": 7,
+    "http_server_stopped": true,
+    "query_http_checks": 7,
+    "query_http_server_stopped": true,
+    "external_model_calls": 0,
+    "github_actions_run": false,
+    "fingerprints": {
+      "pyproject.toml": "2ca9ca8f12516b4cde844d47cd04485d549e611b77269f27f4b632934bccfee6",
+      "uv.lock": "52bb4ffdc5c53d2183eddf0880d77e9fab8fcb7a0ce668e679bf4b73ccb4b8ed",
+      ".github/workflows/ci.yml": "32f6f9d080cca1c85e4b0f0d9c5e09afcf29bd5d1e3fc5833628f1eca78285f6"
+    },
+    "logs": ".local/P1-16/review-v02-offline-round2",
+    "immutable_record": ".local/P1-16/review-v02-offline-round2/verification.json"
+  },
+  "frozen_429_new_recheck": {
+    "at": "2026-10-28T14:06:59.095252+00:00",
+    "classification": "new_rerun_of_frozen_generator_test_set_not_restored_original_XML",
+    "command": [
+      ".venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--ignore=tests/test_role_aware_review.py",
+      "--ignore=tests/test_verification_logs.py",
+      "--basetemp",
+      ".local\\P1-16\\frozen-429-recheck\\pytest",
+      "--junitxml",
+      ".local\\P1-16\\frozen-429-recheck\\tests.xml"
+    ],
+    "exit_code": 0,
+    "tests": {
+      "tests": 429,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "log_root": ".local/P1-16/frozen-429-recheck",
+    "external_model_requests": 0
+  },
+  "old_offline_xml_preserved": false,
+  "old_offline_summary_preserved": true,
+  "old_offline_summary_content_sha256": "0162bcf8c1007c8aa1657d5232cd1587017ca257662028c32b5dc9a2283fc412",
+  "development_verification_history": [
+    {
+      "xml": ".local/P1-16/review-v02-offline-final/tests.xml",
+      "sha256": "d6567c0ee9f009d55054d8e89e8d1d83c23608b2a82fce8bde3bcb1ad6ad2e9e",
+      "tests": 469,
+      "failures": 7,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "xml": ".local/P1-16/review-deep-path-regression/tests.xml",
+      "sha256": "6a26f501ffd68e227caae5ee563463cb66298a95f6e6170210faf3f954e65787",
+      "tests": 40,
+      "failures": 0,
+      "errors": 10,
+      "skipped": 0
+    },
+    {
+      "xml": ".local/P1-16/review-deep-path-round2/tests.xml",
+      "sha256": "2401c407089cc892837c42fa0939e53eba79a438edba39ab39b9ffdc116c41ed",
+      "tests": 40,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "database_204_checks": "historical_not_rerun_for_review_only_changes",
+  "current_system_independent_development_baseline": null,
+  "pre_registered_numeric_quality_target": null,
+  "population_semantic_quality": null,
+  "P1_16_fully_accepted": false,
+  "P1_17_started": false
+}

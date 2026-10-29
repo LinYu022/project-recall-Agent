@@ -1,0 +1,121 @@
+{
+  "schema_version": "P1-11-delivery/0.1",
+  "timestamp": "2026-10-27T09:54:43.957826+00:00",
+  "classification": "real_postgresql_fault_injection_real_worker_process_restart_official_sources_simulated_generation",
+  "migration_head": "0006_durable_dispatch",
+  "offline_tests": {
+    "tests": 361,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "postgres_tests": {
+    "tests": 119,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "offline_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "legacy_http_checks": [
+    7,
+    7
+  ],
+  "process_experiment": {
+    "schema_version": "dispatch-process-experiment/0.1",
+    "timestamp": "2026-10-27T09:53:29.874405+00:00",
+    "classification": "real_postgresql_real_worker_process_exit_retained_official_sources_simulated_generation",
+    "new_source_requests": 0,
+    "new_api_requests": 0,
+    "formal_semantic_metrics": null,
+    "schema_removed": true,
+    "first_process_exit_code": 23,
+    "second_process_exit_code": 0,
+    "recovered_process": {
+      "pid": 16092,
+      "state": "COMPLETED",
+      "calls": {
+        "new_model_calls": 0,
+        "replayed_model_calls": 1,
+        "new_tool_calls": 0,
+        "replayed_tool_calls": 4
+      },
+      "external_model_requests": 0
+    },
+    "successful_publications": 1,
+    "durable_simulated_model_calls": 1,
+    "resource_pool": {
+      "root_task_id": "PROCESS-PRIUS",
+      "owner_id": "local-process-operator",
+      "limits": {
+        "tool_calls": 6,
+        "model_calls": 6,
+        "completion_tokens": 4000,
+        "prompt_characters": 96000
+      },
+      "limits_sha256": "b94116f57090d8d827f3aa0d0d60b3397a94eca3f9776d07af5bb1b48e063aa9",
+      "used": {
+        "tool_calls": 4,
+        "model_calls": 1,
+        "completion_tokens": 2000,
+        "prompt_characters": 23965
+      },
+      "held": {
+        "tool_calls": 0,
+        "model_calls": 0,
+        "completion_tokens": 0,
+        "prompt_characters": 0
+      }
+    },
+    "source_release": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "frozen_source_ids": [
+      "NHTSA-API-CAMPAIGN-10V039000",
+      "NHTSA-INV-PE10006-CLOSE"
+    ],
+    "disposition": "insufficient_evidence",
+    "fault_injection": [
+      "worker os._exit(23) after saved simulated model response",
+      "lease timestamp forced past",
+      "retry availability timestamp advanced"
+    ],
+    "limits": [
+      "Two actual worker processes; main service objects reconstructed in the parent process.",
+      "Generation is explicitly simulated abstention, not real model reasoning.",
+      "Unknown synthetic usage is conservatively charged; no actual provider usage or price is inferred."
+    ]
+  },
+  "legacy_model_responses_replayed": 8,
+  "legacy_outcomes_match": true,
+  "new_api_requests": 0,
+  "new_source_requests": 0,
+  "actual_new_provider_usage": null,
+  "estimated_cost": null,
+  "independent_human_reviews": 0,
+  "formal_semantic_metrics": null,
+  "temporary_postgres_stopped": true,
+  "temporary_http_stopped": true,
+  "experiment_schemas_removed": true,
+  "P1_09_request_ledger_unchanged": true,
+  "record_content_sha256": {
+    "offline": "a0bf8993e667b8cda4ee490e6b87059f8d62f6269378854d136a8e4f77711f0a",
+    "database": "63d25497401e159b4daf2bd948c79f1661b26d096b2087be9859536aae90c084",
+    "request_ledger": "43871e9d45b66127432601660c6f9bfd0367e1bb12a34c758292eae57e07ce1a"
+  },
+  "limits": [
+    "Queue delivery and readonly retry are at least once; no cross-provider exactly-once guarantee.",
+    "Actual process exit/restart uses a simulated abstention model; it is not a quality or API-cost experiment.",
+    "Main service objects are reconstructed in the parent process, not a measured full host reboot.",
+    "Lease expiry and retry availability are advanced by explicit fault injection, not wall-clock waits.",
+    "Completion units without usage are conservatively charged and marked pending reconciliation; they are not measured provider tokens.",
+    "An unknown model response is not automatically regenerated, even after accounting reconciliation.",
+    "File writes and database settlement have no common transaction; missing proof stops recovery.",
+    "Local worker throughput and provider cancellation are not guaranteed by this verification."
+  ]
+}

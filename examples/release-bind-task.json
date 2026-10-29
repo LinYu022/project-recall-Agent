@@ -1,0 +1,12 @@
+{
+  "task_id": "LEARN-RELEASE-OLD",
+  "allowed_source_ids": [
+    "NHTSA-API-CAMPAIGN-10V039000",
+    "NHTSA-INV-PE10006-CLOSE"
+  ],
+  "scope": {
+    "make": "TOYOTA",
+    "model": "PRIUS",
+    "model_year": 2010
+  }
+}

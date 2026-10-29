@@ -1,0 +1,233 @@
+{
+  "schema_version": "role-aware-review/0.2",
+  "policy_sha256": "d53988c7730b3745e4dd6d98a202d441843a7a99cd9e75a435ea078151dc92ab",
+  "experiment_id": "04977b4c562ad6b533b2fefe89098c1c3515d3542ac4216a8f7b6e260e7099ef",
+  "cell_id": "fixed:TEST-18V332000-FACTS:1",
+  "blind_id": "BLIND-525c27d5cddc",
+  "observation_sha256": "28eef5d6fc0ffdcdc0bd13d4c0db84187a41df8e782db48e169e11c57d3b330a",
+  "report_sha256": "edabb43731ca5331395cbfa1560a7182b7b8b4cd048d10fd2050489d8627ed2b",
+  "reference_sha256": "832db09aa4f7d5e977a9c4d692f7c9de1430fade7675844c065db786e8b5a958",
+  "reviewer_kind": "human",
+  "reviewer_id": "learner-01",
+  "source_kind": "actual_human_reply",
+  "sources": [
+    {
+      "name": "docs/experiments/P1-16-human-review-C001.json",
+      "content_sha256": "89098b133558fb568e1b8628ddf126c29b1b31c63c325e7f22d3101d22b32d9a"
+    },
+    {
+      "name": "docs/experiments/P1-16-human-review-C002-C004.json",
+      "content_sha256": "3f17d24a23e18a56e2cfa9ec4174ddba89ec2ed0c07e97c344e0f8346b82a264"
+    },
+    {
+      "name": "docs/experiments/P1-16-human-review-complete.json",
+      "content_sha256": "a2cdd2aef0e95b6d8ef33fb6b8f7ea137620e581e6ca831dcb849b95059609fc"
+    }
+  ],
+  "transcribed_by": "implementation_agent_from_existing_actual_human_records_no_new_judgments",
+  "complete_task_reading": true,
+  "task_success": false,
+  "disposition_correct": true,
+  "dispute_status": "none",
+  "citations": [
+    {
+      "claim_id": "C001",
+      "evidence_alias": "E001",
+      "role": "direct",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "完整C001的有限冻结来源查询计数和不外推全球缺失的边界",
+      "reason": "范围及措辞准确。C001 准确依据了结构化查询结果（E001），说明在允许的冻结来源中，该车型与召回编号的匹配数为 0（共有 11 条待定、55 条排除），并恰当指出了该零匹配仅限当前冻结来源，无法直接证明全球范围内不存在相关召回，表述严谨客观。"
+    },
+    {
+      "claim_id": "C002",
+      "evidence_alias": "E002",
+      "role": "direct",
+      "reason": "缺少certain、车型范围细节、线路短路及踩刹车或手动关闭无法解除的触发条件；18V332000来源关联已存在，pending是make_unknown/model_unknown，联合车型匹配不可写成召回编号未关联。E002/E007仅支持缺陷文本，不单独支持结构化匹配计数。",
+      "direct_verdict": "partial",
+      "evaluated_aspect": "完整复合结论的覆盖：缺陷文本与结构化匹配元结论，后者引用不足"
+    },
+    {
+      "claim_id": "C002",
+      "evidence_alias": "E007",
+      "role": "direct",
+      "reason": "缺少certain、车型范围细节、线路短路及踩刹车或手动关闭无法解除的触发条件；18V332000来源关联已存在，pending是make_unknown/model_unknown，联合车型匹配不可写成召回编号未关联。E002/E007仅支持缺陷文本，不单独支持结构化匹配计数。",
+      "direct_verdict": "partial",
+      "evaluated_aspect": "完整复合结论的覆盖：缺陷文本与结构化匹配元结论，后者引用不足"
+    },
+    {
+      "claim_id": "C003",
+      "evidence_alias": "E002",
+      "role": "both",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "巡航无法解除时的速度维持或加速及碰撞风险；不包含未匹配元结论"
+    },
+    {
+      "claim_id": "C003",
+      "evidence_alias": "E003",
+      "role": "both",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "巡航无法解除时的速度维持或加速及碰撞风险；不包含未匹配元结论"
+    },
+    {
+      "claim_id": "C003",
+      "evidence_alias": "E006",
+      "role": "direct",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "巡航无法解除时的速度维持或加速及碰撞风险；不包含未匹配元结论"
+    },
+    {
+      "claim_id": "C003",
+      "evidence_alias": "E008",
+      "role": "direct",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "巡航无法解除时的速度维持或加速及碰撞风险；不包含未匹配元结论"
+    },
+    {
+      "claim_id": "C003",
+      "evidence_alias": "E004",
+      "role": "required_context",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。"
+    },
+    {
+      "claim_id": "C003",
+      "evidence_alias": "E005",
+      "role": "required_context",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。"
+    },
+    {
+      "claim_id": "C004",
+      "evidence_alias": "E004",
+      "role": "direct",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "经销商免费软件检查/刷新、召回日期和更新前限制；不包含匹配元结论及未提及的应急步骤"
+    },
+    {
+      "claim_id": "C004",
+      "evidence_alias": "E009",
+      "role": "both",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "经销商免费软件检查/刷新、召回日期和更新前限制；不包含匹配元结论及未提及的应急步骤"
+    },
+    {
+      "claim_id": "C004",
+      "evidence_alias": "E011",
+      "role": "direct",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "经销商免费软件检查/刷新、召回日期和更新前限制；不包含匹配元结论及未提及的应急步骤"
+    },
+    {
+      "claim_id": "C004",
+      "evidence_alias": "E007",
+      "role": "required_context",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。"
+    },
+    {
+      "claim_id": "C004",
+      "evidence_alias": "E008",
+      "role": "required_context",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。"
+    },
+    {
+      "claim_id": "C004",
+      "evidence_alias": "E010",
+      "role": "required_context",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。"
+    },
+    {
+      "claim_id": "C005",
+      "evidence_alias": "E005",
+      "role": "direct",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "NHTSA联系渠道与该Notes文本不含永久安全承诺；不包含程序匹配状态元结论",
+      "reason": "Notes text does not directly establish structural matching status; E001 is needed for that meta-claim. Contact telephone numbers omitted, minor impact on main point."
+    },
+    {
+      "claim_id": "C005",
+      "evidence_alias": "E010",
+      "role": "direct",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "NHTSA联系渠道与该Notes文本不含永久安全承诺；不包含程序匹配状态元结论",
+      "reason": "Notes text does not directly establish structural matching status; E001 is needed for that meta-claim. Contact telephone numbers omitted, minor impact on main point."
+    },
+    {
+      "claim_id": "C006",
+      "evidence_alias": "E001",
+      "role": "direct",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "有限来源匹配状态及单项缺陷补救的证据边界；不包含无法核对推断的结论",
+      "reason": "Campaign linkage exists; pending is due make_unknown/model_unknown. Evidence establishes limited scope and does not support permanent-safety extrapolation, so saying the inference cannot be checked is evasive."
+    },
+    {
+      "claim_id": "C006",
+      "evidence_alias": "E002",
+      "role": "direct",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "有限来源匹配状态及单项缺陷补救的证据边界；不包含无法核对推断的结论",
+      "reason": "Campaign linkage exists; pending is due make_unknown/model_unknown. Evidence establishes limited scope and does not support permanent-safety extrapolation, so saying the inference cannot be checked is evasive."
+    },
+    {
+      "claim_id": "C006",
+      "evidence_alias": "E004",
+      "role": "direct",
+      "direct_verdict": "supported",
+      "evaluated_aspect": "有限来源匹配状态及单项缺陷补救的证据边界；不包含无法核对推断的结论",
+      "reason": "Campaign linkage exists; pending is due make_unknown/model_unknown. Evidence establishes limited scope and does not support permanent-safety extrapolation, so saying the inference cannot be checked is evasive."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C001",
+      "verdict": "supported",
+      "scope_verdict": "correct",
+      "reason": "范围及措辞准确。C001 准确依据了结构化查询结果（E001），说明在允许的冻结来源中，该车型与召回编号的匹配数为 0（共有 11 条待定、55 条排除），并恰当指出了该零匹配仅限当前冻结来源，无法直接证明全球范围内不存在相关召回，表述严谨客观。"
+    },
+    {
+      "claim_id": "C002",
+      "verdict": "partial",
+      "scope_verdict": "incorrect",
+      "reason": "缺少certain、车型范围细节、线路短路及踩刹车或手动关闭无法解除的触发条件；18V332000来源关联已存在，pending是make_unknown/model_unknown，联合车型匹配不可写成召回编号未关联。E002/E007仅支持缺陷文本，不单独支持结构化匹配计数。"
+    },
+    {
+      "claim_id": "C003",
+      "verdict": "supported",
+      "scope_verdict": "correct",
+      "reason": "条件和后果准确，无重大遗漏；E004/E005为E006必需上下文，不能算直接支持速度或碰撞风险。关于未匹配的元结论需结合E001。"
+    },
+    {
+      "claim_id": "C004",
+      "verdict": "partial",
+      "scope_verdict": "mostly_correct",
+      "reason": "补救文本受支持，但编号未匹配表述不精确；遗漏持续制动并挂空挡、停稳挂驻车挡的应急处置，以及制造商通知和客服电话。E007/E008/E010只是E011必需上下文，不直接支持补救论点。"
+    },
+    {
+      "claim_id": "C005",
+      "verdict": "partial",
+      "scope_verdict": "mostly_correct",
+      "reason": "Notes text does not directly establish structural matching status; E001 is needed for that meta-claim. Contact telephone numbers omitted, minor impact on main point."
+    },
+    {
+      "claim_id": "C006",
+      "verdict": "partial",
+      "scope_verdict": "partial",
+      "reason": "Campaign linkage exists; pending is due make_unknown/model_unknown. Evidence establishes limited scope and does not support permanent-safety extrapolation, so saying the inference cannot be checked is evasive."
+    }
+  ],
+  "assertions": [],
+  "obligations": [],
+  "relations": [],
+  "assertions_exhaustive": false,
+  "input_visibility": {
+    "input_artifact_sha256": "c4f7793b391eac66e9bae099dbfe2f583ee6227ecd745d592752fc558327a567",
+    "input_content_sha256": "5c95ee58fdf50b47c80c1b0979e0311483a247e19946998b0a9e3ff93b2c7010",
+    "check": "exact_input_checked",
+    "note": "Implementation-agent provenance check, not a new human verdict: numbers were minimized; defect conditions and emergency paragraph were visible; E001 retained counts/scope but omitted detailed rows and make_unknown/model_unknown reasons."
+  },
+  "notes": "Post hoc transcription of one completed human reading. Direct metrics concern only named aspects of compound claims. Original human verdicts unchanged; atomization and reference-obligation mapping were not requested and stay unreviewed. Both role combines the user's direct judgment with a mechanically proven context dependency. Do not call citation-aspect support whole-claim correctness or a population score."
+}

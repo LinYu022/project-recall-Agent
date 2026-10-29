@@ -1,0 +1,21 @@
+{
+  "plan_id": "0bbf2dd8b81521940924ffbb2e25527ebc5e7f9a65efba4ae6a15728d418aab6",
+  "source_kind": "actual_human_reply",
+  "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+  "status": "explicit_user_approved",
+  "human_reply": "批准本校准批次，最多18次",
+  "model": "deepseek-v4-pro",
+  "endpoint": "https://api.deepseek.com",
+  "maximum_requests": 18,
+  "jobs": [
+    "DEV-BLIND-b0f073c1176a",
+    "DEV-BLIND-95cee9ebfdee",
+    "DEV-BLIND-adbcda2666d8",
+    "DEV-BLIND-53ac2882b280",
+    "DEV-BLIND-3bbc60801d77",
+    "DEV-BLIND-5f63e8d13912",
+    "DEV-BLIND-7dcf51b563f8",
+    "DEV-BLIND-84378628fdad",
+    "OLD-BLIND-525c27d5cddc"
+  ]
+}

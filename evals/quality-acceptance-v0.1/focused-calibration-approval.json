@@ -1,0 +1,10 @@
+{
+  "plan_id": "a10d190a428072ac8e54bfa9df42f48c9862971d039dc831b0047f99747694f9",
+  "status": "explicit_user_approved",
+  "source_kind": "actual_human_reply",
+  "human_reply": "批准聚焦校准，最多6次",
+  "source_question_id": "PRIVATE_REVIEW_REFERENCE",
+  "maximum_requests": 6,
+  "model": "deepseek-v4-pro",
+  "endpoint": "https://api.deepseek.com"
+}

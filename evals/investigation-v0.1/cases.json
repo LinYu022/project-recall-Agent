@@ -1,0 +1,231 @@
+{
+  "schema_version": "fixed-baseline-cases/0.1",
+  "label_author": "implementation_agent",
+  "independent_human_review": false,
+  "usage": "previously_seen_development_only_no_unseen_test_claim",
+  "config": {
+    "version": "fixed-investigation/0.1",
+    "retrieval_method": "hybrid",
+    "retrieve_k": 6,
+    "expand_k": 2,
+    "max_tool_calls": 6,
+    "max_model_calls": 1,
+    "prompt_characters": 24000,
+    "generation_tokens": 2000
+  },
+  "cases": [
+    {
+      "case_id": "DEV-PRIUS-JOINT",
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000",
+        "NHTSA-INV-PE10006-CLOSE"
+      ],
+      "request": {
+        "task_id": "DEV-PRIUS-JOINT",
+        "question": "基于当前允许冻结资料，说明2010 Prius的ABS相关制动问题、结案依据和后续监测；结案能否支持所有混动车均已安全？",
+        "retrieval_query": "ABS braking rough road investigation closed monitor software recall",
+        "intent": "cross_source",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      }
+    },
+    {
+      "case_id": "DEV-COUNT-86",
+      "scope": {
+        "make": "FORD",
+        "model": "F-150",
+        "model_year": 2016
+      },
+      "sources": [
+        "NHTSA-COMPLAINTS-F150-2016"
+      ],
+      "request": {
+        "task_id": "DEV-COUNT-86",
+        "question": "当前允许的冻结2016 F-150投诉资料中，POWER TRAIN或SERVICE BRAKES去重投诉数是多少？能否据此断言故障发生率或因果？",
+        "retrieval_query": "POWER TRAIN OR SERVICE BRAKES distinct ODI count",
+        "intent": "complaint_statistics",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [
+          "POWER TRAIN",
+          "SERVICE BRAKES"
+        ],
+        "pairs": []
+      }
+    },
+    {
+      "case_id": "DEV-DOOR-PAIR",
+      "scope": {
+        "make": "FORD",
+        "model": "F-150",
+        "model_year": 2016
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-17V331000",
+        "NHTSA-API-CAMPAIGN-17V652000"
+      ],
+      "request": {
+        "task_id": "DEV-DOOR-PAIR",
+        "question": "17V331和17V652在2016 F-150车门部件上是否描述同一缺陷？请给出各自的缺陷事实及关系边界。",
+        "retrieval_query": "door handle cover side impact cable water freeze latch",
+        "intent": "relationship",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "f7c828b88c7c43c2a4785895d30db3df",
+              "ordinal": 2
+            },
+            "right": {
+              "snapshot_id": "c0aef8c97d7d488d8eb72eb3355f866a",
+              "ordinal": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "DEV-SCOPE-EXCLUSION",
+      "scope": {
+        "make": "FORD",
+        "model": "F-150",
+        "model_year": 2016
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-14V284000",
+        "NHTSA-API-CAMPAIGN-20V332000"
+      ],
+      "request": {
+        "task_id": "DEV-SCOPE-EXCLUSION",
+        "question": "14V284中2008 Escape的这条车型记录，能否用于确认2016 F-150适用？与20V332比较，区分已知排除和条件未知。",
+        "retrieval_query": "14V284 20V332 model year scope brake master cylinder",
+        "intent": "relationship",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": [
+          {
+            "left": {
+              "snapshot_id": "7e2a7f7b671a41b29b70ca4287c5d7fe",
+              "ordinal": 0
+            },
+            "right": {
+              "snapshot_id": "a383e549c8274613a765266427173a1d",
+              "ordinal": 0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "DEV-ZERO",
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2025
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000",
+        "NHTSA-INV-PE10006-CLOSE"
+      ],
+      "request": {
+        "task_id": "DEV-ZERO",
+        "question": "检查当前冻结资料和必要业务条件后回答；不得扩展允许来源。",
+        "retrieval_query": "recall scope",
+        "intent": "record_lookup",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      }
+    },
+    {
+      "case_id": "DEV-MISSING",
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000",
+        "NHTSA-INV-PE10006-CLOSE"
+      ],
+      "request": {
+        "task_id": "DEV-MISSING",
+        "question": "检查当前冻结资料和必要业务条件后回答；不得扩展允许来源。",
+        "retrieval_query": "recall scope",
+        "intent": "applicability",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      }
+    },
+    {
+      "case_id": "DEV-TIME",
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000",
+        "NHTSA-INV-PE10006-CLOSE"
+      ],
+      "request": {
+        "task_id": "DEV-TIME",
+        "question": "检查当前冻结资料和必要业务条件后回答；不得扩展允许来源。",
+        "retrieval_query": "recall scope",
+        "intent": "record_lookup",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": {
+          "mode": "historical_as_of",
+          "event_interval": null,
+          "knowledge_cutoff": "2014-01-01T00:00:00Z",
+          "date_filter_basis": "explicit request, no pre-cutoff observed receipts"
+        },
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      }
+    },
+    {
+      "case_id": "DEV-INSUFFICIENT",
+      "scope": {
+        "make": "TOYOTA",
+        "model": "PRIUS",
+        "model_year": 2010
+      },
+      "sources": [
+        "NHTSA-API-CAMPAIGN-10V039000",
+        "NHTSA-INV-PE10006-CLOSE"
+      ],
+      "request": {
+        "task_id": "DEV-INSUFFICIENT",
+        "question": "检查当前冻结资料和必要业务条件后回答；不得扩展允许来源。",
+        "retrieval_query": "recall scope",
+        "intent": "complaint_statistics",
+        "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+        "expected_time": null,
+        "required_conditions": [],
+        "components": [],
+        "pairs": []
+      }
+    }
+  ]
+}

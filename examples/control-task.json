@@ -1,0 +1,18 @@
+{
+  "task_id": "CONTROL-EXAMPLE",
+  "plan": {
+    "release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6",
+    "allowed_source_ids": ["NHTSA-API-CAMPAIGN-10V039000", "NHTSA-INV-PE10006-CLOSE"],
+    "scope": {"make": "TOYOTA", "model": "PRIUS", "model_year": 2010},
+    "request": {
+      "task_id": "CONTROL-EXAMPLE",
+      "question": "在固定允许资料内检查2010 Prius的ABS制动问题、结案和继续监测条件。",
+      "retrieval_query": "ABS braking rough road investigation closed monitor",
+      "intent": "cross_source",
+      "expected_release_id": "19286b24cd6d539155c61abfa1265d256dd7c5e5c3b4229eaa004782f8393ee6"
+    },
+    "mode": "PLAN",
+    "hypotheses": ["先核对车型范围和ABS工作条件，再判断结案表述能支持什么。"],
+    "steps": ["只读检查允许来源", "保存范围、条件和未确认事项", "进入执行前确认执行能力"]
+  }
+}

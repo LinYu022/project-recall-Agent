@@ -1,0 +1,98 @@
+{
+  "case_id": "TEST-19V782000-FACTS",
+  "split": "test",
+  "slots": [
+    {
+      "slot_id": "summary",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "7a4e0f79ab976203a1b0dcb55782394707c7dd6598f53bdcf17f97ff08d743c2",
+          "unit_id": "78992ab89b840be795935cd5b9c4b4cfd81644b39971d1b6160f8678eda0c990",
+          "start": 0,
+          "end": 407,
+          "quote_sha256": "91deca77f1aa8737041788ce150d4bfabd378f8e9e1755ce8c1ed48e3582751d"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "consequence",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "7a4e0f79ab976203a1b0dcb55782394707c7dd6598f53bdcf17f97ff08d743c2",
+          "unit_id": "dfacc935bc4d6a09ca4b2089a1740fc4f6163d3797d868df12050aa6f93bbb93",
+          "start": 0,
+          "end": 134,
+          "quote_sha256": "e19b32dec0eba9465664a019cfb43d06615f30f1f3199acac60c2ebd266da5e4"
+        }
+      ],
+      "expected_fields": {}
+    },
+    {
+      "slot_id": "remedy",
+      "kind": "text",
+      "alternatives": [
+        {
+          "source_version_id": "7a4e0f79ab976203a1b0dcb55782394707c7dd6598f53bdcf17f97ff08d743c2",
+          "unit_id": "8edfeb4cfa234dbb413c0b1e0d63b185ed5ca7e60706c4f7ad49483d1eb8461d",
+          "start": 0,
+          "end": 419,
+          "quote_sha256": "d899e6e28d55446ed3538f04fc44a3f75319718332b9a71265dfe26259c0465d"
+        }
+      ],
+      "expected_fields": {}
+    }
+  ],
+  "required_claims": [
+    {
+      "reference_claim_id": "R-SUMMARY",
+      "statement": "Mazda North American Operations (Mazda) is recalling certain 2007-2012 CX-7, CX-9, and 2009-2012 Maza6 vehicles.  These vehicles had their passenger frontal air bag inflators previously replaced under a prior recall using inflators of the same design.  The inflators may explode due to propellant degradation occurring after long-term exposure to high absolute humidity, temperature and temperature cycling.",
+      "evidence_sets": [
+        [
+          "summary"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-CONSEQUENCE",
+      "statement": "An inflator explosion may result in sharp metal fragments striking the driver or other occupants resulting in serious injury or death.",
+      "evidence_sets": [
+        [
+          "consequence"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    },
+    {
+      "reference_claim_id": "R-REMEDY",
+      "statement": "Owners are advised not to drive their vehicles until the repair has been performed.  Mazda will notify owners, and dealers will replace the front passenger air bag inflator with an alternate one, free of charge.   The recall began December 3, 2019.  Owners may contact Mazda customer service at 1-800-222-5500, option 4.  Mazda's number for this recall is 1317F.  Note: This recall supersedes recalls 16V356 and 17V012.",
+      "evidence_sets": [
+        [
+          "remedy"
+        ]
+      ],
+      "forbidden_inferences": [
+        "individual_applicability",
+        "causality",
+        "incidence_rate",
+        "all_vehicles_safe"
+      ]
+    }
+  ],
+  "acceptable_dispositions": [
+    "answered"
+  ]
+}

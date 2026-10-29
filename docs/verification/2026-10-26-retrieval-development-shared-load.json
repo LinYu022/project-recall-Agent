@@ -1,0 +1,2269 @@
+{
+  "schema_version": "retrieval-experiment/0.1",
+  "timestamp": "2026-10-26T14:05:28.553747+00:00",
+  "classification": "real_local_onnx_development_experiment_not_heldout_test",
+  "index_artifact_sha256": "46373e84c19beb44a37ed3b2a2cf079d98b86ebf15f7a6cfbcc2b8852a616982",
+  "dataset_build_id": "b84089a6465f68feab955ecaff920d444427c9f5b7a7c1e9a9e0bd37a0001980",
+  "labels_sha256": "f260d4964a87dc1d302075960fd1c6ce59251070196f149011e4193200533e19",
+  "protocol_sha256": "073f241d5c6fe7d29954e2d9a4018b5ee956efacee33201c61c0be759421d4f0",
+  "encoder": {
+    "spec": {
+      "role": "encoder",
+      "repository": "Xenova/all-MiniLM-L6-v2",
+      "revision": "751bff37182d3f1213fa05d7196b954e230abad9",
+      "upstream": "sentence-transformers/all-MiniLM-L6-v2",
+      "upstream_license": "apache-2.0",
+      "conversion_license_declared": "apache-2.0",
+      "quantization": "int8",
+      "max_length": 256,
+      "dimensions": 384,
+      "pooling": "attention_masked_mean_l2",
+      "files": [
+        {
+          "path": "onnx/model_quantized.onnx",
+          "sha256": "afdb6f1a0e45b715d0bb9b11772f032c399babd23bfc31fed1c170afc848bdb1",
+          "byte_size": 22972370
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+          "byte_size": 711661
+        },
+        {
+          "path": "config.json",
+          "sha256": "7135149f7cffa1a573466c6e4d8423ed73b62fd2332c575bf738a0d033f70df7",
+          "byte_size": 650
+        },
+        {
+          "path": "README.md",
+          "sha256": "63ea99bf681a2e9eda4f6a537d5ed8fda95d1677111656da37e9cfd080c3af02",
+          "byte_size": 1767
+        }
+      ]
+    },
+    "onnxruntime": "1.31.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.5.4",
+    "provider": "CPUExecutionProvider",
+    "batch_size": 8,
+    "threads": 1,
+    "adapter_version": "local-minilm/0.1",
+    "synthetic": false
+  },
+  "reranker": {
+    "spec": {
+      "role": "reranker",
+      "repository": "Xenova/ms-marco-MiniLM-L-6-v2",
+      "revision": "a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+      "upstream": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "upstream_license": "apache-2.0",
+      "conversion_license_declared": null,
+      "quantization": "int8",
+      "max_length": 512,
+      "dimensions": 1,
+      "pooling": "raw_sequence_classification_logit",
+      "files": [
+        {
+          "path": "onnx/model_quantized.onnx",
+          "sha256": "e9d8ebf845c413e981c175bfe49a3bfa9b3dcce2a3ba54875ee5df5a58639fbe",
+          "byte_size": 23143499
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+          "byte_size": 711396
+        },
+        {
+          "path": "config.json",
+          "sha256": "d827779a72d27ae68cf878a6fc2e954542663fe21ca515d9f4783fc96be2d37e",
+          "byte_size": 824
+        },
+        {
+          "path": "README.md",
+          "sha256": "5ab9570ca405274a5eed93c119b32bc6415e6dfcc5f822b00e5d6757b4190a31",
+          "byte_size": 1783
+        }
+      ]
+    },
+    "onnxruntime": "1.31.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.5.4",
+    "provider": "CPUExecutionProvider",
+    "batch_size": 8,
+    "threads": 1,
+    "adapter_version": "local-minilm/0.1",
+    "synthetic": false
+  },
+  "corpus_documents": 593,
+  "corpus_evidence_groups": 149,
+  "index_embedding_usage": {
+    "batches": 75,
+    "inputs": 593,
+    "max_length": 256,
+    "truncated_inputs": 28
+  },
+  "queries": 12,
+  "independent_event_clusters": 4,
+  "summary": {
+    "bm25": {
+      "metrics": {
+        "1": {
+          "recall": 0.4444444444444444,
+          "ndcg": 0.7857142857142857
+        },
+        "5": {
+          "recall": 0.9166666666666666,
+          "ndcg": 0.8959227091405142
+        },
+        "10": {
+          "recall": 0.9444444444444444,
+          "ndcg": 0.8988853144337047
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hits_at_10": 4,
+      "exact_identifier_queries": 4,
+      "median_warm_ms": 5.039150011725724,
+      "event_macro_ndcg_at_5": 0.8959227091405142
+    },
+    "dense": {
+      "metrics": {
+        "1": {
+          "recall": 0.3611111111111111,
+          "ndcg": 0.6190476190476191
+        },
+        "5": {
+          "recall": 0.8611111111111112,
+          "ndcg": 0.8141020835839403
+        },
+        "10": {
+          "recall": 0.9305555555555556,
+          "ndcg": 0.8209634181958355
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hits_at_10": 4,
+      "exact_identifier_queries": 4,
+      "median_warm_ms": 9.636499977204949,
+      "event_macro_ndcg_at_5": 0.8141020835839403
+    },
+    "hybrid": {
+      "metrics": {
+        "1": {
+          "recall": 0.4444444444444444,
+          "ndcg": 0.7142857142857143
+        },
+        "5": {
+          "recall": 0.9305555555555556,
+          "ndcg": 0.8693089609655378
+        },
+        "10": {
+          "recall": 0.9305555555555556,
+          "ndcg": 0.8693089609655378
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hits_at_10": 4,
+      "exact_identifier_queries": 4,
+      "median_warm_ms": 11.109549959655851,
+      "event_macro_ndcg_at_5": 0.8693089609655378
+    },
+    "hybrid_rerank": {
+      "metrics": {
+        "1": {
+          "recall": 0.4444444444444444,
+          "ndcg": 0.7857142857142857
+        },
+        "5": {
+          "recall": 0.9444444444444444,
+          "ndcg": 0.916607524879467
+        },
+        "10": {
+          "recall": 0.9722222222222222,
+          "ndcg": 0.9196927603608065
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hits_at_10": 4,
+      "exact_identifier_queries": 4,
+      "median_warm_ms": 2677.3609000374563,
+      "event_macro_ndcg_at_5": 0.916607524879467
+    }
+  },
+  "per_query": [
+    {
+      "query_id": "DEV-23V838000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.938506417451168,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9740576809694537,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        4.987700027413666,
+        3.991600009612739,
+        3.790499991737306
+      ],
+      "median_warm_ms": 3.991600009612739,
+      "candidate_trace_artifact": {
+        "sha256": "42500b8cf00f5ce6e4d44ddf56ef3e647e47996f9399443f7703ca91c689581c",
+        "byte_size": 146945
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V838000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        5.366500001400709,
+        4.20909991953522,
+        5.4981999564915895
+      ],
+      "median_warm_ms": 5.366500001400709,
+      "candidate_trace_artifact": {
+        "sha256": "cbb87ed1cce353294d9cfb36b351bb45f61d6b2d86c7ead19f41c8d258f0a364",
+        "byte_size": 146902
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V838000-REMEDY",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        6.5209000604227185,
+        7.105299970135093,
+        8.982200059108436
+      ],
+      "median_warm_ms": 7.105299970135093,
+      "candidate_trace_artifact": {
+        "sha256": "57cd8ed22a8cc4e3840c82879c199a7fea457ed499242b7bffc4ce16cbbaf5fd",
+        "byte_size": 155328
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V651000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.8609101556836468,
+          "reason": null
+        },
+        "10": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.8609101556836468,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        3.615100053139031,
+        3.8180999690666795,
+        3.3656000159680843
+      ],
+      "median_warm_ms": 3.615100053139031,
+      "candidate_trace_artifact": {
+        "sha256": "7ec8334ff729468e32c1a22381c7a9900ab1fac55cd42eaecea27be56c86448c",
+        "byte_size": 143084
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V651000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.9680147827042069,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9680147827042069,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        6.369499955326319,
+        5.474700010381639,
+        4.456700058653951
+      ],
+      "median_warm_ms": 5.474700010381639,
+      "candidate_trace_artifact": {
+        "sha256": "650f83a05a33a2905715f7000a8fb68b6bfc41f177eb3312aeb7cb9610d67ad2",
+        "byte_size": 148204
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V651000-REMEDY",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        6.608400028198957,
+        5.88640000205487,
+        5.385600030422211
+      ],
+      "median_warm_ms": 5.88640000205487,
+      "candidate_trace_artifact": {
+        "sha256": "75eff2b014d5fcfb280a6c4badf821edf9eda1a4ed004877e0bf5fb108c80409",
+        "byte_size": 153706
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-22V859000-EXACT_ID",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.991474106402634,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.991474106402634,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        3.7287999875843525,
+        4.405500018037856,
+        2.9055000049993396
+      ],
+      "median_warm_ms": 3.7287999875843525,
+      "candidate_trace_artifact": {
+        "sha256": "b718f81ccd4b278c3cf63cbcfe8dd16cff803751822fed84bf6c9985cc5636d7",
+        "byte_size": 140888
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-22V859000-SYMPTOM",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        4.6434999676421285,
+        5.108200013637543,
+        5.168400006368756
+      ],
+      "median_warm_ms": 5.108200013637543,
+      "candidate_trace_artifact": {
+        "sha256": "1a53116e45e68455502d8229fba602069d867776936a7e7f3a034cb5c3815874",
+        "byte_size": 139570
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-22V859000-REMEDY",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        4.970100009813905,
+        4.511900013312697,
+        5.350799998268485
+      ],
+      "median_warm_ms": 4.970100009813905,
+      "candidate_trace_artifact": {
+        "sha256": "d693328e0f76a7068f936ecc1511af277690eaee4080201749e7422ad1a3d1df",
+        "byte_size": 152055
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V080000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        3.816500073298812,
+        2.534099970944226,
+        3.790399990975857
+      ],
+      "median_warm_ms": 3.790399990975857,
+      "candidate_trace_artifact": {
+        "sha256": "ea2a9bcfa518160831dcc4197a3eed5ccaea8f1912d1258de199f632550a151f",
+        "byte_size": 136489
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V080000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.5897053367440438,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.5897053367440438,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        6.0677999863401055,
+        3.9744001114740968,
+        4.132299916818738
+      ],
+      "median_warm_ms": 4.132299916818738,
+      "candidate_trace_artifact": {
+        "sha256": "26e657c565184ef2e2eb2a3bc70a2ae5fb2cdacca986cee2f38212319dd77476",
+        "byte_size": 143726
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V080000-REMEDY",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "bm25",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        5.453999969176948,
+        5.054600071161985,
+        6.9443000247702
+      ],
+      "median_warm_ms": 5.453999969176948,
+      "candidate_trace_artifact": {
+        "sha256": "b520728891e3c775c2c4ae068334ad8dcdd2e74b79fc08384dc15b65bdcc1c52",
+        "byte_size": 157582
+      },
+      "model_usage": {}
+    },
+    {
+      "query_id": "DEV-23V838000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.9860843475230173,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9860843475230173,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        7.414300111122429,
+        7.515800069086254,
+        6.618199986405671
+      ],
+      "median_warm_ms": 7.414300111122429,
+      "candidate_trace_artifact": {
+        "sha256": "821b99ed4570bd1687d9f45e33c0f2b3601ca9a5d4f04a5d9e734ae5498185b0",
+        "byte_size": 155141
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.5,
+          "ndcg": 0.9173194127129571,
+          "reason": null
+        },
+        "10": {
+          "recall": 0.5,
+          "ndcg": 0.9173194127129571,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        9.644800098612905,
+        10.539500042796135,
+        10.25870000012219
+      ],
+      "median_warm_ms": 10.25870000012219,
+      "candidate_trace_artifact": {
+        "sha256": "67906f2e914868d95f0ffec4c5af2e9f5fc07cc78c4ac60f4959256657e76394",
+        "byte_size": 144663
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-REMEDY",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.47774855460816557,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.47774855460816557,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.259700007736683,
+        10.081999935209751,
+        11.076199938543141
+      ],
+      "median_warm_ms": 10.259700007736683,
+      "candidate_trace_artifact": {
+        "sha256": "0fec953555764ae6d53bae49cd776c37a0c0bf900c4e2923486c4021d008a4b3",
+        "byte_size": 155465
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.938506417451168,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9795021391503893,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        8.19169997703284,
+        7.611399982124567,
+        7.208000053651631
+      ],
+      "median_warm_ms": 7.611399982124567,
+      "candidate_trace_artifact": {
+        "sha256": "66279041d6bccaf815cc4cd7685ba77d738301ff556dd16038503bfdb78d3991",
+        "byte_size": 149583
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.785100050270557,
+        9.670599945820868,
+        7.337599992752075
+      ],
+      "median_warm_ms": 9.670599945820868,
+      "candidate_trace_artifact": {
+        "sha256": "82b373d97e52407a814428cc954da65036feb847cd7f9f2fd64b435f0335789f",
+        "byte_size": 151631
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-REMEDY",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.95500006340444,
+        10.8173000626266,
+        9.175799903459847
+      ],
+      "median_warm_ms": 10.8173000626266,
+      "candidate_trace_artifact": {
+        "sha256": "3f6e26de53c2ced033e91af2fa459b2d9eff811906b3880058f586ffda75ab8e",
+        "byte_size": 153843
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-EXACT_ID",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7276545800191442,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7276545800191442,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.630200034938753,
+        8.361399988643825,
+        8.65720002911985
+      ],
+      "median_warm_ms": 8.65720002911985,
+      "candidate_trace_artifact": {
+        "sha256": "8b8ad034e2b75c18afd3bb98ccc181071a68ec75999f06162de9a82e2ffc7d3a",
+        "byte_size": 144947
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-SYMPTOM",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.0,
+          "ndcg": 0.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.5413402936435214,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.5413402936435214,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        9.584299987182021,
+        8.29270004760474,
+        9.1787000419572
+      ],
+      "median_warm_ms": 9.1787000419572,
+      "candidate_trace_artifact": {
+        "sha256": "4c4fdc7dd3286b53a842693412405af1e3bfa0ea6a183b1feff493ff43bebe5f",
+        "byte_size": 148402
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-REMEDY",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.296600055880845,
+        11.493800091557205,
+        44.2507000407204
+      ],
+      "median_warm_ms": 11.493800091557205,
+      "candidate_trace_artifact": {
+        "sha256": "e0a4ba1b95b260a0e45463425fe73655cf4c10200b5d45fd2107be40393c1ae5",
+        "byte_size": 152189
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.5534422429394873,
+          "reason": null
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.5534422429394873,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.167400003410876,
+        6.075599929317832,
+        7.425299962051213
+      ],
+      "median_warm_ms": 7.425299962051213,
+      "candidate_trace_artifact": {
+        "sha256": "a77e4b234373dc3ade8856819a036500fa1e66d0726d945e667c5e634190f48e",
+        "byte_size": 145903
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.5,
+          "ndcg": 0.9173194127129571,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9586597063564786,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        11.711800005286932,
+        9.60240000858903,
+        8.610900025814772
+      ],
+      "median_warm_ms": 9.60240000858903,
+      "candidate_trace_artifact": {
+        "sha256": "f1c1fae881936e74814d2c94f37356b19f37f34916959a8781d9129103d29f10",
+        "byte_size": 149113
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-REMEDY",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "dense",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        9.095100103877485,
+        11.124300071969628,
+        10.454900097101927
+      ],
+      "median_warm_ms": 10.454900097101927,
+      "candidate_trace_artifact": {
+        "sha256": "049be9cfaa464f238cb76ad05de9a76fc853fe0c316b9f63bc7d9a59dbd9d23c",
+        "byte_size": 157715
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.991474106402634,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.991474106402634,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        7.89260002784431,
+        9.183499962091446,
+        8.145299972966313
+      ],
+      "median_warm_ms": 8.145299972966313,
+      "candidate_trace_artifact": {
+        "sha256": "85736a951c1e7d1582bd4cdc1ac727138b2978d1851f61bf81f14648fb8d3851",
+        "byte_size": 159753
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.5,
+          "ndcg": 0.9173194127129571,
+          "reason": null
+        },
+        "10": {
+          "recall": 0.5,
+          "ndcg": 0.9173194127129571,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        13.159400084987283,
+        10.205999948084354,
+        11.825200053863227
+      ],
+      "median_warm_ms": 11.825200053863227,
+      "candidate_trace_artifact": {
+        "sha256": "b74a98c42340a4d226d9b07eff72d0446beb9100f106c474ecb3c2e12b763034",
+        "byte_size": 157927
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-REMEDY",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.5897053367440438,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.5897053367440438,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.601699934341013,
+        11.144899995997548,
+        9.236000012606382
+      ],
+      "median_warm_ms": 10.601699934341013,
+      "candidate_trace_artifact": {
+        "sha256": "d7f18093599c46b3c8eb3f441a0ae450d2da37604ad20dde80b00c74636013c8",
+        "byte_size": 157346
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.9138778446351128,
+          "reason": null
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.9138778446351128,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        7.29249999858439,
+        8.349700015969574,
+        8.830599952489138
+      ],
+      "median_warm_ms": 8.349700015969574,
+      "candidate_trace_artifact": {
+        "sha256": "fc0829051317b5784d1b83573fe9f46a7be59740f9d4ce76cbfca74634a59298",
+        "byte_size": 159165
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        11.617399984970689,
+        10.746299987658858,
+        14.311200007796288
+      ],
+      "median_warm_ms": 11.617399984970689,
+      "candidate_trace_artifact": {
+        "sha256": "1f50fa752e1522cdb21fea087eac831fa6c2295bafd1541dfa0ce1baf0310809",
+        "byte_size": 162051
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-REMEDY",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.871100006625056,
+        11.913200025446713,
+        11.647899984382093
+      ],
+      "median_warm_ms": 11.647899984382093,
+      "candidate_trace_artifact": {
+        "sha256": "320bd75106df7a294dac5135d1a772b6d737e7fb5acb996c733c81542857d6b4",
+        "byte_size": 155697
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-EXACT_ID",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7191286864217782,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7191286864217782,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        9.432399994693696,
+        9.17720003053546,
+        9.812100091949105
+      ],
+      "median_warm_ms": 9.432399994693696,
+      "candidate_trace_artifact": {
+        "sha256": "b82a978c87588cd3636431b6fde50b892fb7a257624a718114ee9b0c1d18df81",
+        "byte_size": 154523
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-SYMPTOM",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.5897053367440438,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.5897053367440438,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.09839994367212,
+        11.230000061914325,
+        9.236600017175078
+      ],
+      "median_warm_ms": 10.09839994367212,
+      "candidate_trace_artifact": {
+        "sha256": "200cebd93cbccef4472b3bf2fa4c80eed254b33d1aeee25e13ede7a8822a0161",
+        "byte_size": 154642
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-REMEDY",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        12.066400027833879,
+        10.750900022685528,
+        12.82619999255985
+      ],
+      "median_warm_ms": 12.066400027833879,
+      "candidate_trace_artifact": {
+        "sha256": "26436e2fc07ed62d5d753d83601804abf00959438e87673b5dbbb8bf63991e00",
+        "byte_size": 154043
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7276545800191442,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7276545800191442,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        10.62920002732426,
+        8.4080999949947,
+        9.419000009074807
+      ],
+      "median_warm_ms": 9.419000009074807,
+      "candidate_trace_artifact": {
+        "sha256": "892337d927acca6e2f1245710a2d0a23604e7215bd85c61edccd50c1259775b8",
+        "byte_size": 152260
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        13.710199971683323,
+        10.239100083708763,
+        12.764399987645447
+      ],
+      "median_warm_ms": 12.764399987645447,
+      "candidate_trace_artifact": {
+        "sha256": "84ac79d2d2ecad49a1ed2c2732cab376d4cc138a00a619b62a04a71d61deaabe",
+        "byte_size": 154434
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-REMEDY",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "hybrid",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        12.208699947223067,
+        12.375800055451691,
+        12.372200028039515
+      ],
+      "median_warm_ms": 12.372200028039515,
+      "candidate_trace_artifact": {
+        "sha256": "316e51946b0894138b32d8f8e92497bd3b304e9eaf1fd3c36b1f9b897cc8017e",
+        "byte_size": 159571
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.938506417451168,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9755292432272432,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        3084.152500028722,
+        3036.131800035946,
+        3017.264600028284
+      ],
+      "median_warm_ms": 3036.131800035946,
+      "candidate_trace_artifact": {
+        "sha256": "b91e072946b990fd3ef42f9f8a6f05c0d73eacf1348d00bffb3354343e090caa",
+        "byte_size": 171214
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        3330.027399933897,
+        3437.2868000064045,
+        3459.840100025758
+      ],
+      "median_warm_ms": 3437.2868000064045,
+      "candidate_trace_artifact": {
+        "sha256": "db9bf36c301ab93e2bec5c5a5779f7a4bdc0c0188cdcba2406267a4087decfdc",
+        "byte_size": 164464
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V838000-REMEDY",
+      "event_cluster_id": "RECALL-23V838000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7098097413968655,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        128.58240003697574,
+        132.05899996683002,
+        128.7358000408858
+      ],
+      "median_warm_ms": 128.7358000408858,
+      "candidate_trace_artifact": {
+        "sha256": "ea2b1ba8d798bc2596f6148e50ab624c2a28643eb8edb6efc346808712a7936c",
+        "byte_size": 159687
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 4,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        2482.58780001197,
+        2687.6677999971434,
+        2423.771600006148
+      ],
+      "median_warm_ms": 2482.58780001197,
+      "candidate_trace_artifact": {
+        "sha256": "600e8c62659dc764c97d721714af7dfeb39bddb06cd5c6c1a87db9e19052bfbe",
+        "byte_size": 166017
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        2828.1461000442505,
+        2874.036099994555,
+        2878.2895000185817
+      ],
+      "median_warm_ms": 2874.036099994555,
+      "candidate_trace_artifact": {
+        "sha256": "5999b39367690efdd946860180c9fbb7e1e65d2496d9223f2843de5a1bfca783",
+        "byte_size": 165846
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V651000-REMEDY",
+      "event_cluster_id": "RECALL-23V651000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.9828422279067397,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        137.6272999914363,
+        140.28030005283654,
+        144.77580005768687
+      ],
+      "median_warm_ms": 140.28030005283654,
+      "candidate_trace_artifact": {
+        "sha256": "be3ee3835e680252ea28b437f2148d427582254dafad5899178e90d7a4fff5c8",
+        "byte_size": 158049
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 4,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-EXACT_ID",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 0.7191286864217782,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 0.7191286864217782,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        3068.78820003476,
+        2788.276599952951,
+        2888.5675000492483
+      ],
+      "median_warm_ms": 2888.5675000492483,
+      "candidate_trace_artifact": {
+        "sha256": "907ddddd5272ffa8811101df3349cbec50f64edf2a0b300402e0795153248268",
+        "byte_size": 164859
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-SYMPTOM",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        2872.1340000629425,
+        2880.9757999842986,
+        2839.3363000359386
+      ],
+      "median_warm_ms": 2872.1340000629425,
+      "candidate_trace_artifact": {
+        "sha256": "56cf43ac4ca1ff76d59769193df694d6d17c44ed35d3ab661241c6a85ea72569",
+        "byte_size": 159850
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-22V859000-REMEDY",
+      "event_cluster_id": "RECALL-22V859000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        149.27930000703782,
+        157.96779992524534,
+        159.12540000863373
+      ],
+      "median_warm_ms": 157.96779992524534,
+      "candidate_trace_artifact": {
+        "sha256": "7be67eafc51774384e646a2d384bcf74f90e4b76c819c8a0d589e7b195f781f4",
+        "byte_size": 156401
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 4,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-EXACT_ID",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.3333333333333333,
+          "ndcg": 0.14285714285714285,
+          "reason": null
+        },
+        "5": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.6661609974703122,
+          "reason": null
+        },
+        "10": {
+          "recall": 0.6666666666666666,
+          "ndcg": 0.6661609974703122,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": true,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        1842.3367999494076,
+        1899.2012001108378,
+        1894.9716999195516
+      ],
+      "median_warm_ms": 1894.9716999195516,
+      "candidate_trace_artifact": {
+        "sha256": "83f639b47ec7b558471154dfbc82587672a4569eb81da0df3bd29313cda57ab3",
+        "byte_size": 162381
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-SYMPTOM",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        2996.0158000467345,
+        3118.5824000276625,
+        2981.107199913822
+      ],
+      "median_warm_ms": 2996.0158000467345,
+      "candidate_trace_artifact": {
+        "sha256": "fbd4caddcf8a00f8506ed3517b320b08cfe8b0053fe53c0eb0e3e694cdf90a8c",
+        "byte_size": 160764
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 30,
+          "truncated_inputs": 0,
+          "batches": 4,
+          "max_length": 512
+        }
+      }
+    },
+    {
+      "query_id": "DEV-23V080000-REMEDY",
+      "event_cluster_id": "RECALL-23V080000",
+      "method": "hybrid_rerank",
+      "metrics": {
+        "1": {
+          "recall": 0.5,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "5": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        },
+        "10": {
+          "recall": 1.0,
+          "ndcg": 1.0,
+          "reason": null
+        }
+      },
+      "wrong_year_hits": 0,
+      "exact_identifier_hit_at_10": null,
+      "pending_hits": 0,
+      "warm_latencies_ms": [
+        154.46610003709793,
+        120.44650001917034,
+        118.64580004476011
+      ],
+      "median_warm_ms": 120.44650001917034,
+      "candidate_trace_artifact": {
+        "sha256": "cadd17109e1d9d7d6f3e4db2ed00bfc045c3fd224f7b856dd1949e0e6a990765",
+        "byte_size": 161923
+      },
+      "model_usage": {
+        "query_encoder": {
+          "inputs": 1,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 256
+        },
+        "reranker:matched": {
+          "inputs": 4,
+          "truncated_inputs": 0,
+          "batches": 1,
+          "max_length": 512
+        }
+      }
+    }
+  ],
+  "default_method": "hybrid",
+  "default_decision": {
+    "ndcg_at_5_delta": 0.04729856391392917,
+    "recall_at_5_no_drop": true,
+    "warm_latency_ratio": 240.99634186445434,
+    "rule": "frozen development protocol; no test-set tuning"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "limitations": [
+    "12 queries from 4 new development campaign clusters; within-event queries are correlated.",
+    "No held-out test set; defaults chosen only under the preregistered development rule.",
+    "English queries and English MiniLM models; Chinese and other languages not evaluated.",
+    "Grade 3 means direct answer field; grade 1 means background/supporting same-event field. Other evidence groups are grade 0 for these narrow questions.",
+    "Labels may require independent review before formal evaluation; no general investigation-accuracy claim."
+  ],
+  "external_generative_model_calls": 0,
+  "inference_network_requests": 0,
+  "dataset_release": null,
+  "run_role": "reference_run_overlapped_offline_checks_not_final_latency"
+}

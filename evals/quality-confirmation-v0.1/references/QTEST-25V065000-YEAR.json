@@ -1,0 +1,9 @@
+{
+  "case_id": "QTEST-25V065000-YEAR",
+  "split": "test",
+  "slots": [],
+  "required_claims": [],
+  "acceptable_dispositions": [
+    "no_matching_records"
+  ]
+}
